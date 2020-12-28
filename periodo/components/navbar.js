@@ -6,11 +6,12 @@ const Navbar = ({ children }) => {
   return (
     <React.Fragment>
       <Nav>
+        <p><b>
+          Periodo
+        </b>
+        </p>
         <Link href="/">
           <a>Home</a>
-        </Link>
-        <Link href="/page-two">
-          <a>Page 2</a>
         </Link>
       </Nav>
       <PageBody>{children}</PageBody>
