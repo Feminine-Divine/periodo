@@ -1,5 +1,33 @@
-.heading {
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playball&family=Redressed&family=Special+Elite&display=swap');
+
+.background{
+    margin: 50px 0;
+    background-image: url('./images/women.jpg');
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+}
+.heading {
+    font-family:'Special Elite', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.button {
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
 }
