@@ -4,8 +4,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-image: url('https://image.freepik.com/free-vector/womens-day-creative-background-with-lady-face_1017-23747.jpg');
-  background-color: palevioletred;
+  background-image: url('../components/images/women.jpg');
+  background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
 }
