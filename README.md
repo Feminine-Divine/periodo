@@ -1,2 +1,3 @@
 # periodo
-An app for tracking periods for young girls.
+This app is basically built for tracking the periods of the women. which uses Nextjs as a framework.
+
