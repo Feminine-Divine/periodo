@@ -1,4 +1,5 @@
-import React from 'react';
+import React,{useState} from 'react';
+import 'react-calendar/dist/Calendar.css';
 import Calendar from 'react-calendar' 
 import Container from '@material-ui/core/Container';
 import AppBar from '@material-ui/core/AppBar';
@@ -7,6 +8,8 @@ import style from "./calender.module.css"
 
 
 const Home =()=>{
+
+  const [value, onChange] = useState(new Date());
 
     function handleClick(e) {
         let state = this.props.state;
@@ -19,12 +22,14 @@ const Home =()=>{
         state["currentDate"] = date;
         this.props.handleChangeState(state);
       }
+
       
 
     return(
         <Container maxWidth="xs" className={style.container}>
         <Calendar
-        onClickDay={handleClickDay}
+         onChange={onChange}
+         value={value}
         />
         </Container>
     );

@@ -231,6 +231,22 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
+"@fullcalendar/common@~5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/common/-/common-5.5.0.tgz#02509c8d96bb0bb7fcf397ccf564ed271a6cee00"
+  integrity sha512-xHsHRI2xnC4vDPdRaOkt03SGIEsmlcSTI6RVInI2PQKi3n4otgM4ej3WL4B010uT4IzrBlUvNm8HHEo/o3g8Ug==
+  dependencies:
+    ical.js "^1.4.0"
+    tslib "^2.0.3"
+
+"@fullcalendar/react@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/react/-/react-5.5.0.tgz#4a74e816ee67c4de59ca6bae1a658e6e72c7970a"
+  integrity sha512-ss109y/kYIb9mwmE9dZc5c2o5I4CoqREDqLNAur83CGC5NvCH8gRzZXEilZz1E6ORuziBEYkPPtREn7Mp+6lYg==
+  dependencies:
+    "@fullcalendar/common" "~5.5.0"
+    tslib "^2.0.3"
+
 "@hapi/accept@5.0.1":
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/@hapi/accept/-/accept-5.0.1.tgz#068553e867f0f63225a506ed74e899441af53e10"
@@ -2150,6 +2166,11 @@ hyphenate-style-name@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/hyphenate-style-name/-/hyphenate-style-name-1.0.4.tgz#691879af8e220aea5750e8827db4ef62a54e361d"
   integrity sha512-ygGZLjmXfPHj+ZWh6LwbC37l43MhfztxetbFCoYTM2VjkIUpeHgSNn7QIyVFj7YQ1Wl9Cbw5sholVJPzWvC2MQ==
+
+ical.js@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/ical.js/-/ical.js-1.4.0.tgz#fc5619dc55fe03d909bf04362aa0677f4541b9d7"
+  integrity sha512-ltHZuOFNNjcyEYbzDgjemS7LWIFh2vydJeznxQHUh3dnarbxqOYsWONYteBVAq1MEOHnwXFGN2eskZReHclnrA==
 
 iconv-lite@0.4.24:
   version "0.4.24"
@@ -4284,6 +4305,11 @@ tslib@^1.9.0:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
+
+tslib@^2.0.3:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
+  integrity sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
 
 tty-browserify@0.0.0:
   version "0.0.0"
