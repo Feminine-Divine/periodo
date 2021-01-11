@@ -5,6 +5,7 @@ import Container from '@material-ui/core/Container';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import style from "./calender.module.css"
+import Link from 'next/link';
 
 
 const Home =()=>{
@@ -26,12 +27,17 @@ const Home =()=>{
       
 
     return(
+      <>
+        <h4 className={style.heading}>Click on the date</h4>
+        <Link href="/flow">
         <Container maxWidth="xs" className={style.container}>
         <Calendar
          onChange={onChange}
          value={value}
         />
         </Container>
+        </Link>
+      </>
     );
 }
 

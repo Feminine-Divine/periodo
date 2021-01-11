@@ -1,72 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 .react-calendar {
     border: none;
     background: transparent;
 }
-
-.MuiToolbar-root.MuiToolbar-regular.MuiToolbar-gutters {
-    display: flex;
-    justify-content: space-between;
-}
-
-.container-div {
+ .heading {
+	font-family:'Special Elite', cursive;
+	margin-top: -1em;
 	display: flex;
-	flex-direction: row-reverse;
-	justify-content: space-around;
-}
-
-.sub-container {
-	padding: 30px;
-}
-
-.react-calendar__tile {
-	background: ghostwhite;
-	font-size: large;
-}
-
-.MuiToolbar-regular {
-	background: lightpink;
-	color: firebrick;
-	font-family: "Lucida Grande";
-}
-
-.react-calendar button {
-	height: 85px;
-}
-
-.react-calendar__tile--active:enabled:hover, .react-calendar__tile--active:enabled:focus {
-	background: border-box;
-}
-
-.MuiFab-sizeMedium {
-	width: 65px;
-	height: 65px;
-}
-
-.react-calendar__month-view__weekdays{
-	color: firebrick;
-}
-
-.react-calendar__navigation button {
-	color: firebrick;
-}
-
-.blood-1 {
-	background: firebrick;
-}
-
-.blood-2 {
-	background: firebrick;
-}
-
-.blood-3 {
-	background: firebrick;
-}
-
-.blood-4 {
-	background: firebrick;
-}
-
-.predict-1 {
-	background: lightcoral;
-}
+    flex-direction: row;
+    justify-content: center;
+ }
