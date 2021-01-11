@@ -1,17 +1,18 @@
 import React from "react"
 import ReactDOM from 'react-dom';
 import StarRatingComponent from 'react-star-rating-component';
+import style from "./Flow.module.css"
 
 const Flow=()=>{
 
     return(
-        <div>
-        <p>Blood Flow:</p>
+        <div className={style.container}>
+        <p className={style.heading}>Blood Flow:</p>
         <StarRatingComponent 
           name="rate1"
           val="1"
           starCount={5}
-          starColor= {`black`}
+          starColor= {`yellow`}
           emptyStarColor={`white`}
         />
       </div>

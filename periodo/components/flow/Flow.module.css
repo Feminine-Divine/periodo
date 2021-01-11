@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    background-color: black;
+    border: 2px;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 1em;
+    margin: 4em;
+}
+.heading {
+    font-style: oblique;
+    color: blanchedalmond;
+}
