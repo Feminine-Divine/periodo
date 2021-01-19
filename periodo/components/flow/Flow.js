@@ -20,7 +20,7 @@ const Flow=()=>{
       <div className={style.container}>
         <p className={style.heading}>Period Pain:</p>
         <StarRatingComponent 
-          name="rate1"
+          name="base1"
           val="1"
           starCount={5}
           starColor= {`yellow`}
@@ -30,7 +30,7 @@ const Flow=()=>{
       <div className={style.container}>
         <p className={style.heading}>Mood:</p>
         <StarRatingComponent 
-          name="rate1"
+          name="mood1"
           val="1"
           starCount={5}
           starColor= {`yellow`}
