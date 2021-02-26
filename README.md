@@ -18,4 +18,4 @@ To be created....
 Please read Contributing.md and Code of Conduct before contrbuting
 
 ## Contact
-Please reachout the admins [Khushi Guatam](https://github.com/Feminine-Divine) and [Shipra Verma](https://github.com/Aaishpra) if you face any doutbs or have any questions regarding the project.
+Please reachout the admins [Khushi Guatam](https://github.com/Feminine-Divine) and [Shipra Verma](https://github.com/Aaishpra) if you face any doubts or have any questions regarding the project.
