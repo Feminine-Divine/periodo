@@ -18,4 +18,4 @@ To be created....
 Please read CONTRIBUTING.md and Code of Conduct before contrbuting
 
 ## Contact
-Please reachout the admins [Khushi Guatam](https://khushishikhu.gtsb.io/) and [Shipra Verma](https://6002bd83fc21bdb414a1a7c3--aaishprafolio.netlify.app/) if you face any doubts or have any questions regarding the project.
+Please reachout the admins [Khushi Gautam](https://khushishikhu.gtsb.io/) and [Shipra Verma](https://6002bd83fc21bdb414a1a7c3--aaishprafolio.netlify.app/) if you face any doubts or have any questions regarding the project.
