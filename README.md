@@ -3,3 +3,7 @@ Our project focuses on the young girls who are going to face their first periods
 The Project is very beginner friendly to contribute to as well as has a user-friendly interface which can help in attracting young audience.
 
 ![image](https://user-images.githubusercontent.com/65439761/108522793-3367eb80-72f3-11eb-9ddb-08c49c1549e9.png)
+
+## Local Setup Instructions
+
+To be created....
