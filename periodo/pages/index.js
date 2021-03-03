@@ -1,13 +1,10 @@
 import React from "react";
-import Navbar from "../components/navbar.js";
-import Home from "../components/calender/calender.js"
-import Start from "../components/started.js"
+import Login from '../components/Login';
 
 const index =()=> {
   return (
     <>
-      <Navbar />
-      <Start/>
+      <Login />
       </>
   );
 }
