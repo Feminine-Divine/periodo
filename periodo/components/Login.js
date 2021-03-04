@@ -1,7 +1,7 @@
 import React from "react";
 import Link from 'next/link'
 import { GoogleLogin } from "react-google-login";
-import { refreshTokenSetup } from "../utils/refreshToken";
+import { FacebookLogin } from "react-facebook-login";
 
 const clientID = '246533887386-o890hff552huvands3abmla9p72h2o18.apps.googleusercontent.com';
 
@@ -14,6 +14,9 @@ function Login() {
     console.log('[Login failure] res:', res);
   };
 
+  const responseFacebook = (response) => {
+    console.log(response);
+  }
   return (
     <>
       <div>
@@ -27,6 +30,14 @@ function Login() {
          style={{ marginTop: "100px"}}
          isSignedIn={true}
          />
+
+        <FacebookLogin
+    appId="1088597931155576"
+    autoLoad={true}
+    fields="name,email,picture"
+    onClick={componentClicked}
+    callback={responseFacebook} 
+        />
       </Link>
       </div>
     </>

@@ -1,10 +1,10 @@
 import React from "react";
-import Login from '../components/Login';
+import Homepage from "./homepage"
 
 const index =()=> {
   return (
     <>
-      <Login />
+      <Homepage />
       </>
   );
 }
