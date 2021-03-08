@@ -6,6 +6,12 @@ The Project is very beginner friendly to contribute to as well as has a user-fri
 
 ![image](https://user-images.githubusercontent.com/65439761/108522793-3367eb80-72f3-11eb-9ddb-08c49c1549e9.png)
 
+<br>
+
+### Project Video : :tv: https://youtu.be/3dxa599SPT4
+
+<br>
+
 ## Tech Stack 
 * ReactJS
 * NextJs
