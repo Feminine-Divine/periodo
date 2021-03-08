@@ -19,3 +19,8 @@ Please read CONTRIBUTING.md and Code of Conduct before contrbuting
 
 ## Contact
 Please reachout the admins [Khushi Gautam](https://khushishikhu.gtsb.io/) and [Shipra Verma](https://6002bd83fc21bdb414a1a7c3--aaishprafolio.netlify.app/) if you face any doubts or have any questions regarding the project.
+
+## Guidelines for Contributors
+Some Guidelines needs to be followed to maintain the decorum in the community.
+1. One participant can only be assigned to one issue at one time , So that everyone will get the chance to Contribute and to create any fuss in the organization.
+2. Every Participant who are assigned in a Issue have to give any update within three days otherwise the next person who is interested will be assigned on that issue.
