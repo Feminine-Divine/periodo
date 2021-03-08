@@ -8,7 +8,7 @@ The Project is very beginner friendly to contribute to as well as has a user-fri
 
 <br>
 
-### Project Video : :tv: https://youtu.be/3dxa599SPT4
+### Demo Project Video : :tv: https://youtu.be/3dxa599SPT4
 
 <br>
 
