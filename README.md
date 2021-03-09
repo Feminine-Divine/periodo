@@ -12,7 +12,46 @@ The Project is very beginner friendly to contribute to as well as has a user-fri
 
 ## Local Setup Instructions
 
-To be created....
+Follow these steps to setup project locally:
+- **Fork the repository:** Click the fork button.
+![fork](https://user-images.githubusercontent.com/43095489/110275583-87fdad00-7ffb-11eb-9828-1b4eb7026b3e.png)
+- **Clone forked repository:** If you are using *Windows OS* use `Git Bash` to run all commands given below.
+    ```bash
+    #to clone the repository
+    git clone https://github.com/<your GitHub user name>/periodo.git
+    #Example
+    git clone https://github.com/johnDoe/periodo.git
+    ```
+- **Add remote:** This will point to the original repository. It will help you to get the latest changes made by others.
+    ```bash
+    #add upstream
+    git remote add upstream https://github.com/Feminine-Divine/periodo.git
+    ```
+- **Install yarn:** This project use `yarn` as a package manager.
+    ```bash
+    #to check yarn installed on your computer or not
+    yarn --version
+    #to install yarn
+    npm install --global yarn
+    ```
+- **Install dependencies:**
+    ```bash
+    #move to directory
+    cd periodo/periodo
+    #install the dependency
+    yarn install
+    #or
+    npm install
+    ```
+- **Run the project:**
+    ```bash
+    #run in the development mode
+    yarn dev
+    #or
+    npm run dev
+    ```
+    Check in which port, the server is running or click the link
+    ![CLI](https://user-images.githubusercontent.com/43095489/110291642-57773c80-8016-11eb-9f40-5b0698c89efa.png)
 
 ## Documentation
 Please read CONTRIBUTING.md and Code of Conduct before contrbuting
