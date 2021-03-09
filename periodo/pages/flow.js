@@ -6,4 +6,4 @@ const flow=()=>{
         <Flow/>
     )
 }
-export default flow
+export default flow;
