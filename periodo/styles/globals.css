@@ -10,9 +10,14 @@ body {
   background-repeat: no-repeat;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+
 a {
   color: inherit;
   text-decoration: none;
+  font-size: large;
+  font-family: "Montserrat", sans-serif;
 }
 
 * {
