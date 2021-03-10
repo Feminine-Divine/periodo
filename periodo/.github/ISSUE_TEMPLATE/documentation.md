@@ -6,6 +6,6 @@ labels: "documentation"
 
 ## 📚 Documentation
 
-(A clear and concise description of what the issue is.)
+<!--- (A clear and concise description of what the issue is.)
 
-(Write your answer here.)
+(Write your answer here.)  --->
