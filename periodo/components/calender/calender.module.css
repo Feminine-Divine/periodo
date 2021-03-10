@@ -5,10 +5,10 @@
     border: none;
     background: transparent;
 }
- .heading {
+.heading {
 	font-family:'Special Elite', cursive;
 	margin-top: -1em;
 	display: flex;
     flex-direction: row;
     justify-content: center;
- }
+}
