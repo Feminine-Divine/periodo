@@ -1,5 +1,5 @@
 import React from "react"
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import StarRatingComponent from 'react-star-rating-component';
 import style from "./Flow.module.css"
 

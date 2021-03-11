@@ -57,6 +57,7 @@
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@auth0/nextjs-auth0/-/nextjs-auth0-1.2.0.tgz#98c31b9e8be469fd0ce805fd2abe455370071411"
   integrity sha512-2qq1BWenjH/a1psbdSJJhxsnTC64O+kiObwi+tdydsfnzZMzxEZZBcQXwO2UCFMc9olMNqhk4kO8ZZp3wI5xCQ==
+
   dependencies:
     "@hapi/joi" "^17.1.1"
     base64url "^3.0.1"
@@ -3858,6 +3859,7 @@ openid-client@^4.2.3:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/openid-client/-/openid-client-4.5.0.tgz#08a4d250895d47af7157070fe5741f4164711da8"
   integrity sha512-ofw+DcVOPXekG2l5quc7f2bQYi+Vtpa748PXz/u6LeLetTQlzQ1H1wiGnTMTyA9jA2gZGYTj4HsVd3DeQMdajA==
+
   dependencies:
     aggregate-error "^3.1.0"
     got "^11.8.0"
