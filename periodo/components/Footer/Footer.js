@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "./Footer.module.css";
-import { Row, Col } from "reactstrap";
+import { Container,Row, Col } from "reactstrap";
 import GithubIcon from "@material-ui/icons/GitHub";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 export default function Footer() {
   return (
     <div>
       <div className={styles.footer}>
+          <Container>
         <Row>
           <Col xs="4" className={styles.one}>
             <ul>
@@ -35,6 +36,7 @@ export default function Footer() {
             </ul>
           </Col>
         </Row>
+        </Container>
       </div>
 
       <div className={styles.base}>
