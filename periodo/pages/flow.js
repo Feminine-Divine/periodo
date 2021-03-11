@@ -10,4 +10,4 @@ const flow=()=>{
         </>
     )
 }
-export default flow
+export default flow;
