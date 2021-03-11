@@ -63,7 +63,7 @@ Follow these steps to setup project locally:
 Please read CONTRIBUTING.md and Code of Conduct before contrbuting
 
 ## Contact
-Please reachout the admins [Khushi Gautam](https://khushishikhu.gtsb.io/) and [Shipra Verma](https://6002bd83fc21bdb414a1a7c3--aaishprafolio.netlify.app/) if you face any doubts or have any questions regarding the project.
+Please reachout the admins [Khushi Gautam](https://www.linkedin.com/in/khushi-gautam-7708b4191) and [Shipra Verma](https://www.linkedin.com/in/shipra-verma-76a4611ab) if you face any doubts or have any questions regarding the project.
 
 Chat Channel:- For any queries post here Mentors will guide you here on [Discord](https://discord.com/channels/811724426965811210/815040260105961472) 
 
