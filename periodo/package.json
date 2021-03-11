@@ -14,6 +14,7 @@
     "@emotion/styled": "^11.0.0",
     "@fullcalendar/react": "^5.5.0",
     "@material-ui/core": "^4.11.2",
+    "beauty-stars": "^1.1.0",
     "dotenv": "^8.2.0",
     "firebase": "^8.2.3",
     "next": "^10.0.4",
