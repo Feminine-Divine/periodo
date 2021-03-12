@@ -32,7 +32,7 @@ export default function Footer() {
               <a href="/tips">Tips</a>
               <br />
               <br />
-              <a href="/home">Home</a>
+              <a href="/">Home</a>
             </ul>
           </Col>
         </Row>

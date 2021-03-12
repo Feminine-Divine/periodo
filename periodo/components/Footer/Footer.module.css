@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 .footer{
     background: black;
-    margin-top: 260px;
     padding: 20px;
     color: aliceblue;
     display: block;
@@ -18,7 +17,7 @@
 .base{
     background: #960435;
     color: black ;
-        display: flex;
+    display: flex;
     font-family: "poppins";
     padding: 0;
     margin-bottom: 0;
