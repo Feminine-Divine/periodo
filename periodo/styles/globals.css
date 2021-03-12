@@ -4,10 +4,11 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-image: url('../components/images/women.jpg');
+  background-image: url("../components/images/women.jpg");
   background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
@@ -22,4 +23,11 @@ a {
 
 * {
   box-sizing: border-box;
+}
+@media only screen and (max-width: 372px) {
+  html {
+    width: 150vw;
+    height: 100vh;
+    border-bottom: none;
+  }
 }
