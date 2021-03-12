@@ -18,6 +18,9 @@ const Navbar = ({ children }) => {
         <Link href="/tips">
           <a>Tips</a>
         </Link>
+        <Link href="/calender">
+          <a>Calender</a>
+        </Link>
       </Nav>
       <PageBody>{children}</PageBody>
     </React.Fragment>
