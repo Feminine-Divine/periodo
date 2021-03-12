@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import styles from './started.module.css'
-
 const Start = () => {
     function getCurrentDate(separator = '') {
 
@@ -30,9 +29,9 @@ const Start = () => {
     }
 
     return (
-        <>
-            <div>
-                <h1 className={styles.title}>Hii Girls, wanna track your periods!!</h1>
+        <div className={styles.bg}>
+            <div className={styles.main}>
+                <h1 className={styles.title} >Hii Girls, wanna track your periods!!</h1>
                 <h4 className={styles.heading}>Period Cycle: 28 days</h4>
                 <h4 className={styles.heading}>Next Period Date: {getnextDate('-')}</h4>
                 <h4 className={styles.heading}>Period just started: {getCurrentDate('-')}</h4>
@@ -40,8 +39,7 @@ const Start = () => {
                     <button className={styles.button}><a>Tap here</a></button>
                 </Link>
             </div>
-
-        </>
+        </div>
     )
 }
 
