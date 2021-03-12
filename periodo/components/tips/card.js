@@ -11,7 +11,7 @@ const card=({props})=>{
                 </div>
                 <div className={style.content}>
                     <p className={style.p}>{prop.tipContent} </p>
-                    <a href="#"  className={style.a}>Read more</a>
+                    <a href={prop.link}  className={style.a}>Read more</a>
                 </div>
             </div>
         );
