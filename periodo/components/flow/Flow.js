@@ -1,5 +1,4 @@
 import React from "react"
-import StarRatingComponent from 'react-star-rating-component';
 import BeautyStars from 'beauty-stars';
 import style from "./Flow.module.css"
 
