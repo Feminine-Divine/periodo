@@ -1,3 +1,4 @@
+
 .section{
     display: flex;
     justify-content: center;
@@ -23,8 +24,8 @@
 }
  .card{
     position: relative;
-    width: 300px;
-    height: 420px;
+    width: 320px;
+    height: 440px;
     background: cornsilk;
     margin: 20px;
     border-radius: 20px;
@@ -47,7 +48,7 @@
 
 }
 .content {
-    position: absolute; 
+    position: absolute;
     bottom: 10px;
     padding: 20px;
     page-break-after: 20px;
@@ -64,5 +65,5 @@
     color: aliceblue;
     border-radius: 40px;
     text-decoration: none;
-    margin-top: 20px
+    margin-top: 2px
 }
