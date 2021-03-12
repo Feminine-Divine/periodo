@@ -1,4 +1,95 @@
-.container {
+.container1 {
+    display: flex;
+    float: left;
+    background-color: rgb(61, 3, 66);
+    border: 2px;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 1em;
+    margin: 4em;
+  }
+  .container2 {
+    display: flex;
+    float: left;
+    background-color: rgb(61, 3, 66);
+    border: 2px;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 1em;
+    margin: 4em;
+  }
+  .container3 {
+    display: flex;
+    float: left;
+    background-color: rgb(61, 3, 66);
+    border: 2px;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 1em;
+    margin: 4em;
+  }
+  .container4 {
+    display: flex;
+    float: left;
+    background-color: rgb(61, 3, 66);
+    border: 2px;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 1em;
+    margin: 4em;
+  }
+  .container5 {
+    display: flex;
+    float: left;
+    background-color: rgb(61, 3, 66);
+    border: 2px;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 1em;
+    margin: 4em;
+  }
+  .container6 {
+    display: flex;
+    float: left;
+    background-color: rgb(61, 3, 66);
+    border: 2px;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 1em;
+    margin: 4em;
+  }
+  .container7 {
+    display: flex;
+    float: left;
+    background-color: rgb(61, 3, 66);
+    border: 2px;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 1em;
+    margin: 4em;
+  }
+  .container8 {
+    display: flex;
+    float: left;
+    background-color: rgb(61, 3, 66);
+    border: 2px;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 1em;
+    margin: 4em;
+  }
+    
+  .heading {
+    font-style: oblique;
+    color: blanchedalmond;
+  }
+
+  .stars {
+    padding-top: 18px;
+    padding-left: 8px;
+}
+
+/* .container {
     display: flex;
     background-color: rgb(61, 3, 66);
     border: 2px;
@@ -12,7 +103,4 @@
     color: blanchedalmond;
 }
 
-.stars {
-    padding-top: 18px;
-    padding-left: 8px;
-}
+ */
