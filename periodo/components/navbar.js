@@ -19,7 +19,7 @@ const Navbar = ({ children }) => {
           <a>Tips</a>
         </Link>
         <Link href="/calender">
-          <a>Calender</a>
+          <a>Calendar</a>
         </Link>
       </Nav>
       <PageBody>{children}</PageBody>
