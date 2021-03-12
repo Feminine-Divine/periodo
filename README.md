@@ -73,3 +73,5 @@ Some Guidelines needs to be followed to maintain the decorum in the community.
 1. One participant can only be assigned to one issue at one time , So that everyone will get the chance to Contribute and to create any fuss in the organization.
 2. Every Participant who are assigned in a Issue have to give any update within three days otherwise the next person who is interested will be assigned on that issue.
 3. An issue will get assign to those who comes first to comment. If He/She is unable to give any update within 3 days. The person who is next in the queue will get assigned.
+
+Contributer: Anushka Chitranshi (codebuzzer01)
