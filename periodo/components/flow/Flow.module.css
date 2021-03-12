@@ -1,13 +1,169 @@
-.container {
-    display: flex;
-    background-color: black;
-    border: 2px;
-    width: fit-content;
-    padding: 10px;
-    border-radius: 1em;
-    margin: 4em;
+.container1 {
+  display: flex;
+  float: left;
+  background-color: black;
+  opacity: 0.77;
+  filter: alpha(opacity=77);
+  border: 3px;
+  width: 14%;
+  padding: 8px;
+  border-radius: 0.5em;
+
+  margin: 4em;
 }
+.container2 {
+  display: flex;
+  float: left;
+  background-color: black;
+
+  border-color: white;
+  border: 2px;
+  width: 14%;
+  padding: 8px;
+  border-radius: 0.5em;
+  opacity: 0.77;
+  filter: alpha(opacity=77);
+  margin: 4em;
+}
+.container3 {
+  display: flex;
+  float: left;
+  background-color: black;
+  border-style: solid;
+  opacity: 0.77;
+  filter: alpha(opacity=77);
+  border-color: white;
+  border: 2px;
+  width: 14%;
+  padding: 10px;
+  border-radius: 0.5em;
+
+  margin: 4em;
+}
+.container4 {
+  display: flex;
+  float: left;
+  background-color: black;
+  border-style: solid;
+  opacity: 0.77;
+  filter: alpha(opacity=77);
+  border-color: white;
+  border: 2px;
+  width: 14%;
+  padding: 10px;
+  border-radius: 0.5em;
+
+  margin: 4em;
+}
+.container5 {
+  display: flex;
+  float: left;
+  background-color: black;
+
+  opacity: 0.77;
+  filter: alpha(opacity=77);
+  border-color: white;
+  border: 2px;
+  width: 14%;
+  padding: 10px;
+  border-radius: 0.5em;
+
+  margin: 4em;
+}
+.container6 {
+  display: flex;
+  float: left;
+  background-color: black;
+  border-style: solid;
+  opacity: 0.77;
+  filter: alpha(opacity=77);
+  border-color: white;
+  border: 2px;
+  width: 14%;
+  padding: 10px;
+  border-radius: 0.5em;
+
+  margin: 4em;
+}
+.container7 {
+  display: flex;
+  float: left;
+  background-color: black;
+  opacity: 0.77;
+  filter: alpha(opacity=77);
+  border-color: white;
+  border: 3px;
+  width: 14%;
+  padding: 10px;
+  border-radius: 0.5em;
+
+  border-style: solid;
+  margin: 4em;
+}
+.container8 {
+  display: flex;
+  float: left;
+  background-color: black;
+  opacity: 0.77;
+  filter: alpha(opacity=77);
+  border-color: white;
+  border: 3px;
+  width: 14%;
+  padding: 10px;
+  border-radius: 0.5em;
+  border-style: solid;
+  margin: 4em;
+}
+.container1:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  cursor: pointer;
+  text-shadow: 2px 2px 5px blue;
+}
+.container2:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  cursor: pointer;
+  text-shadow: 2px 2px 5px blue;
+}
+.container3:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  cursor: pointer;
+  text-shadow: 2px 2px 5px blue;
+}
+.container4:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  cursor: pointer;
+  text-shadow: 2px 2px 5px blue;
+}
+.container5:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  cursor: pointer;
+  text-shadow: 2px 2px 5px blue;
+}
+.container6:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  cursor: pointer;
+  text-shadow: 2px 2px 5px blue;
+}
+.container7:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  cursor: pointer;
+  text-shadow: 2px 2px 5px blue;
+}
+.container8:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  cursor: pointer;
+  text-shadow: 2px 2px 5px blue;
+}
+
 .heading {
-    font-style: oblique;
-    color: blanchedalmond;
+  font-style: oblique;
+  color: whitesmoke;
 }
