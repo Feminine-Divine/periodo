@@ -17,6 +17,7 @@
     "@material-ui/icons": "^4.11.2",
     "dotenv": "^8.2.0",
     "firebase": "^8.2.3",
+    "materialize-css": "^1.0.0-rc.2",
     "next": "^10.0.8",
     "next-session": "^3.4.0",
     "react": "^17.0.1",
