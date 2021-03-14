@@ -8,7 +8,7 @@ import styles from "./Analysis.module.css"
 const Analysis=()=>{
 	const questions = [
 		{
-			questionText: 'Is your periods regular?',
+			questionText: 'Are your periods regular?',
 			answerOptions: [
 				{ answerText: 'YES', isCorrect: true },
 				{ answerText: 'NO', isCorrect: true },
@@ -25,7 +25,7 @@ const Analysis=()=>{
 			],
 		},
 		{
-			questionText: 'How many days does it last?',
+			questionText: 'How many days does it last for?',
 			answerOptions: [
 				{ answerText: 'Less than 3', isCorrect: true },
 				{ answerText: '3 to 5', isCorrect: true },
