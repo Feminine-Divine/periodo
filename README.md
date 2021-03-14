@@ -15,7 +15,7 @@ The Project is very beginner friendly to contribute to as well as has a user-fri
 To be created....
 
 ## Documentation
-Please read CONTRIBUTING.md and Code of Conduct before contrbuting
+Please read [CONTRIBUTING.md](https://github.com/Feminine-Divine/periodo/blob/master/.github/CONTRIBUTING.md) and Code of Conduct before contrbuting
 
 ## Contact
 Please reachout the admins [Khushi Gautam](https://khushishikhu.gtsb.io/) and [Shipra Verma](https://6002bd83fc21bdb414a1a7c3--aaishprafolio.netlify.app/) if you face any doubts or have any questions regarding the project.
