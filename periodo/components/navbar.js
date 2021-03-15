@@ -22,7 +22,13 @@ const Navbar = ({ children }) => {
         <Link href = "/analysis">
         <a>Quiz</a>
         </Link>
+
+        <Link href="/calender">
+          <a>Calendar</a>
+        </Link>
+    
         </>
+
       </Nav>
       <PageBody>{children}</PageBody>
     </React.Fragment>
