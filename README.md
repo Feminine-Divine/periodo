@@ -10,11 +10,14 @@ The Project is very beginner friendly to contribute to as well as has a user-fri
 
 ### Project's Demo Video : :tv: https://youtu.be/3dxa599SPT4
 
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)      [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?v=103)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)   [![Maintenance](https://img.shields.io/badge/PR's%3F-Welcomed-brightgreen.svg?v=103)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) 
+
 <br>
 
 ## Tech Stack 
-* ReactJS
-* NextJs
+
+[![Made withJupyter](https://img.shields.io/badge/Made%20with-React-blue?style=for-the-badge&logo=React)]()  [![Made withJupyter](https://img.shields.io/badge/Made%20with-next-purple?style=for-the-badge&logo=Javascript)]()
+
 
 ## Local Setup Instructions
 
