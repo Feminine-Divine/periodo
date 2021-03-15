@@ -61,7 +61,7 @@ Follow these steps to setup project locally:
     ![CLI](https://user-images.githubusercontent.com/43095489/110291642-57773c80-8016-11eb-9f40-5b0698c89efa.png)
 
 ## Documentation
-Please read [CONTRIBUTING.md](https://github.com/Feminine-Divine/periodo/blob/master/.github/CONTRIBUTING.md) and Code of Conduct before contrbuting
+Please read [CONTRIBUTING.md](https://github.com/Feminine-Divine/periodo/blob/master/.github/CONTRIBUTING.md) and [Code of Conduct](/Code-of-Conduct.md) before contrbuting
 
 
 ## Contact
