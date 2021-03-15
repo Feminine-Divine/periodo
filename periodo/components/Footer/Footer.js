@@ -4,8 +4,10 @@ import { Container,Row, Col } from "reactstrap";
 import GithubIcon from "@material-ui/icons/GitHub";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import ContactSupportIcon from '@material-ui/icons/ContactSupport';
+import Link from "next/link"
 export default function Footer() {
   return (
+    
     <div>
       <div className={styles.footer}>
           <Container>
@@ -30,7 +32,7 @@ export default function Footer() {
           </Col>
           <Col xs="4" className={styles.two}>
             <ul>
-              <a href="/">Contact Us</a>
+              <Link href="/contact">Contact Us</Link>
               <br />
               <br />
               <ContactSupportIcon  style={{width:"50px",height:"40px",marginLeft:"25px"}}/>
