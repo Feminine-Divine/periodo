@@ -19,7 +19,6 @@ The Project is very beginner friendly to contribute to as well as has a user-fri
 
 ## Tech Stack 
 
-
 [![Made withJupyter](https://img.shields.io/badge/Made%20with-React-blue?style=for-the-badge&logo=React)]()  [![Made withJupyter](https://img.shields.io/badge/Made%20with-next-purple?style=for-the-badge&logo=Javascript)]()
 
 
