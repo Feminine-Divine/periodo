@@ -61,7 +61,8 @@ Follow these steps to setup project locally:
     ![CLI](https://user-images.githubusercontent.com/43095489/110291642-57773c80-8016-11eb-9f40-5b0698c89efa.png)
 
 ## Documentation
-Please read CONTRIBUTING.md and Code of Conduct before contrbuting
+Please read [CONTRIBUTING.md](https://github.com/Feminine-Divine/periodo/blob/master/.github/CONTRIBUTING.md) and Code of Conduct before contrbuting
+
 
 ## Contact
 Please reachout the admins [Khushi Gautam](https://www.linkedin.com/in/khushi-gautam-7708b4191) and [Shipra Verma](https://www.linkedin.com/in/shipra-verma-76a4611ab) if you face any doubts or have any questions regarding the project.
@@ -75,5 +76,4 @@ Some Guidelines needs to be followed to maintain the decorum in the community.
 2. Every Participant who are assigned in a Issue have to give any update within three days otherwise the next person who is interested will be assigned on that issue.
 3. An issue will get assign to those who comes first to comment. If He/She is unable to give any update within 3 days. The person who is next in the queue will get assigned.
 
-Contributer: Anushka Chitranshi (codebuzzer01), [Sandeep Suman](https://github.com/SandeepKrSuman)
-
+Contributer: Anushka Chitranshi (codebuzzer01) , Ansika srivastava (anshka208), [Sandeep Suman](https://github.com/SandeepKrSuman)
