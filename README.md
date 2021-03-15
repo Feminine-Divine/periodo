@@ -81,7 +81,7 @@ Please reachout the admins [Khushi Gautam](https://www.linkedin.com/in/khushi-ga
 ### Some Guidelines needs to be followed to maintain the decorum in the community.
 1. Participant can be assigned to only one issue at a single time (please refrain from asking new issues until your work in an issue is completed), So that every contributer gets the equal chance to contribute and collaborate in the project.
 2. Every Participant who are assigned in a issue have to give regular updates after every three three days otherwise the issue will be made available again.
-3. Issues will get assigned om first come first serve basis. Although if the current assignee is unable to give any update within 3 days. The person who is next in the queue will get assigned.
+3. Issues will get assigned on first come first serve basis. Although if the current assignee is unable to give any update within 3 days. The person who is next in the queue will get assigned.
 4. Please try to wait atleast 3-4 days after submitting a PR. Maintaners are also human beings and have to manage the whole project.(So, don't ping constantly for review)
 5. Try to discuss your features and problems related to the issue or PR directly here on Github.
  
