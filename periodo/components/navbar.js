@@ -5,22 +5,31 @@ import { Header, Nav, PageBody } from "./styles.js";
 
 const Navbar = ({ children }) => {
   return (
-    <React.Fragment>
 
-      <Header>
-        <img src="Logo.png" height="64px" width="190px" padding="10px" class="nav-img"></img>
-        <Typography variant="h5" >
-        </Typography>
+
+<React.Fragment>
+ 
+  <Header>
+  <img src="Logo.png" height="64px" width="190px" padding="10px" class="nav-img"></img>
+  <Typography variant="h5" >
+  </Typography>
         <Nav>
           <input type= "checkbox" id="nav-btn"></input>
           
          <div class="main-navbar"> 
             <Link href="/">
-            <a class="Nav-bar">Home</a>
+            <a class="Nav-bar Nav-Active">Home</a>
           </Link>
           <Link href="/tips">
             <a class="Nav-bar">Tips</a>
           </Link>
+          <Link href = "/analysis">
+        <a class="Nav-bar">Quiz</a>
+        </Link>
+
+        <Link href="/calender">
+          <a class="Nav-bar">Calendar</a>
+        </Link>
           </div>
         </Nav>
         <label for="nav-btn">
@@ -31,6 +40,7 @@ const Navbar = ({ children }) => {
        </div>
        </label>
       </Header>
+
       <PageBody>{children}</PageBody>
     </React.Fragment>
   )

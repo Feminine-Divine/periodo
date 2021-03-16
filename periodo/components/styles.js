@@ -15,7 +15,7 @@ height:50px;
 margin: 2rem 0.5rem;
 position: absolute;
 top: -1%;
-right: 0;
+right: 15%;
 `
 
 
