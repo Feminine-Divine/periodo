@@ -1,0 +1,69 @@
+
+.nav-img{
+    position: relative;
+    left: 2%;
+}
+.Nav-bar{
+   width: 90%;
+   height: 150px;
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 700;
+} 
+.main-navbar{
+   width: 150px;
+   height: 20px;
+    /* background-color: aqua; */
+}
+.Nav-bar:hover{
+   border-radius: 2rem;
+    box-shadow: 2px 2px 3px 3px cyan,
+                 2px 2px 5px 4px cyan;
+color: turquoise;
+}
+#nav-btn,.toggle{
+    display: none;
+}
+
+
+/***********Responshiv********/
+
+@media (min-width:400px) and (max-width:700px){
+    
+        .toggle{
+        display: block;
+        width: 30px;
+        height: 20px;
+        position: absolute;
+        top: 4%;
+        right: 2%;
+    }
+    .Nav-bar{
+        right: -50%;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .main-navbar{
+        display: none;
+        }
+    .toggel-btn{
+        width: 30px;
+        min-height: 7px;
+        margin: 2px;
+        background-color: white;
+
+    }
+
+    #nav-btn:checked+.main-navbar{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:400px){
+
+    .Nav-bar{
+        right: -40%;
+    }
+
+}

@@ -1,24 +1,36 @@
 import React from "react"
 import Link from "next/link"
 import Typography from '@material-ui/core/Typography';
-import { Nav, PageBody } from "./styles.js"
+import { Header, Nav, PageBody } from "./styles.js";
 
 const Navbar = ({ children }) => {
   return (
     <React.Fragment>
-      <Nav>
-      <img src="Logo.png" height="64px" width="190px" padding="10px"></img>
-      <Typography variant="h5" >
 
+      <Header>
+        <img src="Logo.png" height="64px" width="190px" padding="10px" class="nav-img"></img>
+        <Typography variant="h5" >
         </Typography>
-
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-        <Link href="/tips">
-          <a>Tips</a>
-        </Link>
-      </Nav>
+        <Nav>
+          <input type= "checkbox" id="nav-btn"></input>
+          
+         <div class="main-navbar"> 
+            <Link href="/">
+            <a class="Nav-bar">Home</a>
+          </Link>
+          <Link href="/tips">
+            <a class="Nav-bar">Tips</a>
+          </Link>
+          </div>
+        </Nav>
+        <label for="nav-btn">
+       <div class="toggle" > 
+         <div class="toggel-btn"></div>
+         <div class="toggel-btn"></div>
+         <div class="toggel-btn"></div>
+       </div>
+       </label>
+      </Header>
       <PageBody>{children}</PageBody>
     </React.Fragment>
   )
