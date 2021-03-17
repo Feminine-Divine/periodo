@@ -18,6 +18,10 @@ const Navbar = ({ children }) => {
         <Link href="/tips">
           <a>Tips</a>
         </Link>
+        <Link href="/Gynac">
+          <a>Gynac Help</a>
+        </Link>
+
       </Nav>
       <PageBody>{children}</PageBody>
     </React.Fragment>
