@@ -841,8 +841,6 @@
     "@next/react-refresh-utils" "10.0.8"
     "@opentelemetry/api" "0.14.0"
 
-
-
   dependencies:
     "@protobufjs/aspromise" "^1.1.2"
     "@protobufjs/base64" "^1.1.2"
@@ -863,10 +861,7 @@
     "merge-class-names" "^1.1.1"
     "prop-types" "^15.6.0"
 
-"react-dom@^17.0.1":
-  "integrity" "sha512-6eV150oJZ9U2t9svnsspTMrWNyHc6chX0KzDeAOXftRa8bNeOKTTfCJ7KorIwenkHd2xqVTBTCZd79yk/lx/Ug=="
-  "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-17.0.1.tgz"
-  "version" "17.0.1"
+
   dependencies:
     "loose-envify" "^1.1.0"
     "object-assign" "^4.1.1"
@@ -877,13 +872,6 @@
   "resolved" "https://registry.npmjs.org/react-facebook-login/-/react-facebook-login-4.1.1.tgz"
   "version" "4.1.1"
 
-"react-google-login@^5.2.2":
-  "integrity" "sha512-JUngfvaSMcOuV0lFff7+SzJ2qviuNMQdqlsDJkUM145xkGPVIfqWXq9Ui+2Dr6jdJWH5KYdynz9+4CzKjI5u6g=="
-  "resolved" "https://registry.npmjs.org/react-google-login/-/react-google-login-5.2.2.tgz"
-  "version" "5.2.2"
-  dependencies:
-    "@types/react" "*"
-    "prop-types" "^15.6.0"
 
 "react-hook-form@^6.14.2":
   "integrity" "sha512-GgDUuT3Yfhl1BOcMl862uAFbCixSomtm3CVlQQ1qVu9Tq5BN2uUIRUIXP8l2Gy99eLUrBqU9x4E7N+si9cnvaw=="
@@ -900,10 +888,7 @@
   "resolved" "https://registry.npmjs.org/react-refresh/-/react-refresh-0.8.3.tgz"
   "version" "0.8.3"
 
-"react-star-rating-component@^1.4.1":
-  "integrity" "sha512-i0YEvQzToS0s0GDkxn01Jy4EeLpVEyh023NXJTJ+/1+xkvhpACyD4d1YeBhYWZab53ppUnUxs5gmp75gJr3khA=="
-  "resolved" "https://registry.npmjs.org/react-star-rating-component/-/react-star-rating-component-1.4.1.tgz"
-  "version" "1.4.1"
+
   dependencies:
     "classnames" "^2.2.5"
     "prop-types" "^15.6.1"

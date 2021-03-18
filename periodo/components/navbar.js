@@ -11,13 +11,24 @@ const Navbar = ({ children }) => {
       <Typography variant="h5" >
 
         </Typography>
+        <>
 
         <Link href="/">
           <a>Home</a>
         </Link>
         <Link href="/tips">
-          <a>Tips</a>
+          <a>Tips</a></Link>
+        
+        <Link href = "/analysis">
+        <a>Quiz</a>
         </Link>
+
+        <Link href="/calender">
+          <a>Calendar</a>
+        </Link>
+    
+        </>
+
       </Nav>
       <PageBody>{children}</PageBody>
     </React.Fragment>
