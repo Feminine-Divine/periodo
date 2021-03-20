@@ -6,7 +6,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import 'react-day-picker/lib/style.css';
 import style from "./calender.module.css"
-import Link from 'next/link';
+import DialogNextButton from "../dialogbox/DialogNextButton";
 
 
 export default class Example extends React.Component {
@@ -63,9 +63,7 @@ export default class Example extends React.Component {
           modifiers={modifiers}
           onDayClick={this.handleDayClick}
         />
-        <Link href="/flow">
-        <button>Next</button>
-        </Link>
+        <DialogNextButton />
         </Container>
         <Helmet>
           <style>{`
