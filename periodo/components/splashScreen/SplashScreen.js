@@ -19,7 +19,7 @@ function SplashScreen({ setSplashScreenVisible }) {
       {!firstTextStatus && (
         <img src="/woman_walking.svg" alt="image_2" className={style.image} />
       )}
-      <div class={style.typewriter}>
+      <div className={style.typewriter}>
         {firstTextStatus && <h1>Track your periods with Periodo</h1>}
         {!firstTextStatus && <h1>Get medical advice and more</h1>}
       </div>
