@@ -35,8 +35,11 @@ const Start = () => {
                 <h4 className={styles.heading}>Period Cycle: 28 days</h4>
                 <h4 className={styles.heading}>Next Period Date: {getnextDate('-')}</h4>
                 <h4 className={styles.heading}>Period just started: {getCurrentDate('-')}</h4>
+                
                 <Link href='/calender'>
-                    <button className={styles.button}><a>Tap here</a></button>
+                    {/* <div className={styles.btn_container}> */}
+                        <button className={styles.button}>Tap here</button>
+                    {/* </div> */}
                 </Link>
             </div>
         </div>
