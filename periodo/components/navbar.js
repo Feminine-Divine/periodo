@@ -15,11 +15,13 @@ const Navbar = ({ children }) => {
         <Link href="/">
           <a>Home</a>
         </Link>
-        <Link href="/about">
-          <a>About Us</a>
-        </Link>
+        
         <Link href="/tips">
           <a>Tips</a>
+        </Link>
+    
+      <Link href="/about">
+          <a>About Us</a>
         </Link>
 
       </Nav>
