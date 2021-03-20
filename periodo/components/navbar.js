@@ -30,6 +30,9 @@ const Navbar = ({ children }) => {
         <Link href="/calender">
           <a class="Nav-bar">Calendar</a>
         </Link>
+        <Link href="/notes">
+          <a>Notes</a>
+        </Link>
           </div>
         </Nav>
         <label for="nav-btn">
