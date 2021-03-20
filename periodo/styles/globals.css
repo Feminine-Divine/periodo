@@ -1,3 +1,5 @@
+
+@import "../components/navbar.css";
 html,
 body {
   padding: 0;
@@ -12,6 +14,7 @@ body {
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+
 
 a {
   color: inherit;
