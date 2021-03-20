@@ -31,6 +31,10 @@ const Navbar = ({ children }) => {
         <Link href="/calender">
           <a class="Nav-bar">Calendar</a>
         </Link>
+        <Link href="/about">
+          <a class="Nav-bar">AboutUs</a>
+        </Link>
+        
         <Link href="/notes">
           <a>Notes</a>
         </Link>
