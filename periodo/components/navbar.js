@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Typography from "@material-ui/core/Typography";
 import { Header, Nav, PageBody } from "./styles.js";
 
 const Navbar = ({ children }) => {
@@ -13,10 +12,8 @@ const Navbar = ({ children }) => {
           width="190px"
           padding="10px"
           class="nav-img"
-        ></img>
-        <Typography variant="h5"></Typography>
+        />
         <Nav>
-          <input type="checkbox" id="nav-btn"></input>
           <div class="main-navbar">
             <Link href="/">
               <a class="Nav-bar Nav-Active">Home</a>
@@ -31,20 +28,20 @@ const Navbar = ({ children }) => {
               <a class="Nav-bar">Calendar</a>
             </Link>
             <Link href="/about">
-              <a class="Nav-bar">AboutUs</a>
+              <a class="Nav-bar">About Us</a>
             </Link>
             <Link href="/notes">
-              <a>Notes</a>
+              <a class="Nav-bar">Notes</a>
             </Link>
           </div>
+          <label for="nav-btn">
+            <div class="toggle">
+              <div class="toggel-btn"></div>
+              <div class="toggel-btn"></div>
+              <div class="toggel-btn"></div>
+            </div>
+          </label>
         </Nav>
-        <label for="nav-btn">
-          <div class="toggle">
-            <div class="toggel-btn"></div>
-            <div class="toggel-btn"></div>
-            <div class="toggel-btn"></div>
-          </div>
-        </label>
       </Header>
 
       <PageBody>{children}</PageBody>
