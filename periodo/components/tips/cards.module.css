@@ -8,10 +8,11 @@
     background: coral;
     display: flex;
     justify-content: center;
-    border-radius: 5%;
+    border-radius: 5rem;
     width: 80%;
     align-items: center;
     background-attachment: fixed;
+    margin-bottom: 3rem;
 }
 .container{
     position: relative;
