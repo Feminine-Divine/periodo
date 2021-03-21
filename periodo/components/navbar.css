@@ -46,6 +46,7 @@ color: turquoise;
         right: -60%;
         text-align: center;
         text-transform: capitalize;
+        z-index: 1;
     }
     .toggel-btn{
         width: 30px;
