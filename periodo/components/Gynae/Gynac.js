@@ -48,14 +48,17 @@ const initialFValues ={
         <Grid container>
             <Grid item xs ={6}>   
            <em><TextField
-           
-            InputLabelProps={{
-              style:{
-                fontSize:23,
-                color:"#880e4f",
-              }
-            }}
-                variant="filled"
+           style={{
+                backgroundColor: "#fff8e1"
+        }}
+        InputLabelProps={{
+          style:{
+            fontSize:23,
+            color:"#880e4f",
+          }
+        }}
+            
+                variant="outlined"
                 label="Name"
                 name="fullName"
                 color="secondary"
@@ -65,14 +68,18 @@ const initialFValues ={
                 </em>
                 
                <em> <TextField 
-                   
+               style={{
+                backgroundColor: "#fff8e1"
+            }}
+               
                 InputLabelProps={{
+            
                   style:{
                     fontSize:23,
-                    color:"#880e4f "
+                    color:"#880e4f"
                   }
                 }}
-                  variant="filled"
+                  variant="outlined"
                   label="Age"
                   name="age"
                   value={values.age}
@@ -80,13 +87,16 @@ const initialFValues ={
                   />
                   </em>
                    <em> <TextField
+                   style={{
+                    backgroundColor: "#fff8e1"
+                }}
                   InputLabelProps={{
                     style:{
                       fontSize:23,
                       color:"#880e4f "
                     }
                   }}
-                  variant="filled"
+                  variant="outlined"
                   label="Email"
                   name="email"
                   value={values.email}
@@ -94,21 +104,26 @@ const initialFValues ={
                   />
                   </em>
                  <em><TextField
+                 style={{
+                  backgroundColor: "#fff8e1"
+              }}
                 InputLabelProps={{
                   style:{
                     fontSize:23,
                     color:"#880e4f "
                   }
                 }}
-                  variant="filled"
+                  variant="outlined"
                   label="Contact Number"
                   name="mobile"
                   value={values.mobile}
                   onChange={handleInputChange}
                   />
                   </em>
-                  
                  <em> <TextField
+                 style={{
+                  backgroundColor: "#fff8e1"
+              }}
                 
                   InputLabelProps={{
                     style:{
@@ -116,7 +131,7 @@ const initialFValues ={
                       color:"#880e4f"
                     }
                   }}
-                  variant="filled"
+                  variant="outlined"
                   label="Weight"
                   name="weight"
                   value={values.weight}
@@ -125,6 +140,9 @@ const initialFValues ={
                   </em>
                  
                  <em><TextField
+                 style={{
+                  backgroundColor: "#fff8e1"                  
+              }}
                  
                 InputLabelProps={{
                   style:{
@@ -132,7 +150,7 @@ const initialFValues ={
                     color:"#880e4f"
                   }
                 }}
-                  variant="filled"
+                  variant="outlined"
                   label="Height (in cm)"
                   name="height"
                   value={values.height}
@@ -150,6 +168,9 @@ const initialFValues ={
                   </Grid>
                   <Grid item xs={6}>
                   <em><TextField
+                  style={{
+                    backgroundColor: "#fff8e1"
+                }}
                 
                 InputLabelProps={{ 
                  style:{
@@ -157,7 +178,7 @@ const initialFValues ={
                    color:"#880e4f"
                  }
                }}
-                 variant="filled"
+                 variant="outlined"
                  label="Number of Days Menstrual Cycle is Late"
                  name="lateCycle"
                  value={values.lateCycle}
@@ -166,6 +187,9 @@ const initialFValues ={
                  </em>
           
                   <em> <TextField
+                  style={{
+                    backgroundColor: "#fff8e1 "
+                }}
       
       InputLabelProps={{
         style:{
@@ -173,7 +197,7 @@ const initialFValues ={
           color:"#880e4f"
         }
       }}
-                variant="filled"
+                variant="outlined"
                 label="Describe the Menstrual Issue"
                 name="issues"
                 value={values.issues}
@@ -182,6 +206,9 @@ const initialFValues ={
                 </em>
                 <form noValidate>
  <em> <TextField
+ style={{
+  backgroundColor: "white"
+}}
   InputLabelProps={{
     style:{
     fontSize:23,
