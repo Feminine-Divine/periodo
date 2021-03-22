@@ -1,12 +1,9 @@
-import React from "react"
-import Link from "next/link"
-import Typography from '@material-ui/core/Typography';
+import React from "react";
+import Link from "next/link";
 import { Header, Nav, PageBody } from "./styles.js";
 
 const Navbar = ({ children }) => {
   return (
-
-
 <React.Fragment>
  
   <Header>
@@ -38,20 +35,19 @@ const Navbar = ({ children }) => {
         <a class="Nav-bar">Notes</a>
         </Link>
           </div>
+          <label for="nav-btn">
+            <div class="toggle">
+              <div class="toggel-btn"></div>
+              <div class="toggel-btn"></div>
+              <div class="toggel-btn"></div>
+            </div>
+          </label>
         </Nav>
-        <label for="nav-btn">
-       <div class="toggle" > 
-         <div class="toggel-btn"></div>
-         <div class="toggel-btn"></div>
-         <div class="toggel-btn"></div>
-       </div>
-       </label>
       </Header>
-
 
       <PageBody>{children}</PageBody>
     </React.Fragment>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
