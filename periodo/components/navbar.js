@@ -8,8 +8,6 @@ const Navbar = ({ children }) => {
  
   <Header>
   <img src="Logo.png" height="64px" width="160px" padding="10px" class="nav-img"></img>
-  <Typography variant="h5" >
-  </Typography>
         <Nav>
           <input type= "checkbox" id="nav-btn"></input> 
          <div class="main-navbar"> 
