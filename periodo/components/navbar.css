@@ -12,6 +12,7 @@
 } 
 .main-navbar{
    width: 150px;
+   width: 100px;
    height: 20px;
 }
 .Nav-bar:hover{
@@ -70,6 +71,7 @@ color: turquoise;
 
     .Nav-bar{
         right: -40%;
+        right: -30%;
     }
 
 }

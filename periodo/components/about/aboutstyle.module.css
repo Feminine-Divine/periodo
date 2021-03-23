@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+.body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.heading{
+  position:absolute;
+  font-size: 50px;
+  color: white;
+  width: 100%;
+  padding-top: 20px;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #181818;
+}
+.topline{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: 0;
+  padding-top: 20px;
+  color: #A0616A;
+  text-transform: uppercase;
+  background-color: #181818;
+}
+.subline{
+  display: flex;
+  margin-top: -20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  justify-content: center;
+  color: white;
+  background-color: #181818;
+}
+.bottomline{
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #181818;
+  /*background-color: #FFB4B4;*/
+  padding: 20px 20px 20px 30px;
+  margin-bottom: 0;
+
+}
+.body{
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    /*background-color: #CF6F80;*/
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    align-items: center;
+
+}
+
+.med{
+  position: absolute;
+  top:55%;
+  left: 60%;
+  z-index: 2;
+}
+.chatbot{
+  position: absolute;
+  top: 8%;
+  left: 60%;
+  z-index: 2;
+}
+.calendar{
+  position: absolute;
+  top: 8%;
+  right: 60%;
+  z-index: 2;
+}
+.diet{
+  position: absolute;
+  top: 55%;
+  right: 60%;
+  z-index: 2;
+}
+.container{
+    position: relative;
+    width: 1150px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+   position: relative;
+   width: 400px;
+   height: 330px;
+   background: #C26E7A;
+   margin: 20px;
+   border-radius: 20px;
+   overflow: hidden;
+   box-shadow: 0 15px 25px black;
+   transition: 0.5s;
+}
+
+.h2{
+    color: #fff;
+    padding: 200px 10px 0 10px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 100;
+    font-family: Roboto;
+}
+.content {
+    position: absolute;
+    bottom: 0;
+    padding: 0 40px 0 ;
+    page-break-after: 20px;
+    text-align: center;
+
+}
+.p{
+    position: absolute;
+    display: flex;
+    color: black;
+    font-weight: normal;
+    bottom: 0;
+    width: 300px;
+}
+
+/*
+.a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #000;
+    color: aliceblue;
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: 2px
+}
+*/

@@ -13,6 +13,7 @@ const Navbar = ({ children }) => {
   <img src="Logo.png" height="64px" width="190px" padding="10px" class="nav-img"></img>
   <Typography variant="h5" >
   </Typography>
+        
         <Nav>
           <input type= "checkbox" id="nav-btn"></input>
           
@@ -27,8 +28,17 @@ const Navbar = ({ children }) => {
         <a class="Nav-bar">Quiz</a>
         </Link>
 
+
         <Link href="/calender">
           <a class="Nav-bar">Calendar</a>
+        </Link>
+     
+        <Link href="/about">
+          <a class="Nav-bar">AboutUs</a>
+        </Link>
+        
+        <Link href="/notes">
+          <a>Notes</a>
         </Link>
           </div>
         </Nav>
@@ -40,6 +50,7 @@ const Navbar = ({ children }) => {
        </div>
        </label>
       </Header>
+
 
       <PageBody>{children}</PageBody>
     </React.Fragment>
