@@ -1,13 +1,18 @@
-  
-import React from "react";
-import Homepage from "./homepage"
+import React, { useState } from "react";
+import Homepage from "./homepage";
+import SplashScreen from "../components/splashScreen/SplashScreen";
 
-const index =()=> {
+const index = () => {
+  const [splashScreenVisible, setSplashScreenVisible] = useState(true);
+
   return (
     <>
-      <Homepage />
-      </>
+      {splashScreenVisible && (
+        <SplashScreen setSplashScreenVisible={setSplashScreenVisible} />
+      )}
+      {!splashScreenVisible && <Homepage />}
+    </>
   );
-}
+};
 
 export default index;
