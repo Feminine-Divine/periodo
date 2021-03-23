@@ -6,12 +6,12 @@
 }
 
 .heading{
-  position:absolute;
+  position: absolute;
   font-size: 50px;
   color: white;
   width: 100%;
-  padding-top: 20px;
-  top: 20px;
+  padding-top: 15px;
+  top: 30px;
   display: flex;
   justify-content: center;
   background-color: #181818;
