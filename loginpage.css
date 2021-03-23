@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    background: linear-gradient(to right top, #FFE5D8,#FBEEE6);
+    justify-content: center;
+}
+h2{
+    color: #d1a3a4;
+    opacity: 0.8;
+    font-size: 2rem;
+    font-weight: 300;
+
+}
+form{
+    color: #d1a3a4;
+    opacity: 0.8;
+    font-size: 1.6rem;
+    font-weight: 100;
+    justify-content: space-evenly;
+    
+
+}
+.login input{
+    
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.8),rgba(255,255,255,0.5));
+    border: none;
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 10px rgba(122,122,122,0.212);
+    display: grid;
+    margin: 22px 0;
+    font-family: "Poppins",sans-serif;
+
+    
+
+
+}
+.glass{
+    background: white;
+    min-height: 30vh;
+    width: 60%;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.1),rgba(255,255,255,0.7));
+    border-radius: 2rem;
+    display: flex;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+}
+.square1 
+{
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.9),rgba(255,255,255,0.1));
+  
+    position: absolute;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    animation:animate 10s linear infinite;
+    animation-delay: calc(-2s*var(--i));
+    
+
+}
+.square1{
+    top:5%;
+    right: 15%;
+    height: 6rem;
+    width:6rem;
+    z-index: 7;
+    
+
+}
+.square2{
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.9),rgba(255,255,255,0.1));
+    height: 10rem;
+    width:10rem;
+    position: absolute;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    animation:animate 10s linear infinite;
+    animation-delay: calc(-2s*var(--i));
+    
+
+}
+.square2{
+    bottom: 3%;
+    left:10%;
+    height:5rem;
+    width:5rem;
+
+}
+.square3{
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.9),rgba(255,255,255,0.1));
+  
+    position: absolute;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    animation:animate 10s linear infinite;
+    animation-delay: calc(-2s*var(--i));
+    
+
+}
+.square3{
+    bottom: 6%;
+    left:15%;
+    height:3rem;
+    width:3rem;
+}
+.square4{
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.9),rgba(255,255,255,0.1));
+  
+    position: absolute;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    animation:animate 10s linear infinite;
+    animation-delay: calc(-2s*var(--i));
+    
+}
+.square4{
+    top: 150px;
+    right:60px;
+    width: 50px;
+    height:50px;
+
+}
+.square5{
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.9),rgba(255,255,255,0.1));
+  
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    animation:animate 10s linear infinite;
+    position: absolute;
+    animation-delay: calc(-2s*var(--i));
+    
+
+}
+.square5{
+    bottom: 150px;
+    right:60px;
+    width: 70px;
+    height:70px;
+    z-index: 2;
+
+
+
+}
+.square6{
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.9),rgba(255,255,255,0.1));
+  
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    animation:animate 10s linear infinite;
+    position: absolute;
+    animation-delay: calc(-3s*var(--i));
+    
+
+}
+.square6{
+    top: 30%;
+    left:4%;
+    height:3rem;
+    width:3rem;
+
+}
+@keyframes animate{
+    0% 100%{
+        transform: translateY(-15px);
+    }
+    50%{
+        transform: translateY(15px);
+    }
+}
+.women{
+    width: 60%;
+  height: 50%;
+  margin-right: 80px;
+  margin-bottom: 150px;
+
+}
+.dashboard{
+    flex:1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 2rem;
+    
+  
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.9),rgba(255,255,255,0.3));
+    text-align: center;
+
+}
+.login{
+    flex:1;
+    margin: 5rem;
+
+}
+h2{
+    text-align: center;
+    text-transform:uppercase;
+    
+}
+.btn{
+    text-align: center;
+}
+       
+
+.submit-button{
+   
+    padding:0.5rem;
+    width:50%;
+    height:80%;
+    border-radius: 10px;
+    transition: all 0.5s;
+    background-color: #C8A2C8;
+    
+}
+.submit-button:hover{
+    background-color :#957dad;;
+
+}
+.submit:active{
+    background-color: #957dad;
+
+}
+.forget-password{
+    padding: 5px;
+    font-size:15px;
+    margin: 0.7rem;
+    font-weight: 100px;
+    
+}
+.account{
+    padding: 5px;
+    font-size:15px;
+
+}
+h4{
+    font-family: 'Anonymous Pro' , monospace;
+    font-size:0.8rem;
+    text-align: right;
+    margin-left: 1.1rem;
+    margin-top: 1rem;
+    
+}
