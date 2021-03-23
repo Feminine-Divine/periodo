@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Header, Nav, PageBody } from "./styles.js";
 
 const Navbar = ({ children }) => {
-  const {user} = useUser();
   return (
 <React.Fragment>
  
