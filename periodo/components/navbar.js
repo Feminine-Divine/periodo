@@ -10,25 +10,26 @@ const Navbar = ({ children }) => {
     <React.Fragment>
       <Header>
         <img src="Logo.png" height="64px" width="190px" padding="10px" class="nav-img"></img>
-        <Typography variant="h5" >
-        </Typography>
         <Nav>
           <input type="checkbox" id="nav-btn"></input>
           <div class="main-navbar">
             <Link href="/">
               <a class="Nav-bar Nav-Active">Home</a>
             </Link>
-            <Link href="/tips">
-              <a class="Nav-bar">Tips</a>
-            </Link>
-            <Link href="/analysis">
-              <a class="Nav-bar">Quiz</a>
-            </Link>
             {user ? <Link href="/api/auth/logout">
               <a class="Nav-bar">Logout</a>
             </Link> : <Link href="/api/auth/login">
               <a class="Nav-bar">Login</a>
             </Link>}
+            <Link href="/tips">
+              <a class="Nav-bar">Tips</a>
+            </Link>
+            <Link href="/Gynac">
+              <a class="Nav-bar">GynacHelp</a>
+            </Link>
+            <Link href="/analysis">
+              <a class="Nav-bar">Quiz</a>
+            </Link>
             <Link href="/calender">
               <a class="Nav-bar">Calendar</a>
             </Link>
@@ -50,7 +51,7 @@ const Navbar = ({ children }) => {
       </Header>
       <PageBody>{children}</PageBody>
     </React.Fragment>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
