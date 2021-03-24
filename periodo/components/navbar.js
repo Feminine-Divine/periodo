@@ -1,13 +1,15 @@
 import React from "react";
 import Link from "next/link";
 import { Header, Nav, PageBody } from "./styles.js";
+import styles from "./navbar.module.css";
 
 const Navbar = ({ children }) => {
   return (
 <React.Fragment>
-
+        <header className={styles.mobileNav}>
   <Header>
-  <img src="Logo.png" height="64px" width="160px" padding="10px" class="nav-img"></img>
+
+        <img src="Logo.png" height="64px" width="160px" padding="10px" class="nav-img"></img>
         <Nav>
           <input type= "checkbox" id="nav-btn"></input>
          <div class="main-navbar">
@@ -41,6 +43,7 @@ const Navbar = ({ children }) => {
             </div>
           </label>
         </Nav>
+
       </Header>
 
       <PageBody>{children}</PageBody>
