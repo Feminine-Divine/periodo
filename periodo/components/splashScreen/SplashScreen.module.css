@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 50%;
+  height: 50%;
+}
+
+.typewriter h1 {
+  overflow: hidden;
+  border-right: 0.15em solid #f6b1c3;
+  white-space: nowrap;
+  margin: 0px auto;
+  letter-spacing: 0.15em;
+  font-family: "Open Sans";
+  font-size: min(4vw, 40px);
+  color: #2f2e41;
+  animation: typing 2.3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #f6b1c3;
+  }
+}

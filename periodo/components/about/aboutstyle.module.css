@@ -6,12 +6,12 @@
 }
 
 .heading{
-  position:absolute;
+  position: absolute;
   font-size: 50px;
   color: white;
   width: 100%;
-  padding-top: 20px;
-  top: 20px;
+  padding-top: 15px;
+  top: 30px;
   display: flex;
   justify-content: center;
   background-color: #181818;
@@ -97,7 +97,7 @@
    position: relative;
    width: 400px;
    height: 330px;
-   background: #0F52BA;
+   background: #C26E7A;
    margin: 20px;
    border-radius: 20px;
    overflow: hidden;
