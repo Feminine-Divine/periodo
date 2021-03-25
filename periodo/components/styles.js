@@ -1,7 +1,4 @@
-/** @format */
-
 import styled from '@emotion/styled';
-
 export const Header = styled('div')`
   width: 100%;
   color: white;
