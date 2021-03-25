@@ -50,6 +50,14 @@
     font-family: inherit;
     resize: none;
   }
+
+  .forminp:focus-within{
+    border-bottom: 1.5px solid #ccc;
+  }
+
+  .forminp:focus-within::placeholder,.txtarea:focus-within::placeholder{
+    color: #ccc;
+  }
   
   .createbtn {
     position: absolute;
