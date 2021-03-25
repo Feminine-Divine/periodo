@@ -30,10 +30,10 @@
 
 
 @media (min-width: 400px) and (max-width: 700px) {
-		.main-navbar {
-			display: none;
-			visibility: hidden;
-		}
+  .main-navbar {
+	display: none;
+	visibility: hidden;
+	}
 
 
   .toggle {
