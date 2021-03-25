@@ -30,7 +30,7 @@ function CreateArea(props) {
 
   return (
     <div>
-      <form className={styles.createnote}>
+      <form className={styles.createnote} onSubmit={submitNote}>
         <input
           className={styles.forminp}
           name="title"
@@ -38,6 +38,7 @@ function CreateArea(props) {
           value={note.title}
           placeholder="Title"
           autoComplete="off"
+          required
         />
         <textarea
           className={styles.txtarea}
@@ -46,8 +47,9 @@ function CreateArea(props) {
           value={note.content}
           placeholder="Take a note..."
           rows="3"
+          required
         />
-        <button className={styles.createbtn} onClick={submitNote}>
+        <button className={styles.createbtn}>
           <AddIcon />
         </button>
       </form>
