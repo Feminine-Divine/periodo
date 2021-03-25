@@ -9,7 +9,7 @@
   padding: 0.5rem 1rem;
     font-size: 20px;
     font-weight: 700;
-} 
+}
 .main-navbar{
    width: 100%;
    margin-right: 10px;
@@ -24,7 +24,6 @@ color: turquoise;
     display: none;
 }
 
-
 /***********Responsive********/
 
 @media (min-width:400px) and (max-width:700px){
@@ -32,7 +31,7 @@ color: turquoise;
         display: none;
         visibility: hidden;
     }
-      
+
     .toggle{
         display: block;
         width: 30px;
