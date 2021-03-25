@@ -130,7 +130,7 @@
     width: 300px;
 }
 
-@media (max-width:919px){
+@media only screen and (max-width:919px) and (min-width:770px){
  .chatbot{
    position: absolute;
    top: 28%;
@@ -150,5 +150,27 @@
    position: absolute;
    top: 4%;
    left: 40%;
+ }
+}
+@media only screen and (max-width:770px){
+ .chatbot{
+   position: absolute;
+   top: 28%;
+   left: 35%;
+ }
+ .med{
+   position: absolute;
+   top: 77%;
+   left: 35%;
+ }
+ .diet{
+   position: absolute;
+   top: 53%;
+   left: 35%;
+ }
+ .calendar{
+   position: absolute;
+   top: 4%;
+   left: 35%;
  }
 }
