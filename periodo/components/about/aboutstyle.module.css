@@ -130,15 +130,47 @@
     width: 300px;
 }
 
-/*
-.a{
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    background: #000;
-    color: aliceblue;
-    border-radius: 40px;
-    text-decoration: none;
-    margin-top: 2px
+@media only screen and (max-width:919px) and (min-width:770px){
+ .chatbot{
+   position: absolute;
+   top: 28%;
+   left: 40%;
+ }
+ .med{
+   position: absolute;
+   top: 77%;
+   left: 40%;
+ }
+ .diet{
+   position: absolute;
+   top: 53%;
+   left: 40%;
+ }
+ .calendar{
+   position: absolute;
+   top: 4%;
+   left: 40%;
+ }
 }
-*/
+@media only screen and (max-width:770px){
+ .chatbot{
+   position: absolute;
+   top: 28%;
+   left: 35%;
+ }
+ .med{
+   position: absolute;
+   top: 77%;
+   left: 35%;
+ }
+ .diet{
+   position: absolute;
+   top: 53%;
+   left: 35%;
+ }
+ .calendar{
+   position: absolute;
+   top: 4%;
+   left: 35%;
+ }
+}
