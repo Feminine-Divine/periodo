@@ -10,7 +10,7 @@ Periodo - The Tracker focuses on young girls who are going to experience their f
 The Project is very beginner friendly to contribute to as well as has a user-friendly interface which can help in attracting young audience.
 
 
-![image](https://user-images.githubusercontent.com/65439761/108522793-3367eb80-72f3-11eb-9ddb-08c49c1549e9.png)
+![image](https://user-images.githubusercontent.com/61618767/112602083-41041a00-8e39-11eb-9c6b-50cb15535f3c.png)
 
 <br>
 
