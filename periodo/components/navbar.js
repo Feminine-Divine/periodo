@@ -17,29 +17,6 @@ const Navbar = ({ children }) => {
           <input type= "checkbox" id="nav-btn"></input>
          <div className="main-navbar">
             <Link href="/">
-<<<<<<< HEAD
-            <a class="Nav-bar Nav-Active">Home</a>
-          </Link>
-          <Link href="/tips">
-            <a class="Nav-bar">Tips</a>
-          </Link>
-          <Link href="/Gynac">
-            <a class="Nav-bar">GynacHelp</a>
-          </Link>
-          <Link href = "/analysis">
-        <a class="Nav-bar">Quiz</a>
-        </Link>
-        <Link href="/calender">
-          <a class="Nav-bar">Calendar</a>
-        </Link>
-     
-        <Link href="/about">
-          <a class="Nav-bar">AboutUs</a>
-        </Link>
-        <Link href="/notes">
-        <a class="Nav-bar">Notes</a>
-        </Link>
-=======
               <a className="Nav-bar Nav-Active">Home</a>
             </Link>
             {user ? <Link href="/api/auth/logout">
@@ -72,7 +49,6 @@ const Navbar = ({ children }) => {
                 <div className="toggel-btn"></div>
               </div>
             </label>
->>>>>>> upstream/master
           </div>
         </Nav>
 

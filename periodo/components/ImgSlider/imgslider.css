@@ -53,6 +53,7 @@ margin: 0 0 0 -2400px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+  
 
 }
 .sliderImg1{
@@ -68,6 +69,7 @@ margin: 0 0 0 -2400px;
     width: 100%;
     height: auto;
     text-align: center;
+   
 }
 .slide-items{
     height: 800px;
@@ -161,4 +163,20 @@ margin: 0 0 0 -2400px;
 }
 .css-cu6pwb{
     display: none;
+}
+@media only screen and (max-device-width: 680px) {
+    .img-container{
+        height: 600px;
+        width: 550px;
+       
+    }
+
+    .Content-box-slider{
+
+       width: 400px;
+        top: 10%;
+        left: 0;
+    }
+
+
 }
