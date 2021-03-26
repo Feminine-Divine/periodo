@@ -15,11 +15,11 @@
    margin-right: 10px;
 }
 .Nav-bar:hover{
-   border-radius: 2rem;
-    box-shadow: 2px 2px 3px 3px cyan,
-                 2px 2px 5px 4px cyan;
-color: turquoise;
-}
+    border-radius: 2rem;
+     box-shadow: 2px 2px 3px 3px rgb(252, 168, 245),
+                  2px 2px 5px 4px rgb(252, 168, 245);
+ color: rgb(252, 168, 245);
+ }
 #nav-btn,.toggle{
     display: none;
 }
