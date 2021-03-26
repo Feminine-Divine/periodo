@@ -1,20 +1,38 @@
+
+@import "../components/navbar.css";
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-image: url('../components/images/women.jpg');
-  background-color: black;
-  background-size: cover;
-  background-repeat: no-repeat;
+
+  background-image: url('../public/woman_with_chart.svg'),url('../public/woman_v_sign.svg');
+  background-size: 60vw 60vh, 45vw 46vh;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 107% 99%, 0% 100%;
+  width: 100vw;
+  height: 100vh;
 }
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+
 
 a {
   color: inherit;
   text-decoration: none;
+  font-size: large;
+  font-family: "Montserrat", sans-serif;
 }
 
 * {
   box-sizing: border-box;
+}
+@media only screen and (max-width: 372px) {
+  html {
+    width: 150vw;
+    height: 100vh;
+    border-bottom: none;
+  }
 }
