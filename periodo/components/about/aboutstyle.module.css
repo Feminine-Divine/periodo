@@ -94,40 +94,40 @@
     flex-wrap: wrap;
 }
 .card{
-   position: relative;
-   width: 400px;
-   height: 330px;
-   background: #C26E7A;
-   margin: 20px;
-   border-radius: 20px;
-   overflow: hidden;
-   box-shadow: 0 15px 25px black;
-   transition: 0.5s;
+  position: relative;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  padding: 10px;
+  height: 330px;
+  background: #C26E7A;
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 25px black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .h2{
-    color: #fff;
-    padding: 200px 10px 0 10px;
-    text-align: center;
-    font-size: 10px;
-    font-weight: 100;
-    font-family: Roboto;
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 100;
+  font-family: Roboto;
+  padding: 10px 11px;
 }
 .content {
-    position: absolute;
-    bottom: 0;
-    padding: 0 40px 0 ;
-    page-break-after: 20px;
-    text-align: center;
+  position: absolute;
+  bottom: 0;
+  padding: 0 3px;
+  text-align: center;
 
 }
 .p{
-    position: absolute;
-    display: flex;
-    color: black;
-    font-weight: normal;
-    bottom: 0;
-    width: 300px;
+  color: black;
+  font-weight: bolder;
+  bottom: 0;
 }
 
 /*

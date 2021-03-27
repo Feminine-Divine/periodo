@@ -53,7 +53,7 @@ const initialFValues ={
         }}
         InputLabelProps={{
           style:{
-            fontSize:23,
+            fontSize:"100%",
             color:"#880e4f",
           }
         }}
@@ -75,7 +75,7 @@ const initialFValues ={
                 InputLabelProps={{
             
                   style:{
-                    fontSize:23,
+                    fontSize:"100%",
                     color:"#880e4f"
                   }
                 }}
@@ -92,7 +92,7 @@ const initialFValues ={
                 }}
                   InputLabelProps={{
                     style:{
-                      fontSize:23,
+                      fontSize:"100%",
                       color:"#880e4f "
                     }
                   }}
@@ -109,7 +109,7 @@ const initialFValues ={
               }}
                 InputLabelProps={{
                   style:{
-                    fontSize:23,
+                    fontSize:"100%",
                     color:"#880e4f "
                   }
                 }}
@@ -127,7 +127,7 @@ const initialFValues ={
                 
                   InputLabelProps={{
                     style:{
-                      fontSize:23,
+                      fontSize:"100%",
                       color:"#880e4f"
                     }
                   }}
@@ -146,7 +146,7 @@ const initialFValues ={
                  
                 InputLabelProps={{
                   style:{
-                    fontSize:23,
+                    fontSize:"100%",
                     color:"#880e4f"
                   }
                 }}
@@ -161,7 +161,9 @@ const initialFValues ={
                   <Grid item xs={6}>
 
        <Link href="/homepage">
-         <em> <strong><a>Return Home</a>
+         <em> <strong  style={{
+                  fontSize:"x-large"                  
+              }} ><a>Return Home</a>
          </strong></em>
         </Link >
         </Grid>
@@ -174,12 +176,13 @@ const initialFValues ={
                 
                 InputLabelProps={{ 
                  style:{
-                   fontSize:23,
-                   color:"#880e4f"
+                  fontSize:"100%",
+                   color:"#880e4f",
+                   padding:"0 5px"
                  }
                }}
                  variant="outlined"
-                 label="Number of Days Menstrual Cycle is Late"
+                 label="No. of Days your Cycle is Late"
                  name="lateCycle"
                  value={values.lateCycle}
                  onChange={handleInputChange}
@@ -193,7 +196,7 @@ const initialFValues ={
       
       InputLabelProps={{
         style:{
-          fontSize:23,
+          fontSize:"100%",
           color:"#880e4f"
         }
       }}
@@ -211,7 +214,7 @@ const initialFValues ={
 }}
   InputLabelProps={{
     style:{
-    fontSize:23,
+    fontSize:"100%",
           color:"#880e4f"
     }
   }}
@@ -219,7 +222,7 @@ const initialFValues ={
     label="Date of Latest Cycle"
     type="date"
     defaultValue="2017-05-24"
-    style={{ width: 400}}
+    
     
   />
   </em>
@@ -369,12 +372,18 @@ const initialFValues ={
 </Menu>
      
 
-                  <Grid item xs={6}>
+                  <Grid item xs={6}  style={{
+  margin:"20px 0"
+}}>
 
-        <Button variant="contained" color="secondary" >
+        <Button style={{
+  margin:"0 10px"
+}} variant="contained" color="secondary" >
   Send
 </Button>
-      <Button variant="contained" >
+      <Button style={{
+  margin:"0 10px"
+}} variant="contained" >
         Cancel
        </Button>
        <hr></hr>

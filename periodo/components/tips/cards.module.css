@@ -17,7 +17,6 @@
 .container{
     position: relative;
     width: 1150px;
-    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +24,7 @@
 }
  .card{
     position: relative;
-    width: 320px;
+    width: 290px;
     height: 440px;
     background: cornsilk;
     margin: 20px;

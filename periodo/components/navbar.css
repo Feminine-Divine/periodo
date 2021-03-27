@@ -23,11 +23,17 @@ color: turquoise;
 #nav-btn,.toggle{
     display: none;
 }
-
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    height: 80px;
+  }
 
 /***********Responsive********/
 
-@media (min-width:400px) and (max-width:700px){
+@media screen and (max-width:1000px){
     .main-navbar{
         display: none;
         visibility: hidden;
@@ -35,10 +41,8 @@ color: turquoise;
       
     .toggle{
         display: block;
-        width: 30px;
-        height: 20px;
         position: absolute;
-        top: 4%;
+        top: 2%;
         right: 2%;
     }
     .Nav-bar{
@@ -65,10 +69,10 @@ color: turquoise;
     }
 }
 
-@media screen and (max-width:400px){
+/* @media screen and (max-width:400px){
 
     .Nav-bar{
         right: -30%;
     }
 
-}
+} */

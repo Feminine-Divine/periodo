@@ -30,14 +30,14 @@
     outline: none;
   }
   
-  .createnote {
-    position: relative;
-    width: 480px;
+  .createnote {    position: relative;
+    width: 85%;
+    max-width: 480px;
     margin: 30px auto 20px auto;
     background: #ffffff;
     padding: 15px;
     border-radius: 7px;
-    box-shadow: 0 1px 5px rgb(138, 137, 137);
+    box-shadow: 0 1px 5px rgb(138 137 137);
   }
   
   .forminp,
