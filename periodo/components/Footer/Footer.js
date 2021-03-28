@@ -5,6 +5,7 @@ import GithubIcon from "@material-ui/icons/GitHub";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import ContactSupportIcon from '@material-ui/icons/ContactSupport';
 import Link from "next/link"
+import contact from '../../pages/contact'
 export default function Footer() {
   return (
     
