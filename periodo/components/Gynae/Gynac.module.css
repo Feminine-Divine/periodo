@@ -1,0 +1,12 @@
+.grid{
+    width: 85%!important;
+    margin: auto!important;
+    max-width: 950px!important;
+    padding: 10px 0;
+    flex-basis: auto!important;
+}
+
+.field{
+    width: 100%!important;
+    margin: 3%!important;
+}
