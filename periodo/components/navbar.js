@@ -30,12 +30,6 @@ const Navbar = ({ children }) => {
         <Link href="/calender">
           <a class="Nav-bar">Calendar</a>
         </Link>
-<<<<<<< HEAD
-        <Link href="/contact">
-          <a>Contact Us</a>
-        </Link>
-      </Nav>
-=======
           </div>
         </Nav>
         <label for="nav-btn">
@@ -47,7 +41,6 @@ const Navbar = ({ children }) => {
        </label>
       </Header>
 
->>>>>>> ce13e0c29b2d93ed05cf7dd1dd0bff102dfc9660
       <PageBody>{children}</PageBody>
     </React.Fragment>
   )
