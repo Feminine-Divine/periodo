@@ -1,58 +1,42 @@
 import React from "react";
-
-
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+import style from "./Imgslider.module.css";
 function ImgeSlider() {
+  
     return (
-        <>
-            <div className="slider-frame">
-
-                <div class="slide-images">
-                    <div className="slide-items">
-                        <div class="img-container sliderImg1">
-                            <div className="Content-box-slider box-imgslider1">
-                                <h1> Mind Set </h1>
-                                <span></span>
-                                <p> IT's All about mindset from the moment you 
-                                    wake up to the moment you rest head at night
-                                    Everything is up to you. your emotions, your thoughts your 
-                                    perception your reaction Every Moment</p>
-                                 <a href="https://thriveglobal.com/stories/20-inspirational-growth-mindset-quotes-that-will-change-your-life/" target="_Blank">Read More</a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div className="slide-items">
-                        <div class="img-container sliderImg2">
-                        </div>
-                        <div className="Content-box-slider box-imgslider2">
-                            <h1> Responsibility </h1>
-                            <span></span>
-                            <p> As an intern it is your responsibility to show your supervisor and others
-                            within the organization that you have what it takes,
-                            both personally and professionally, to fit in with the corporate culture.
-                            Taking time to learn about the mission of the organization
-                            and what it values in its employees can provide essential information
-                                  on how the company identifies and defines success.</p>
-                            <a href="https://www.ldoceonline.com/dictionary/responsibility"target="_Blank">Read More</a>
-                        </div>
-                    </div>
-                    <div className="slide-items">
-                        <div class="img-container sliderImg3">
-                        </div>
-                        <div className="Content-box-slider box-imgslider3">
-                            <h1> Amazing Facts About Periods</h1>
-                            <span></span>
-                            <p> If the fact above scares you into thinking about the environmental impact 
-                                that you’re having just by menstruating, then don’t worry! 
-                                There are actually many different ways you can reduce your waste and 
-                                have a guilt-free, eco-friendly period.</p>
-                            <a href="https://www.helpingwomenperiod.org/7-amazing-facts-about-periods-that-everyone-needs-to-know/"target="_Blank"> Read More </a>
-                        </div>
-                    </div>
+       
+       <>
+           
+            <Carousel infiniteLoop autoPlay>
                   
-                </div>
+                 <div className={style.slideimg}>
+                        <img src="/image/img1.jpg" />
+                       <div className={style.contentbox1}> 
+                           <h2> Hey Girls! 🙋‍♀️ 🙋‍♀️</h2> 
+                        </div>
+                 </div>
+                  <div className={style.slideimg}>
+                        <img src="/image/img2.jpg" />
+                        <div className={style.contentbox2}> 
+                           <h2>Welcome to <span> periodoo.vercel.app </span> </h2>
+                        </div>
+                 </div>
+                 <div className={style.slideimg}>
+                        <img src="/image/img3.jpg" />  
+                        <div className={style.contentbox3}> 
+                           <h2>Here you can get <i>More infomation </i> related to periodo </h2>  
+                        </div>                   
+                  </div>
+                  <div className={style.slideimg}>
+                    <img src="/image/img4.jpg" />
+                    <div className={style.contentbox4}> 
+                    <h2> Create your Account and get More Info </h2>
+                    <a href="/api/auth/login"> SingUp </a>
+                        </div>
+                </div> 
 
-            </div>
+            </Carousel>     
 
         </>
 

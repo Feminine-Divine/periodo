@@ -1,6 +1,4 @@
-
 @import "../components/navbar.css";
-@import "../components/ImgSlider/imgslider.css";
 
 html,
 body {
@@ -30,6 +28,14 @@ a {
 * {
   box-sizing: border-box;
 }
+/********Images Slider********/
+.css-cu6pwb{
+  display: none;
+}
+.carousel .thumbs-wrapper{
+  display: none;
+} 
+
 @media only screen and (max-width: 372px) {
   html {
     width: 150vw;
