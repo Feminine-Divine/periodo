@@ -3,6 +3,7 @@ import Navbar from "../navbar";
 import "./contact.module.css";
 import Button from "@material-ui/core/Button";
 import "reactstrap";
+import contact1 from '../../pages/contact'
 import Footer from '../Footer/Footer'
 import CreateIcon from "@material-ui/icons/Create";
 import Container from "@material-ui/core/Container";
@@ -35,12 +36,12 @@ export default function contact() {
     setValue(event.target.value);
   };
   return (
-    <div class="body">
+    <div class="body" style="background-color:pink">
       <Navbar />
       <Container>
         <div
           style={{
-            background: "white",
+            background: "#ff80aa",
             borderRadius: "5px",
             paddingLeft: "50px",
             paddingRight: "50px",
