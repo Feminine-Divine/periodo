@@ -10,7 +10,7 @@ Periodo - The Tracker focuses on young girls who are going to experience their f
 The Project is very beginner friendly to contribute to as well as has a user-friendly interface which can help in attracting young audience.
 
 
-![image](https://user-images.githubusercontent.com/65439761/108522793-3367eb80-72f3-11eb-9ddb-08c49c1549e9.png)
+![image](https://user-images.githubusercontent.com/61618767/112602083-41041a00-8e39-11eb-9c6b-50cb15535f3c.png)
 
 <br>
 
@@ -41,6 +41,9 @@ The Project is very beginner friendly to contribute to as well as has a user-fri
     #add upstream
     git remote add upstream https://github.com/Feminine-Divine/periodo.git
     ```
+## Two Ways to Install from here:
+
+### 1. Without using Docker i.e Conventional Way
 - **Install yarn:** This project use `yarn` as a package manager.
     ```bash
     #to check yarn installed on your computer or not
@@ -66,6 +69,18 @@ The Project is very beginner friendly to contribute to as well as has a user-fri
     ```
     Check in which port, the server is running or click the link
     ![CLI](https://user-images.githubusercontent.com/43095489/110291642-57773c80-8016-11eb-9f40-5b0698c89efa.png)
+
+### 2. Using Docker
+
+* Install [Docker](https://docs.docker.com/engine/install/), from the given link.
+
+* Once Docker is installed, use the following two commands to run the app in the root dicrectory:
+  * `docker-compose build` , This command will build the project
+  * `docker-compose up`, This command will run the container.
+  
+* You can open the project on `localhost:3000` on the machine.
+
+Note: If you are using docker-desktop on Windows Or WSL2 i.e Windows Subsystem For Linux, you can use the GUI Options to run the containers 
 
 ## Documentation 📃
 Please read [CONTRIBUTING.md](https://github.com/Feminine-Divine/periodo/blob/master/.github/CONTRIBUTING.md) and [Code of Conduct](/Code-of-Conduct.md) before contrbuting
