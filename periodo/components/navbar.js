@@ -16,7 +16,7 @@ const Navbar = ({ children }) => {
         <Nav>
           <input type= "checkbox" id="nav-btn"></input>
          <div className="main-navbar">
-            <Link href="/">
+            <Link href="/homepage">
               <a className="Nav-bar Nav-Active">Home</a>
             </Link>
             {user ? <Link href="/api/auth/logout">
