@@ -14,11 +14,7 @@
     "@emotion/styled": "^11.0.0",
     "@fullcalendar/react": "^5.5.0",
     "@material-ui/core": "^4.11.2",
-<<<<<<< HEAD
     "@material-ui/icons": "^4.11.2",
-=======
-    "beauty-stars": "^1.1.0",
->>>>>>> ce13e0c29b2d93ed05cf7dd1dd0bff102dfc9660
     "dotenv": "^8.2.0",
     "firebase": "^8.2.3",
     "materialize-css": "^1.0.0-rc.2",
@@ -27,7 +23,7 @@
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.1",
     "react-calendar": "^3.2.1",
-    "react-day-picker": "^7.4.8",
+    "react-day-picker": "^7.4.10",
     "react-dom": "^17.0.1",
     "react-facebook-login": "^4.1.1",
     "react-google-login": "^5.2.2",
