@@ -10,6 +10,7 @@ const card=({props})=>{
                       <div className={style.h2}>
                           <h1 >{prop.aboutNumber}</h1>
                       </div>
+                      <img src={prop.imgsrc} height="200px" width="200px" padding="10px"/>
                       <div className={style.content}>
                         <p className={style.p}>{prop.aboutContent} </p>
                       </div>
@@ -32,12 +33,7 @@ const card=({props})=>{
             <div className={style.body}>
 
               <div className={style.container}>
-              <div className={style.pics}>
-              <img className={style.med} src="/Medicine.svg" height="200px" width="200px" padding="10px"></img>
-              <img className={style.chatbot} src="/Chatbot.svg" height="200px" width="200px" padding="10px"></img>
-              <img className={style.diet} src="/Diet.svg" height="200px" width="200px" padding="10px"></img>
-              <img className={style.calendar} src="/Calendar.svg" height="200px" width="200px" padding="10px"></img>
-              </div>
+             
                   {propsList}
               </div>
             </div>

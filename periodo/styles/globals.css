@@ -29,6 +29,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
  
 .bot {
   bottom: 0;
@@ -46,3 +47,6 @@ margin-top: 14%;
     border-bottom: none;
   }
 }
+
+
+
