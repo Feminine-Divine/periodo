@@ -8,8 +8,8 @@ const Homepage =()=> {
   return (
     <>
       <Navbar />
-      <ChatBot />
       <Start/>
+      <ChatBot />
       </>
   );
 }
