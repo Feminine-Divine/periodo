@@ -36,6 +36,19 @@ a {
   display: none;
 } 
 
+<<<<<<< HEAD
+=======
+ 
+.bot {
+  bottom: 0;
+  right : 0;
+   position: fixed; 
+  margin-left: 93%;
+margin-top: 14%;
+}
+
+
+>>>>>>> upstream/master
 @media only screen and (max-width: 372px) {
   html {
     width: 150vw;
@@ -43,3 +56,9 @@ a {
     border-bottom: none;
   }
 }
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> upstream/master
