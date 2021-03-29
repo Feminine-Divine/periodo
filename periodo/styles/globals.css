@@ -30,3 +30,23 @@ a {
   box-sizing: border-box;
 }
 
+ 
+.bot {
+  bottom: 0;
+  right : 0;
+   position: fixed; 
+  margin-left: 93%;
+margin-top: 14%;
+}
+
+
+@media only screen and (max-width: 372px) {
+  html {
+    width: 150vw;
+    height: 100vh;
+    border-bottom: none;
+  }
+}
+
+
+
