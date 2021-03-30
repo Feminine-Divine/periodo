@@ -36,8 +36,6 @@ a {
   display: none;
 } 
 
-<<<<<<< HEAD
-=======
  
 .bot {
   bottom: 0;
@@ -48,7 +46,6 @@ margin-top: 14%;
 }
 
 
->>>>>>> upstream/master
 @media only screen and (max-width: 372px) {
   html {
     width: 150vw;
@@ -56,9 +53,3 @@ margin-top: 14%;
     border-bottom: none;
   }
 }
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> upstream/master
