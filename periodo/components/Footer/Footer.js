@@ -14,7 +14,7 @@ export default function Footer() {
         <Row>
           <Col xs="4" className={styles.one}>
             <ul>
-              <a href="/">About Us</a>
+              <a href="/about">About Us</a>
               <br />
               <br />
               <a
