@@ -9,18 +9,18 @@
   right:40%;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 30vh;
   background-color: #252d4a;
   width: 450px;
-  min-height: 200px;
-  height: min-content;
+  /*min-height: 200px;*/
+  height: 55%;
   border-radius: 15px;
   padding: 20px;
   box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
   display: flex;
   justify-content: space-evenly;
-  
- 
+
+
 
 }
 
@@ -69,22 +69,68 @@
   outline:none;
 }
 
+.endCardButton1{
+  background-color: #B53737;
+  border-color: #B53737;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  color: white;
+  position: absolute;
+  top: 80%;
+  left: 10%;
+}
+.endCardButton2{
+  background-color: #B53737;
+  border-color: #B53737;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  color: white;
+  position: absolute;
+  top: 80%;
+  left: 55%;
+}
+.endCardHead{
+  position: absolute;
+  top: 2%;
+  left: 10%;
+  color: #D84242;
+}
+.endCardText{
+  position: absolute;
+  top: 52%;
+  left: 10%;
 
+}
+.allSet{
+  position: absolute;
+  top: 5%;
+  left: 40%;
+}
+.endCardButton1:hover {
+  /*border:#D84242;
 
+  color: white;*/
+  cursor: pointer;
+  background-color: #D84242;
+  border: #D84242;
+}
+.endCardButton2:hover {
+  /*border:#D84242;
+
+  color: white;*/
+  cursor: pointer;
+  background-color: #D84242;
+  border: #D84242;
+}
 
 
 .button:hover { border:white;
-  background-color: grey;
+  background-color: #D84242;
   cursor: pointer;
 }
-.button:active{background-color: yellow;
+.button:active{background-color: #9E4244;
 border:white;}
 
 
 .button svg {
   margin-right: 5px;}
-
-
-
-
-
