@@ -13,7 +13,9 @@ const Navbar = ({ children }) => {
 <div className="header">
    <div className="logo-nav">
      <Link href="/">
+      <a className="Nav-bar Nav-Active">
      <img src="Logo.png" height="64px" width="160px" padding="10px" class="nav-img"></img>
+     </a>
      </Link>
      <ul className={click ? "nav-options active " : "nav-options "} >
           <li className="option" onClick={closeMobileMenu}>
