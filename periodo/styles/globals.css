@@ -31,14 +31,13 @@ a {
 }
 
 
-
-
 .bot {
   bottom: 0;
   right : 0;
    position: fixed; 
   margin-left: 90%;
   margin-top: 14%;
+
 }
 
 
