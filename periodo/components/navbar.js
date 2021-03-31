@@ -13,7 +13,7 @@ const Navbar = ({ children }) => {
 <div className="header">
    <div className="logo-nav">
      <Link href="/">
-      <a className="Nav-bar Nav-Active">
+      <a >
      <img src="Logo.png" height="64px" width="160px" padding="10px" class="nav-img"></img>
      </a>
      </Link>
