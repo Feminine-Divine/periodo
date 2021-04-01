@@ -129,7 +129,9 @@
   font-weight: bolder;
   bottom: 0;
 }
-
+.card:hover{
+  transform: scale(1.1);
+}
 /*
 .a{
     position: relative;
