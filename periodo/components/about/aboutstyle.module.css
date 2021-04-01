@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 .body{
-  margin: 0;
-  padding: 0;
+  margin-top: 0px;
+  padding: 50px;
   box-sizing: border-box;
 }
 
@@ -10,9 +10,9 @@
   font-size: 50px;
   color: white;
   width: 100%;
-  padding-top: 15px;
-  top: 30px;
-  display: flex;
+  padding-top: 30px;
+  top: 0px;
+  display:flex;
   justify-content: center;
   background-color: #181818;
 }
@@ -20,7 +20,7 @@
   display: flex;
   justify-content: center;
   font-weight: bold;
-  margin-top: 0;
+  margin-top: 0px;
   padding-top: 20px;
   color: #A0616A;
   text-transform: uppercase;
@@ -28,13 +28,14 @@
 }
 .subline{
   display: flex;
-  margin-top: -20px;
+  margin-top: -18px;
   padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 10px;
+ 
+  
   justify-content: center;
   color: white;
   background-color: #181818;
+  
 }
 .bottomline{
   display: flex;
@@ -55,7 +56,7 @@
     justify-content: center;
     height: 100%;
     width: 100%;
-
+    position: relative;
     align-items: center;
 
 }
@@ -85,7 +86,7 @@
   z-index: 2;
 }
 .container{
-    position: relative;
+    position:relative ;
     width: 1150px;
     padding: 20px;
     display: flex;
