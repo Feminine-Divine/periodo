@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 .body{
-  margin-top: 0px;
-  padding: 50px;
-  box-sizing: border-box;
+  margin-top:0px;
+  padding:50px;
+  box-sizing:border-box;
 }
 
 .heading{
-  position: absolute;
+  position:absolute;
   font-size: 50px;
   color: white;
   width: 100%;
@@ -30,8 +30,8 @@
   display: flex;
   margin-top: -18px;
   padding-top: 20px;
- 
-  
+  padding-bottom: 20px;
+  padding-left: 10px;
   justify-content: center;
   color: white;
   background-color: #181818;
@@ -86,7 +86,7 @@
   z-index: 2;
 }
 .container{
-    position:relative ;
+    position: relative;
     width: 1150px;
     padding: 20px;
     display: flex;
