@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+.footer{
+    margin-top: 350px;
+    background: black;
+    padding: 20px;
+    color: aliceblue;
+    display: block;
+}
+.one{
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+.two{
+    display: flex;
+    justify-content: center;
+}
+.base{
+    background: #960435;
+    color: black ;
+    display: flex;
+    font-family: "poppins";
+    padding: 0;
+    margin-bottom: 0;
+    justify-content: center;
+    font-size: 1.2em;
+}
+.name{
+     color: "black";
+}
+.iconGit:hover {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
