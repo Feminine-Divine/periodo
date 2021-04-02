@@ -8,7 +8,8 @@
 }
 .slideimg img{
     height: 100%;
-    width: 700px;
+    width: 100%;
+    object-fit: fill;
 }
 .contentbox1, .contentbox2, .contentbox3, .contentbox4{
     width: 300px;
