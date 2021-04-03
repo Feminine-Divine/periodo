@@ -8,10 +8,9 @@
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
   padding: 18px;
-  min-height: 100px;
   width: 85%;
-  max-width: 400px;
-  margin: 25px;
+  max-width: 370px;
+  margin: 38px;
   float: left;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgb(253, 120, 142);
 }
@@ -27,7 +26,7 @@
   position: relative;
   float: right;
   margin-right: 10px;
-  color: #fa1e0e;
+  color: #fa1841;
   border: none;
   width: 36px;
   height: 36px;
@@ -70,4 +69,11 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
+}
+
+.h1 {
+  color: rgb(223, 223, 223);
+  padding: 15px 0;
+  background: rgb(247, 37, 72);
+  text-align: center;
 }
