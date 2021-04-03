@@ -5,10 +5,7 @@ const notes = () => {
   return (
     <>
       <Navbar />
-      <div style={{background: "#d9dbda",
-                    padding: "10px", height:"100vh"}}>
       <Notes />
-      </div>
     </>
   );
 };
