@@ -41,15 +41,20 @@
   margin: 30px auto 20px auto;
   background: #ffffff;
   padding: 15px;
-  border-radius: 7px;
-  box-shadow: 0 1px 5px rgb(138 137 137);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgb(253, 120, 142);
+}
+
+.createnote:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 10px 0 rgb(216, 10, 44);
 }
 
 .forminp,
 .txtarea {
   width: 100%;
-  border: none;
-  padding: 4px;
+  border: 2px solid #f3b3be;
+  padding: 5px;
+  margin-top: 8px;
   outline: none;
   font-size: 1.2em;
   font-family: inherit;
