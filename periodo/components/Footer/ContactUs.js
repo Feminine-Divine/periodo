@@ -16,7 +16,7 @@ function ContactUs () {
         <Paper style={{alignItems:"center", margin:"0 19%", background:"#960435"}}>
         <Card style={{backgroundColor: '#960435',
                       color: 'white'}}>
-          <CardHeader title="Talk with us (beta)"/>
+          <CardHeader title="Contact Us (beta)"/>
         </Card>
         <CardContent>
         <div >
