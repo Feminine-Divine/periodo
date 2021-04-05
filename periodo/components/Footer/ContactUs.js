@@ -6,6 +6,7 @@ import InputAdornment from '@material-ui/core/InputAdornment';
 import PersonIcon from '@material-ui/icons/Person';
 import { TextareaAutosize } from '@material-ui/core';
 import {Paper, Grid} from '@material-ui/core';
+import { Row, Col } from "reactstrap";
 
 
 function ContactUs () {
@@ -15,7 +16,7 @@ function ContactUs () {
         <Paper style={{alignItems:"center", margin:"0 19%", background:"#960435"}}>
         <Card style={{backgroundColor: '#960435',
                       color: 'white'}}>
-          <CardHeader title="Talk with us"/>
+          <CardHeader title="Talk with us (beta)"/>
         </Card>
         <CardContent>
         <div >
@@ -79,10 +80,25 @@ function ContactUs () {
                             overflowY: "scroll",
                             fontSize:"17px",
                             outline: "none",
-                            padding:"10px"
+                            padding:"10px",
+                            marginTop:"10px"
                         }}
                 />
               </Grid>
+              <br/>
+              <br/>
+              <Container>
+              <Row>
+                  <Col >
+                  <Button
+                    variant="contained"
+                    color="secondary"
+                    style={{background:"black", margin:"10px 0px 0px -10px"}}>
+                    Submit
+                  </Button>
+                  </Col>
+                </Row>
+                </Container>
             </Grid>
             </div>
         </CardContent>
@@ -90,4 +106,4 @@ function ContactUs () {
     ) ;
 };
 
-export default (ContactUs);
+export default ContactUs;
