@@ -5,14 +5,19 @@ import GithubIcon from "@material-ui/icons/GitHub";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import ContactSupportIcon from '@material-ui/icons/ContactSupport';
 import Link from "next/link"
+import ContactUs from "./ContactUs";
 export default function Footer() {
   return (
     
     <div>
       <div className={styles.footer}>
-          <Container>
+        <Container>
         <Row>
+        <Col lg="12">
+            <ContactUs />  
+        </Col>
           <Col xs="4" className={styles.one}>
+          
             <ul>
               <a href="/about">About Us</a>
               <br />
