@@ -13,11 +13,7 @@ export default function Footer() {
       <div className={styles.footer}>
         <Container>
         <Row>
-        <Col lg="12">
-            <ContactUs />  
-        </Col>
-          <Col xs="4" className={styles.one}>
-          
+          <Col xs="4" className={styles.one}>          
             <ul>
               <a href="/about">About Us</a>
               <br />
@@ -45,6 +41,9 @@ export default function Footer() {
           </Col>
         </Row>
         </Container>
+        <Col className={styles.contactus} lg="12">
+            <ContactUs />  
+        </Col>
       </div>
 
       <div className={styles.base}>
