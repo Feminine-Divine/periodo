@@ -67,3 +67,14 @@
   outline: "none";
   padding: "10px";
 } */
+
+.contactButton {
+  font-size: 100px;
+}
+
+@media (max-width: 480px) {
+  .contactus {
+    margin: 1% -19%;
+    margin-right: -53px;
+  }
+}
