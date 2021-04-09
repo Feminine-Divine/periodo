@@ -22,13 +22,12 @@ const card=({props})=>{
     return (
       <>
 
-
         <div className={style.section}>
 
         <div className={style.texttop}>
-        <h1 className={style.heading}>HOW WE HELP...</h1>
-        <p className={style.topline}> Worried about your period arriving out of the blue?</p>
-        <p className={style.subline}>Bid adieu to public embarrasment with PERIODO - a customised period tracker catering to all your needs, with a single click!</p>
+        <div className={style.heading}>HOW WE HELP...</div>
+        <div className={style.topline}> Worried about your period arriving out of the blue?</div>
+        <div className={style.subline}>Bid adieu to public embarrasment with PERIODO - a customised period tracker catering to all your needs, with a single click!</div>
         </div>
             <div className={style.body}>
 

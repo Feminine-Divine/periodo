@@ -4,14 +4,13 @@
   padding:50px;
   box-sizing:border-box;
 }
-
 .heading{
-  position: absolute;
+  
   font-size: 50px;
   color: white;
   width: 100%;
   padding-top: 30px;
-  top: 0px;
+  margin-top:0px;
   display:flex;
   justify-content: center;
   background-color: #181818;
@@ -20,7 +19,7 @@
   display: flex;
   justify-content: center;
   font-weight: bold;
-  margin-top: 0px;
+  
   padding-top: 20px;
   color: #A0616A;
   text-transform: uppercase;
@@ -28,7 +27,7 @@
 }
 .subline{
   display: flex;
-  margin-top: -18px;
+
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 10px;
