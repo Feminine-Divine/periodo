@@ -13,7 +13,9 @@ const Navbar = ({ children }) => {
 <div className="header">
    <div className="logo-nav">
      <Link href="/">
+      <a >
      <img src="Logo.png" height="64px" width="160px" padding="10px" class="nav-img"></img>
+     </a>
      </Link>
      <ul className={click ? "nav-options active " : "nav-options "} >
           <li className="option" onClick={closeMobileMenu}>
@@ -56,13 +58,18 @@ const Navbar = ({ children }) => {
         </Link>
           </li>
           <li className="option" onClick={closeMobileMenu}>
-          <Link href="/about">
-          <a class="Nav-bar">AboutUs</a>
+          <Link href="/flow">
+          <a class="Nav-bar">Wanna Rate Yourself</a>
         </Link>
           </li>
           <li className="option" onClick={closeMobileMenu}>
           <Link href="/notes">
         <a class="Nav-bar">Notes</a>
+        </Link>
+          </li>
+          <li className="option" onClick={closeMobileMenu}>
+          <Link href="/about">
+          <a class="Nav-bar">AboutUs</a>
         </Link>
           </li>
         </ul>
@@ -105,11 +112,14 @@ const Navbar = ({ children }) => {
             <Link href="/calender">
               <a className="Nav-bar">Calendar</a>
             </Link>
-            <Link href="/about">
-              <a className="Nav-bar">AboutUs</a>
+            <Link href="/flow">
+              <a className="Nav-bar">Wanna Rate Yourself</a>
             </Link>
             <Link href="/notes">
               <a className="Nav-bar">Notes</a>
+            </Link>
+            <Link href="/about">
+              <a className="Nav-bar">AboutUs</a>
             </Link>
             <label for="nav-btn">
               <div className="toggle" >

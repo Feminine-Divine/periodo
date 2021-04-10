@@ -40,6 +40,22 @@ a {
 
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track{
+  background: #1c1c1c;
+  border-left: 9px solid #1c1c1c;
+  border-right: 9px solid #1c1c1c;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #fc5296;
+background-image: linear-gradient(315deg, #fc5296 0%, #f67062 74%); 
+  border-radius: 30px;
+}
+
 
 @media only screen and (max-width: 372px) {
   html {
