@@ -7,13 +7,16 @@ const card=({props})=>{
             return (
               <>
               <div className={style.card}>
-                      <div className={style.h2}>
+                
+                <div className={style.h2}>
                           <h1 >{prop.aboutNumber}</h1>
                       </div>
                       <img src={prop.imgsrc} height="200px" width="200px" padding="10px"/>
                       <div className={style.content}>
                         <p className={style.p}>{prop.aboutContent} </p>
                       </div>
+              
+                      
               </div>
             </>
 
