@@ -6,11 +6,11 @@
     </p>
 
 ## About 📚
-Our project focuses on the young girls who are going to experience their first periods and the women who face problem tracking their period dates and remembering their dates be it for avoiding embarrassing moments or to monitor your period for lifestyle disorders(PCOS,PCOD,etc.). Our application Periodo can help these girls and women by keeping a track of their periods and notifying them on their upcoming dates along with keeping track on the level of flow of their periods also helping them with their correct diet in their period days. We have planned to add more features in the application as it grows with the help of contributors.
-The Project is very beginner friendly to contribute to as well as has a user-friendly interface which can help in attracting young audience.
+Periodo - The Tracker focuses on young girls who are going to experience their first periods and the women who face problems tracking their period dates and remembering their dates be it for avoiding embarrassing moments or to monitor your period for lifestyle disorders(PCOS, PCOD, etc.). Our application Periodo can help these girls and women by keeping a track of their periods and notifying them of their upcoming dates along with keeping track of the level of flow of their periods also helping them with their correct diet in their period days. We have planned to add more features to the application as it grows with the help of contributors.
+The Project is very beginner-friendly to contribute to as well as has a user-friendly interface which can help in attracting a young audience.
 
 
-![image](https://user-images.githubusercontent.com/65439761/108522793-3367eb80-72f3-11eb-9ddb-08c49c1549e9.png)
+![image](https://user-images.githubusercontent.com/61618767/112602083-41041a00-8e39-11eb-9c6b-50cb15535f3c.png)
 
 <br>
 
@@ -41,6 +41,9 @@ The Project is very beginner friendly to contribute to as well as has a user-fri
     #add upstream
     git remote add upstream https://github.com/Feminine-Divine/periodo.git
     ```
+## Two Ways to Install from here:
+
+### 1. Without using Docker i.e Conventional Way
 - **Install yarn:** This project use `yarn` as a package manager.
     ```bash
     #to check yarn installed on your computer or not
@@ -67,6 +70,18 @@ The Project is very beginner friendly to contribute to as well as has a user-fri
     Check in which port, the server is running or click the link
     ![CLI](https://user-images.githubusercontent.com/43095489/110291642-57773c80-8016-11eb-9f40-5b0698c89efa.png)
 
+### 2. Using Docker
+
+* Install [Docker](https://docs.docker.com/engine/install/), from the given link.
+
+* Once Docker is installed, use the following two commands to run the app in the root dicrectory:
+  * `docker-compose build` , This command will build the project
+  * `docker-compose up`, This command will run the container.
+  
+* You can open the project on `localhost:3000` on the machine.
+
+Note: If you are using docker-desktop on Windows Or WSL2 i.e Windows Subsystem For Linux, you can use the GUI Options to run the containers 
+
 ## Documentation 📃
 Please read [CONTRIBUTING.md](https://github.com/Feminine-Divine/periodo/blob/master/.github/CONTRIBUTING.md) and [Code of Conduct](/Code-of-Conduct.md) before contrbuting
 
@@ -77,14 +92,14 @@ Please reachout the admins [Khushi Gautam](https://www.linkedin.com/in/khushi-ga
 ### Chat Channel:- For any queries post here Mentors will guide you here on [Discord](https://discord.com/channels/811724426965811210/815040260105961472) 
 
 
-## Genral Guidelines for Contributors 🚧
-### Some Guidelines needs to be followed to maintain the decorum in the community.
-1. Participant can be assigned to only one issue at a single time (please refrain from asking new issues until your work in an issue is completed), So that every contributer gets the equal chance to contribute and collaborate in the project.
-2. Every Participant who are assigned in a issue have to give regular updates after every three three days otherwise the issue will be made available again.
-3. Issues will get assigned on first come first serve basis. Although if the current assignee is unable to give any update within 3 days. The person who is next in the queue will get assigned.
-4. Please try to wait atleast 3-4 days after submitting a PR. Maintaners are also human beings and have to manage the whole project.(So, don't ping constantly for review)
+## General Guidelines for Contributors 🚧
+### Some Guidelines need to be followed to maintain the decorum in the community.
+1. Participants can be assigned to only one issue at a single time (please refrain from asking about new issues until your work in an issue is completed) So that every contributor gets an equal chance to contribute and collaborate in the project.
+2. Every Participant who is assigned to an issue has to give regular updates after every three days otherwise the issue will be made available again.
+3. Issues will get assigned on a first come first serve basis. Although if the current assignee is unable to give any update within 3 days. The person who is next in the queue will get assigned.
+4. Please try to wait at least 3-4 days after submitting a PR. Maintainers are also human beings and have to manage the whole project. (So, don't ping constantly for review)
 5. Try to discuss your features and problems related to the issue or PR directly here on Github.
- 
+
 ## Open Source Programs
 This Project is a part of following program
 

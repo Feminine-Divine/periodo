@@ -1,68 +1,84 @@
+.notetitle {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+
 .note {
-    background: #fff;
-    border-radius: 7px;
-    box-shadow: 0 2px 5px #ccc;
-    padding: 10px;
-    width: 240px;
-    margin: 16px;
-    float: left;
-  }
-  .notetitle {
-    font-size: 1.1em;
-    margin-bottom: 6px;
-  }
-  .notebody {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
-  
-  .delbtn {
-    position: relative;
-    float: right;
-    margin-right: 10px;
-    color: #fa1e0e;
-    border: none;
-    width: 36px;
-    height: 36px;
-    cursor: pointer;
-    outline: none;
-  }
-  
-  .createnote {
-    position: relative;
-    width: 480px;
-    margin: 30px auto 20px auto;
-    background: #ffffff;
-    padding: 15px;
-    border-radius: 7px;
-    box-shadow: 0 1px 5px rgb(138, 137, 137);
-  }
-  
-  .forminp,
-  .txtarea {
-    width: 100%;
-    border: none;
-    padding: 4px;
-    outline: none;
-    font-size: 1.2em;
-    font-family: inherit;
-    resize: none;
-  }
-  
-  .createbtn {
-    position: absolute;
-    right: 18px;
-    bottom: -18px;
-    background: #f50057;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    outline: none;
-  }
-  
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 18px;
+  width: 85%;
+  max-width: 370px;
+  margin: 38px;
+  float: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgb(253, 120, 142);
+}
+
+.notebody {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.delbtn {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #fa1841;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+
+.createnote {
+  position: relative;
+  width: 85%;
+  max-width: 480px;
+  margin: 30px auto 20px auto;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgb(253, 120, 142);
+}
+
+.createnote:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 10px 0 rgb(216, 10, 44);
+}
+
+.forminp,
+.txtarea {
+  width: 100%;
+  border: 2px solid #f3b3be;
+  padding: 5px;
+  margin-top: 8px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+
+.createbtn {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f50057;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+.h1 {
+  color: rgb(223, 223, 223);
+  padding: 15px 0;
+  background: rgb(247, 37, 72);
+  text-align: center;
+}
