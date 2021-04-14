@@ -42,8 +42,9 @@ const initialFValues ={
                  <>
             <Navbar></Navbar>
         <Forme>
+            <div style={{ display:"flex", justifyContent: "space-evenly", background:"#181818", color:"lightpink", fontSize:"20px", marginBottom:"30px",}}>
     <h1><em><strong>Contact the Gynecologist!</strong></em></h1>
-    <hr></hr>
+    </div>
         <Grid container>
             <Grid item xs ={6} className={style.grid}>   
            <em><TextField className={style.field}
@@ -79,6 +80,7 @@ const initialFValues ={
                   }
                 }}
                   variant="outlined"
+                  color="secondary"
                   label="Age"
                   name="age"
                   value={values.age}
@@ -96,6 +98,7 @@ const initialFValues ={
                     }
                   }}
                   variant="outlined"
+                  color="secondary"
                   label="Email"
                   name="email"
                   value={values.email}
@@ -113,6 +116,7 @@ const initialFValues ={
                   }
                 }}
                   variant="outlined"
+                  color="secondary"
                   label="Contact Number"
                   name="mobile"
                   value={values.mobile}
@@ -131,6 +135,7 @@ const initialFValues ={
                     }
                   }}
                   variant="outlined"
+                  color="secondary"
                   label="Weight"
                   name="weight"
                   value={values.weight}
@@ -150,6 +155,7 @@ const initialFValues ={
                   }
                 }}
                   variant="outlined"
+                  color="secondary"
                   label="Height (in cm)"
                   name="height"
                   value={values.height}
@@ -162,17 +168,17 @@ const initialFValues ={
                   <Grid item xs={6} className={style.grid}>
                   <em><TextField className={style.field}
                   style={{
-                    backgroundColor: "#fff8e1"
+                    backgroundColor: "#fff8e1",
                 }}
                 
                 InputLabelProps={{ 
                  style:{
                   fontSize:"100%",
                    color:"#880e4f",
-                   padding:"0 5px"
                  }
                }}
                  variant="outlined"
+                 color="secondary"
                  label="No. of Days your Cycle is Late"
                  name="lateCycle"
                  value={values.lateCycle}
@@ -192,6 +198,7 @@ const initialFValues ={
         }
       }}
                 variant="outlined"
+                color="secondary"
                 label="Describe the Menstrual Issue"
                 name="issues"
                 value={values.issues}
