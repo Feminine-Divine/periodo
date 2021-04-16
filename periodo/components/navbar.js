@@ -1,6 +1,7 @@
 import React,{useState} from "react"
 import Link from "next/link"
 import { useUser } from '@auth0/nextjs-auth0';
+import stickyNavStyle from "./navbar.module.css"
 
 const Navbar = ({ children }) => {
   const { user } = useUser();
@@ -9,7 +10,7 @@ const Navbar = ({ children }) => {
   const closeMobileMenu = () => setClick(false);
   return (
 <React.Fragment>
-
+<div className={stickyNavStyle.mobileNav}>
 <div className="header">
    <div className="logo-nav">
      <Link href="/">
@@ -21,14 +22,14 @@ const Navbar = ({ children }) => {
             <a class="Nav-bar Nav-Active">Home</a>
           </Link>
           </li>
-          {user ? 
-          
+          {user ?
+
             <li className="option" onClick={closeMobileMenu}>
             <Link href="/api/auth/logout">
               <a className="Nav-bar">Logout</a>
             </Link>
           </li>
-           : 
+           :
            <li className="option" onClick={closeMobileMenu}>
            <Link href="/api/auth/login">
               <a className="Nav-bar">Login</a>
@@ -123,6 +124,7 @@ const Navbar = ({ children }) => {
 
       </Header> */}
       <div>{children}</div>
+      </div>
     </React.Fragment>
   );
 };

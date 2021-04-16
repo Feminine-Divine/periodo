@@ -62,7 +62,7 @@
 
 .med{
   position: absolute;
-  top:55%;
+  top: 55%;
   left: 60%;
   z-index: 2;
 }
@@ -126,7 +126,7 @@
 }
 .p{
   color: black;
-  font-weight: bolder;
+  font-weight: normal;
   bottom: 0;
 }
 

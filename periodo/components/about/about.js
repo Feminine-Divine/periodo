@@ -9,14 +9,14 @@ const about=[
     {
         aboutNumber:"TRACK YOUR CYCLE",
         aboutContent:"Eliminate those pesky mood swings and stay in the know with our custom calendar.",
-        imgsrc:"./Medicine.svg"
+        imgsrc:"./Calendar.svg"
 
 
     },
     {
       aboutNumber:"CHAT WITH OUR VERY OWN CHATBOT",
       aboutContent:"Tired of Humans? Our friendly neighbourhood chatbot is happy to lend an ear! ",
-      imgsrc:"./Chatbot.svg"            
+      imgsrc:"./Chatbot.svg"
 
     },
     {
@@ -28,7 +28,7 @@ const about=[
     {
       aboutNumber:"GET CUSTOMISED MEDICINAL ADVICE",
       aboutContent:"No amount of pain is worth it. Find expert advice at your doorstep from women who have gone through the same.",
-      imgsrc:'./Calendar.svg'
+      imgsrc:'./Medicine.svg'
     }
 ]
 

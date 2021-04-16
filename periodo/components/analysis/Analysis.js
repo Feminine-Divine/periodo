@@ -1,10 +1,28 @@
 
 import React from "react"
+import { useState } from "react";
+import ReactDOM from 'react-dom';
 import styles from "./Analysis.module.css"
 import Link from 'next/link'
+import Header from './analysisToggle.js'
 //import Router , {useRouter}  from 'next/router';
-
-
+/*export default function Header(){
+	const [showMe, setShowMe] = useState(false);
+	function toggle(){
+		setShowMe(!showMe);
+	}
+	return (
+		<>
+			<button onClick={toggle}>TELL ME MORE!</button>
+			{/*The bottom code should toggle on and off when the button is pressed}*/
+			/*<div style={{
+				display: showMe?"block":"none"
+			}}>
+				Use heating pads
+			</div>
+		</>
+	);
+}*/
 
 
 
@@ -16,8 +34,9 @@ const Analysis=()=>{
 				{ answerText: 'YES', is5Correct: true },
 				{ answerText: 'NO', is5Correct: false },
 
-
 			],
+
+			imgsrc: './Questions.svg'
 		},
 		{
 			questionText: 'Do you need medicines?',
@@ -26,6 +45,7 @@ const Analysis=()=>{
 				{ answerText: 'NO', is5Correct: false },
 
 			],
+			imgsrc: './Questions.svg'
 		},
 		{
 			questionText: 'How many days does it last for?',
@@ -35,6 +55,7 @@ const Analysis=()=>{
 				{ answerText: 'More than 5', is5Correct: true },
 
 			],
+			imgsrc: './Questions.svg'
 		},
 		{
 			questionText: 'Do you feel any pain?',
@@ -44,6 +65,7 @@ const Analysis=()=>{
 				{ answerText: 'No pain ', is5Correct: false},
 
 			],
+			imgsrc: './Questions.svg'
 		},
 		{
 			questionText: 'Do you feel any mood swings?',
@@ -54,16 +76,22 @@ const Analysis=()=>{
 
 
 			],
+			imgsrc: './Questions.svg'
 		},
 	];
-	const [currentQuestion, setCurrentQuestion] = React.useState(0);
 	const [showScore, setShowScore] = React.useState(false);
+	const [isTrue, setIsTrue] = React.useState(false); //change
 	const [score, setScore] = React.useState(0);
 
-	const handleAnswerOptionClick = (is5Correct,answerOptions) => {
+	const [currentQuestion, setCurrentQuestion] = React.useState(0);
 
+
+
+	const handleAnswerOptionClick = (is5Correct) => {
+	//isTrue === is5Correct;
 		if (is5Correct) {
-			setScore(score + 1);
+
+		 setScore(score + 1);
 		}
 
 		const nextQuestion = currentQuestion + 1;
@@ -73,32 +101,49 @@ const Analysis=()=>{
 		else {
 			setShowScore(true);
 
-//const router = useRouter();
-				//<button type="button" onClick={() => router.push('/myroute')} />
-		//	<button className={styles.button}  onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>SUBMIT</button>
-		//	<form ref="form">
-	    // <button type="submit">Do the thing</button>
-	   // </form>
-		} //
+		}
 	}
 
 //<div>{handleEndCard.h1}</div>
 //You	scored {score} out of {questions.length}
-//
-    return(
+	//	<img src="./Questions.svg" alt="Questions" width="100px" height="100px" ></img>
+
+
+
+//function handleResultsClick(is5Correct) {
+const handleResultsClick = (is5Correct) => {
+	if (is5Correct) {
+			setIsTrue(true);
+	}
+}
+const element = <h1>Hello, world</h1>;
+//const textres = <h1>Do this</h1>
+		//	The variable is {isTrue}
+		//	<button className={styles.endCardButton1} onClick={() => handleResultsClick(questions.is5Correct)}>TELL ME MORE !</button>
+//You	scored {score} out of {questions.length}
+	  return(
 
     <div className={styles.quiz}>
-			{showScore ? (
+
+		{isTrue ? (
+			<h1>{element}</h1>
+		):
+
+			showScore ? (
 					<div className={styles.scoresection}>
+
 					<img className={styles.allSet} alt="All Set!" src="/Checklist.svg" height="200px" width="200px" padding="10px"></img>
-					<h1 className={styles.endCardHead}>ALL SET...</h1>
-					<h5 className={styles.endCardText}>
+					<h1 className={styles.endCardHead}>ALL SET !</h1>
+					<div className={styles.endCardText}>
+
 					Your response is noted!<br/>
-					Here are the curated remedies specially tailored to fit your needs....</h5>
-					<button className={styles.endCardButton1}>TELL ME MORE !</button>
+					Here are the curated remedies specially tailored to fit your needs....</div>
+
 					<Link href='/analysis'>
+
 					<button className={styles.endCardButton2}>RETAKE THE QUIZ</button>
 					</Link>
+					<Header  className={styles.endCardButton1} />
 					</div>
 
 					) : (
