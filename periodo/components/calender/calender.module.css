@@ -12,3 +12,32 @@
     flex-direction: row;
     justify-content: center;
 }
+.nextbtn{
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    padding: 20px;
+    border-radius: 25px;
+
+}
+.RangeExample{
+   margin-right: 400px;
+   margin-left: 400px;
+}
+.link{
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    padding: 20px;
+    border-radius: 25px;
+    margin-left: 250px;
+}
+.container{
+    font-family:Special Elite;
+    background-color: rgb(228, 146, 194);
+    border-radius: 30px;
+    padding: 30px;
+    opacity: 0.9;
+   
+     
+}

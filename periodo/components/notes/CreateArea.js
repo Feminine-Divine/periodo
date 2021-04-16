@@ -40,6 +40,7 @@ function CreateArea(props) {
           autoComplete="off"
           required
         />
+        <br />
         <textarea
           className={styles.txtarea}
           name="content"
