@@ -1,11 +1,14 @@
 import React from "react";
 import style from "./cards.module.css";
+
 const card = ({ props }) => {
   const propsList = props.map((prop) => {
     return (
       <div className={style.card}>
         <div className={style.circle}>
-          <div className={style.img}></div>
+          <div className={style.img}>
+            <img src={prop.tipLogo} alt="image" height={150} width={290} />
+          </div>
           <div className={style.h2}>
             <h2>{prop.tipNumber}</h2>
           </div>
