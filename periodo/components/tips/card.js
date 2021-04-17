@@ -5,11 +5,14 @@ const card=({props})=>{
         const propsList=props.map((prop)=>{
             return (
             <div className={style.card}>
-                <Image src="/img1.jpg" height={120} width={120} />
                 <div className={style.circle}>
+                <div className={style.img}>
+                            <Image src="/bg.png" layout="fill" />
+                        </div>
                     <div className={style.h2}>
-                        <h1 >{prop.tipNumber}</h1>
-                        
+                    
+                        <h2 >{prop.tipNumber}</h2>
+                       
                     </div>
                 </div>
 

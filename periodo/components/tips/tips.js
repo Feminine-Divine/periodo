@@ -31,7 +31,7 @@ const tips=[
     },
     {
         tipNumber:"Soak in a tub",
-        tipContent:"Soaking in a warm bathtub surrounds your pelvic muscles with the warmth they need to relax. You can enhance the pain-relieving power by adding a few drops of essential oils like lavender or rose. Try to relax in a warm bath for at least 15 minutes.",
+        tipContent:"Soaking in a warm bathtub surrounds your pelvic muscles with the warmth they need to relax. You can enhance the pain-relieving power by adding a few drops of essential oils & Try to relax in warm bath for at least 15 minutes.",
         link:"https://www.medicalnewstoday.com/articles/324403#3.-Shouldnt-have-a-bath"
     },
     {
@@ -49,7 +49,8 @@ const Tips = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <Card props={tips} />    
+            <Card props={tips} />
+        
         </div>
     );
 
