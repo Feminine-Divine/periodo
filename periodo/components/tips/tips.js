@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../navbar";
-// import style from  "./tips.module.css";
 import Card from "./card";
 const tips=[
     {

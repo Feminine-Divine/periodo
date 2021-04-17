@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./cards.module.css";
-
 const card = ({ props }) => {
   const propsList = props.map((prop) => {
     return (
