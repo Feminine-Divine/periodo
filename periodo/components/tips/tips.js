@@ -49,8 +49,7 @@ const Tips = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <Card props={tips} />
-            
+            <Card props={tips} />    
         </div>
     );
 
