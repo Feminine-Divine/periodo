@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./cards.module.css";
-import Image from "next/image";
+
 const card = ({ props }) => {
   const propsList = props.map((prop) => {
     return (
@@ -15,7 +15,7 @@ const card = ({ props }) => {
         <div className={style.content}>
           <p className={style.p}>{prop.tipContent} </p>
           <a href={prop.link} className={style.a}>
-            Read more{" "}
+            Read more
           </a>
         </div>
       </div>
