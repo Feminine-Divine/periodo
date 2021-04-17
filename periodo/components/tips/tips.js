@@ -5,6 +5,7 @@ import Card from "./card";
 const tips=[
     {
         tipNumber:"Drink tea",
+        tipLogo:"/tea.png",
         tipContent:"Drinking  atleast 1 cup of tea (Ginger/Cardamom/Lavender) can provide you with much needed freshness and also help decrease the amount of pain you experience at that time of the month.",
         link:"https://www.timesnownews.com/health/article/how-a-warm-cup-of-tea-can-be-a-perfect-home-remedy-for-period-cramps-and-pain/537320#:~:text=One%20home%20remedy%20that%20is,that%20time%20of%20the%20month."
     },
@@ -49,6 +50,7 @@ const Tips = () => {
         <div>
             <Navbar></Navbar>
             <Card props={tips} />
+            
         </div>
     );
 

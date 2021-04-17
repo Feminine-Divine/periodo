@@ -29,7 +29,6 @@
     background: cornsilk;
     margin: 20px;
     border-radius: 20px;
-    overflow: hidden;
     box-shadow: 0 15px 25px black;
     transition: 0.5s;
 }
