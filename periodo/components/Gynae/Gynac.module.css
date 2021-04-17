@@ -1,7 +1,7 @@
 /* changed */
 .mydiv{
     
-    background-color:  rgba(235,30,56,1);
+    background-color: rgb(251,174,210);
     background-image:url('../../public/woman_with_chart.svg'),url('../../public/woman_v_sign.svg') ;
     background-repeat: no-repeat, no-repeat;
     background-position: 130% 98%, -180px 100%;
@@ -11,7 +11,7 @@
 
 .grid{
     background: rgb(228,178,68);
-background: radial-gradient(circle, rgba(228,178,68,1) 12%, rgba(235,30,56,1) 100%);
+background: radial-gradient(circle, rgb(250, 247, 240) 12%,rgb(251,174,210) 100%);
  
     width: 100%!important;
     margin: auto!important;
