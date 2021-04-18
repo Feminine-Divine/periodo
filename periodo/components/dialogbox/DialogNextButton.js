@@ -47,13 +47,13 @@ export default function DialogNextButton() {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose} variant="outlined">
+          <button className={style.Disagreebtn} onClick={handleClose} variant="outlined">
             Disagree
-          </Button>
+          </button>
           <Link href="/flow">
-            <Button variant="contained" color="secondary">
+            <button className={style.Agreebtn} variant="contained" color="secondary">
               Agree
-            </Button>
+            </button>
           </Link>
         </DialogActions>
       </Dialog>

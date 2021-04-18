@@ -8,6 +8,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
   background-image: url('../public/woman_with_chart.svg'),url('../public/woman_v_sign.svg');
+  
   background-size: 60vw 60vh, 45vw 46vh;
   background-repeat: no-repeat, no-repeat;
   background-position: 107% 99%, 0% 100%;
