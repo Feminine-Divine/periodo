@@ -4,147 +4,165 @@ import { useState } from "react";
 import ReactDOM from 'react-dom';
 import styles from "./Analysis.module.css"
 import Link from 'next/link'
-import Header from './analysisToggle.js'
-//import Router , {useRouter}  from 'next/router';
-/*export default function Header(){
-	const [showMe, setShowMe] = useState(false);
-	function toggle(){
-		setShowMe(!showMe);
-	}
-	return (
-		<>
-			<button onClick={toggle}>TELL ME MORE!</button>
-			{/*The bottom code should toggle on and off when the button is pressed}*/
-			/*<div style={{
-				display: showMe?"block":"none"
-			}}>
-				Use heating pads
-			</div>
-		</>
-	);
-}*/
-
-
 
 const Analysis=()=>{
 	const questions = [
 		{
 			questionText: 'Are your periods regular?',
 			answerOptions: [
-				{ answerText: 'YES', is5Correct: true },
-				{ answerText: 'NO', is5Correct: false },
-
+				{ answerText: 'YES', isCorrect: false },
+				{ answerText: 'NO', isCorrect: true },
 			],
-
-			imgsrc: './Questions.svg'
 		},
 		{
 			questionText: 'Do you need medicines?',
 			answerOptions: [
-				{ answerText: 'YES', is5Correct: true },
-				{ answerText: 'NO', is5Correct: false },
-
+				{ answerText: 'YES', isCorrect: true },
+				{ answerText: 'NO', isCorrect: false },
 			],
-			imgsrc: './Questions.svg'
 		},
 		{
 			questionText: 'How many days does it last for?',
 			answerOptions: [
-				{ answerText: 'Less than 3', is5Correct: false },
-				{ answerText: '3 to 5', is5Correct: false },
-				{ answerText: 'More than 5', is5Correct: true },
-
+				{ answerText: 'Less than 3', isCorrect: false },
+				{ answerText: '3 to 5', isCorrect: false },
+				{ answerText: 'More than 5', isCorrect: true },
 			],
-			imgsrc: './Questions.svg'
 		},
 		{
 			questionText: 'Do you feel any pain?',
 			answerOptions: [
-				{ answerText: 'Extremely painful', is5Correct: true },
-				{ answerText: 'Mild pain', is5Correct: false },
-				{ answerText: 'No pain ', is5Correct: false},
-
+				{ answerText: 'Extremely painful', isCorrect: true },
+				{ answerText: 'Mild pain', isCorrect: false },
+				{ answerText: 'No pain ', isCorrect: false},
 			],
-			imgsrc: './Questions.svg'
 		},
 		{
 			questionText: 'Do you feel any mood swings?',
 			answerOptions: [
-				{ answerText: 'Almost all of the time', is5Correct: true },
-				{ answerText: 'A little bit', is5Correct: false },
-				{ answerText: 'No mood swings at all',  is5Correct: false},
-
-
+				{ answerText: 'Almost all of the time', isCorrect: true },
+				{ answerText: 'A little bit', isCorrect: false },
+				{ answerText: 'No mood swings at all',  isCorrect: false},
 			],
-			imgsrc: './Questions.svg'
 		},
 	];
-	const [showScore, setShowScore] = React.useState(false);
-	const [isTrue, setIsTrue] = React.useState(false); //change
-	const [score, setScore] = React.useState(0);
 
+	const [showScore, setShowScore] = React.useState(false);
+	const [score, setScore] = React.useState(0);
 	const [currentQuestion, setCurrentQuestion] = React.useState(0);
 
-
-
-	const handleAnswerOptionClick = (is5Correct) => {
-	//isTrue === is5Correct;
-		if (is5Correct) {
-
-		 setScore(score + 1);
+	var	yes = 0;
+	const handleAnswerOptionClick = (isCorrect) => {
+		if (isCorrect) {
+			yes=1;
 		}
-
+	 setScore(score*10 + yes); /* calculates score */
 		const nextQuestion = currentQuestion + 1;
 		if (nextQuestion < questions.length) {
 			setCurrentQuestion(nextQuestion);
 		}
 		else {
 			setShowScore(true);
-
 		}
+	};
+
+function Header(){
+	const [showMe1, setShowMe1] = useState(false);
+	const [showMe2, setShowMe2] = useState(false);
+	const [showMe3, setShowMe3] = useState(false);
+	const [showMe4, setShowMe4] = useState(false);
+	const [showMe5, setShowMe5] = useState(false);
+
+	/* Taking each digit of result to map each question to specific answer */
+	const a1 = score%10;
+	const a2 = ((score/10) | 0) % 10;
+	const a3 = ((score/100) | 0) % 10;
+	const a4 = ((score/1000) | 0) % 10;
+	const a5 = ((score/10000) | 0) % 10;
+
+	function toggle(){
+		if (a1==1){
+		setShowMe1(!showMe1); /* Toggles first card if answer for question 1 is true  */
 	}
-
-//<div>{handleEndCard.h1}</div>
-//You	scored {score} out of {questions.length}
-	//	<img src="./Questions.svg" alt="Questions" width="100px" height="100px" ></img>
-
-
-
-//function handleResultsClick(is5Correct) {
-const handleResultsClick = (is5Correct) => {
-	if (is5Correct) {
-			setIsTrue(true);
+		if ((a2==1) || (a4==1)){
+		setShowMe2(!showMe2); /* Toggles second card if answer for question 2 or 4 is true  */
 	}
+		if (a3==1){
+		setShowMe3(!showMe3); /* Toggles third card if answer for question 3 is true  */
+	}
+		if (a5==1){
+		setShowMe4(!showMe4); /* Toggles fourth card if answer for question 4 is true  */
+	}
+		if ((a1==0) && (a2==0) && (a3==0) && (a4==0) && (a5==0)){
+		setShowMe5(!showMe5); /* Toggles last card if no answer is true  */
+		}
 }
-const element = <h1>Hello, world</h1>;
-//const textres = <h1>Do this</h1>
-		//	The variable is {isTrue}
-		//	<button className={styles.endCardButton1} onClick={() => handleResultsClick(questions.is5Correct)}>TELL ME MORE !</button>
-//You	scored {score} out of {questions.length}
-	  return(
+	return (
+<>
+	<button className={styles.endCardButton1} onClick={toggle}>TELL ME MORE!</button>
+			{/*The bottom code should toggle on and off when the button is pressed*/}
+	<div style={{display: showMe1?"block":"none"}}>
+		<div className={styles.resultCard}>
+		Maintaining a healthy lifestyle can help reduce the risk of some of the causes of irregular periods.<br/>
+		This includes:
+		<ul>
+		<li>exercising regularly to maintain a healthy weight and reduce stress</li>
+		<li>following a healthy diet</li>
+		</ul>
+		</div>
+	</div>
+	<div style={{display: showMe2?"block":"none"}}>
+		<div className={styles.resultCard2}>
+			Ouch! Try applying heating pads to quell the pain.Over-the-counter pain relievers, such as ibuprofen (Advil, Motrin IB, others) or naproxen sodium (Aleve), at regular doses starting the day before you expect your period to begin can help control the pain of cramps.
+		</div>
+	</div>
+	<div style={{display: showMe3?"block":"none"}}>
+		<div className={styles.resultCard3}>
+			Don’t ignore a long period. It’s important to see your doctor to discuss why you might be experiencing this symptom. Delaying your diagnosis and treatment could lead to a worsening of the underlying condition responsible for the extended bleeding.
+		</div>
+	</div>
+	<div style={{display: showMe4?"block":"none"}}>
+			<div className={styles.resultCard4}>
+					It is important to speak to a doctor before taking supplements to treat PMS or any other condition.
+					<ul>
+					<li>Not getting enough sleep can kill your mood if you're weeks away from your period.</li>
+					<li>Unmanaged stress can worsen mood swings.</li>
+					</ul>
+			</div>
+	</div>
+	<div style={{display: showMe5?"block":"none"}}>
+			<div className={styles.resultCard5}>
+					<img className={styles.congrats} src="/Congrats.svg" />
+				<p className={styles.resultCard5Text}><strong>	#Blessed!<br/></strong> Don't stress - looks like you have already discerned what works best for you! Continue living your awesome lifestyle and lording over the rest of us, you lucky human!</p>
+			</div>
+	</div>
+</>
+	);
+}
 
+/* function for retaking quiz */
+function refreshPage(){
+    window.location.reload(false);
+  };
+
+	  return(
+			<>
+			<h1 className={styles.quizHead}> Get the answers to all your questions. Period. </h1>
     <div className={styles.quiz}>
 
-		{isTrue ? (
-			<h1>{element}</h1>
-		):
+			{showScore ? (
 
-			showScore ? (
-					<div className={styles.scoresection}>
+				<div className={styles.scoresection}>
 
 					<img className={styles.allSet} alt="All Set!" src="/Checklist.svg" height="200px" width="200px" padding="10px"></img>
 					<h1 className={styles.endCardHead}>ALL SET !</h1>
 					<div className={styles.endCardText}>
-
 					Your response is noted!<br/>
-					Here are the curated remedies specially tailored to fit your needs....</div>
-
-					<Link href='/analysis'>
-
-					<button className={styles.endCardButton2}>RETAKE THE QUIZ</button>
-					</Link>
-					<Header  className={styles.endCardButton1} />
+					Here are the curated remedies specially tailored to fit your needs....
 					</div>
+					<Header  className={styles.endCardButton1} />
+					<button onClick={refreshPage} className={styles.endCardButton2}><p className={styles.retake}>RETAKE THE QUIZ </p></button>
+				</div>
 
 					) : (
 
@@ -159,7 +177,7 @@ const element = <h1>Hello, world</h1>;
 						{questions[currentQuestion].answerOptions.map((answerOption, key) => (
 							<div key={key}>
 
-								<button className={styles.button } onClick={() => handleAnswerOptionClick(answerOption.is5Correct)}>{answerOption.answerText}</button>
+								<button className={styles.button } onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
 							</div>
 						))}
 					</div>
@@ -167,7 +185,8 @@ const element = <h1>Hello, world</h1>;
 			)}
 
 		</div>
-
+</>
     );
 }
+
 export default Analysis;

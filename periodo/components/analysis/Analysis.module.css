@@ -1,31 +1,26 @@
 
-
-
-
-
+.quizHead{
+  color: #CF6F80/*#D84242*/;
+  position: absolute;
+  left: 25%;
+}
 
 .quiz {
   position: absolute;
-  bottom: 20%;
+  bottom: 12%;
   left: 30%;
   justify-content: center;
   align-items: center;
 
   background-color: #252d4a;
-  width: 36%;
-  min-width: 250px;
-  max-width: 450px;
+  width: 480px;
   margin: auto;
 
-  height: 60vh;
+  height: 400px;
   border-radius: 15px;
   margin-top: 250px;
   padding: 20px;
-  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
-  justify-content: space-evenly;
-
-
-
+  box-shadow: 10px 10px 42px 0 rgba(0, 0, 0, 0.75);
 }
 
 
@@ -59,7 +54,6 @@
 .button {
   width: 100%;
   font-size: 16px;
-  justify-content: space-evenly;
   background-color: #252d4a;
   border-radius:15px;
   display: flex;
@@ -74,17 +68,15 @@
 }
 .resultCard{
   color: white;
-  /*background-image: url("../../public/Questions.svg");*/
   position: absolute;
-  bottom: 40%;
-  left: 100%;
+  bottom: 35%;
+  left: 105%;
   justify-content: center;
   align-items: center;
   background-color: #D84242;
-  min-width: 250px;
+  width: 250px;
   margin: auto;
-  height: 40vh;
-  width: 10vw;
+  height: 260px;
   border-radius: 15px;
   margin-top: 250px;
   padding: 20px;
@@ -93,22 +85,82 @@
 }
 .resultCard2{
   color: white;
-  /*background-image: url("../../public/Questions.svg");*/
   position: absolute;
-  bottom: 40%;
-  right: 100%;
+  bottom: 35%;
+  right: 105%;
   justify-content: center;
   align-items: center;
-  background-color: #D84242 /*#252d4a*/;
-  min-width: 250px;
+  background-color: #D84242 ;
+  width: 250px;
   margin: auto;
-  height: 40vh;
-  width: 10vw;
+  height: 260px;
   border-radius: 15px;
   margin-top: 250px;
   padding: 20px;
   box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
   justify-content: space-evenly;
+}
+.resultCard3{
+  color: white;
+  position: absolute;
+  top: 8%;
+  right: 120%;
+  justify-content: center;
+  align-items: center;
+  background-color: #D84242;
+  width: 250px;
+  margin: auto;
+  height: 260px;
+  border-radius: 15px;
+  margin-top: 250px;
+  padding: 20px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  justify-content: space-evenly;
+}
+.resultCard4{
+  color: white;
+  position: absolute;
+  top: 8%;
+  left: 120%;
+  justify-content: center;
+  align-items: center;
+  background-color: #D84242;
+  margin: auto;
+  height: 260px;
+  width: 250px;
+  border-radius: 15px;
+  margin-top: 250px;
+  padding: 20px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  justify-content: space-evenly;
+}
+.resultCard5{
+  color: white;
+  position: absolute;
+  bottom: 100px;
+  left: 10%;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: #D84242;
+  margin: auto;
+  height: 330px;
+  width: 350px;
+  border-radius: 15px;
+  margin-top: 250px;
+  padding: 20px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  justify-content: space-evenly;
+}
+.congrats{
+  height: 170px;
+  width: 170px;
+  position: absolute;
+  left: 20%;
+}
+.resultCard5Text{
+  position: absolute;
+  top: 55%;
 }
 .endCardButton1{
   background-color: #B53737;
@@ -123,9 +175,11 @@
 .endCardButton2{
   background-color: #B53737;
   border-color: #B53737;
-  padding: 10px 20px 10px 20px;
+  padding: 0 20px 0 20px;
   border-radius: 10px;
   color: white;
+  width: 170px;
+  height: 40px;
   position: absolute;
   top: 85%;
   left: 55%;
@@ -149,20 +203,18 @@
   top: 16%;
   left: 20%;
 }
+
+.retake{
+  position: absolute;
+  bottom: 0px;
+}
+
 .endCardButton1:hover {
-  /*border:#D84242;
-
-  color: white;*/
-
   cursor: pointer;
   background-color: #D84242;
   border: #D84242;
 }
 .endCardButton2:hover {
-  /*border:#D84242;
-
-  color: white;*/
-
   cursor: pointer;
   background-color: #D84242;
   border: #D84242;
