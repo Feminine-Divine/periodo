@@ -40,15 +40,19 @@ const initialFValues ={
     
              return (
                  <>
+                
             <Navbar></Navbar>
+          
         <Forme>
     <h1><em><strong>Contact the Gynecologist!</strong></em></h1>
     <hr></hr>
+    <div className={style.mydiv}>
         <Grid container>
             <Grid item xs ={6} className={style.grid}>   
            <em><TextField className={style.field}
            style={{
-                backgroundColor: "#fff8e1"
+                backgroundColor: "#fff8e1",
+                border:10
         }}
         InputLabelProps={{
           style:{
@@ -385,6 +389,7 @@ const initialFValues ={
        </div>
        <hr></hr>
        </Grid></Grid>
+    </div>
         </Forme>
       
         </>
