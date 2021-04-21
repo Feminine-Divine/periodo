@@ -1,10 +1,9 @@
 import { Button, Checkbox, Container, FormControl, FormControlLabel, Grid, Icon, InputLabel, makeStyles, Menu, MenuItem, MuiThemeProvider, Paper, Select, TextField, Typography } from '@material-ui/core';
 import React from 'react'
 import Navbar from '../navbar'
-import Tips from '../tips/tips';
 import { Forme, Userform } from './Userform';
 import Link from "next/link"
-
+import style from "./Gynac.module.css"
 
 const initialFValues ={
     fullName:'',
@@ -41,19 +40,23 @@ const initialFValues ={
     
              return (
                  <>
+                
             <Navbar></Navbar>
+          
         <Forme>
     <h1><em><strong>Contact the Gynecologist!</strong></em></h1>
     <hr></hr>
+    <div className={style.mydiv}>
         <Grid container>
-            <Grid item xs ={6}>   
-           <em><TextField
+            <Grid item xs ={6} className={style.grid}>   
+           <em><TextField className={style.field}
            style={{
-                backgroundColor: "#fff8e1"
+                backgroundColor: "#fff8e1",
+                border:10
         }}
         InputLabelProps={{
           style:{
-            fontSize:23,
+            fontSize:"100%",
             color:"#880e4f",
           }
         }}
@@ -67,7 +70,7 @@ const initialFValues ={
                 />
                 </em>
                 
-               <em> <TextField 
+               <em> <TextField className={style.field}
                style={{
                 backgroundColor: "#fff8e1"
             }}
@@ -75,7 +78,7 @@ const initialFValues ={
                 InputLabelProps={{
             
                   style:{
-                    fontSize:23,
+                    fontSize:"100%",
                     color:"#880e4f"
                   }
                 }}
@@ -86,13 +89,13 @@ const initialFValues ={
                   onChange={handleInputChange}
                   />
                   </em>
-                   <em> <TextField
+                   <em> <TextField className={style.field}
                    style={{
                     backgroundColor: "#fff8e1"
                 }}
                   InputLabelProps={{
                     style:{
-                      fontSize:23,
+                      fontSize:"100%",
                       color:"#880e4f "
                     }
                   }}
@@ -103,13 +106,13 @@ const initialFValues ={
                   onChange={handleInputChange}
                   />
                   </em>
-                 <em><TextField
+                 <em><TextField className={style.field}
                  style={{
                   backgroundColor: "#fff8e1"
               }}
                 InputLabelProps={{
                   style:{
-                    fontSize:23,
+                    fontSize:"100%",
                     color:"#880e4f "
                   }
                 }}
@@ -120,14 +123,14 @@ const initialFValues ={
                   onChange={handleInputChange}
                   />
                   </em>
-                 <em> <TextField
+                 <em> <TextField className={style.field}
                  style={{
                   backgroundColor: "#fff8e1"
               }}
                 
                   InputLabelProps={{
                     style:{
-                      fontSize:23,
+                      fontSize:"100%",
                       color:"#880e4f"
                     }
                   }}
@@ -139,14 +142,14 @@ const initialFValues ={
                   />
                   </em>
                  
-                 <em><TextField
+                 <em><TextField className={style.field}
                  style={{
                   backgroundColor: "#fff8e1"                  
               }}
                  
                 InputLabelProps={{
                   style:{
-                    fontSize:23,
+                    fontSize:"100%",
                     color:"#880e4f"
                   }
                 }}
@@ -158,42 +161,37 @@ const initialFValues ={
                   />
                   </em>
 
-                  <Grid item xs={6}>
-
-       <Link href="/homepage">
-         <em> <strong><a>Return Home</a>
-         </strong></em>
-        </Link >
-        </Grid>
+              
                   </Grid>
-                  <Grid item xs={6}>
-                  <em><TextField
+                  <Grid item xs={6} className={style.grid}>
+                  <em><TextField className={style.field}
                   style={{
                     backgroundColor: "#fff8e1"
                 }}
                 
                 InputLabelProps={{ 
                  style:{
-                   fontSize:23,
-                   color:"#880e4f"
+                  fontSize:"100%",
+                   color:"#880e4f",
+                   padding:"0 5px"
                  }
                }}
                  variant="outlined"
-                 label="Number of Days Menstrual Cycle is Late"
+                 label="No. of Days your Cycle is Late"
                  name="lateCycle"
                  value={values.lateCycle}
                  onChange={handleInputChange}
                  />
                  </em>
           
-                  <em> <TextField
+                  <em> <TextField className={style.field}
                   style={{
                     backgroundColor: "#fff8e1 "
                 }}
       
       InputLabelProps={{
         style:{
-          fontSize:23,
+          fontSize:"100%",
           color:"#880e4f"
         }
       }}
@@ -205,13 +203,13 @@ const initialFValues ={
                 /> 
                 </em>
                 <form noValidate>
- <em> <TextField
+ <em> <TextField className={style.field}
  style={{
   backgroundColor: "white"
 }}
   InputLabelProps={{
     style:{
-    fontSize:23,
+    fontSize:"100%",
           color:"#880e4f"
     }
   }}
@@ -219,13 +217,13 @@ const initialFValues ={
     label="Date of Latest Cycle"
     type="date"
     defaultValue="2017-05-24"
-    style={{ width: 400}}
+    
     
   />
   </em>
 </form>
 
-                
+<div className={style.grid}>              
 <FormControlLabel
 
   control={
@@ -293,9 +291,12 @@ const initialFValues ={
   }
   label="None"
   /> 
-      <h4><em>Choose:</em></h4>
+  </div>
+  <div className={style.grid} style={{display:"flex",position:"relative"}}>
+      <h4 margin="10px"><em>Choose:</em></h4>
 
   <Button
+        style={{margin:"10px",position:"absolute",right:"0"}}
         aria-controls="customized-menu"
         aria-haspopup="true"
         variant="contained"
@@ -305,6 +306,8 @@ const initialFValues ={
         <em>General Menstrual Cycle Duration 
         </em>
       </Button>
+
+  </div>    
 
 <Menu
   id="simple-menu"
@@ -331,9 +334,10 @@ const initialFValues ={
 </Menu>
 
                
-  
-<h4><em>Choose:</em></h4>
+<div className={style.grid} style={{display:"flex",position:"relative"}}> 
+<h4 margin="10px"><em>Choose:</em></h4>
 <Button
+ style={{margin:"10px",position:"absolute",right:"0"}}
         aria-controls="customized-menu"
         aria-haspopup="true"
         variant="contained"
@@ -343,6 +347,7 @@ const initialFValues ={
       <em>Latest Menstrual Cycle 
         Duration </em>
       </Button>
+   </div>   
 <Menu
   id="simple-menu"
   anchorEl={anchorEl}
@@ -369,17 +374,22 @@ const initialFValues ={
 </Menu>
      
 
-                  <Grid item xs={6}>
 
-        <Button variant="contained" color="secondary" >
+<div className={style.grid} style={{display:"flex",position:"relative"}}>
+        <Button style={{
+  margin:"10px 0"
+}} variant="contained" color="secondary" >
   Send
 </Button>
-      <Button variant="contained" >
+      <Button 
+      style={{margin:"10px",position:"absolute",right:"0"}}
+ variant="contained" >
         Cancel
        </Button>
+       </div>
        <hr></hr>
        </Grid></Grid>
-            </Grid>
+    </div>
         </Forme>
       
         </>
