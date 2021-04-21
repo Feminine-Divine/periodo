@@ -122,5 +122,11 @@
 	width: 120%;
 }
 
+/* responsive css */
 
+@media (max-width:400px) {
+    .title{
+        font-size: 3em;
+    }
+}
 
