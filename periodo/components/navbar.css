@@ -80,13 +80,18 @@ color: rgb(255, 211, 232);
     background-color: black;
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    align-items: center;
   }
   
   .nav-options {
     list-style-type: none;
     display: flex;
   }
+
+  .nav-options-right {
+    margin-left: auto;
+  }
+
   .mobile-option {
     display: none;
   }
