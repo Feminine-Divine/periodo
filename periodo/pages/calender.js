@@ -1,14 +1,14 @@
 import React from "react";
-import Home from "../components/calender/calender"
-import Navbar from "../components/navbar"
+import Home from "../components/calender/calender";
+import Navbar from "../components/navbar";
 
-const calender = ()=>{
-    return (
-        <>
-    <Navbar/>
-    <Home/>
+const calender = () => {
+  return (
+    <>
+      <Navbar />
+      <Home />
     </>
-    )
-}
+  );
+};
 
-export default calender
+export default calender;

@@ -14,21 +14,21 @@ orientation.
 Examples of behavior that contributes to creating a positive environment
 include:
 
-* Using welcoming and inclusive language
-* Being respectful of differing viewpoints and experiences
-* Gracefully accepting constructive criticism
-* Focusing on what is best for the community
-* Showing empathy towards other community members
+- Using welcoming and inclusive language
+- Being respectful of differing viewpoints and experiences
+- Gracefully accepting constructive criticism
+- Focusing on what is best for the community
+- Showing empathy towards other community members
 
 Examples of unacceptable behavior by participants include:
 
-* The use of sexualized language or imagery and unwelcome sexual attention or
-advances
-* Trolling, insulting/derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or electronic
+- The use of sexualized language or imagery and unwelcome sexual attention or
+  advances
+- Trolling, insulting/derogatory comments, and personal or political attacks
+- Public or private harassment
+- Publishing others' private information, such as a physical or electronic
   address, without explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
+- Other conduct which could reasonably be considered inappropriate in a
   professional setting
 
 ## Our Responsibilities:
@@ -62,18 +62,19 @@ obligated to maintain confidentiality with regard to the reporter of an incident
 Further details of specific enforcement policies may be posted separately.
 
 Project contributors who do not follow or enforce the Code of Conduct in good
-faith may face temporary or permanent repercussions as determined by 
+faith may face temporary or permanent repercussions as determined by
 members of the project's leadership.
 
 Actions we may take in such instances include (but are not limited to) the following:
 
-* [Locking conversations](https://help.github.com/articles/locking-conversations/)
-* [Blocking users](https://github.com/blog/2146-organizations-can-now-block-abusive-users)
-* [Reporting users to Github](https://help.github.com/articles/reporting-abuse-or-spam/)
+- [Locking conversations](https://help.github.com/articles/locking-conversations/)
+- [Blocking users](https://github.com/blog/2146-organizations-can-now-block-abusive-users)
+- [Reporting users to Github](https://help.github.com/articles/reporting-abuse-or-spam/)
 
 As an individual user on Github, you also have the option to [block a user from your personal account](https://help.github.com/articles/blocking-a-user-from-your-personal-account/) or to [report a user to Github](https://help.github.com/articles/reporting-abuse-or-spam/) yourself, but the existence of these functions will not be used as a reason for inaction on our part.
 
-## About  Feminine-Divine / periodo 
+## About Feminine-Divine / periodo
+
 - We suggest you to follow this Code of Conduct Strictly !!
 - And Strict actions will be taken if not done so !!
 - If you found anyone disobeying this feel free to reach us at femininedivine591@gmail.com

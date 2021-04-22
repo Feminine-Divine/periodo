@@ -1,10 +1,4 @@
-
-
-
-
-
-
-.quiz { 
+.quiz {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -20,14 +14,10 @@
   padding: 20px;
   box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
   justify-content: space-evenly;
-  
- 
-
 }
 
-
 .questionsection {
-  color:white;
+  color: white;
   width: 100%;
   position: relative;
 }
@@ -44,8 +34,6 @@
   margin-bottom: 12px;
 }
 
-
-
 .answersection {
   width: 100%;
   display: flex;
@@ -58,34 +46,28 @@
   font-size: 16px;
   justify-content: space-evenly;
   background-color: #252d4a;
-  border-radius:15px;
+  border-radius: 15px;
   display: flex;
   padding: 5px;
-  margin:5px;
+  margin: 5px;
   justify-content: flex-start;
   align-items: center;
-  border:solid white;
+  border: solid white;
   cursor: pointer;
-  color:white;
-  outline:none;
+  color: white;
+  outline: none;
 }
 
-
-
-
-
-.button:hover { border:white;
+.button:hover {
+  border: white;
   background-color: grey;
   cursor: pointer;
 }
-.button:active{background-color: yellow;
-border:white;}
-
+.button:active {
+  background-color: yellow;
+  border: white;
+}
 
 .button svg {
-  margin-right: 5px;}
-
-
-
-
-
+  margin-right: 5px;
+}
