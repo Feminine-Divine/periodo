@@ -21,7 +21,7 @@ const Navbar = ({ children }) => {
      </Link>
      <ul className={click ? "nav-options active " : "nav-options "} >
           <li className="option" onClick={closeMobileMenu}>
-          <Link href="/">
+          <Link href="/homepage">
             <a class="Nav-bar Nav-Active">Home <FontAwesomeIcon icon={faHome} /></a>
           </Link>
           </li>
