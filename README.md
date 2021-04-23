@@ -67,15 +67,15 @@ The Project is very beginner-friendly to contribute to as well as has a user-fri
     #or
     npm run dev
     ```
-    Check in which port, the server is running or click the link
+    Check-in which port, the server is running or clicks the link
     ![CLI](https://user-images.githubusercontent.com/43095489/110291642-57773c80-8016-11eb-9f40-5b0698c89efa.png)
 
 ### 2. Using Docker
 
 * Install [Docker](https://docs.docker.com/engine/install/), from the given link.
 
-* Once Docker is installed, use the following two commands to run the app in the root dicrectory:
-  * `docker-compose build` , This command will build the project
+* Once Docker is installed, use the following two commands to run the app in the root directory:
+  * `docker-compose build`, This command will build the project
   * `docker-compose up`, This command will run the container.
   
 * You can open the project on `localhost:3000` on the machine.
@@ -87,7 +87,7 @@ Please read [CONTRIBUTING.md](https://github.com/Feminine-Divine/periodo/blob/ma
 
 
 ## Contact Us ☎️
-Please reachout the admins [Khushi Gautam](https://www.linkedin.com/in/khushi-gautam-7708b4191) and [Shipra Verma](https://www.linkedin.com/in/shipra-verma-76a4611ab) if you face any doubts or have any questions regarding the project.
+Please reach out to the admins [Khushi Gautam](https://www.linkedin.com/in/khushi-gautam-7708b4191) and [Shipra Verma](https://www.linkedin.com/in/shipra-verma-76a4611ab) if you face any doubts or have any questions regarding the project.
 
 ### Chat Channel:- For any queries post here Mentors will guide you here on [Discord](https://discord.com/channels/811724426965811210/815040260105961472) 
 
@@ -101,6 +101,6 @@ Please reachout the admins [Khushi Gautam](https://www.linkedin.com/in/khushi-ga
 5. Try to discuss your features and problems related to the issue or PR directly here on Github.
 
 ## Open Source Programs
-This Project is a part of following program
+This Project is a part of the following program
 
 ![image](https://user-images.githubusercontent.com/66299533/111175145-1fe83180-85ce-11eb-9ab7-ffe81fbec848.png)
