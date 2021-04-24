@@ -38,7 +38,7 @@ export default function Footer() {
                 ><MailIcon style={{fontSize:"30px"}}/></a>
                 <a href="" className={styles.social__icon_link}
                 ><InstagramIcon style={{fontSize:"30px"}}/></a>
-                <a href="" className={styles.social__icon_link}
+                <a href="https://www.linkedin.com/company/feminine-divine/" className={styles.social__icon_link}
                 ><LinkedInIcon style={{fontSize:"30px"}}/></a>
             </div>
             </div>
