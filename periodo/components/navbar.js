@@ -1,8 +1,12 @@
 import React,{useState} from "react"
 import Link from "next/link"
 import { useUser } from '@auth0/nextjs-auth0';
+
+import stickyNavStyle from "./navbar.module.css"
+
 import { faHome, faUser, faHandHoldingMedical, faNotesMedical, faFileMedical, faCalendarAlt, faAward, faStar, faSignOutAlt, faSignInAlt} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 const Navbar = ({ children }) => {
   const { user } = useUser();
@@ -11,7 +15,7 @@ const Navbar = ({ children }) => {
   const closeMobileMenu = () => setClick(false);
   return (
 <React.Fragment>
-
+<div className={stickyNavStyle.mobileNav}>
 <div className="header">
    <div className="logo-nav">
      <Link href="/">
@@ -25,7 +29,7 @@ const Navbar = ({ children }) => {
             <a class="Nav-bar Nav-Active">Home <FontAwesomeIcon icon={faHome} /></a>
           </Link>
           </li>
-          
+
           <li className="option" onClick={closeMobileMenu}>
           <Link href="/about">
           <a class="Nav-bar">AboutUs <FontAwesomeIcon icon={faUser} /></a>
@@ -155,6 +159,7 @@ const Navbar = ({ children }) => {
 
       </Header> */}
       <div>{children}</div>
+      </div>
     </React.Fragment>
   );
 };

@@ -34,6 +34,7 @@ export default function Footer() {
             </div>
             <p className={styles.website__rights}>© FEMININE-DIVINE 2021. All rights reserved.</p>
             <div className={styles.social__icons}>
+
                 <a href="mailto:femininedivine591@gmail.com" className={styles.social__icon_link}
                 ><MailIcon style={{fontSize:"30px"}}/></a>
                 <a href="" className={styles.social__icon_link}
