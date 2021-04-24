@@ -5,6 +5,9 @@
   padding: 20px;
   color: aliceblue;
   display: block;
+  width: 100vw;
+  margin-right: 0;
+  padding-right: 0;
 }
 .one {
   float: left;
@@ -47,10 +50,10 @@
   background: "#960435";
 }
 
-.contactCard {
+ .contactCard {
   background-color: "#960435";
   color: "white";
-}
+} 
 
 .contactText {
   width: "100%";
@@ -75,6 +78,9 @@
 @media (max-width: 480px) {
   .contactus {
     margin: 1% -19%;
-    margin-right: -53px;
+    margin-right: 0;
+  }
+  .footer{
+    margin-top: 12em;
   }
 }
