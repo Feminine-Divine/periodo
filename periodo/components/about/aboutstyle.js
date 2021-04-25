@@ -7,7 +7,6 @@ const card=({props})=>{
             return (
               <>
               <div className={style.card}>
-                
                 <div className={style.h2}>
                           <h1 >{prop.aboutNumber}</h1>
                       </div>
@@ -15,8 +14,6 @@ const card=({props})=>{
                       <div className={style.content}>
                         <p className={style.p}>{prop.aboutContent} </p>
                       </div>
-              
-                      
               </div>
             </>
 
@@ -36,7 +33,7 @@ const card=({props})=>{
             <div className={style.body}>
 
               <div className={style.container}>
-             
+
                   {propsList}
               </div>
             </div>

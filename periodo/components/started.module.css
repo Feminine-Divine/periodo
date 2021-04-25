@@ -18,7 +18,7 @@
     text-align: center;
     flex-direction: row;
     justify-content: center;
-    margin-top: 20%;
+    margin-top: 5%;
 
 }
 .heading {
@@ -186,6 +186,7 @@
     
 }
 
+
 @keyframes anim-1 {
 	0%, 8.3% { left: -100%; opacity: 0; }
   8.3%,25% { left: 25%; opacity: 1; }
@@ -205,4 +206,9 @@
 }
 
 
+@media (max-width:400px) {
+    .title{
+        font-size: 3em;
+    }
+}
 
