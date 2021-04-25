@@ -78,7 +78,7 @@ class SimpleForm extends Component {
                 } else if (value > 120) {
                   return `${value}? Come on!`;
                 }
-  
+
                 return true;
               },
             },
@@ -184,5 +184,5 @@ class SimpleForm extends Component {
       );
     }
   }
-  
+
   export default SimpleForm;

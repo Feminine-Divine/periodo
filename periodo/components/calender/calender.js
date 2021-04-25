@@ -41,8 +41,8 @@ export default class Example extends React.Component {
     const { from, to } = this.state;
     const modifiers = { start: from, end: to };
     return (
-      <div className={style.RangeExample}>
-      <Container maxWidth="md" className={style.container}>
+      <div className={style.RangeExample} className={style.container}>
+      <Container maxWidth="md">
         <p>
           {!from && !to && 'Please select the first flow day.'}
           {from && !to && 'Please select the expected end day.'}

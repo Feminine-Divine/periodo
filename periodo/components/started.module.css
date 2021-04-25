@@ -186,6 +186,7 @@
     
 }
 
+
 @keyframes anim-1 {
 	0%, 8.3% { left: -100%; opacity: 0; }
   8.3%,25% { left: 25%; opacity: 1; }
@@ -204,4 +205,10 @@
   100% { left: 110%; opacity: 0; }
 }
 
+
+@media (max-width:400px) {
+    .title{
+        font-size: 3em;
+    }
+}
 
