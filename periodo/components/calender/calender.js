@@ -51,9 +51,10 @@ export default class Example extends React.Component {
             `Selected from ${from.toLocaleDateString()} to
                 ${to.toLocaleDateString()}`}{' '}
           {from && to && (
-            <button className={style.link} onClick={this.handleResetClick}>
+            [<button className={style.link} onClick={this.handleResetClick}>
               Reset
-            </button>
+            </button>,
+            <DialogNextButton />]
           )}
         </p>
         <DayPicker
@@ -63,7 +64,6 @@ export default class Example extends React.Component {
           modifiers={modifiers}
           onDayClick={this.handleDayClick}
         />
-        <DialogNextButton />
         </Container>
         <Helmet>
           <style>{`
