@@ -8,6 +8,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
   background-image: url('../public/woman_with_chart.svg'),url('../public/woman_v_sign.svg');
+  
   background-size: 60vw 60vh, 45vw 46vh;
   background-repeat: no-repeat, no-repeat;
   background-position: 107% 99%, 0% 100%;
@@ -34,7 +35,9 @@ a {
 .bot {
   bottom: 0;
   right : 0;
+  position: fixed; 
    position: fixed; 
+  position: fixed; 
   margin-left: 90%;
   margin-top: 14%;
 
@@ -65,12 +68,14 @@ background-image: linear-gradient(315deg, #fc5296 0%, #f67062 74%);
 }
 
 
-@media only screen and (max-width: 372px) {
+@media  (max-width: 400px) {
   html {
-    width: 150vw;
+    width: 100vw;
     height: 100vh;
     border-bottom: none;
+    overflow-x: hidden;
   }
+
 }
 
 

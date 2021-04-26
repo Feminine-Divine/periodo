@@ -6,6 +6,7 @@ import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import Slide from "@material-ui/core/Slide";
+import style from "../calender/calender.module.css"
 
 import Link from "next/link";
 
@@ -26,9 +27,9 @@ export default function DialogNextButton() {
 
   return (
     <>
-      <Button variant="contained" onClick={handleClickOpen}>
+      <button className={style.nextbtn} variant="contained" onClick={handleClickOpen}>
         Next
-      </Button>
+      </button>
       <Dialog
         open={open}
         TransitionComponent={Transition}
@@ -46,13 +47,13 @@ export default function DialogNextButton() {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose} variant="outlined">
+          <button className={style.Disagreebtn} onClick={handleClose} variant="outlined">
             Disagree
-          </Button>
+          </button>
           <Link href="/flow">
-            <Button variant="contained" color="secondary">
+            <button className={style.Agreebtn} variant="contained" color="secondary">
               Agree
-            </Button>
+            </button>
           </Link>
         </DialogActions>
       </Dialog>

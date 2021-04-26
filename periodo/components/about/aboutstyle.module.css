@@ -6,11 +6,11 @@
 }
 
 .heading{
-  position: absolute;
   font-size: 50px;
   color: white;
   width: 100%;
   padding-top: 30px;
+  margin-top:0px;
   top: 0px;
   display:flex;
   justify-content: center;
@@ -28,7 +28,6 @@
 }
 .subline{
   display: flex;
-  margin-top: -18px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 10px;
@@ -63,7 +62,7 @@
 
 .med{
   position: absolute;
-  top:55%;
+  top: 55%;
   left: 60%;
   z-index: 2;
 }
@@ -103,11 +102,27 @@
   height: 330px;
   background: #C26E7A;
   margin: 20px;
+  perspective: 300px;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 15px 25px black;
+  box-shadow: 0 15px 25px rgb(19, 4, 4);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+
+ /* &:after {
+    position: absolute;
+    z-index: 0;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    display: block;
+    content: '';
+    background: transparent;
+    box-shadow: 4px 4px 80px rgba(0,0,0,.4);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}*/
 }
 
 .h2{
@@ -127,10 +142,17 @@
 }
 .p{
   color: black;
-  font-weight: bolder;
+  font-weight: normal;
   bottom: 0;
 }
 
+.card:hover{
+  transform: scale(1.1);
+  background: #db4158;
+  box-shadow: 0 15px 25px rgb(0, 0, 0);
+  border: 3px solid;
+  border-color: rgb(235, 186, 197);
+}
 /*
 .a{
     position: relative;

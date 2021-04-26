@@ -8,6 +8,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
+        <title>Periodo App</title>
         <Head />
         <body>
           <Main />
