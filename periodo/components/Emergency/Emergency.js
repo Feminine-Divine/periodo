@@ -11,15 +11,15 @@ const App = (props) => {
       <>     
       <div className = "emergency">
         <div style ={{display: showMenu ? "" : "none"}}>
-            <a href="https://www.google.com/maps/search/public+toilet+near+me/" target="_blank">
+            <p><a href="https://www.google.com/maps/search/public+toilet+near+me/" target="_blank">
               <button className = {styles.btn} onClick={() => hideMenu()}>Public</button >
-            </a>
-            <a href="https://www.google.com/maps/search/restaurants+near+me/" target="_blank">
+            </a></p>
+            <p><a href="https://www.google.com/maps/search/restaurants+near+me/" target="_blank">
               <button className = {styles.btn} onClick={() => hideMenu()}>Restaurant</button>
-            </a>
-            <a href="https://www.google.com/maps/search/hospitals+near+me/" target="_blank">
+            </a></p>
+            <p><a href="https://www.google.com/maps/search/hospitals+near+me/" target="_blank">
               <button className = {styles.btn} onClick={() => hideMenu()}>Hospital</button>
-            </a>
+            </a></p>
         </div>      
         {!showMenu 
             ?  <button className = {styles.btn} onClick={() => startMenu()}>Restrooms</button> 
