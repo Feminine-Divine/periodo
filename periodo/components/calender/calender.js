@@ -41,8 +41,8 @@ export default class Example extends React.Component {
     const { from, to } = this.state;
     const modifiers = { start: from, end: to };
     return (
-      <div className={style.RangeExample}>
-      <Container maxWidth="md" className={style.container}>
+      <div className={style.RangeExample} className={style.container}>
+      <Container maxWidth="md">
         <p>
           {!from && !to && 'Please select the first flow day.'}
           {from && !to && 'Please select the expected end day.'}
@@ -51,9 +51,10 @@ export default class Example extends React.Component {
             `Selected from ${from.toLocaleDateString()} to
                 ${to.toLocaleDateString()}`}{' '}
           {from && to && (
-            <button className={style.link} onClick={this.handleResetClick}>
+            [<button className={style.link} onClick={this.handleResetClick}>
               Reset
-            </button>
+            </button>,
+            <DialogNextButton />]
           )}
         </p>
         <DayPicker
@@ -63,7 +64,6 @@ export default class Example extends React.Component {
           modifiers={modifiers}
           onDayClick={this.handleDayClick}
         />
-        <DialogNextButton />
         </Container>
         <Helmet>
           <style>{`
