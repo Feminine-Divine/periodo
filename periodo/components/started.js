@@ -31,7 +31,7 @@ const Start = () => {
 
     return (
         <>
-            <div>
+            <div className={styles.container}>
                 <h1 className={styles.title}>Hii Girls, wanna track your periods!!</h1>
                 <h4 className={styles.heading}>Period Cycle: 28 days</h4>
                 <h4 className={styles.heading}>Next Period Date: {getnextDate('-')}</h4>
