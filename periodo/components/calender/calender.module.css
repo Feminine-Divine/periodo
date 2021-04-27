@@ -18,7 +18,7 @@
     color: white;
     padding: 20px;
     border-radius: 25px;
-
+    cursor: pointer;
 }
 .RangeExample{
    margin-right: 400px;
@@ -30,7 +30,8 @@
     color: white;
     padding: 20px;
     border-radius: 25px;
-    margin-left: 250px;
+    margin: 0 20px;
+    cursor: pointer;
 }
 .container{
     font-family:Special Elite;
