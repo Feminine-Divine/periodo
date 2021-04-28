@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useRouter } from 'next/router'
 import styles from "./Footer.module.css";
 import ContactUs from "./ContactUs";
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -8,12 +9,19 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import { Col } from "reactstrap";
 
 export default function Footer() {
+  const router = useRouter();
+  const [isHome, setIsHome] = useState(false);
+
+  useEffect(() => setIsHome(router.pathname === '/homepage'||router.pathname === '/'), [router.pathname]);
+  console.log(isHome);
   return (
     <React.Fragment>
-      <div style={{ background: "#131313", paddingTop: "100px", marginTop: "350px" }}>
-        <Col className={styles.contactus} style={{ color: "#131313" }} lg="12">
+      <div className={`${styles.footer__wrapper} ${isHome&&styles.footer__pagedep}`}>
+        {
+          isHome&&<Col className={styles.contactus} style={{ color: "#131313" }} lg="12">
           <ContactUs />
         </Col>
+        }
         <div className={styles.footer__container}>
           <div className={styles.footer__links}>
             <div>

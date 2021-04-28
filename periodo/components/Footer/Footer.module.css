@@ -227,6 +227,15 @@
   margin-left: 53px;
 }
 
+.footer__wrapper{
+  background: #131313;
+}
+
+.footer__wrapper.footer__pagedep{
+  padding-top: 100px;
+  margin-top: 350px;
+}
+
 @media screen and (max-width: 820px) {
   .footer__links {
     padding-top: 2rem;

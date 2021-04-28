@@ -146,7 +146,7 @@ function refreshPage(){
   };
 
 	  return(
-			<>
+			<div className={styles.quizWrapper}>
 			<h1 className={styles.quizHead}> Get the answers to all your questions. Period. </h1>
     <div className={styles.quiz}>
 
@@ -185,7 +185,7 @@ function refreshPage(){
 			)}
 
 		</div>
-</>
+</div>
     );
 }
 
