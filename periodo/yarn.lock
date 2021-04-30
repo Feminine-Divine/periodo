@@ -186,16 +186,16 @@
     "@babel/types" "^7.12.13"
 
 "@babel/traverse@^7.4.5":
-  "version" "7.13.13"
-  "resolved" "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.13.13.tgz#39aa9c21aab69f74d948a486dd28a2dbdbf5114d"
-  "integrity" "sha512-CblEcwmXKR6eP43oQGG++0QMTtCjAsa3frUuzHoiIJWpaIIi8dwMyEFUJoXRLxagGqCK+jALRwIO+o3R9p/uUg=="
+  "integrity" "sha512-xys5xi5JEhzC3RzEmSGrs/b3pJW/o87SypZ+G/PhaE7uqVQNv/jlmVIBXuoh5atqQ434LfXV+sf23Oxj0bchJQ=="
+  "resolved" "https://registry.npmjs.org/@babel/traverse/-/traverse-7.13.0.tgz"
+  "version" "7.13.0"
   dependencies:
     "@babel/code-frame" "^7.12.13"
     "@babel/generator" "^7.13.0"
     "@babel/helper-function-name" "^7.12.13"
     "@babel/helper-split-export-declaration" "^7.12.13"
-    "@babel/parser" "^7.13.13"
-    "@babel/types" "^7.13.13"
+    "@babel/parser" "^7.13.0"
+    "@babel/types" "^7.13.0"
     "debug" "^4.1.0"
     "globals" "^11.1.0"
     "lodash" "^4.17.19"
