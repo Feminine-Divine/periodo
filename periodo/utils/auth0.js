@@ -1,4 +1,4 @@
-import { initAuth0 } from '@auth0/nextjs-auth0';
+import { initAuth0 } from "@auth0/nextjs-auth0";
 
 /*
 
@@ -29,9 +29,9 @@ export default initAuth0({
 */
 
 export default initAuth0({
-    secret: 'akldhwcfnasjdbkbfeabnjkvdbavbdjbskeubvjdkudnvdkjuhd',
-    issuerBaseURL: 'https://dev-jepc3b7g.us.auth0.com',
-    baseURL: 'http://localhost:3000',
-    clientID: process.env.AUTH0_CLIENT_ID,
-    clientSecret: process.env.AUTH0_SECRET
-  });
+  secret: "akldhwcfnasjdbkbfeabnjkvdbavbdjbskeubvjdkudnvdkjuhd",
+  issuerBaseURL: "https://dev-jepc3b7g.us.auth0.com",
+  baseURL: "http://localhost:3000",
+  clientID: process.env.AUTH0_CLIENT_ID,
+  clientSecret: process.env.AUTH0_SECRET,
+});

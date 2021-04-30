@@ -1,0 +1,11 @@
+.*md
+.github
+package*.json
+.all-contributorsrc
+CONTRIBUTING.md
+CODE-OF-CONDUCT.md
+*.yml
+*.yaml
+.github
+assets
+README.md

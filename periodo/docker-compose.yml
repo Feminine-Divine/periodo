@@ -5,9 +5,9 @@ services:
     build: ./
     ports:
       - "3000:3000"
-      - "35729:35729" 
-    environment: 
+      - "35729:35729"
+    environment:
       - CHOKIDAR_USEPOLLING=true
-    volumes: 
+    volumes:
       - ./:/usr/src/app
       - /usr/src/app/node_modules
