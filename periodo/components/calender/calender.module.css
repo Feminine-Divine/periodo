@@ -87,6 +87,10 @@
     box-shadow: inset 0 0 0 50px #D80286;
     color: black; 
   }
+
+.calendarContainer{
+  min-height: 90vh;
+}
   
   @media (max-width:400px) {
     .container{
