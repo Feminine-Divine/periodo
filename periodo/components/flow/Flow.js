@@ -17,7 +17,7 @@ export default class App extends React.Component {
   size = "18px";
   render() {
     return (
-      <>
+      <div className={style.container}>
         <div className={style.container1}>
           <p className={style.heading}>Blood Flow:</p>
           <div className={style.stars}>
@@ -106,7 +106,7 @@ export default class App extends React.Component {
           />
           </div>
         </div>
-      </>
+      </div>
     );
   }
 }
