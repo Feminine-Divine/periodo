@@ -17,7 +17,12 @@ export default function ContactUs() {
      
         // NOTE: make sure to make your own setup and also make .env configurations!
 
-    emailjs.sendForm(process.env.CONTACT_FORM_SERVICE_ID, process.env.CONTACT_FORM_TEMPLATE_ID, e.target, process.env.CONTACT_FORM_USER_IDCONTACT_FORM)
+    emailjs.sendForm(
+        process.env.NEXT_PUBLIC_CONTACT_FORM_SERVICE_ID, 
+        process.env.NEXT_PUBLIC_CONTACT_FORM_TEMPLATE_ID, 
+        e.target,
+        process.env.NEXT_PUBLIC_CONTACT_FORM_USER_ID
+        )
         .then((result) => {
             console.log(result.text);
         }, (error) => {
