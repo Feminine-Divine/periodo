@@ -4,6 +4,7 @@ import Home from "../components/calender/calender.js"
 import Start from "../components/started.js"
 import Footer from "../components/Footer/Footer.js"
 import ChatBot from "../components/ChatBot/ChatBot"
+import Emergency from "../components/Emergency/Emergency"
 
 const Homepage =()=> {
   return (
@@ -12,6 +13,7 @@ const Homepage =()=> {
       <Start/>
       <Footer/>
       <ChatBot />
+      <Emergency />
       </>
   );
 }

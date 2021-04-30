@@ -35,10 +35,20 @@ a {
 .bot {
   bottom: 0;
   right : 0;
+  position: fixed; 
    position: fixed; 
+  position: fixed; 
   margin-left: 90%;
   margin-top: 14%;
 
+}
+
+.emergency {
+  bottom: 0;
+  left : 0;
+  position: fixed; 
+  margin-left: 0%;
+  margin-top: 14%;
 }
 
 ::-webkit-scrollbar {
@@ -58,12 +68,14 @@ background-image: linear-gradient(315deg, #fc5296 0%, #f67062 74%);
 }
 
 
-@media only screen and (max-width: 372px) {
+@media  (max-width: 400px) {
   html {
-    width: 150vw;
+    width: 100vw;
     height: 100vh;
     border-bottom: none;
+    overflow-x: hidden;
   }
+
 }
 
 

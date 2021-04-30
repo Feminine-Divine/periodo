@@ -6,8 +6,8 @@
     </p>
 
 ## About 📚
-Periodo - The Tracker focuses on young girls who are going to experience their first periods and the women who face problems tracking their period dates and remembering their dates be it for avoiding embarrassing moments or to monitor your period for lifestyle disorders(PCOS, PCOD, etc.). Our application Periodo can help these girls and women by keeping a track of their periods and notifying them of their upcoming dates along with keeping track of the level of flow of their periods also helping them with their correct diet in their period days. We have planned to add more features to the application as it grows with the help of contributors.
-The Project is very beginner-friendly to contribute to as well as has a user-friendly interface which can help in attracting a young audience.
+Periodo - The Tracker is designed for teenage girls about to start their periods and women who have trouble recalling their period dates, whether it's to prevent embarrassing situations or to check the period for lifestyle disorders (PCOS, PCOD, etc.).
+By keeping track of their cycles and notifying them, our app Periodo will assist these girls and women. Periodo will assist these girls and women by keeping track of their periods and notifying them of upcoming dates, as well as keeping track of the amount of discharge of their periods and assisting them with proper diet during their periods.We want to expand the application's functionality as it expands with the assistance of contributors. The project is really beginner-friendly to contribute to, and it has a user-friendly interface that may appeal to a younger audience. 
 
 
 ![image](https://user-images.githubusercontent.com/61618767/112602083-41041a00-8e39-11eb-9c6b-50cb15535f3c.png)

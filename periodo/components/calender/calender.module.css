@@ -18,7 +18,7 @@
     color: white;
     padding: 20px;
     border-radius: 25px;
-
+    cursor: pointer;
 }
 .RangeExample{
    margin-right: 400px;
@@ -30,7 +30,8 @@
     color: white;
     padding: 20px;
     border-radius: 25px;
-    margin-left: 250px;
+    margin: 0 20px;
+    cursor: pointer;
 }
 .container{
     font-family:Special Elite;
@@ -38,7 +39,8 @@
     border-radius: 30px;
     padding: 30px;
     opacity: 0.9;
-   
+    margin:0 auto;
+    width:50%;
      
 }
 .Agreebtn{
@@ -85,4 +87,14 @@
     box-shadow: inset 0 0 0 50px #D80286;
     color: black; 
   }
+
+.calendarContainer{
+  min-height: 90vh;
+}
   
+  @media (max-width:400px) {
+    .container{
+      width: 85%;
+      padding:2rem 0;
+    }
+  }
