@@ -1,91 +1,108 @@
 .container1 {
   display: flex;
-  float: left;
-  background-color: rgb(61, 3, 66);
+  justify-content: center;
+  background-color: #691792;
   border: 2px;
-  width: fit-content;
+  width: 290px;
   padding: 10px;
   border-radius: 1em;
-  margin: 4em;
+  margin: 3em;
 }
 
 .container2 {
   display: flex;
-  float: left;
-  background-color: rgb(61, 3, 66);
+  justify-content: center;
+  background-color: #691792;
   border: 2px;
-  width: fit-content;
+  width: 290px;
   padding: 10px;
   border-radius: 1em;
-  margin: 4em;
+  margin: 3em;
 }
 .container3 {
   display: flex;
-  float: left;
-  background-color: rgb(61, 3, 66);
+  justify-content: center;
+  background-color: #691792;
   border: 2px;
-  width: fit-content;
+  width: 290px;
   padding: 10px;
   border-radius: 1em;
-  margin: 4em;
+  margin: 3em;
 }
 .container4 {
   display: flex;
-  float: left;
-  background-color: rgb(61, 3, 66);
+  justify-content: center;
+  background-color: #691792;
   border: 2px;
-  width: fit-content;
+  width: 290px;
   padding: 10px;
   border-radius: 1em;
-  margin: 4em;
+  margin: 3em;
 }
 .container5 {
   display: flex;
-  float: left;
-  background-color: rgb(61, 3, 66);
+  justify-content: center;
+  background-color: #691792;
   border: 2px;
-  width: fit-content;
-  padding: 10px;
+  width: 290px;
+  padding: 13px;
   border-radius: 1em;
-  margin: 4em;
+  margin: 3em;
 }
 .container6 {
   display: flex;
-  float: left;
-  background-color: rgb(61, 3, 66);
+  justify-content: center;
+  background-color: #691792;
   border: 2px;
-  width: fit-content;
+  width: 290px;
   padding: 10px;
   border-radius: 1em;
-  margin: 4em;
+  margin: 3em;
 }
 .container7 {
   display: flex;
-  float: left;
-  background-color: rgb(61, 3, 66);
+  justify-content: center;
+  background-color: #691792;
   border: 2px;
-  width: fit-content;
+  width: 290px;
   padding: 10px;
   border-radius: 1em;
-  margin: 4em;
+  margin: 3em;
 }
 .container8 {
   display: flex;
-  float: left;
-  background-color: rgb(61, 3, 66);
+  justify-content: center;
+  background-color: #691792;
   border: 2px;
-  width: fit-content;
+  width: 290px;
   padding: 10px;
   border-radius: 1em;
-  margin: 4em;
+  margin: 3em;
 }
 
 .heading {
   font-style: oblique;
   color: blanchedalmond;
-} 
+}
 
 .stars {
   padding-top: 18px;
-  padding-left: 8px;
-} 
+  padding-left: 10px;
+}
+
+.stars5 {
+  padding-top: 28px;
+  padding-left: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 740px) {
+  .container {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}

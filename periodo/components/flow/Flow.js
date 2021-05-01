@@ -17,7 +17,8 @@ export default class App extends React.Component {
   size = "18px";
   render() {
     return (
-      <>
+      <div style={{display:"flex", flexDirection:"column", alignItems:"center", width:"100%"}}>
+         <div className={style.container}>  
         <div className={style.container1}>
           <p className={style.heading}>Blood Flow:</p>
           <div className={style.stars}>
@@ -51,23 +52,14 @@ export default class App extends React.Component {
           />
           </div>
         </div>
+        </div>
+        <div className={style.container}>
         <div className={style.container4}>
           <p className={style.heading}>Weakness:</p>
           <div className={style.stars}>
           <BeautyStars
             value={this.state.value4}
             onChange={value => this.setState({ value4: value })}
-            inactiveColor={this.colour}
-            size={this.size}
-          />
-          </div>
-        </div>
-        <div className={style.container5}>
-          <p className={style.heading}>Breast Tenderness:</p>
-          <div className={style.stars}>
-          <BeautyStars
-            value={this.state.value5}
-            onChange={value => this.setState({ value5: value })}
             inactiveColor={this.colour}
             size={this.size}
           />
@@ -95,6 +87,19 @@ export default class App extends React.Component {
           />
           </div>
         </div>
+        </div>
+        <div className={style.container}>
+        <div className={style.container5}>
+          <p className={style.heading}>Breast Tenderness:</p>
+          <div className={style.stars5}>
+          <BeautyStars
+            value={this.state.value5}
+            onChange={value => this.setState({ value5: value })}
+            inactiveColor={this.colour}
+            size={this.size}
+          />
+          </div>
+        </div>
         <div className={style.container8}>
           <p className={style.heading}>HairLoss:</p>
           <div className={style.stars}>
@@ -106,7 +111,8 @@ export default class App extends React.Component {
           />
           </div>
         </div>
-      </>
+        </div>
+      </div>
     );
   }
 }
