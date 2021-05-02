@@ -4,15 +4,16 @@
     left: 0;
 }
 .Nav-bar{
-   width: 90%;
+   width: 30%;
   padding: 0.5rem 1rem;
-    font-size: 20px;
-    font-weight: 700;
-} 
+    font-size: 15px;
+    font-weight: 1000;
+}
 .Nav-bar:hover{
-   border-radius: 2rem;
+   border-radius: 1rem;
     box-shadow: 2px 2px 3px 3px rgb(255, 211, 232),
                  2px 2px 5px 4px rgb(255, 211, 232);
+
 color: rgb(255, 211, 232);
 }
 #nav-btn,.toggle{
@@ -29,7 +30,7 @@ color: rgb(255, 211, 232);
 /***********Responsive********/
 
 @media screen and (max-width:1000px){
-  
+
     .toggle{
         display: block;
         position: absolute;
@@ -73,7 +74,7 @@ color: rgb(255, 211, 232);
     justify-content: space-between;
     align-items: center;
     width: auto;
-    height:auto;
+    height:50px;
   }
   .logo-nav {
     color: white;
@@ -82,7 +83,7 @@ color: rgb(255, 211, 232);
     width: 100%;
     align-items: center;
   }
-  
+
   .nav-options {
     list-style-type: none;
     display: flex;
@@ -95,7 +96,7 @@ color: rgb(255, 211, 232);
   .mobile-option {
     display: none;
   }
-  
+
   .option :hover {
     color: white;
   }
@@ -105,7 +106,7 @@ color: rgb(255, 211, 232);
   }
   @media (max-width: 1000px) {
     /*Mobile View */
- 
+
     .header {
         padding: 0px 10px;
       }
@@ -135,7 +136,7 @@ color: rgb(255, 211, 232);
         align-content: center;
         padding-left: 0px;
       }
-    
+
       .menu-icon {
         width: 45px;
         height: 45px;
@@ -155,4 +156,3 @@ color: rgb(255, 211, 232);
   .mobile-menu {
     display: block;
   }
-  
