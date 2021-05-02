@@ -1,13 +1,13 @@
 import React from "react"
 import Analysis from "../components/analysis/Analysis"
-import Footer from "../components/Footer/Footer"
-import Navbar from "../components/navbar"
+import Layout from "../components/Layout"
+
 const analysis = () => {
 	return (
 		<>
-			<Navbar />
+			<Layout>
 			<Analysis />
-			<Footer />
+			</Layout>
 		</>
 	)
 }

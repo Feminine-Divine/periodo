@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../navbar";
 import Content from "./aboutstyle.js";
 
 
@@ -35,8 +34,6 @@ const about=[
 const About = () => {
     return (
       <div>
-      <Navbar></Navbar>
-
       <Content props={about} />
       </div>
     );

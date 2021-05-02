@@ -1,14 +1,13 @@
 import React from "react";
 import Home from "../components/calender/calender"
-import Footer from "../components/Footer/Footer";
-import Navbar from "../components/navbar"
+import Layout from "../components/Layout";
 
 const calender = () => {
 	return (
 		<>
-			<Navbar />
+			<Layout>
 			<Home />
-			<Footer/>
+			</Layout>
 		</>
 	)
 }

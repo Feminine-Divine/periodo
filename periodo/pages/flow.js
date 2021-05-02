@@ -1,14 +1,14 @@
 import React from "react"
 import Flow from "../components/flow/Flow"
-import Footer from "../components/Footer/Footer"
+import Layout from "../components/Layout"
 import Navbar from "../components/navbar"
 
 const flow=()=>{
     return(
         <>
-            <Navbar/>
+            <Layout>
             <Flow/>
-            <Footer/>
+            </Layout>
         </>
     )
 }

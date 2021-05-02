@@ -1,6 +1,5 @@
 import { Button, Checkbox, Container, FormControl, FormControlLabel, Grid, Icon, InputLabel, makeStyles, Menu, MenuItem, MuiThemeProvider, Paper, Select, TextField, Typography } from '@material-ui/core';
 import React from 'react'
-import Navbar from '../navbar'
 import { Forme, Userform } from './Userform';
 import Link from "next/link"
 import style from "./Gynac.module.css"
@@ -40,9 +39,6 @@ const initialFValues ={
     
              return (
                  <>
-                
-            <Navbar></Navbar>
-          
         <Forme>
     <h1><em><strong>Contact the Gynecologist!</strong></em></h1>
     <hr></hr>
