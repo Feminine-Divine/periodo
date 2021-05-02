@@ -82,3 +82,8 @@
   background: rgb(247, 37, 72);
   text-align: center;
 }
+
+.notesContainer{
+  min-height: 90vh;
+  overflow: scroll;
+}

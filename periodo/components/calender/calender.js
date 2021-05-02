@@ -41,6 +41,7 @@ export default class Example extends React.Component {
     const { from, to } = this.state;
     const modifiers = { start: from, end: to };
     return (
+      <div className={style.calendarContainer}>
       <div className={style.RangeExample} className={style.container}>
       <Container maxWidth="md">
         <p>
@@ -84,6 +85,7 @@ export default class Example extends React.Component {
   }
 `}</style>
         </Helmet>
+      </div>
       </div>
     );
   }

@@ -231,3 +231,7 @@ border:white;}
 
 .button svg {
   margin-right: 5px;}
+
+.quizWrapper{
+  min-height: 90vh;
+}
