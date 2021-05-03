@@ -1,6 +1,8 @@
 import React from "react"
 import BeautyStars from 'beauty-stars';
 import style from "./Flow.module.css"
+import Grid from "@material-ui/core/Grid";
+
 
 export default class App extends React.Component {
   state = { 
@@ -17,7 +19,11 @@ export default class App extends React.Component {
   size = "18px";
   render() {
     return (
+
       <div style={{display:"flex", flexDirection:"column", alignItems:"center", width:"100%"}}>
+
+      <Grid style={{display:"flex", flexDirection:"column", alignItems:"center", paddingTop:"50px"}}>
+
          <div className={style.container}>  
         <div className={style.container1}>
           <p className={style.heading}>Blood Flow:</p>
@@ -88,6 +94,32 @@ export default class App extends React.Component {
           </div>
         </div>
         </div>
+
+        <div className={style.container_medium}>
+        <div className={style.container3_medium}>
+          <p className={style.heading}>Mood:</p>
+          <div className={style.stars}>
+          <BeautyStars
+            value={this.state.value3}
+            onChange={value => this.setState({ value3: value })}
+            inactiveColor={this.colour}
+            size={this.size}
+          />
+          </div>
+        </div>
+        <div className={style.container3_medium}>
+          <p className={style.heading}>Acne:</p>
+          <div className={style.stars}>
+          <BeautyStars
+            value={this.state.value6}
+            onChange={value => this.setState({ value6: value })}
+            inactiveColor={this.colour}
+            size={this.size}
+          />
+          </div>
+        </div>
+        </div>
+
         <div className={style.container}>
         <div className={style.container5}>
           <p className={style.heading}>Breast Tenderness:</p>
@@ -112,7 +144,11 @@ export default class App extends React.Component {
           </div>
         </div>
         </div>
+
       </div>
+
+      </Grid>
+
     );
   }
 }
