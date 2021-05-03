@@ -4,15 +4,15 @@
     left: 0;
 }
 .Nav-bar{
-   width: 30%;
-  padding: 0.5rem 1rem;
+   width: auto;
+  padding: 0.5rem 0.5rem;
     font-size: 15px;
     font-weight: 1000;
 }
 .Nav-bar:hover{
-   border-radius: 1rem;
-    box-shadow: 2px 2px 3px 3px rgb(255, 211, 232),
-                 2px 2px 5px 4px rgb(255, 211, 232);
+   border-radius: 0.5rem;
+    box-shadow: 1px 1px 1px 1px rgb(255, 211, 232),
+                 1px 1px 3px 4px rgb(255, 211, 232);
 
 color: rgb(255, 211, 232);
 }
@@ -39,8 +39,10 @@ color: rgb(255, 211, 232);
     }
     .Nav-bar{
         position: relative;
+        width: auto;
         text-align: center;
         text-transform: capitalize;
+        padding: 0.5rem 1rem;
     }
     .toggel-btn{
         width: 30px;
@@ -73,7 +75,7 @@ color: rgb(255, 211, 232);
     justify-content: space-between;
     align-items: center;
     width: auto;
-    height:50px;
+    height:90px;
   }
   .logo-nav {
     color: white;
@@ -137,8 +139,8 @@ color: rgb(255, 211, 232);
       }
 
       .menu-icon {
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
       }
       .menu-icon:hover{
         color: rgb(255, 211, 232);
