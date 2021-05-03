@@ -45,7 +45,9 @@
   background-color: #691792;
   border: 2px;
   width: 290px;
+
   padding: 10px;
+
   border-radius: 1em;
   margin: 3em;
 }
@@ -79,9 +81,11 @@
   border-radius: 1em;
   margin: 3em;
 }
+
 .container_medium {
   display: none;
 }
+
 
 .heading {
   font-style: oblique;
@@ -102,6 +106,7 @@
   display: flex;
   align-items: center;
 }
+
 
 @media screen and (max-width: 1000px) {
   .container3 {
@@ -132,6 +137,7 @@
     display: flex !important;
     flex-direction: column !important;
   }
+
 
   .container {
     display: flex !important;
