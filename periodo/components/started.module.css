@@ -2,13 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playball&family=Redressed&family=Special+Elite&display=swap');
 
-.background{
+/*.background{
     margin: 50px 0;
     background-image: url('./images/women.jpg');
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
 }
+*/
 
 .title {
     font-family: 'Dancing Script', cursive;
@@ -17,6 +18,7 @@
     text-align: center;
     flex-direction: row;
     justify-content: center;
+    margin-top: 5%;
 
 }
 .heading {
@@ -121,8 +123,88 @@
 	opacity:1;
 	width: 120%;
 }
+.slider {
+    
+    margin-top: 0px;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    animation: slider 15s infinite ;
+    font-size: 70px;
+    color: white;
 
-/* responsive css */
+
+  
+}
+.text{
+    color: white;
+    font-size: 50px;
+}
+  
+  @keyframes slider{
+   0%{
+       
+       content: "wtrtertee1";
+       background-image: url("https://images.unsplash.com/photo-1583782037617-2cd6aa8658f4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" );
+   }
+   50%{
+        content:" we2";
+        background-image: url("https://images.unsplash.com/photo-1563715992566-7ad5cf5b71d3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+   }
+   100%{
+        content: "we3";
+        background-image: url("https://images.unsplash.com/photo-1542302228-57d9d15bf6fd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+   }
+}
+
+.item1, 
+.item2, 
+.item3 {
+	position: absolute;
+    display: block;
+	top: 2em;
+    color: white;
+    width: 60%;
+    font-size: 3em;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+    margin-top: 30%;
+}
+
+.item1{
+	animation-name: anim-1;
+    font-size: 2em;
+}
+
+.item2{
+	animation-name: anim-2;
+}
+
+.item3{
+	animation-name: anim-3;
+    
+}
+
+
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+
 
 @media (max-width:400px) {
     .title{
