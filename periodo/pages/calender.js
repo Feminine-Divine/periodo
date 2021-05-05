@@ -12,4 +12,4 @@ const calender = () => {
 	)
 }
 
-export default calender
+export default calender;

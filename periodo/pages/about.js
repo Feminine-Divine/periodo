@@ -8,9 +8,11 @@ const about = () => {
     <>
       <Layout>
       <About></About>
-      <Head><title>About</title></Head>
+      <Head>
+         <title>About</title>
+      </Head>
       </Layout>
     </>
   );
-}
+};
 export default about;

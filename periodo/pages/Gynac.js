@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import Gynac from "../components/Gynae/Gynac";
+
 const Gynae =()=>{
     return (
         <>
@@ -11,3 +12,4 @@ const Gynae =()=>{
     );
 }
 export default Gynae;
+

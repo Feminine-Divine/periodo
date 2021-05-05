@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 import ChatBot from "../components/ChatBot/ChatBot"
 import Emergency from "../components/Emergency/Emergency"
 
-const Homepage =()=> {
+const Homepage = () => {
   return (
     <>
       <Layout>
@@ -12,8 +12,8 @@ const Homepage =()=> {
       </Layout>
       <ChatBot />
       <Emergency />
-      </>
+    </>
   );
-}
+};
 
 export default Homepage;
