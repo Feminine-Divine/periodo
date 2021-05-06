@@ -1,15 +1,15 @@
-import React from "react";
-import Flow from "../components/flow/Flow";
-import Footer from "../components/Footer/Footer";
-import Navbar from "../components/navbar";
+import React from "react"
+import Flow from "../components/flow/Flow"
+import Layout from "../components/Layout"
+import Navbar from "../components/navbar"
 
-const flow = () => {
-  return (
-    <>
-      <Navbar />
-      <Flow />
-      <Footer />
-    </>
-  );
-};
+const flow=()=>{
+    return(
+        <>
+            <Layout>
+            <Flow/>
+            </Layout>
+        </>
+    )
+}
 export default flow;

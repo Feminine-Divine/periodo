@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../navbar";
 import Content from "./aboutstyle.js";
 
 //import styles from  "../tips/cards.module.css";
@@ -32,12 +31,10 @@ const about = [
 ];
 
 const About = () => {
-  return (
-    <div>
-      <Navbar></Navbar>
-
+    return (
+      <div>
       <Content props={about} />
-    </div>
+      </div>
   );
 };
 export default About;
