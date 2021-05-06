@@ -83,7 +83,7 @@
   text-align: center;
 }
 
-.notesContainer{
+.notesContainer {
   min-height: 90vh;
   overflow: scroll;
 }

@@ -7,7 +7,7 @@ const notes = () => {
     <>
       <Navbar />
       <Notes />
-      <Footer/>
+      <Footer />
     </>
   );
 };
