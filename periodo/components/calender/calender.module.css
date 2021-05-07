@@ -95,3 +95,15 @@
     padding: 2rem 0;
   }
 }
+
+/* Responsive calender */
+
+@media (max-width: 360px) {
+  .nextbtn {
+    padding: 8px;
+  }
+
+  .link {
+    padding: 8px;
+  }
+}
