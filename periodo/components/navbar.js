@@ -24,64 +24,6 @@ const Navbar = ({ children }) => {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
   return (
-
-          <li className="option" onClick={closeMobileMenu}>
-          <Link href="/about">
-          <a class="Nav-bar">AboutUs <FontAwesomeIcon icon={faUser} /></a>
-        </Link>
-          </li>
-        </ul>
-
-
-        <ul className={click ? "nav-options active nav-options-right " : "nav-options nav-options-right "}  >
-
-        <li className="option" onClick={closeMobileMenu}>
-          <Link href="/Gynac">
-            <a class="Nav-bar">GynacHelp <FontAwesomeIcon icon={faHandHoldingMedical} /></a>
-          </Link>
-          </li>
-
-          <li className="option" onClick={closeMobileMenu}>
-          <Link href="/notes">
-        <a class="Nav-bar">Notes <FontAwesomeIcon icon={faNotesMedical} /></a>
-        </Link>
-          </li>
-
-          <li className="option" onClick={closeMobileMenu}>
-          <Link href="/tips">
-            <a class="Nav-bar">Tips <FontAwesomeIcon icon={faFileMedical} /></a>
-          </Link>
-          </li>
-
-          <li className="option" onClick={closeMobileMenu}>
-          <Link href="/calender">
-          <a class="Nav-bar">Calendar <FontAwesomeIcon icon={ faCalendarAlt} /></a>
-        </Link>
-          </li>
-
-          <li className="option" onClick={closeMobileMenu}>
-          <Link href = "/analysis">
-        <a class="Nav-bar">Quiz <FontAwesomeIcon icon={faAward} /></a>
-        </Link>
-          </li>
-
-          <li className="option" onClick={closeMobileMenu}>
-          <Link href="/flow">
-          <a class="Nav-bar">Wanna Rate Yourself <FontAwesomeIcon icon={faStar} /></a>
-        </Link>
-          </li>
-
-        {user ?
-
-            <li className="option" onClick={closeMobileMenu}>
-            <Link href="/api/auth/logout">
-              <a className="Nav-bar">Logout <FontAwesomeIcon icon={faSignOutAlt} /></a>
-            </Link>
-          </li>
-           :
-           <li className="option" onClick={closeMobileMenu}>
-           <Link href="/api/auth/login">
-              <a className="Nav-bar">Login <FontAwesomeIcon icon={faSignInAlt} /></a>
     <React.Fragment>
       <div className={stickyNavStyle.mobileNav}>
         <div className="header">
@@ -247,7 +189,7 @@ const Navbar = ({ children }) => {
             </label>
           </div>
         </Nav>
-
+        
       </Header> */}
         <div>{children}</div>
       </div>
