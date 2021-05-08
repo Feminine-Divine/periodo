@@ -2,18 +2,18 @@
   position: relative;
   left: 0;
 }
-.Nav-bar{
-   width: auto;
+.Nav-bar {
+  width: auto;
   padding: 0.5rem 0.5rem;
-    font-size: 15px;
-    font-weight: 1000;
+  font-size: 15px;
+  font-weight: 1000;
 }
-.Nav-bar:hover{
-   border-radius: 0.5rem;
-    box-shadow: 1px 1px 1px 1px rgb(255, 211, 232),
-                 1px 1px 3px 4px rgb(255, 211, 232);
+.Nav-bar:hover {
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 1px 1px rgb(255, 211, 232),
+    1px 1px 3px 4px rgb(255, 211, 232);
 
-color: rgb(255, 211, 232);
+  color: rgb(255, 211, 232);
 }
 #nav-btn,
 .toggle {
@@ -29,6 +29,7 @@ color: rgb(255, 211, 232);
 
 /***********Responsive********/
 
+<<<<<<< HEAD
 
 @media screen and (max-width:1000px){
 
@@ -53,6 +54,8 @@ color: rgb(255, 211, 232);
 
     }
   }
+=======
+>>>>>>> feat_added precommit-feature 248
 @media screen and (max-width: 1000px) {
   .toggle {
     display: block;
@@ -62,8 +65,10 @@ color: rgb(255, 211, 232);
   }
   .Nav-bar {
     position: relative;
+    width: auto;
     text-align: center;
     text-transform: capitalize;
+    padding: 0.5rem 1rem;
   }
   .toggel-btn {
     width: 30px;
@@ -71,17 +76,35 @@ color: rgb(255, 211, 232);
     margin: 2px;
     background-color: white;
   }
+  @media screen and (max-width: 1000px) {
+    .toggle {
+      display: block;
+      position: absolute;
+      top: 2%;
+      right: 2%;
+    }
+    .Nav-bar {
+      position: relative;
+      text-align: center;
+      text-transform: capitalize;
+    }
+    .toggel-btn {
+      width: 30px;
+      min-height: 7px;
+      margin: 2px;
+      background-color: white;
+    }
 
-  #nav-btn:checked + .main-navbar {
-    display: flex;
-    flex-direction: column;
-    visibility: visible;
+    #nav-btn:checked + .main-navbar {
+      display: flex;
+      flex-direction: column;
+      visibility: visible;
+    }
+    .Nav-bar:hover {
+      color: red;
+    }
   }
-  .Nav-bar:hover {
-    color: red;
-  }
-}
-/* @media screen and (max-width:400px){
+  /* @media screen and (max-width:400px){
 
     .Nav-bar{
         right: -30%;
@@ -89,91 +112,92 @@ color: rgb(255, 211, 232);
 
 } */
 
-/*Desktop View*/
-.header {    display: flex;
+  /*Desktop View*/
+  .header {
+    display: flex;
     background: black;
     justify-content: space-between;
     align-items: center;
     width: auto;
-    height:90px;
-}
-.logo-nav {
-  color: white;
-  background-color: black;
-  display: flex;
-  width: 100%;
-  align-items: center;
-}
-
-.nav-options {
-  list-style-type: none;
-  display: flex;
-}
-
-.nav-options-right {
-  margin-left: auto;
-}
-
-.mobile-option {
-  display: none;
-}
-
-.option :hover {
-  color: white;
-}
-
-.mobile-menu {
-  display: none;
-}
-@media (max-width: 1000px) {
-  /*Mobile View */
-
-  .header {
-    padding: 0px 10px;
+    height: 90px;
   }
-  .logo {
-    width: 45px;
-    height: 45px;
-  }
-  .nav-options {
+  .logo-nav {
+    color: white;
+    background-color: black;
     display: flex;
     width: 100%;
-    position: absolute;
-    top: 47px;
-    z-index: 11;
-    left: -100%;
-    opacity: 0;
-    transition: all 0.5s ease;
-    flex-direction: column;
-    list-style-type: none;
-    grid-gap: 0px;
-  }
-  .nav-options.active {
-    background: #101011;
-    left: 0;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 11;
-    align-content: center;
-    padding-left: 0px;
+    align-items: center;
   }
 
-  .menu-icon {
-    width: 45px;
-    height: 45px;
+  .nav-options {
+    list-style-type: none;
+    display: flex;
   }
-      .menu-icon:hover{
-        color: rgb(255, 211, 232);
-      }
-      .option {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 10vw;
-        padding: 30px 0px;
-      }
+
+  .nav-options-right {
+    margin-left: auto;
   }
-.mobile-menu {
-  display: block;
-}
+
+  .mobile-option {
+    display: none;
+  }
+
+  .option :hover {
+    color: white;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+  @media (max-width: 1000px) {
+    /*Mobile View */
+
+    .header {
+      padding: 0px 10px;
+    }
+    .logo {
+      width: 45px;
+      height: 45px;
+    }
+    .nav-options {
+      display: flex;
+      width: 100%;
+      position: absolute;
+      top: 47px;
+      z-index: 11;
+      left: -100%;
+      opacity: 0;
+      transition: all 0.5s ease;
+      flex-direction: column;
+      list-style-type: none;
+      grid-gap: 0px;
+    }
+    .nav-options.active {
+      background: #101011;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 11;
+      align-content: center;
+      padding-left: 0px;
+    }
+
+    .menu-icon {
+      width: 45px;
+      height: 45px;
+    }
+    .menu-icon:hover {
+      color: rgb(255, 211, 232);
+    }
+    .option {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 10vw;
+      padding: 30px 0px;
+    }
+  }
+  .mobile-menu {
+    display: block;
+  }
 }
