@@ -6,10 +6,9 @@ const notes = () => {
   return (
     <>
       <Layout>
-      <Notes />
+        <Notes />
       </Layout>
     </>
   );
 };
 export default notes;
-
