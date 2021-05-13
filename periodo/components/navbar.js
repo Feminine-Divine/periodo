@@ -189,7 +189,7 @@ const Navbar = ({ children }) => {
             </label>
           </div>
         </Nav>
-
+        
       </Header> */}
         <div>{children}</div>
       </div>
