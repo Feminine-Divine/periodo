@@ -78,6 +78,8 @@ export default function Gynac() {
                   }}
                   variant="outlined"
                   label="Name"
+                  type="text"
+                  required
                   name="fullName"
                   color="secondary"
                   value={values.fullName}
@@ -100,6 +102,7 @@ export default function Gynac() {
                   }}
                   variant="outlined"
                   label="Age"
+                  type="number"
                   name="age"
                   value={values.age}
                   onChange={handleInputChange}
@@ -120,7 +123,9 @@ export default function Gynac() {
                   }}
                   variant="outlined"
                   label="Email"
+                  type="email"
                   name="email"
+                  required
                   value={values.email}
                   onChange={handleInputChange}
                 />
@@ -139,6 +144,7 @@ export default function Gynac() {
                   }}
                   variant="outlined"
                   label="Contact Number"
+                  type="tel"
                   name="mobile"
                   value={values.mobile}
                   onChange={handleInputChange}
@@ -159,6 +165,7 @@ export default function Gynac() {
                   }}
                   variant="outlined"
                   label="Weight"
+                  type="number"
                   name="weight"
                   value={values.weight}
                   onChange={handleInputChange}
@@ -180,6 +187,7 @@ export default function Gynac() {
                   variant="outlined"
                   label="Height (in cm)"
                   name="height"
+                  type="number"
                   value={values.height}
                   onChange={handleInputChange}
                 />
@@ -201,6 +209,7 @@ export default function Gynac() {
                   }}
                   variant="outlined"
                   label="No. of Days your Cycle is Late"
+                  type="number"
                   name="lateCycle"
                   value={values.lateCycle}
                   onChange={handleInputChange}
@@ -222,6 +231,7 @@ export default function Gynac() {
                   }}
                   variant="outlined"
                   label="Describe the Menstrual Issue"
+                  type="text"
                   name="issues"
                   value={values.issues}
                   onChange={handleInputChange}
@@ -414,6 +424,7 @@ export default function Gynac() {
                   }}
                   variant="contained"
                   color="secondary"
+                  type="submit"
                 >
                   Send
                 </Button>
