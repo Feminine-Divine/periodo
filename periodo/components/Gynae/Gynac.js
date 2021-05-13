@@ -103,7 +103,6 @@ export default function Gynac() {
                   variant="outlined"
                   label="Age"
                   type="number"
-                  required
                   name="age"
                   value={values.age}
                   onChange={handleInputChange}
@@ -126,6 +125,7 @@ export default function Gynac() {
                   label="Email"
                   type="email"
                   name="email"
+                  required
                   value={values.email}
                   onChange={handleInputChange}
                 />
