@@ -75,6 +75,9 @@ export default class Example extends React.Component {
     background-color: #f0f8ff !important;
     color: #4a90e2;
   }
+  .DayPicker-Weekday{
+    color:#660099;
+  }
   .Selectable .DayPicker-Day {
     border-radius: 0 !important;
   }
