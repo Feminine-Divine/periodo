@@ -1,8 +1,6 @@
 import React from "react";
 import Content from "./aboutstyle.js";
 
-//import styles from  "../tips/cards.module.css";
-//import aboutstyle from "./aboutstyle";
 const about = [
   {
     aboutNumber: "TRACK YOUR CYCLE",
@@ -33,7 +31,7 @@ const about = [
 const About = () => {
     return (
       <div>
-      <Content props={about} />
+        <Content props={about} />
       </div>
   );
 };

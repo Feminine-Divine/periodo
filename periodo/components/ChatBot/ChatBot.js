@@ -18,7 +18,6 @@ const App = (props) => {
         <div style={{ display: showChat ? "" : "none" }}>
           <SimpleForm></SimpleForm>
         </div>
-        {/* <div> {showChat ? <SimpleForm></SimpleForm> : null} </div> */}
         {!showChat ? (
           <button className={styles.btn} onClick={() => startChat()}>
             Click to chat...{" "}

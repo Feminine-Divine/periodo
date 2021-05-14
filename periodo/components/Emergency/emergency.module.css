@@ -17,7 +17,6 @@
   text-decoration: none;
   display: block;
 }
-
 .btn:hover {
   background: #d34949;
   background-image: -webkit-linear-gradient(top, #d34949, #89c4af);

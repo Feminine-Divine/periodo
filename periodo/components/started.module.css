@@ -9,7 +9,6 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .title {
   font-family: "Dancing Script", cursive;
   font-size: 4em;
@@ -27,9 +26,7 @@
 }
 
 /******************** Button ********************/
-
 .button {
-  /* background-color: rgb(241, 231, 216); */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -57,20 +54,11 @@
   transition: all 0.3s ease-in-out;
   z-index: 2;
 }
-
-/* .button:hover {
-    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
-    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-    transition: all 0.4s ease 0s;
-    } */
-
 .button:hover {
   border: 1px solid #d34949;
   color: #ffffff !important;
   font-weight: 1500;
 }
-
 .button::before {
   content: "";
   width: 0%;
@@ -91,7 +79,6 @@
   transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
   box-shadow: 2px 0px 14px rgba(0, 0, 0, 0.6);
 }
-
 .button::after {
   content: "";
   width: 0%;
@@ -124,7 +111,6 @@
 }
 
 /* responsive css */
-
 @media (max-width: 400px) {
   .title {
     font-size: 3em;

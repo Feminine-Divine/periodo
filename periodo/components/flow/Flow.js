@@ -104,7 +104,6 @@ export default class App extends React.Component {
               </div>
             </div>
           </div>
-
           <div className={style.container_medium}>
             <div className={style.container3_medium}>
               <p className={style.heading}>Mood:</p>

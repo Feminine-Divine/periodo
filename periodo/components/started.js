@@ -40,15 +40,11 @@ const Start = () => {
         <h4 className={styles.heading}>
           Period just started: {getCurrentDate("-")}
         </h4>
-
         <Link href="/calender">
-          {/* <div className={styles.btn_container}> */}
           <button className={styles.button}>Tap here</button>
-          {/* </div> */}
         </Link>
       </div>
     </>
   );
 };
-
 export default Start;

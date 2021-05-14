@@ -97,7 +97,6 @@
 }
 
 /* Responsive calender */
-
 @media (max-width: 360px) {
   .nextbtn {
     padding: 8px;

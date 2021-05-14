@@ -1,4 +1,3 @@
-/* changed */
 .mydiv {
   background-color: rgb(251, 174, 210);
   background-image: url("../../public/woman_with_chart.svg"),
@@ -7,7 +6,6 @@
   background-position: 130% 98%, -180px 100%;
   background-size: 50vw 50vh, 40vw 40vh;
 }
-
 .grid {
   background: rgb(228, 178, 68);
   background: radial-gradient(
@@ -22,7 +20,6 @@
   padding: 10px 0;
   flex-basis: auto !important;
 }
-
 .field {
   width: 100% !important;
   margin: 3% !important;
