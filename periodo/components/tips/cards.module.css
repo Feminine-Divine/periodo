@@ -2,6 +2,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+ background-color: rgb(253, 207, 246);
+}
+.intro
+{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  background-color: rgb(253, 207, 246);
+  margin-top: -22px;
+ font-size: 17px;
+  justify-content: center;
+  
+}
+.intro h1{
+ padding: 40px;
 }
 .img {
   position: relative;
@@ -9,7 +23,9 @@
   z-index: 100;
 }
 .body {
-  background: coral;
+  /* background: coral; */
+
+
   display: flex;
   justify-content: center;
   border-radius: 5rem;
@@ -17,6 +33,8 @@
   align-items: center;
   background-attachment: fixed;
   margin-bottom: 3rem;
+  margin: -2rem;
+  padding: 4rem;
 }
 .container {
   position: relative;
@@ -25,20 +43,24 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
 }
 .card {
   position: relative;
   width: 290px;
-  height: 440px;
-  background: cornsilk;
+  height: 450px;
+  background: #ee9ca7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   margin: 20px;
-  border-radius: 20px;
+ 
   box-shadow: 0 15px 25px black;
   transition: 0.5s;
   transition: transform 0.3s;
 }
 .card:hover {
-  transform: scale(1.14);
+  transform: scale(1.05);
 }
 /*.circle{
     position: relative;
@@ -51,17 +73,19 @@
 .h2 {
   color: rgb(3, 0, 0);
   padding: 30px 0;
+  font-size: 15px;
   text-align: center;
 }
 .content {
   position: absolute;
-  bottom: 10px;
-  padding: 20px;
+  bottom: 15px;
+  padding: 25px;
   page-break-after: 20px;
   text-align: center;
 }
 .p {
-  color: sienna;
+  color: rgb(56, 56, 56);
+  font-size: 16px;
 }
 .a {
   position: relative;
@@ -74,5 +98,5 @@
   margin-top: 2px;
 }
 .a:hover {
-  color: turquoise;
+  color: rgb(255, 167, 208);
 }
