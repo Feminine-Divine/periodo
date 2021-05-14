@@ -29,7 +29,11 @@
 
 /***********Responsive********/
 
+<<<<<<< HEAD
 <<<<<<< HEAD @media screen and (max-width:1000px) {
+=======
+@media screen and (max-width: 1000px) {
+>>>>>>> 6c2a4d299865ea74ad9c606f8957b6f36d3ba0ca
   .toggle {
     display: block;
     position: absolute;
@@ -49,6 +53,7 @@
     margin: 2px;
     background-color: white;
   }
+<<<<<<< HEAD
 }
 =======>>>>>>>feat_added
   precommit-feature
@@ -104,6 +109,36 @@
       color: red;
     }
   }
+=======
+  @media screen and (max-width: 1000px) {
+    .toggle {
+      display: block;
+      position: absolute;
+      top: 2%;
+      right: 2%;
+    }
+    .Nav-bar {
+      position: relative;
+      text-align: center;
+      text-transform: capitalize;
+    }
+    .toggel-btn {
+      width: 30px;
+      min-height: 7px;
+      margin: 2px;
+      background-color: white;
+    }
+
+    #nav-btn:checked + .main-navbar {
+      display: flex;
+      flex-direction: column;
+      visibility: visible;
+    }
+    .Nav-bar:hover {
+      color: red;
+    }
+  }
+>>>>>>> 6c2a4d299865ea74ad9c606f8957b6f36d3ba0ca
   /* @media screen and (max-width:400px){
 
     .Nav-bar{
@@ -120,6 +155,7 @@
     align-items: center;
     width: auto;
     height: 90px;
+<<<<<<< HEAD
   }
   .logo-nav {
     color: white;
@@ -200,4 +236,86 @@
   .mobile-menu {
     display: block;
   }
+=======
+  }
+  .logo-nav {
+    color: white;
+    background-color: black;
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  .nav-options {
+    list-style-type: none;
+    display: flex;
+  }
+
+  .nav-options-right {
+    margin-left: auto;
+  }
+
+  .mobile-option {
+    display: none;
+  }
+
+  .option :hover {
+    color: white;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+  @media (max-width: 1000px) {
+    /*Mobile View */
+
+    .header {
+      padding: 0px 10px;
+    }
+    .logo {
+      width: 45px;
+      height: 45px;
+    }
+    .nav-options {
+      display: flex;
+      width: 100%;
+      position: absolute;
+      top: 47px;
+      z-index: 11;
+      left: -100%;
+      opacity: 0;
+      transition: all 0.5s ease;
+      flex-direction: column;
+      list-style-type: none;
+      grid-gap: 0px;
+    }
+    .nav-options.active {
+      background: #101011;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 11;
+      align-content: center;
+      padding-left: 0px;
+    }
+
+    .menu-icon {
+      width: 45px;
+      height: 45px;
+    }
+    .menu-icon:hover {
+      color: rgb(255, 211, 232);
+    }
+    .option {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 10vw;
+      padding: 30px 0px;
+    }
+  }
+  .mobile-menu {
+    display: block;
+  }
+>>>>>>> 6c2a4d299865ea74ad9c606f8957b6f36d3ba0ca
 }

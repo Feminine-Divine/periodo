@@ -11,7 +11,7 @@
     "lint": "eslint *.js --ignore-pattern node_modules/",
     "lint:fix": "npm run lint -- --fix",
     "setup": "npm i && npm run prepare"
-  },
+ },
   "dependencies": {
     "@ampproject/toolbox-optimizer": "^2.7.6",
     "@auth0/nextjs-auth0": "^1.2.0",

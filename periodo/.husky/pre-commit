@@ -2,4 +2,8 @@
 . "$(dirname "$0")/_/husky.sh"
 
 npm run prettier
+<<<<<<< HEAD
 npm run lint:fix
+=======
+npm run lint
+>>>>>>> 6c2a4d299865ea74ad9c606f8957b6f36d3ba0ca
