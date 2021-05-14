@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import styles from "./Footer.module.css";
-import ContactUs from "./ContactUs";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import MailIcon from "@material-ui/icons/Mail";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import { Col } from "reactstrap";
+import ContactUs from "./ContactUs";
+import styles from "./Footer.module.css";
 
 export default function Footer() {
   const router = useRouter();
@@ -18,7 +18,7 @@ export default function Footer() {
   );
   console.log(isHome);
   return (
-    <React.Fragment>
+    <>
       <div
         className={`${styles.footer__wrapper} ${
           isHome && styles.footer__pagedep
@@ -90,6 +90,6 @@ export default function Footer() {
           </section>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 }

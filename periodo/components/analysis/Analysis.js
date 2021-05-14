@@ -1,8 +1,8 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
+
 import ReactDOM from "react-dom";
-import styles from "./Analysis.module.css";
 import Link from "next/link";
+import styles from "./Analysis.module.css";
 
 const Analysis = () => {
   const questions = [
@@ -50,7 +50,7 @@ const Analysis = () => {
   const [score, setScore] = React.useState(0);
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
 
-  var yes = 0;
+  let yes = 0;
   const handleAnswerOptionClick = (isCorrect) => {
     if (isCorrect) {
       yes = 1;
@@ -108,7 +108,7 @@ const Analysis = () => {
         <button className={styles.endCardButton1} onClick={toggle}>
           TELL ME MORE!
         </button>
-        {/*The bottom code should toggle on and off when the button is pressed*/}
+        {/* The bottom code should toggle on and off when the button is pressed */}
         <div style={{ display: showMe1 ? "block" : "none" }}>
           <div className={styles.resultCard}>
             Maintaining a healthy lifestyle can help reduce the risk of some of
@@ -193,7 +193,7 @@ const Analysis = () => {
               height="200px"
               width="200px"
               padding="10px"
-            ></img>
+            />
             <h1 className={styles.endCardHead}>ALL SET !</h1>
             <div className={styles.endCardText}>
               Your response is noted!

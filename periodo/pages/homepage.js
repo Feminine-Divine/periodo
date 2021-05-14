@@ -4,16 +4,14 @@ import Layout from "../components/Layout";
 import ChatBot from "../components/ChatBot/ChatBot";
 import Emergency from "../components/Emergency/Emergency";
 
-const Homepage = () => {
-  return (
-    <>
-      <Layout>
-        <Start />
-      </Layout>
-      <ChatBot />
-      <Emergency />
-    </>
-  );
-};
+const Homepage = () => (
+  <>
+    <Layout>
+      <Start />
+    </Layout>
+    <ChatBot />
+    <Emergency />
+  </>
+);
 
 export default Homepage;

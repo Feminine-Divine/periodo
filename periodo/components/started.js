@@ -4,10 +4,10 @@ import styles from "./started.module.css";
 
 const Start = () => {
   function getCurrentDate(separator = "") {
-    let newDate = new Date();
-    let date = newDate.getDate();
-    let month = newDate.getMonth() + 1;
-    let year = newDate.getFullYear();
+    const newDate = new Date();
+    const date = newDate.getDate();
+    const month = newDate.getMonth() + 1;
+    const year = newDate.getFullYear();
 
     return `${year}${separator}${
       month < 10 ? `0${month}` : `${month}`
@@ -15,8 +15,8 @@ const Start = () => {
   }
 
   function getnextDate(separator = "") {
-    let newDate = new Date();
-    let date = newDate.getDate() + 28;
+    const newDate = new Date();
+    const date = newDate.getDate() + 28;
     let month = newDate.getMonth() + 1;
     if (date > 30) {
       month = (newDate.getMonth() % 12) + 2;

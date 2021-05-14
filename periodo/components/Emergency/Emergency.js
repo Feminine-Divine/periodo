@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./emergency.module.css";
 
 const App = (props) => {
-  let [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   const startMenu = () => {
     setShowMenu(true);
@@ -19,6 +19,7 @@ const App = (props) => {
             <a
               href="https://www.google.com/maps/search/public+toilet+near+me/"
               target="_blank"
+              rel="noreferrer"
             >
               <button className={styles.btn} onClick={() => hideMenu()}>
                 Public
@@ -29,6 +30,7 @@ const App = (props) => {
             <a
               href="https://www.google.com/maps/search/restaurants+near+me/"
               target="_blank"
+              rel="noreferrer"
             >
               <button className={styles.btn} onClick={() => hideMenu()}>
                 Restaurant
@@ -39,6 +41,7 @@ const App = (props) => {
             <a
               href="https://www.google.com/maps/search/hospitals+near+me/"
               target="_blank"
+              rel="noreferrer"
             >
               <button className={styles.btn} onClick={() => hideMenu()}>
                 Hospital

@@ -3,7 +3,7 @@ import SimpleForm from "../../pages/SimpleForm";
 import styles from "./chatBot.module.css";
 
 const App = (props) => {
-  let [showChat, setShowChat] = useState(false);
+  const [showChat, setShowChat] = useState(false);
 
   const startChat = () => {
     setShowChat(true);
@@ -16,7 +16,7 @@ const App = (props) => {
     <>
       <div className="bot">
         <div style={{ display: showChat ? "" : "none" }}>
-          <SimpleForm></SimpleForm>
+          <SimpleForm />
         </div>
         {/* <div> {showChat ? <SimpleForm></SimpleForm> : null} </div> */}
         {!showChat ? (

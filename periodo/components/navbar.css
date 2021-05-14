@@ -29,34 +29,34 @@
 
 /***********Responsive********/
 
-<<<<<<< HEAD
-
-@media screen and (max-width:1000px){
-
-    .toggle{
-        display: block;
-        position: absolute;
-        top: 2%;
-        right: 2%;
-    }
-    .Nav-bar{
-        position: relative;
-        width: auto;
-        text-align: center;
-        text-transform: capitalize;
-        padding: 0.5rem 1rem;
-    }
-    .toggel-btn{
-        width: 30px;
-        min-height: 7px;
-        margin: 2px;
-        background-color: white;
-
-    }
+<<<<<<< HEAD @media screen and (max-width:1000px) {
+  .toggle {
+    display: block;
+    position: absolute;
+    top: 2%;
+    right: 2%;
   }
-=======
->>>>>>> feat_added precommit-feature 248
-@media screen and (max-width: 1000px) {
+  .Nav-bar {
+    position: relative;
+    width: auto;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0.5rem 1rem;
+  }
+  .toggel-btn {
+    width: 30px;
+    min-height: 7px;
+    margin: 2px;
+    background-color: white;
+  }
+}
+=======>>>>>>>feat_added
+  precommit-feature
+  248
+  @media
+  screen
+  and
+  (max-width: 1000px) {
   .toggle {
     display: block;
     position: absolute;

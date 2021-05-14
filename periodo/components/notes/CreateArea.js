@@ -11,12 +11,10 @@ function CreateArea(props) {
   function handleChange(event) {
     const { name, value } = event.target;
 
-    setNote((prevNote) => {
-      return {
-        ...prevNote,
-        [name]: value,
-      };
-    });
+    setNote((prevNote) => ({
+      ...prevNote,
+      [name]: value,
+    }));
   }
 
   function submitNote(event) {

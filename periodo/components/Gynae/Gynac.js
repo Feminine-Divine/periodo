@@ -17,9 +17,9 @@ import {
   Typography,
 } from "@material-ui/core";
 import React from "react";
+import Link from "next/link";
 import Navbar from "../navbar";
 import { Forme, Userform } from "./Userform";
-import Link from "next/link";
 import style from "./Gynac.module.css";
 
 const initialFValues = {
@@ -51,7 +51,7 @@ export default function Gynac() {
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar />
 
       <Forme>
         <h1>
@@ -59,7 +59,7 @@ export default function Gynac() {
             <strong>Contact the Gynecologist!</strong>
           </em>
         </h1>
-        <hr></hr>
+        <hr />
         <div className={style.mydiv}>
           <Grid container>
             <Grid item xs={6} className={style.grid}>
@@ -435,7 +435,7 @@ export default function Gynac() {
                   Cancel
                 </Button>
               </div>
-              <hr></hr>
+              <hr />
             </Grid>
           </Grid>
         </div>

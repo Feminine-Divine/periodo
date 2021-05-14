@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useUser } from "@auth0/nextjs-auth0";
 
-import stickyNavStyle from "./navbar.module.css";
-
 import {
   faHome,
   faUser,
@@ -17,6 +15,7 @@ import {
   faSignInAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import stickyNavStyle from "./navbar.module.css";
 
 const Navbar = ({ children }) => {
   const { user } = useUser();
@@ -24,7 +23,7 @@ const Navbar = ({ children }) => {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
   return (
-    <React.Fragment>
+    <>
       <div className={stickyNavStyle.mobileNav}>
         <div className="header">
           <div className="logo-nav">
@@ -35,14 +34,14 @@ const Navbar = ({ children }) => {
                   height="64px"
                   width="160px"
                   padding="10px"
-                  class="nav-img"
-                ></img>
+                  className="nav-img"
+                />
               </a>
             </Link>
             <ul className={click ? "nav-options active " : "nav-options "}>
               <li className="option" onClick={closeMobileMenu}>
                 <Link href="/homepage">
-                  <a class="Nav-bar Nav-Active">
+                  <a className="Nav-bar Nav-Active">
                     Home <FontAwesomeIcon icon={faHome} />
                   </a>
                 </Link>
@@ -50,7 +49,7 @@ const Navbar = ({ children }) => {
 
               <li className="option" onClick={closeMobileMenu}>
                 <Link href="/about">
-                  <a class="Nav-bar">
+                  <a className="Nav-bar">
                     AboutUs <FontAwesomeIcon icon={faUser} />
                   </a>
                 </Link>
@@ -66,7 +65,7 @@ const Navbar = ({ children }) => {
             >
               <li className="option" onClick={closeMobileMenu}>
                 <Link href="/Gynac">
-                  <a class="Nav-bar">
+                  <a className="Nav-bar">
                     GynacHelp <FontAwesomeIcon icon={faHandHoldingMedical} />
                   </a>
                 </Link>
@@ -74,7 +73,7 @@ const Navbar = ({ children }) => {
 
               <li className="option" onClick={closeMobileMenu}>
                 <Link href="/notes">
-                  <a class="Nav-bar">
+                  <a className="Nav-bar">
                     Notes <FontAwesomeIcon icon={faNotesMedical} />
                   </a>
                 </Link>
@@ -82,7 +81,7 @@ const Navbar = ({ children }) => {
 
               <li className="option" onClick={closeMobileMenu}>
                 <Link href="/tips">
-                  <a class="Nav-bar">
+                  <a className="Nav-bar">
                     Tips <FontAwesomeIcon icon={faFileMedical} />
                   </a>
                 </Link>
@@ -90,7 +89,7 @@ const Navbar = ({ children }) => {
 
               <li className="option" onClick={closeMobileMenu}>
                 <Link href="/calender">
-                  <a class="Nav-bar">
+                  <a className="Nav-bar">
                     Calendar <FontAwesomeIcon icon={faCalendarAlt} />
                   </a>
                 </Link>
@@ -98,7 +97,7 @@ const Navbar = ({ children }) => {
 
               <li className="option" onClick={closeMobileMenu}>
                 <Link href="/analysis">
-                  <a class="Nav-bar">
+                  <a className="Nav-bar">
                     Quiz <FontAwesomeIcon icon={faAward} />
                   </a>
                 </Link>
@@ -106,7 +105,7 @@ const Navbar = ({ children }) => {
 
               <li className="option" onClick={closeMobileMenu}>
                 <Link href="/flow">
-                  <a class="Nav-bar">
+                  <a className="Nav-bar">
                     Wanna Rate Yourself <FontAwesomeIcon icon={faStar} />
                   </a>
                 </Link>
@@ -193,7 +192,7 @@ const Navbar = ({ children }) => {
       </Header> */}
         <div>{children}</div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

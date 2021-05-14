@@ -75,9 +75,11 @@ class SimpleForm extends Component {
             validator: (value) => {
               if (isNaN(value)) {
                 return "value must be a number";
-              } else if (value < 0) {
+              }
+              if (value < 0) {
                 return "value must be positive";
-              } else if (value > 120) {
+              }
+              if (value > 120) {
                 return `${value}? Come on!`;
               }
 

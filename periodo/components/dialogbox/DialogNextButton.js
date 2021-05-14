@@ -6,13 +6,12 @@ import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import Slide from "@material-ui/core/Slide";
+import Link from "next/link";
 import style from "../calender/calender.module.css";
 
-import Link from "next/link";
-
-const Transition = React.forwardRef(function Transition(props, ref) {
-  return <Slide direction="up" ref={ref} {...props} />;
-});
+const Transition = React.forwardRef((props, ref) => (
+  <Slide direction="up" ref={ref} {...props} />
+));
 
 export default function DialogNextButton() {
   const [open, setOpen] = React.useState(false);
@@ -43,11 +42,11 @@ export default function DialogNextButton() {
         aria-describedby="alert-dialog-slide-description"
       >
         <DialogTitle id="alert-dialog-slide-title">
-          {"Rate your experience"}
+          Rate your experience
         </DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-            {"Do you want to share your period experience?"}
+            Do you want to share your period experience?
           </DialogContentText>
         </DialogContent>
         <DialogActions>

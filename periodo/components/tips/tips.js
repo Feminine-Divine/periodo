@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./card";
+
 const tips = [
   {
     tipNumber: "Drink tea",
@@ -72,11 +73,9 @@ const tips = [
       "https://www.webmd.com/women/qa/what-are-the-best-medications-to-relieve-painful-menstrual-cramps",
   },
 ];
-const Tips = () => {
-  return (
-    <div>
-      <Card props={tips} />
-    </div>
-  );
-};
+const Tips = () => (
+  <div>
+    <Card props={tips} />
+  </div>
+);
 export default Tips;
