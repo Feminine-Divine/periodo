@@ -29,8 +29,8 @@ export default initAuth0({
 */
 
 export default initAuth0({
-  secret: "akldhwcfnasjdbkbfeabnjkvdbavbdjbskeubvjdkudnvdkjuhd",
-  issuerBaseURL: "https://dev-jepc3b7g.us.auth0.com",
+  secret: process.env.REACT_APP_SECRET,
+  issuerBaseURL: process.env.REACT_APP_USERBASE_URL,
   baseURL: "http://localhost:3000",
   clientID: process.env.AUTH0_CLIENT_ID,
   clientSecret: process.env.AUTH0_SECRET,
