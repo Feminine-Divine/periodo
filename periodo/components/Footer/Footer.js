@@ -18,21 +18,21 @@ export default function Footer() {
   );
   console.log(isHome);
   return (
-    <React.Fragment>
-      <div
-        className={`${styles.footer__wrapper} ${
-          isHome && styles.footer__pagedep
-        }`}
-      >
-        {isHome && (
-          <Col
-            className={styles.contactus}
-            style={{ color: "#131313" }}
-            lg="12"
-          >
-            <ContactUs />
-          </Col>
-        )}
+    // <React.Fragment>
+    //   <div
+    //     className={`${styles.footer__wrapper} ${
+    //       isHome && styles.footer__pagedep
+    //     }`}
+    //   >
+        // {isHome && (
+        //   <Col
+        //     className={styles.contactus}
+        //     style={{ color: "#131313" }}
+        //     lg="12"
+        //   >
+            
+          // </Col> 
+      
         <div className={styles.footer__container}>
           <div className={styles.footer__links}>
             <div>
@@ -89,7 +89,7 @@ export default function Footer() {
             </div>
           </section>
         </div>
-      </div>
-    </React.Fragment>
+     
+    
   );
 }

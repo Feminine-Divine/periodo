@@ -7,113 +7,61 @@ import PersonIcon from "@material-ui/icons/Person";
 import { TextareaAutosize } from "@material-ui/core";
 import { Paper, Grid } from "@material-ui/core";
 import { Row, Col } from "reactstrap";
+import styles from "./ContactUs.module.css";
+import 'font-awesome/css/font-awesome.min.css';
 
 function ContactUs() {
   return (
-    <Paper
-      style={{ alignItems: "center", margin: "0 19%", background: "#960435" }}
-    >
-      <Card style={{ backgroundColor: "#960435", color: "white" }}>
-        <CardHeader title="Talk with us (beta)" />
-      </Card>
-      <CardContent>
-        <form>
-          <Grid container spacing={2} lg={12}>
-            <Grid item md={12} sm={12} xs={12} lg={12}>
-              <TextField
-                margin="dense"
-                variant="filled"
-                name="Name"
-                label="Name"
-                color="secondary"
-                autoComplete="off"
-                style={{ width: "100%", background: "#fad2e3" }}
-                type="text"
-                required
-                InputProps={{
-                  endAdornment: (
-                    <InputAdornment position="end">
-                      <PersonIcon />
-                    </InputAdornment>
-                  ),
-                }}
-              />
-            </Grid>
-            <Grid
-              style={{ alignItems: "center" }}
-              item
-              md={12}
-              sm={12}
-              xs={12}
-              lg={12}
-            >
-              <TextField
-                margin="dense"
-                label="Email"
-                variant="filled"
-                color="secondary"
-                name="email"
-                type="email"
-                autoComplete="off"
-                required
-                style={{ width: "100%", background: "#fad2e3" }}
-                InputProps={{
-                  endAdornment: (
-                    <InputAdornment position="end">
-                      <EmailIcon />
-                    </InputAdornment>
-                  ),
-                }}
-              />
-            </Grid>
-            <Grid
-              style={{ alignItems: "center" }}
-              item
-              md={12}
-              sm={12}
-              xs={12}
-              lg={12}
-            >
-            <TextareaAutosize
-                rowsMax={4}
-                aria-label="maximum height"
-                placeholder="Message"
-                style={{
-                  width: "100%",
-                  background: "#e9b8cc",
-                  maxHeight: "90px",
-                  minHeight: "90px",
-                  overflowY: "scroll",
-                  fontSize: "17px",
-                  outline: "none",
-                  padding: "10px",
-                  marginTop: "10px",
-                }}
-              />
-            </Grid>
-            <br />
-            <br />
-            <Container>
-              <Row>
-                <Col>
-                  <Button
-                    type="submit"
-                    variant="contained"
-                    color="secondary"
-                    style={{
-                      background: "black",
-                      margin: "10px 0px 0px -10px",
-                    }}
-                  >
-                    Submit
-                  </Button>
-                </Col>
-              </Row>
-            </Container>
-          </Grid>
-        </form>
-      </CardContent>
-    </Paper>
+    <div className={styles.contactus_body}>
+        <div className={styles.form_wrapper}>
+            <div className={styles.form_container}>
+                <div className={styles.title_container}>
+                    <h2>Talk to us <span id={styles.touch}>Beta</span></h2>
+                    <h3>Contact us</h3>
+                </div>
+                <form>
+                    <div className={styles.row_clearfix}>
+                        <div className={styles.col_half}>
+                            <label className={styles.input_label}>First name</label>
+                            <div className={styles.input_field}> <span><i aria-hidden="true" className="fa fa-user"></i></span>
+                                <input className={styles.inputN} type="text" name="first_name" placeholder="John" required />
+                            </div>
+                        </div>
+                        <div className={styles.col_half}>
+                            <label className={styles.input_label}>Last name</label>
+                            <div className={styles.input_field}> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                                <input className={styles.inputN}  type="text" name="last_name" placeholder="Doe" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.row_clearfix}>
+                        <div className={styles.col_half}>
+                            <label className={styles.input_label}>Email</label>
+                            <div className={styles.input_field}> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                                <input className={styles.inputN}  type="email" name="email" placeholder="johndoe@gmail.com" required />
+                            </div>
+                        </div>
+                        <div className={styles.col_half}>
+                            <label className={styles.input_label}>Phone</label>
+                            <div className={styles.input_field}> <span><i aria-hidden="true" class="fa fa-phone"></i></span>
+                                <input className={styles.inputN}  type="tel" name="phone" placeholder="Phone no" pattern="[0-9]{10}" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.row_clearfix}>
+                        <div>
+                        <label className={styles.input_label}>Comments</label>
+                            <div className={styles.textarea_field}> <span><i aria-hidden="true" class="fa fa-comment"></i></span>
+                                <textarea className={styles.inputN}  style={{resize:"none", color:"#ffd7d6"}} cols="82" rows="8" name="comments"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <input className={styles.inputN} type="submit" value="Submit" />
+                </form>
+            </div>
+        </div>
+        </div>
+
   );
 }
 export default ContactUs;
