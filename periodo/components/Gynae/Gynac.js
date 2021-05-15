@@ -171,7 +171,6 @@ export default function Gynac() {
                   onChange={handleInputChange}
                 />
               </em>
-
               <em>
                 <TextField
                   className={style.field}
@@ -215,7 +214,6 @@ export default function Gynac() {
                   onChange={handleInputChange}
                 />
               </em>
-
               <em>
                 {" "}
                 <TextField
@@ -258,52 +256,51 @@ export default function Gynac() {
                   />
                 </em>
               </form>
-
-              <div className={style.grid}>
+                <div className={style.grid}>
+                  <FormControlLabel
+                    control={
+                      <Checkbox
+                        checked={values.checkedB}
+                        onChange={handleInputChange}
+                        name="PCOD"
+                        color="primary"
+                      />
+                    }
+                    label="PCOD"
+                  />
+                  <FormControlLabel
+                    control={
+                      <Checkbox
+                        checked={values.checkedB}
+                        onChange={handleInputChange}
+                        name="PCOS"
+                        color="primary"
+                      />
+                    }
+                    label="PCOS"
+                  />
                 <FormControlLabel
-                  control={
-                    <Checkbox
-                      checked={values.checkedB}
-                      onChange={handleInputChange}
-                      name="PCOD"
-                      color="primary"
-                    />
-                  }
-                  label="PCOD"
-                />
+                    control={
+                      <Checkbox
+                        checked={values.checkedB}
+                        onChange={handleInputChange}
+                        name="PMS"
+                        color="primary"
+                      />
+                    }
+                    label="PMS"
+                  />
                 <FormControlLabel
-                  control={
-                    <Checkbox
-                      checked={values.checkedB}
-                      onChange={handleInputChange}
-                      name="PCOS"
-                      color="primary"
-                    />
-                  }
-                  label="PCOS"
-                />
-                <FormControlLabel
-                  control={
-                    <Checkbox
-                      checked={values.checkedB}
-                      onChange={handleInputChange}
-                      name="PMS"
-                      color="primary"
-                    />
-                  }
-                  label="PMS"
-                />
-                <FormControlLabel
-                  control={
-                    <Checkbox
-                      checked={values.checkedB}
-                      onChange={handleInputChange}
-                      name="PMDD"
-                      color="primary"
-                    />
-                  }
-                  label="PMDD"
-                />
+                    control={
+                      <Checkbox
+                        checked={values.checkedB}
+                        onChange={handleInputChange}
+                        name="PMDD"
+                        color="primary"
+                      />
+                    }
+                    label="PMDD"
+                  />
                 <FormControlLabel
                   control={
                     <Checkbox

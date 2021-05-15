@@ -13,9 +13,7 @@ import {
   faSignOutAlt,
   faSignInAlt,
 } from "@fortawesome/free-solid-svg-icons";
-
 import classes from "./navbar.component.style.js";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import clsx from "clsx";
 import { useTheme } from "@material-ui/core/styles";
@@ -168,3 +166,4 @@ const Navbar = () => {
   );
 };
 export default Navbar;
+
