@@ -196,5 +196,4 @@ const Navbar = ({ children }) => {
     </React.Fragment>
   );
 };
-
 export default Navbar;
