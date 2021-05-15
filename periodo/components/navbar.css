@@ -147,7 +147,7 @@
     grid-gap: 0px;
   }
   .nav-options.active {
-    background: #101011;
+    background: #000000 ;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
