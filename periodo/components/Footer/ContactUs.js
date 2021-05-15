@@ -17,7 +17,7 @@ function ContactUs() {
         <CardHeader title="Talk with us (beta)" />
       </Card>
       <CardContent>
-        <div>
+        <form>
           <Grid container spacing={2} lg={12}>
             <Grid item md={12} sm={12} xs={12} lg={12}>
               <TextField
@@ -28,6 +28,7 @@ function ContactUs() {
                 color="secondary"
                 autoComplete="off"
                 style={{ width: "100%", background: "#fad2e3" }}
+                type="text"
                 required
                 InputProps={{
                   endAdornment: (
@@ -52,6 +53,7 @@ function ContactUs() {
                 variant="filled"
                 color="secondary"
                 name="email"
+                type="email"
                 autoComplete="off"
                 required
                 style={{ width: "100%", background: "#fad2e3" }}
@@ -95,6 +97,7 @@ function ContactUs() {
               <Row>
                 <Col>
                   <Button
+                    type="submit"
                     variant="contained"
                     color="secondary"
                     style={{
@@ -108,7 +111,7 @@ function ContactUs() {
               </Row>
             </Container>
           </Grid>
-        </div>
+        </form>
       </CardContent>
     </Paper>
   );

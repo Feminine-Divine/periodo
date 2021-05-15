@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 .body {
-  margin-top: 0px;
+  margin-top: 90px;
   padding: 50px;
   box-sizing: border-box;
 }
@@ -9,7 +9,7 @@
   color: white;
   width: 100%;
   padding-top: 30px;
-  margin-top: 0px;
+  margin-top: 65px;
   top: 0px;
   display: flex;
   justify-content: center;
@@ -142,6 +142,6 @@
 .image {
   overflow: hidden;
   transform: translatey(0px);
-	animation: float 3.4s ease-in-out infinite;
+  animation: float 3.4s ease-in-out infinite;
 }
 

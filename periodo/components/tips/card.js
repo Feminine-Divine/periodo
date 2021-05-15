@@ -23,10 +23,14 @@ const card = ({ props }) => {
     );
   });
   return (
+    <div className={style.intro}>
+      <h1>| SOME TIPS FOR YOU |</h1>
     <div className={style.section}>
       <div className={style.body}>
+
         <div className={style.container}>{propsList}</div>
       </div>
+    </div>
     </div>
   );
 };

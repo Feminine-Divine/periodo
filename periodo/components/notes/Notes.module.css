@@ -77,4 +77,5 @@
 .notesContainer {
   min-height: 90vh;
   overflow: scroll;
+  margin-top: 65px;
 }
