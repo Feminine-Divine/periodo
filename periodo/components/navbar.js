@@ -14,7 +14,7 @@ import {
   faSignInAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
-import classes from './navbar.component.style.js'
+import classes from "./navbar.component.style.js";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import clsx from "clsx";
@@ -32,7 +32,6 @@ import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-
 
 const Navbar = () => {
   const theme = useTheme();
@@ -52,6 +51,7 @@ const Navbar = () => {
       <CssBaseline />
       <AppBar
         position="fixed"
+        style={{ backgroundColor: "black" }}
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
         })}
