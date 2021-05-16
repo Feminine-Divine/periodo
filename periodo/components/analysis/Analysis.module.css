@@ -3,11 +3,13 @@
   color: #CF6F80/*#D84242*/;
   position: absolute;
   left: 25%;
+  right: 79%;
 }
 
 .quiz {
   position: absolute;
   bottom: 12%;
+  right: 30%;
   left: 30%;
   justify-content: center;
   align-items: center;
@@ -235,3 +237,231 @@ border:white;}
 .quizWrapper{
   min-height: 90vh;
 }
+
+@media screen and (max-width: 700px) {
+  .quizHead {
+    color: #cf6f80;
+    position: absolute;
+    left: 25%;
+  }
+  .quiz {
+    position: absolute;
+    top: auto;
+    right: auto;
+    margin: auto;
+  
+    height: auto;
+    width: auto;
+   
+    
+    padding: 70px; 
+    box-shadow: 10px 10px 42px 0 rgba(0, 0, 0, 0.75);
+  }
+  .questionsection {
+    color: white;
+    width: 100%;
+    position: relative;
+  }
+  .questioncount {
+    margin-bottom: 20px;
+  }
+  .questioncount span {
+    font-size: 28px;
+  }
+  .questiontext {
+    margin-bottom: 12px;
+  }
+  .answersection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .button {
+    width: 100%;
+    font-size: 16px;
+    background-color: #252d4a;
+    border-radius: 15px;
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    border: solid white;
+    cursor: pointer;
+    color: white;
+    outline: none;
+  }
+  .resultCard {
+    color: black;
+    position: absolute;
+    bottom: 35%;
+    left: 105%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 250px;
+    margin: auto;
+    height: 260px;
+    border-radius: 15px;
+    margin-top: 250px;
+    padding: 20px;
+    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    justify-content: space-evenly;
+  }
+  .resultCard2 {
+    color: white;
+    position: absolute;
+    bottom: 35%;
+    right: 105%;
+    justify-content: center;
+    align-items: center;
+    background-color: #d84242;
+    width: 250px;
+    margin: auto;
+    height: 260px;
+    border-radius: 15px;
+    margin-top: 250px;
+    padding: 20px;
+    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    justify-content: space-evenly;
+  }
+  .resultCard3 {
+    color: white;
+    position: absolute;
+    top: 8%;
+    right: 120%;
+    justify-content: center;
+    align-items: center;
+    background-color: #d84242;
+    width: 250px;
+    margin: auto;
+    height: 260px;
+    border-radius: 15px;
+    margin-top: 250px;
+    padding: 20px;
+    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    justify-content: space-evenly;
+  }
+  .resultCard4 {
+    color: white;
+    position: absolute;
+    top: 8%;
+    left: 120%;
+    justify-content: center;
+    align-items: center;
+    background-color: #d84242;
+    margin: auto;
+    height: 260px;
+    width: 250px;
+    border-radius: 15px;
+    margin-top: 250px;
+    padding: 20px;
+    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    justify-content: space-evenly;
+  }
+  .resultCard5 {
+    color: white;
+    position: absolute;
+    bottom: 100px;
+    left: 10%;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: #d84242;
+    margin: auto;
+    height: 330px;
+    width: 350px;
+    border-radius: 15px;
+    margin-top: 250px;
+    padding: 20px;
+    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    justify-content: space-evenly;
+  }
+  .congrats {
+    height: 170px;
+    width: 170px;
+    position: absolute;
+    left: 20%;
+  }
+  .resultCard5Text {
+    position: absolute;
+    top: 55%;
+  }
+  .endCardButton1 {
+    background-color: #b53737;
+    border-color: #b53737;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+    top: 85%;
+    left: 10%;
+  }
+  .endCardButton2 {
+    background-color: #b53737;
+    border-color: #b53737;
+    padding: 0 20px 0 20px;
+    border-radius: 10px;
+    color: white;
+    width: 170px;
+    height: 40px;
+    position: absolute;
+    top: 85%;
+    left: 55%;
+  }
+  .endCardHead {
+    position: absolute;
+    bottom: 74%;
+    font-size: 7vh;
+    left: 30%;
+    color: #d84242;
+  }
+  .endCardText {
+    position: absolute;
+    color: black;
+    top: 62%;
+    left: 10%;
+  }
+  .allSet {
+    position: absolute;
+    top: 96%;
+    left: 20%;
+  }
+  
+  .retake {
+    position: absolute;
+    bottom: 0px;
+  }
+  
+  .endCardButton1:hover {
+    cursor: pointer;
+    background-color: #d84242;
+    border: #d84242;
+  }
+  .endCardButton2:hover {
+    cursor: pointer;
+    background-color: #d84242;
+    border: #d84242;
+  }
+  
+  .button:hover {
+    border: white;
+    background-color: #d84242;
+    cursor: pointer;
+  }
+  .button:active {
+    background-color: #9e4244;
+    border: white;
+  }
+  
+  .button svg {
+    margin-right: 10px;
+  }
+  
+  .quizWrapper {
+    min-height: 90vh;
+  }
+  
+}
+
