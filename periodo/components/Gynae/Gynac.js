@@ -78,6 +78,8 @@ export default function Gynac() {
                   }}
                   variant="outlined"
                   label="Name"
+                  type="text"
+                  required
                   name="fullName"
                   color="secondary"
                   value={values.fullName}
@@ -100,6 +102,7 @@ export default function Gynac() {
                   }}
                   variant="outlined"
                   label="Age"
+                  type="number"
                   name="age"
                   value={values.age}
                   onChange={handleInputChange}
@@ -120,7 +123,9 @@ export default function Gynac() {
                   }}
                   variant="outlined"
                   label="Email"
+                  type="email"
                   name="email"
+                  required
                   value={values.email}
                   onChange={handleInputChange}
                 />
@@ -139,6 +144,7 @@ export default function Gynac() {
                   }}
                   variant="outlined"
                   label="Contact Number"
+                  type="tel"
                   name="mobile"
                   value={values.mobile}
                   onChange={handleInputChange}
@@ -159,12 +165,12 @@ export default function Gynac() {
                   }}
                   variant="outlined"
                   label="Weight"
+                  type="number"
                   name="weight"
                   value={values.weight}
                   onChange={handleInputChange}
                 />
               </em>
-
               <em>
                 <TextField
                   className={style.field}
@@ -180,6 +186,7 @@ export default function Gynac() {
                   variant="outlined"
                   label="Height (in cm)"
                   name="height"
+                  type="number"
                   value={values.height}
                   onChange={handleInputChange}
                 />
@@ -201,12 +208,12 @@ export default function Gynac() {
                   }}
                   variant="outlined"
                   label="No. of Days your Cycle is Late"
+                  type="number"
                   name="lateCycle"
                   value={values.lateCycle}
                   onChange={handleInputChange}
                 />
               </em>
-
               <em>
                 {" "}
                 <TextField
@@ -222,6 +229,7 @@ export default function Gynac() {
                   }}
                   variant="outlined"
                   label="Describe the Menstrual Issue"
+                  type="text"
                   name="issues"
                   value={values.issues}
                   onChange={handleInputChange}
@@ -248,52 +256,51 @@ export default function Gynac() {
                   />
                 </em>
               </form>
-
-              <div className={style.grid}>
+                <div className={style.grid}>
+                  <FormControlLabel
+                    control={
+                      <Checkbox
+                        checked={values.checkedB}
+                        onChange={handleInputChange}
+                        name="PCOD"
+                        color="primary"
+                      />
+                    }
+                    label="PCOD"
+                  />
+                  <FormControlLabel
+                    control={
+                      <Checkbox
+                        checked={values.checkedB}
+                        onChange={handleInputChange}
+                        name="PCOS"
+                        color="primary"
+                      />
+                    }
+                    label="PCOS"
+                  />
                 <FormControlLabel
-                  control={
-                    <Checkbox
-                      checked={values.checkedB}
-                      onChange={handleInputChange}
-                      name="PCOD"
-                      color="primary"
-                    />
-                  }
-                  label="PCOD"
-                />
+                    control={
+                      <Checkbox
+                        checked={values.checkedB}
+                        onChange={handleInputChange}
+                        name="PMS"
+                        color="primary"
+                      />
+                    }
+                    label="PMS"
+                  />
                 <FormControlLabel
-                  control={
-                    <Checkbox
-                      checked={values.checkedB}
-                      onChange={handleInputChange}
-                      name="PCOS"
-                      color="primary"
-                    />
-                  }
-                  label="PCOS"
-                />
-                <FormControlLabel
-                  control={
-                    <Checkbox
-                      checked={values.checkedB}
-                      onChange={handleInputChange}
-                      name="PMS"
-                      color="primary"
-                    />
-                  }
-                  label="PMS"
-                />
-                <FormControlLabel
-                  control={
-                    <Checkbox
-                      checked={values.checkedB}
-                      onChange={handleInputChange}
-                      name="PMDD"
-                      color="primary"
-                    />
-                  }
-                  label="PMDD"
-                />
+                    control={
+                      <Checkbox
+                        checked={values.checkedB}
+                        onChange={handleInputChange}
+                        name="PMDD"
+                        color="primary"
+                      />
+                    }
+                    label="PMDD"
+                  />
                 <FormControlLabel
                   control={
                     <Checkbox
@@ -414,6 +421,7 @@ export default function Gynac() {
                   }}
                   variant="contained"
                   color="secondary"
+                  type="submit"
                 >
                   Send
                 </Button>

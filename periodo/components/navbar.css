@@ -3,15 +3,16 @@
   left: 0;
 }
 .Nav-bar {
-  width: 90%;
-  padding: 0.5rem 1rem;
-  font-size: 20px;
-  font-weight: 700;
+  width: auto;
+  padding: 0.5rem 0.5rem;
+  font-size: 15px;
+  font-weight: 1000;
 }
 .Nav-bar:hover {
-  border-radius: 2rem;
-  box-shadow: 2px 2px 3px 3px rgb(255, 211, 232),
-    2px 2px 5px 4px rgb(255, 211, 232);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 1px 1px rgb(255, 211, 232),
+    1px 1px 3px 4px rgb(255, 211, 232);
+
   color: rgb(255, 211, 232);
 }
 #nav-btn,
@@ -28,6 +29,27 @@
 
 /***********Responsive********/
 
+@media screen and (max-width: 1000px) {
+  .toggle {
+    display: block;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+  }
+  .Nav-bar {
+    position: relative;
+    width: auto;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0.5rem 1rem;
+  }
+  .toggel-btn {
+    width: 30px;
+    min-height: 7px;
+    margin: 2px;
+    background-color: white;
+  }
+}
 @media screen and (max-width: 1000px) {
   .toggle {
     display: block;
@@ -56,13 +78,10 @@
     color: red;
   }
 }
-
 /* @media screen and (max-width:400px){
-
     .Nav-bar{
         right: -30%;
     }
-
 } */
 
 /*Desktop View*/
@@ -72,7 +91,7 @@
   justify-content: space-between;
   align-items: center;
   width: auto;
-  height: auto;
+  height: 90px;
 }
 .logo-nav {
   color: white;
@@ -126,7 +145,7 @@
     grid-gap: 0px;
   }
   .nav-options.active {
-    background: #101011;
+    background: #000000 ;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;

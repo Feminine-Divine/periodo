@@ -1,9 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import { useUser } from "@auth0/nextjs-auth0";
-
-import stickyNavStyle from "./navbar.module.css";
-
 import {
   faHome,
   faUser,
@@ -16,185 +13,157 @@ import {
   faSignOutAlt,
   faSignInAlt,
 } from "@fortawesome/free-solid-svg-icons";
+import classes from "./navbar.component.style.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import clsx from "clsx";
+import { useTheme } from "@material-ui/core/styles";
+import Drawer from "@material-ui/core/Drawer";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import List from "@material-ui/core/List";
+import Divider from "@material-ui/core/Divider";
+import IconButton from "@material-ui/core/IconButton";
+import MenuIcon from "@material-ui/icons/Menu";
+import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
+import ChevronRightIcon from "@material-ui/icons/ChevronRight";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemIcon from "@material-ui/core/ListItemIcon";
+import ListItemText from "@material-ui/core/ListItemText";
 
-const Navbar = ({ children }) => {
+const Navbar = () => {
+  const theme = useTheme();
+  const [open, setOpen] = React.useState(false);
   const { user } = useUser();
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+
+  const handleDrawerOpen = () => {
+    setOpen(true);
+  };
+
+  const handleDrawerClose = () => {
+    setOpen(false);
+  };
+
   return (
-    <React.Fragment>
-      <div className={stickyNavStyle.mobileNav}>
-        <div className="header">
-          <div className="logo-nav">
-            <Link href="/">
-              <a>
-                <img
-                  src="Logo.png"
-                  height="64px"
-                  width="160px"
-                  padding="10px"
-                  class="nav-img"
-                ></img>
-              </a>
-            </Link>
-            <ul className={click ? "nav-options active " : "nav-options "}>
-              <li className="option" onClick={closeMobileMenu}>
-                <Link href="/homepage">
-                  <a class="Nav-bar Nav-Active">
-                    Home <FontAwesomeIcon icon={faHome} />
-                  </a>
-                </Link>
-              </li>
-
-              <li className="option" onClick={closeMobileMenu}>
-                <Link href="/about">
-                  <a class="Nav-bar">
-                    AboutUs <FontAwesomeIcon icon={faUser} />
-                  </a>
-                </Link>
-              </li>
-            </ul>
-
-            <ul
-              className={
-                click
-                  ? "nav-options active nav-options-right "
-                  : "nav-options nav-options-right "
-              }
-            >
-              <li className="option" onClick={closeMobileMenu}>
-                <Link href="/Gynac">
-                  <a class="Nav-bar">
-                    GynacHelp <FontAwesomeIcon icon={faHandHoldingMedical} />
-                  </a>
-                </Link>
-              </li>
-
-              <li className="option" onClick={closeMobileMenu}>
-                <Link href="/notes">
-                  <a class="Nav-bar">
-                    Notes <FontAwesomeIcon icon={faNotesMedical} />
-                  </a>
-                </Link>
-              </li>
-
-              <li className="option" onClick={closeMobileMenu}>
-                <Link href="/tips">
-                  <a class="Nav-bar">
-                    Tips <FontAwesomeIcon icon={faFileMedical} />
-                  </a>
-                </Link>
-              </li>
-
-              <li className="option" onClick={closeMobileMenu}>
-                <Link href="/calender">
-                  <a class="Nav-bar">
-                    Calendar <FontAwesomeIcon icon={faCalendarAlt} />
-                  </a>
-                </Link>
-              </li>
-
-              <li className="option" onClick={closeMobileMenu}>
-                <Link href="/analysis">
-                  <a class="Nav-bar">
-                    Quiz <FontAwesomeIcon icon={faAward} />
-                  </a>
-                </Link>
-              </li>
-
-              <li className="option" onClick={closeMobileMenu}>
-                <Link href="/flow">
-                  <a class="Nav-bar">
-                    Wanna Rate Yourself <FontAwesomeIcon icon={faStar} />
-                  </a>
-                </Link>
-              </li>
-
-              {user ? (
-                <li className="option" onClick={closeMobileMenu}>
-                  <Link href="/api/auth/logout">
-                    <a className="Nav-bar">
-                      Logout <FontAwesomeIcon icon={faSignOutAlt} />
-                    </a>
-                  </Link>
-                </li>
-              ) : (
-                <li className="option" onClick={closeMobileMenu}>
-                  <Link href="/api/auth/login">
-                    <a className="Nav-bar">
-                      Login <FontAwesomeIcon icon={faSignInAlt} />
-                    </a>
-                  </Link>
-                </li>
-              )}
-            </ul>
-
-            <div
-              className="mobile-menu nav-options-right"
-              onClick={handleClick}
-            >
-              {click ? (
-                <img src="x.svg" className="menu-icon" />
-              ) : (
-                <img src="menu.svg" className="menu-icon" />
-              )}
-            </div>
-          </div>
+    <div className={classes.root}>
+      <CssBaseline />
+      <AppBar
+        position="fixed"
+        style={{ backgroundColor: "black" }}
+        className={clsx(classes.appBar, {
+          [classes.appBarShift]: open,
+        })}
+      >
+        <Toolbar>
+          <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            onClick={handleDrawerOpen}
+            edge="start"
+            className={clsx(classes.menuButton, open && classes.hide)}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Link href="/">
+            <img src="Logo.png" height="70px" width="215px"></img>
+          </Link>
+        </Toolbar>
+      </AppBar>
+      <Drawer
+        className={classes.drawer}
+        variant="persistent"
+        anchor="left"
+        open={open}
+        classes={{
+          paper: classes.drawerPaper,
+        }}
+      >
+        <div className={classes.drawerHeader}>
+          <IconButton onClick={handleDrawerClose}>
+            {theme.direction === "ltr" ? (
+              <ChevronLeftIcon />
+            ) : (
+              <ChevronRightIcon />
+            )}
+          </IconButton>
         </div>
+        <Divider />
+        <List>
+          <ListItem button component="a" href="/homepage">
+            <ListItemIcon>
+              <FontAwesomeIcon icon={faHome} />
+            </ListItemIcon>
+            <ListItemText primary="Home" />
+          </ListItem>
 
-        {/* <header className={styles.mobileNav}>
-  <Header>
+          <ListItem button component="a" href="/about">
+            <ListItemIcon>
+              <FontAwesomeIcon icon={faUser} />
+            </ListItemIcon>
+            <ListItemText primary="AboutUs" />
+          </ListItem>
 
-        <img src="Logo.png" height="64px" width="160px" padding="10px" className="nav-img"></img>
-        <Nav>
-          <input type= "checkbox" id="nav-btn"></input>
-         <div className="main-navbar">
-            <Link href="/homepage">
-              <a className="Nav-bar Nav-Active">Home</a>
-            </Link>
-            {user ? <Link href="/api/auth/logout">
-              <a className="Nav-bar">Logout</a>
-            </Link> : <Link href="/api/auth/login">
-              <a className="Nav-bar">Login</a>
-            </Link>}
-            <Link href="/tips">
-              <a className="Nav-bar">Tips</a>
-            </Link>
-            <Link href="/Gynac">
-              <a className="Nav-bar">GynacHelp</a>
-            </Link>
-            <Link href="/analysis">
-              <a className="Nav-bar">Quiz</a>
-            </Link>
-            <Link href="/calender">
-              <a className="Nav-bar">Calendar</a>
-            </Link>
-            <Link href="/flow">
-              <a className="Nav-bar">Wanna Rate Yourself</a>
-            </Link>
-            <Link href="/notes">
-              <a className="Nav-bar">Notes</a>
-            </Link>
-            <Link href="/about">
-              <a className="Nav-bar">AboutUs</a>
-            </Link>
-            <label for="nav-btn">
-              <div className="toggle" >
-                <div className="toggel-btn"></div>
-                <div className="toggel-btn"></div>
-                <div className="toggel-btn"></div>
-              </div>
-            </label>
-          </div>
-        </Nav>
+          <ListItem button component="a" href="/Gynac">
+            <ListItemIcon>
+              <FontAwesomeIcon icon={faHandHoldingMedical} />
+            </ListItemIcon>
+            <ListItemText primary="GynacHelp" />
+          </ListItem>
 
-      </Header> */}
-        <div>{children}</div>
-      </div>
-    </React.Fragment>
+          <ListItem button component="a" href="/notes">
+            <ListItemIcon>
+              <FontAwesomeIcon icon={faNotesMedical} />
+            </ListItemIcon>
+            <ListItemText primary="Notes" />
+          </ListItem>
+
+          <ListItem button component="a" href="/tips">
+            <ListItemIcon>
+              <FontAwesomeIcon icon={faFileMedical} />
+            </ListItemIcon>
+            <ListItemText primary="Tips" />
+          </ListItem>
+
+          <ListItem button component="a" href="/calender">
+            <ListItemIcon>
+              <FontAwesomeIcon icon={faCalendarAlt} />
+            </ListItemIcon>
+            <ListItemText primary="Calendar" />
+          </ListItem>
+
+          <ListItem button component="a" href="/analysis">
+            <ListItemIcon>
+              <FontAwesomeIcon icon={faAward} />
+            </ListItemIcon>
+            <ListItemText primary="Quiz" />
+          </ListItem>
+
+          <ListItem button component="a" href="/flow">
+            <ListItemIcon>
+              <FontAwesomeIcon icon={faStar} />
+            </ListItemIcon>
+            <ListItemText primary="Wanna Rate Yourself" />
+          </ListItem>
+
+          {user ? (
+            <ListItem button component="a" href="/api/auth/logout">
+              <ListItemIcon>
+                <FontAwesomeIcon icon={faSignOutAlt} />
+              </ListItemIcon>
+              <ListItemText primary="Logout" />
+            </ListItem>
+          ) : (
+            <ListItem button component="a" href="/api/auth/login">
+              <ListItemIcon>
+                <FontAwesomeIcon icon={faSignInAlt} />
+              </ListItemIcon>
+              <ListItemText primary="Login" />
+            </ListItem>
+          )}
+        </List>
+      </Drawer>
+    </div>
   );
 };
-
 export default Navbar;
+

@@ -9,6 +9,11 @@ import MailIcon from "@material-ui/icons/Mail";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import styles from '../styles/Home.module.css';
+import Start from "../components/started.js"
+import Layout from "../components/Layout"
+import ChatBot from "../components/ChatBot/ChatBot"
+import Emergency from "../components/Emergency/Emergency"
+
 
 const Homepage = () => {
   return (
@@ -23,6 +28,9 @@ const Homepage = () => {
         </div>
       <Start />
       <Footer />
+      <Layout>
+      <Start/>
+      </Layout>
       <ChatBot />
       <Emergency />
     </>

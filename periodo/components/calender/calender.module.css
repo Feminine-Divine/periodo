@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 
+.calendarContainer {
+  margin-top: 70px;
+}
 .react-calendar {
   border: none;
   background: transparent;
@@ -93,5 +96,16 @@
   .container {
     width: 85%;
     padding: 2rem 0;
+  }
+}
+
+/* Responsive calender */
+@media (max-width: 360px) {
+  .nextbtn {
+    padding: 8px;
+  }
+
+  .link {
+    padding: 8px;
   }
 }
