@@ -145,3 +145,18 @@
   animation: float 3.4s ease-in-out infinite;
 }
 
+@media screen and (max-width: 420px) {
+  .heading {
+    font-size: 35px;
+    text-align: center;
+  }
+  .topline {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+  }
+  .subline {
+    text-align: center;
+    padding-right: 7px;
+  }
+}
