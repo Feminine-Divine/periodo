@@ -1,21 +1,19 @@
 import React from "react";
-import Navbar from "../components/navbar.js";
-import Home from "../components/calender/calender.js"
 import Start from "../components/started.js"
-import Footer from "../components/Footer/Footer.js"
+import Layout from "../components/Layout"
 import ChatBot from "../components/ChatBot/ChatBot"
 import Emergency from "../components/Emergency/Emergency"
 
-const Homepage =()=> {
+const Homepage = () => {
   return (
     <>
-      <Navbar />
+      <Layout>
       <Start/>
-      <Footer/>
+      </Layout>
       <ChatBot />
       <Emergency />
-      </>
+    </>
   );
-}
+};
 
 export default Homepage;

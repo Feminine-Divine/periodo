@@ -8,11 +8,10 @@ function ShowNote(props) {
   }
 
   return (
-      
     <div className={styles.note}>
-        <div className={styles.h1}>  
-            <h1 className={styles.notetitle}>{props.title}</h1>
-        </div>
+      <div className={styles.h1}>
+        <h1 className={styles.notetitle}>{props.title}</h1>
+      </div>
       <p className={styles.notebody}>{props.content}</p>
       <button className={styles.delbtn} onClick={handleClick}>
         <DeleteIcon />
@@ -20,5 +19,4 @@ function ShowNote(props) {
     </div>
   );
 }
-
 export default ShowNote;

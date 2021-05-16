@@ -28,6 +28,62 @@ Refer to the following articles on the basics of Git and Github and can also con
 - Add Screenshots to help us know what this Script is all about.
 
 
+## HOW TO REBASE A BRANCH💥:
+
+**1.** [Fork](https://github.com/Feminine-Divine/periodo.git) the project.
+
+**2.** Clone the forked repository. Open git bash and type:
+
+```bash
+git clone https://github.com/<your-github-username>/periodo.git
+```
+
+**3.** Navigate to the project directory.
+
+```bash
+cd periodo
+```
+
+**4.** Add upstream.
+
+```bash
+git remote add upstream https://github.com/Feminine-Divine/periodo
+```
+
+**5.** Check if the upstream is added or not.
+
+```bash
+git remote -v
+```
+
+**6.** If you cloned a while ago, get the latest changes from upstream.
+
+```bash
+git checkout <master>
+git pull upstream <master>
+```
+
+**7.** Make a feature branch(Always check your current branch is up to date before creating a new branch from it to avoid merge conflicts)
+
+```bash
+git checkout -b <branch-name>
+```
+
+**8.** Locally merge (or rebase) the upstream master branch into your topic branch:
+
+```bash
+git pull [--rebase] upstream <master>
+```
+
+**9.** Push your local commits to the remote repo.
+
+```bash
+git push origin <branch-name>
+```
+
+**10.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) !
+
+
 ## HOW TO MAKE A PULL REQUEST✨:
 
 **1.** Fork [this](https://github.com/Feminine-Divine/periodo.git) repository.

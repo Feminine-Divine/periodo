@@ -26,5 +26,4 @@ function SplashScreen({ setSplashScreenVisible }) {
     </div>
   );
 }
-
 export default SplashScreen;
