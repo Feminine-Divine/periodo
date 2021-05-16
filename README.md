@@ -89,6 +89,8 @@ Do follow the [commit conventions](https://github.com/Feminine-Divine/periodo/bl
 ## Contact Us ☎️
 Please reach out to the admins [Khushi Gautam](https://www.linkedin.com/in/khushi-gautam-7708b4191) and [Shipra Verma](https://www.linkedin.com/in/shipra-verma-76a4611ab) if you face any doubts or have any questions regarding the project.
 
+### Follow us on [LinkedIn](https://www.linkedin.com/company/feminine-divine/)
+
 ### Chat Channel:- For any queries post here Mentors will guide you here on [Discord](https://discord.com/channels/811724426965811210/815040260105961472) 
 
 
