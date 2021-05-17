@@ -52,7 +52,7 @@ function ContactUs() {
                         <div>
                         <label className={styles.input_label}>Comments</label>
                             <div className={styles.textarea_field}> <span><i aria-hidden="true" class="fa fa-comment"></i></span>
-                                <textarea className={styles.inputN}  style={{resize:"none", color:"#ffd7d6"}} cols="82" rows="8" name="comments"></textarea>
+                                <input type ="text" className={styles.inputtextarea}  name="comments"/>
                             </div>
                         </div>
                     </div>

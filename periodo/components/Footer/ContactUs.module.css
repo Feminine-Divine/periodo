@@ -59,6 +59,7 @@
 }
 .form_wrapper .input_field, .form_wrapper .textarea_field {
 	position:relative;
+	
 }
 .form_wrapper .input_field > span, .form_wrapper .textarea_field > span {
 	position:absolute;
@@ -69,17 +70,21 @@
 	border-right:1px solid #ccc;
 	text-align:center;
 	width:30px;
+	
 }
 .form_wrapper .textarea_field > span {
 	border-bottom:1px solid #ccc;
 	max-height:35px;
+	
+	
 }
 .form_wrapper .input_field > span > i, .form_wrapper .textarea_field > span > i {
 	padding-top:12px;
-}
-.form_wrapper .inputN[type="text"], .form_wrapper .inputN[type="email"], .form_wrapper .inputN[type="tel"], textarea .inputN {
-	width:98%;
+
 	
+}
+.form_wrapper .inputN[type="text"], .form_wrapper .inputN[type="email"], .form_wrapper .inputN[type="tel"]{
+	width:98%;
 	padding:10px 10px 10px 35px;
 	border:1px solid #ccc;
 	box-sizing:border-box;
@@ -89,12 +94,10 @@
 	-moz-transition: all 0.30s ease-in-out;
 	-ms-transition: all 0.30s ease-in-out;
 	transition: all 0.30s ease-in-out;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
-.form_wrapper textarea .inputN {
-	height:8em;
-}
-.form_wrapper .inputN[type="text"]:focus, .form_wrapper .inputN[type="email"]:focus, .form_wrapper .inputN[type="tel"]:focus, textarea .inputN:focus {
+
+.form_wrapper .inputN[type="text"]:focus, .form_wrapper .inputN[type="email"]:focus, .form_wrapper .inputN[type="tel"]:focus {
 	-webkit-box-shadow:0 0 2px 1px pink;
 	-moz-box-shadow:0 0 2px 1px pink;
 	box-shadow:0 0 2px 1px pink;
@@ -148,6 +151,13 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.inputtextarea {
+	height: 5rem;
+	width: 44rem;
+	resize: none;
+	margin-bottom: 1rem;
+	
+}
 @media (max-width: 600px) {
 .form_wrapper .col_half {
 	width:100%;
@@ -161,7 +171,7 @@
     45deg,
     rgb(133, 29, 186) 15%,
     rgba(255, 0, 224, 1) 100%
-  );;
+  );
 	height:40px;
 	line-height:40px;
 	width:40%;
@@ -178,4 +188,46 @@
 	-ms-transition: all 0.30s ease-in-out;
 	transition: all 0.30s ease-in-out;
 }
+.inputtextarea {
+	height: 70px;
+	width: 360px;
+	resize: none;
+}
 } 
+@media (max-width: 1000px) {
+	.form_wrapper .col_half {
+		width:100%;
+		float:none;
+	}
+	.form_wrapper .input_label {
+		margin:10px 0;
+	}
+	.form_wrapper .inputN[type="submit"] {
+		background: -webkit-linear-gradient(
+		45deg,
+		rgb(133, 29, 186) 15%,
+		rgba(255, 0, 224, 1) 100%
+	  );
+		height:40px;
+		line-height:40px;
+		width:40%;
+		border:none;
+		margin-left: 90px;
+		justify-content: center;
+		outline:none;
+		cursor:pointer;
+		color:#fff;
+		font-size:1em;
+	  padding-top: 0px;
+		-webkit-transition: all 0.30s ease-in-out;
+		-moz-transition: all 0.30s ease-in-out;
+		-ms-transition: all 0.30s ease-in-out;
+		transition: all 0.30s ease-in-out;
+	}
+	.inputtextarea {
+		height: 70px;
+		width: 290px;
+		resize: none;
+	}
+	} 
+	
