@@ -74,16 +74,7 @@ function ContactUs() {
               xs={12}
               lg={12}
             >
-              {/*<TextField
-                  margin="dense"
-                  label="Email"
-                  variant="filled"
-                  color="secondary"
-                  name="email"
-                  required
-                  style={{width: '95%', background:"#fad2e3"}}
-                /> */}
-              <TextareaAutosize
+            <TextareaAutosize
                 rowsMax={4}
                 aria-label="maximum height"
                 placeholder="Message"
@@ -125,5 +116,4 @@ function ContactUs() {
     </Paper>
   );
 }
-
 export default ContactUs;

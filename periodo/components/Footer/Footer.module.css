@@ -9,18 +9,15 @@
   margin-right: 0;
   padding-right: 0;
 }
-
 .one {
   float: left;
   display: flex;
   justify-content: center;
 }
-
 .two {
   display: flex;
   justify-content: center;
 }
-
 .base {
   background: #960435;
   color: black;
@@ -31,7 +28,6 @@
   justify-content: center;
   font-size: 1.2em;
 }
-
 .name {
   color: "black";
 }
@@ -48,7 +44,6 @@
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
 }
-
 .contactButton {
   font-size: 100px;
 }
@@ -254,7 +249,7 @@
     padding-left: 0px;
   }
 }
-
+/* Responsiveness */
 @media screen and (max-width: 480px) {
   .footer__link_items {
     margin: 0;
