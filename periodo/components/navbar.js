@@ -45,16 +45,16 @@ const Navbar = () => {
   };
 
   return (
-    <div className={classes.root}>
+    <div >
       <CssBaseline />
       <AppBar
         position="fixed"
-        style={{ backgroundColor: "black" }}
+        style={{ backgroundColor: "rgb(255, 192, 203)" }}
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
         })}
       >
-        <Toolbar>
+        <Toolbar >
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -78,7 +78,7 @@ const Navbar = () => {
           paper: classes.drawerPaper,
         }}
       >
-        <div className={classes.drawerHeader}>
+        <div className={classes.drawerHeader} style={{ backgroundColor: "rgb(255, 182, 193)" }}>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === "ltr" ? (
               <ChevronLeftIcon />
@@ -88,7 +88,8 @@ const Navbar = () => {
           </IconButton>
         </div>
         <Divider />
-        <List>
+        <div height="30px">
+        <List className={classes.root} style={{ backgroundColor: "rgb(255, 182, 193)" }}>
           <ListItem button component="a" href="/homepage">
             <ListItemIcon>
               <FontAwesomeIcon icon={faHome} />
@@ -157,10 +158,13 @@ const Navbar = () => {
               <ListItemIcon>
                 <FontAwesomeIcon icon={faSignInAlt} />
               </ListItemIcon>
-              <ListItemText primary="Login" />
+              <ListItemText primary="Login" height="200px"/>
             </ListItem>
           )}
+          <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+          <br></br><br></br><br></br><br></br><br></br>
         </List>
+        </div>
       </Drawer>
     </div>
   );
