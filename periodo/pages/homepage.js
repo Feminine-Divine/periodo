@@ -12,6 +12,8 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import styles from '../styles/Home.module.css';
 
 
+
+
 const Homepage = () => {
   return (
     <>
@@ -23,7 +25,7 @@ const Homepage = () => {
             <a data-testid="instagram" href=""><InstagramIcon className={styles.icons} /></a>
         </div>
       <Start />
-      <Layout/>
+      <Layout />
       <ChatBot />
       <Emergency />
     </>
