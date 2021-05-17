@@ -120,3 +120,50 @@
   padding: 8px 0;
   background: #3a2b58;
 }
+
+.socialIcons{
+  position: fixed;
+  top: 27%;
+  left: 95%;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.socialIcons a{
+ background-color: rgb(255, 211, 232);
+ padding: 10px;
+ padding-top: 12px;
+ padding-bottom: 8px;
+ font-size: 28px;
+ margin: 3px;
+ text-align: left;
+ border-radius:  33px  33px 0px  ;
+ transform:  translate(-16px,0px);
+ transition: all 0.5s;
+ 
+}
+.socialIcons a:hover{
+  transform: translate(12px,0px);
+}
+.icons{
+  background-color: lightpink;
+  border-radius: 33%;
+  margin-right: 25px;
+  font-size: 100px;
+  height: 80px;
+  width: 34px;
+  color: black;
+  text-align: center;
+  transition: all 0.5;
+  animation: animate 5s linear infinite;
+}
+
+
+@keyframes animate{
+  0%{
+      transform:rotate(0deg);
+  }
+  100%{
+      transform:rotate(360deg);
+  }
+}
