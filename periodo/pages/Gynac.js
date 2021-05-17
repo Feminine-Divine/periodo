@@ -1,12 +1,15 @@
 import React from "react";
-import Footer from "../components/Footer/Footer";
+import Layout from "../components/Layout";
 import Gynac from "../components/Gynae/Gynac";
-const Gynae = () => {
-  return (
-    <>
-      <Gynac></Gynac>
-      <Footer />
-    </>
-  );
-};
+
+const Gynae =()=>{
+    return (
+        <>
+        <Layout>
+        <Gynac></Gynac>
+        </Layout>
+        </>
+    );
+}
 export default Gynae;
+

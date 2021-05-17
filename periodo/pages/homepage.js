@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/navbar.js";
 import Start from "../components/started.js";
+import Layout from "../components/Layout";
 import Footer from "../components/Footer/Footer.js";
 import ChatBot from "../components/ChatBot/ChatBot";
 import Emergency from "../components/Emergency/Emergency";
@@ -10,11 +11,11 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import styles from '../styles/Home.module.css';
 
+
 const Homepage = () => {
   return (
     <>
       <Navbar />
-      <br></br>
         <div className={styles.socialIcons}>
             <a data-testid="github" href="https://github.com/Feminine-Divine/periodo"><GitHubIcon className={styles.icons} /></a>
             <a data-testid="mail" href="mailto:femininedivine591@gmail.com"><MailIcon className={styles.icons} /></a>
@@ -22,7 +23,7 @@ const Homepage = () => {
             <a data-testid="instagram" href=""><InstagramIcon className={styles.icons} /></a>
         </div>
       <Start />
-      <Footer />
+      <Layout/>
       <ChatBot />
       <Emergency />
     </>

@@ -1,16 +1,15 @@
 import React from "react";
-import Home from "../components/calender/calender";
-import Footer from "../components/Footer/Footer";
-import Navbar from "../components/navbar";
+import Home from "../components/calender/calender"
+import Layout from "../components/Layout";
 
 const calender = () => {
-  return (
-    <>
-      <Navbar />
-      <Home />
-      <Footer />
-    </>
-  );
-};
+	return (
+		<>
+			<Layout>
+			<Home />
+			</Layout>
+		</>
+	)
+}
 
 export default calender;

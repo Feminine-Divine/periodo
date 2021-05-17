@@ -1,12 +1,15 @@
 import React from "react";
-import Footer from "../components/Footer/Footer";
+import Layout from "../components/Layout";
 import Tips from "../components/tips/tips";
-const tips = () => {
-  return (
-    <>
-      <Tips></Tips>
-      <Footer />
-    </>
-  );
-};
+
+const tips =()=>{
+    return (
+        <>
+        <Layout>
+        <Tips></Tips>
+        </Layout>
+        </>
+    );
+}
 export default tips;
+

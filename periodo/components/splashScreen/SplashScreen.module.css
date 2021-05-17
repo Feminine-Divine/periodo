@@ -9,12 +9,10 @@
   justify-content: center;
   align-items: center;
 }
-
 .image {
   width: 50%;
   height: 50%;
 }
-
 .typewriter h1 {
   overflow: hidden;
   border-right: 0.15em solid #f6b1c3;
@@ -26,7 +24,6 @@
   color: #2f2e41;
   animation: typing 2.3s steps(40, end), blink-caret 0.75s step-end infinite;
 }
-
 @keyframes typing {
   from {
     width: 0px;
@@ -35,7 +32,6 @@
     width: 100%;
   }
 }
-
 @keyframes blink-caret {
   from,
   to {
