@@ -106,4 +106,3 @@ Please reach out to the admins [Khushi Gautam](https://www.linkedin.com/in/khush
 This Project is a part of the following program
 
 ![image](https://user-images.githubusercontent.com/66299533/111175145-1fe83180-85ce-11eb-9ab7-ffe81fbec848.png)
-Vanshika Yadav
