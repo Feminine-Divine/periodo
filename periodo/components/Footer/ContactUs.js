@@ -11,7 +11,7 @@ import { Row, Col } from "reactstrap";
 function ContactUs() {
   return (
     <Paper
-      style={{ alignItems: "center", margin: "0 19%", background: "#960435" }}
+      style={{ alignItems: "center",isolation: 'isolate', margin: "0 19%", background: "#960435" }}
     >
       <Card style={{ backgroundColor: "#960435", color: "white" }}>
         <CardHeader title="Talk with us (beta)" />
