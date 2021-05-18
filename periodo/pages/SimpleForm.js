@@ -192,9 +192,6 @@ class SimpleForm extends Component {
             end: true,
           },
         ]}
-        floating={true}
-        opened={true}
-        toggleFloating={this.toggleFloating}
       />
     );
   }
