@@ -76,29 +76,34 @@ const Analysis = () => {
     const a4 = ((score / 1000) | 0) % 10;
     const a5 = ((score / 10000) | 0) % 10;
 
+    /* Toggles first card if answer for question 1 is true  */    
     function toggle() {
       if (a1 == 1) {
         setShowMe1(
           !showMe1
-        ); /* Toggles first card if answer for question 1 is true  */
+        ); 
       }
+      /* Toggles second card if answer for question 2 or 4 is true  */
       if (a2 == 1 || a4 == 1) {
         setShowMe2(
           !showMe2
-        ); /* Toggles second card if answer for question 2 or 4 is true  */
+        ); 
       }
+      /* Toggles third card if answer for question 3 is true  */
       if (a3 == 1) {
         setShowMe3(
           !showMe3
-        ); /* Toggles third card if answer for question 3 is true  */
+        );
       }
+      /* Toggles fourth card if answer for question 4 is true  */
       if (a5 == 1) {
         setShowMe4(
           !showMe4
-        ); /* Toggles fourth card if answer for question 4 is true  */
+        ); 
       }
+       /* Toggles last card if no answer is true  */
       if (a1 == 0 && a2 == 0 && a3 == 0 && a4 == 0 && a5 == 0) {
-        setShowMe5(!showMe5); /* Toggles last card if no answer is true  */
+        setShowMe5(!showMe5);
       }
     }
     return (
@@ -106,6 +111,7 @@ const Analysis = () => {
         <button className={styles.endCardButton1} onClick={toggle}>
           TELL ME MORE!
         </button>
+
         {/*The bottom code should toggle on and off when the button is pressed*/}
         <div className="resCards">
           <div style={{ display: showMe1 ? "block" : "none" }}>

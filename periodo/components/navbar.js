@@ -13,7 +13,6 @@ import {
   faSignOutAlt,
   faSignInAlt,
 } from "@fortawesome/free-solid-svg-icons";
-
 import classes from "./navbar.component.style.js";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -56,15 +55,16 @@ const Navbar = () => {
   };
 
   return (
-    <div className={classes.root}>
+    <div >
       <CssBaseline />
       <AppBar
         position="fixed"
+        style={{ backgroundColor: "rgb(255, 192, 203)" }}
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
         })}
       >
-        <Toolbar>
+        <Toolbar >
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -88,7 +88,7 @@ const Navbar = () => {
           paper: classes.drawerPaper,
         }}
       >
-        <div className={classes.drawerHeader}>
+        <div className={classes.drawerHeader} style={{ backgroundColor: "rgb(255, 182, 193)" }}>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === "ltr" ? (
               <ChevronLeftIcon />
@@ -98,18 +98,18 @@ const Navbar = () => {
           </IconButton>
         </div>
         <Divider />
-        <ThemeProvider theme={nav}>
-          <div className={classes.list}>
-            <List>
-              <ListItem button component="a" href="/homepage">
-                <ListItemIcon>
-                  <FontAwesomeIcon icon={faHome} />
-                </ListItemIcon>
 
-                <ListItemText>
+<ThemeProvider theme={nav}>
+        <div height="30px">
+        <List className={classes.root} style={{ backgroundColor: "rgb(255, 182, 193)" }}>
+          <ListItem button component="a" href="/homepage">
+            <ListItemIcon>
+              <FontAwesomeIcon icon={faHome} />
+            </ListItemIcon>
+             <ListItemText>
                   <Typography variant="h6">Home</Typography>
                 </ListItemText>
-              </ListItem>
+          </ListItem>
 
               <ListItem button component="a" href="/about">
                 <ListItemIcon>
@@ -174,30 +174,33 @@ const Navbar = () => {
                 </ListItemText>
               </ListItem>
 
-              {user ? (
-                <ListItem button component="a" href="/api/auth/logout">
-                  <ListItemIcon>
-                    <FontAwesomeIcon icon={faSignOutAlt} />
-                  </ListItemIcon>
-                  <ListItemText>
+          {user ? (
+            <ListItem button component="a" href="/api/auth/logout">
+              <ListItemIcon>
+                <FontAwesomeIcon icon={faSignOutAlt} />
+              </ListItemIcon>
+            <ListItemText>
                     <Typography variant="h6">Logout</Typography>
                   </ListItemText>
-                </ListItem>
-              ) : (
-                <ListItem button component="a" href="/api/auth/login">
-                  <ListItemIcon>
-                    <FontAwesomeIcon icon={faSignInAlt} />
-                  </ListItemIcon>
-                  <ListItemText>
+            </ListItem>
+          ) : (
+            <ListItem button component="a" href="/api/auth/login">
+              <ListItemIcon>
+                <FontAwesomeIcon icon={faSignInAlt} />
+              </ListItemIcon>
+               <ListItemText>
                     <Typography variant="h6">Login</Typography>
                   </ListItemText>
-                </ListItem>
-              )}
-            </List>
-          </div>
-        </ThemeProvider>
+            </ListItem>
+          )}
+          <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+          <br></br><br></br><br></br><br></br><br></br>
+        </List>
+        </div>
+ </ThemeProvider>
       </Drawer>
     </div>
   );
 };
 export default Navbar;
+

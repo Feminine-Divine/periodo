@@ -19,5 +19,4 @@ function ShowNote(props) {
     </div>
   );
 }
-
 export default ShowNote;

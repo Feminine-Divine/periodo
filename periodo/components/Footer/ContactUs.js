@@ -11,7 +11,7 @@ import { Row, Col } from "reactstrap";
 function ContactUs() {
   return (
     <Paper
-      style={{ alignItems: "center", margin: "0 19%", background: "#960435" }}
+      style={{ alignItems: "center",isolation: 'isolate', margin: "0 19%", background: "#960435" }}
     >
       <Card style={{ backgroundColor: "#960435", color: "white" }}>
         <CardHeader title="Talk with us (beta)" />
@@ -74,16 +74,7 @@ function ContactUs() {
               xs={12}
               lg={12}
             >
-              {/*<TextField
-                  margin="dense"
-                  label="Email"
-                  variant="filled"
-                  color="secondary"
-                  name="email"
-                  required
-                  style={{width: '95%', background:"#fad2e3"}}
-                /> */}
-              <TextareaAutosize
+            <TextareaAutosize
                 rowsMax={4}
                 aria-label="maximum height"
                 placeholder="Message"
@@ -125,5 +116,4 @@ function ContactUs() {
     </Paper>
   );
 }
-
 export default ContactUs;

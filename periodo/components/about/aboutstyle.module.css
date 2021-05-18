@@ -1,16 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 .body {
-  margin-top: 0px;
+  margin-top: 90px;
   padding: 50px;
   box-sizing: border-box;
 }
-
 .heading {
   font-size: 50px;
   color: white;
   width: 100%;
   padding-top: 30px;
-  margin-top: 0px;
+  margin-top: 65px;
   top: 0px;
   display: flex;
   justify-content: center;
@@ -25,6 +24,9 @@
   color: #a0616a;
   text-transform: uppercase;
   background-color: #181818;
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-size: 15px;
 }
 .subline {
   display: flex;
@@ -34,21 +36,24 @@
   justify-content: center;
   color: white;
   background-color: #181818;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  font-size: 14px;
 }
 .bottomline {
   display: flex;
   justify-content: center;
   color: white;
   background-color: #181818;
-  /*background-color: #FFB4B4;*/
   padding: 20px 20px 20px 30px;
   margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 700;
 }
 .body {
   margin-top: 0;
   padding-top: 0;
   padding-bottom: 0;
-  /*background-color: #CF6F80;*/
   display: flex;
   justify-content: center;
   height: 100%;
@@ -56,7 +61,6 @@
   position: relative;
   align-items: center;
 }
-
 .med {
   position: absolute;
   top: 55%;
@@ -105,23 +109,7 @@
   box-shadow: 0 15px 25px rgb(19, 4, 4);
   -webkit-transition: 0.5s;
   transition: 0.5s;
-
-  /* &:after {
-    position: absolute;
-    z-index: 0;
-    top: 10px;
-    right: 10px;
-    bottom: 10px;
-    left: 10px;
-    display: block;
-    content: '';
-    background: transparent;
-    box-shadow: 4px 4px 80px rgba(0,0,0,.4);
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}*/
 }
-
 .h2 {
   color: #fff;
   text-align: center;
@@ -137,11 +125,11 @@
   text-align: center;
 }
 .p {
-  color: black;
-  font-weight: normal;
+  color: #170909;
+  font-weight: 1000;
   bottom: 0;
+  font-size: 17px;
 }
-
 .card:hover {
   transform: scale(1.1);
   background: #db4158;
@@ -163,17 +151,21 @@
 .image {
   overflow: hidden;
   transform: translatey(0px);
-	animation: float 3.4s ease-in-out infinite;
+  animation: float 3.4s ease-in-out infinite;
 }
-/*
-.a{
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    background: #000;
-    color: aliceblue;
-    border-radius: 40px;
-    text-decoration: none;
-    margin-top: 2px
+
+@media screen and (max-width: 420px) {
+  .heading {
+    font-size: 35px;
+    text-align: center;
+  }
+  .topline {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+  }
+  .subline {
+    text-align: center;
+    padding-right: 7px;
+  }
 }
-*/

@@ -13,7 +13,6 @@ const card = ({ props }) => {
             <h2>{prop.tipNumber}</h2>
           </div>
         </div>
-
         <div className={style.content}>
           <p className={style.p}>{prop.tipContent} </p>
           <a href={prop.link} className={style.a}>

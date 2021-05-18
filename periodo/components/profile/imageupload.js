@@ -7,10 +7,8 @@ class DisplayImage extends Component {
     this.state = {
       image: null
     };
-
     this.onImageChange = this.onImageChange.bind(this);
   }
-
   onImageChange = event => {
     if (event.target.files && event.target.files[0]) {
       let img = event.target.files[0];
