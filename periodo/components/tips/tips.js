@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../navbar";
 import Card from "./card";
 const tips = [
   {
@@ -76,7 +75,6 @@ const tips = [
 const Tips = () => {
   return (
     <div>
-      <Navbar></Navbar>
       <Card props={tips} />
     </div>
   );

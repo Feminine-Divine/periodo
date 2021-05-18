@@ -1,14 +1,15 @@
 import React from "react";
 import Notes from "../components/notes/Notes";
-import Navbar from "../components/navbar";
-import Footer from "../components/Footer/Footer";
+import Layout from "../components/Layout";
+
 const notes = () => {
   return (
     <>
-      <Navbar />
+      <Layout>
       <Notes />
-      <Footer/>
+      </Layout>
     </>
   );
 };
 export default notes;
+
