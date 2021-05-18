@@ -5,6 +5,9 @@ class SimpleForm extends Component {
   render() {
     return (
       <ChatBot
+        headerTitle="ChatBot"
+        speechSynthesis={{ enable: true, lang: 'en',voice:null }}
+        recognitionEnable={true}
         steps={[
           {
             id: "1",
@@ -189,6 +192,9 @@ class SimpleForm extends Component {
             end: true,
           },
         ]}
+        floating={true}
+        opened={true}
+        toggleFloating={this.toggleFloating}
       />
     );
   }
