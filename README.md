@@ -59,6 +59,8 @@ By keeping track of their cycles and notifying them, our app Periodo will assist
     yarn install
     #or
     npm install
+    #or
+    npm run setup
     ```
 - **Run the project:**
     ```bash

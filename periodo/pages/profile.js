@@ -6,7 +6,7 @@ import Footer from "../components/Footer/Footer";
 const profile = () => {
   return (
     <>
-     <Navbar />
+      <Navbar />
       <Profile></Profile>
       <Head>
         <title>Profile</title>
