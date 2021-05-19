@@ -11,6 +11,8 @@ import { Col } from "reactstrap";
 export default function Footer() {
   const router = useRouter();
   const [isHome, setIsHome] = useState(false);
+  var date = new Date();
+  var year = date.getFullYear();
 
   useEffect(
     () => setIsHome(router.pathname === "/homepage" || router.pathname === "/"),
@@ -64,7 +66,7 @@ export default function Footer() {
                 </a>
               </div>
               <p className={styles.website__rights}>
-                © FEMININE-DIVINE 2021. All rights reserved.
+                © FEMININE-DIVINE {year}. All rights reserved.
               </p>
               <div className={styles.social__icons}>
                 <a

@@ -12,6 +12,7 @@ import 'font-awesome/css/font-awesome.min.css';
 
 function ContactUs() {
   return (
+
     <div className={styles.contactus_body}>
         <div className={styles.form_wrapper}>
             <div className={styles.form_container}>
@@ -61,7 +62,6 @@ function ContactUs() {
             </div>
         </div>
         </div>
-
   );
 }
 export default ContactUs;

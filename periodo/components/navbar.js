@@ -30,6 +30,15 @@ import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
+import {
+  createMuiTheme,
+  ThemeProvider,
+  responsiveFontSizes,
+} from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
+
+let nav = createMuiTheme();
+nav = responsiveFontSizes(nav);
 
 const Navbar = () => {
   const theme = useTheme();
@@ -45,16 +54,16 @@ const Navbar = () => {
   };
 
   return (
-    <div className={classes.root}>
+    <div >
       <CssBaseline />
       <AppBar
         position="fixed"
-        style={{ backgroundColor: "black" }}
+        style={{ backgroundColor: "rgb(255, 192, 203)" }}
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
         })}
       >
-        <Toolbar>
+        <Toolbar >
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -78,7 +87,7 @@ const Navbar = () => {
           paper: classes.drawerPaper,
         }}
       >
-        <div className={classes.drawerHeader}>
+        <div className={classes.drawerHeader} style={{ backgroundColor: "rgb(255, 182, 193)" }}>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === "ltr" ? (
               <ChevronLeftIcon />
@@ -88,7 +97,9 @@ const Navbar = () => {
           </IconButton>
         </div>
         <Divider />
-        <List>
+
+        <div height="30px">
+        <List className={classes.root} style={{ backgroundColor: "rgb(255, 182, 193)" }}>
           <ListItem button component="a" href="/homepage">
             <ListItemIcon>
               <FontAwesomeIcon icon={faHome} />
@@ -96,54 +107,69 @@ const Navbar = () => {
             <ListItemText primary="Home" />
           </ListItem>
 
-          <ListItem button component="a" href="/about">
-            <ListItemIcon>
-              <FontAwesomeIcon icon={faUser} />
-            </ListItemIcon>
-            <ListItemText primary="AboutUs" />
-          </ListItem>
+              <ListItem button component="a" href="/about">
+                <ListItemIcon>
+                  <FontAwesomeIcon icon={faUser} />
+                </ListItemIcon>
+                <ListItemText>
+                  <Typography variant="h6">AboutUs</Typography>
+                </ListItemText>
+              </ListItem>
 
-          <ListItem button component="a" href="/Gynac">
-            <ListItemIcon>
-              <FontAwesomeIcon icon={faHandHoldingMedical} />
-            </ListItemIcon>
-            <ListItemText primary="GynacHelp" />
-          </ListItem>
+              <ListItem button component="a" href="/Gynac">
+                <ListItemIcon>
+                  <FontAwesomeIcon icon={faHandHoldingMedical} />
+                </ListItemIcon>
+                <ListItemText>
+                  <Typography variant="h6">GynacHelp</Typography>
+                </ListItemText>
+              </ListItem>
 
-          <ListItem button component="a" href="/notes">
-            <ListItemIcon>
-              <FontAwesomeIcon icon={faNotesMedical} />
-            </ListItemIcon>
-            <ListItemText primary="Notes" />
-          </ListItem>
+              <ListItem button component="a" href="/notes">
+                <ListItemIcon>
+                  <FontAwesomeIcon icon={faNotesMedical} />
+                </ListItemIcon>
+                <ListItemText>
+                  <Typography variant="h6">Notes</Typography>
+                </ListItemText>
+              </ListItem>
 
-          <ListItem button component="a" href="/tips">
-            <ListItemIcon>
-              <FontAwesomeIcon icon={faFileMedical} />
-            </ListItemIcon>
-            <ListItemText primary="Tips" />
-          </ListItem>
+              <ListItem button component="a" href="/tips">
+                <ListItemIcon>
+                  <FontAwesomeIcon icon={faFileMedical} />
+                </ListItemIcon>
+                <ListItemText>
+                  <Typography variant="h6">Tips</Typography>
+                </ListItemText>
+              </ListItem>
 
-          <ListItem button component="a" href="/calender">
-            <ListItemIcon>
-              <FontAwesomeIcon icon={faCalendarAlt} />
-            </ListItemIcon>
-            <ListItemText primary="Calendar" />
-          </ListItem>
+              <ListItem button component="a" href="/calender">
+                <ListItemIcon>
+                  <FontAwesomeIcon icon={faCalendarAlt} />
+                </ListItemIcon>
+                <ListItemText>
+                  <Typography variant="h6">Calander</Typography>
+                </ListItemText>
+              </ListItem>
 
-          <ListItem button component="a" href="/analysis">
-            <ListItemIcon>
-              <FontAwesomeIcon icon={faAward} />
-            </ListItemIcon>
-            <ListItemText primary="Quiz" />
-          </ListItem>
+              <ListItem button component="a" href="/analysis">
+                <ListItemIcon>
+                  <FontAwesomeIcon icon={faAward} />
+                </ListItemIcon>
+                <ListItemText>
+                  <Typography variant="h6">Quiz</Typography>
+                </ListItemText>
+              </ListItem>
 
-          <ListItem button component="a" href="/flow">
-            <ListItemIcon>
-              <FontAwesomeIcon icon={faStar} />
-            </ListItemIcon>
-            <ListItemText primary="Wanna Rate Yourself" />
-          </ListItem>
+              <ListItem button component="a" href="/flow">
+                <ListItemIcon>
+                  <FontAwesomeIcon icon={faStar} />
+                </ListItemIcon>
+                <ListItemText>
+                  <Typography variant="h6">Wanna Rate Yourself</Typography>
+                </ListItemText>
+              </ListItem>
+
 
           {user ? (
             <ListItem button component="a" href="/api/auth/logout">
@@ -157,10 +183,14 @@ const Navbar = () => {
               <ListItemIcon>
                 <FontAwesomeIcon icon={faSignInAlt} />
               </ListItemIcon>
-              <ListItemText primary="Login" />
+              <ListItemText primary="Login" height="200px"/>
             </ListItem>
           )}
+          <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+          <br></br><br></br><br></br><br></br><br></br>
         </List>
+        </div>
+
       </Drawer>
     </div>
   );

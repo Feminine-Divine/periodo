@@ -47,7 +47,7 @@
     width: 30px;
     min-height: 7px;
     margin: 2px;
-    background-color: white;
+    background-color:rgb(255, 211, 232);
   }
 }
 @media screen and (max-width: 1000px) {
@@ -66,7 +66,7 @@
     width: 30px;
     min-height: 7px;
     margin: 2px;
-    background-color: white;
+    background-color:rgb(247, 168, 206);
   }
 
   #nav-btn:checked + .main-navbar {
@@ -75,7 +75,7 @@
     visibility: visible;
   }
   .Nav-bar:hover {
-    color: red;
+    color: "rgb(255, 105, 180)";
   }
 }
 /* @media screen and (max-width:400px){
@@ -159,7 +159,7 @@
     height: 45px;
   }
   .menu-icon:hover {
-    color: rgb(255, 211, 232);
+    color: rgb(241, 65, 150);
   }
   .option {
     display: flex;
