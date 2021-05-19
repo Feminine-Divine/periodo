@@ -1,12 +1,15 @@
 import React from "react"
 import Analysis from "../components/analysis/Analysis"
-import Navbar from "../components/navbar"
-const analysis=()=>{
-    return(
-    	<>
-    	<Navbar/>
-        <Analysis/>
-        </>
-    )
+import Layout from "../components/Layout"
+
+const analysis = () => {
+	return (
+		<>
+			<Layout>
+			<Analysis />
+			</Layout>
+		</>
+	)
 }
 export default analysis
+

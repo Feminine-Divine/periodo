@@ -13,7 +13,6 @@ const card = ({ props }) => {
             <h2>{prop.tipNumber}</h2>
           </div>
         </div>
-
         <div className={style.content}>
           <p className={style.p}>{prop.tipContent} </p>
           <a href={prop.link} className={style.a}>
@@ -24,10 +23,14 @@ const card = ({ props }) => {
     );
   });
   return (
+    <div className={style.intro}>
+      <h1>| SOME TIPS FOR YOU |</h1>
     <div className={style.section}>
       <div className={style.body}>
+
         <div className={style.container}>{propsList}</div>
       </div>
+    </div>
     </div>
   );
 };

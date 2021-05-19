@@ -1,32 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-.body{
-  margin-top:0px;
-  padding:50px;
-  box-sizing:border-box;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+.body {
+  margin-top: 90px;
+  padding: 50px;
+  box-sizing: border-box;
 }
-
-.heading{
+.heading {
   font-size: 50px;
   color: white;
   width: 100%;
   padding-top: 30px;
-  margin-top:0px;
+  margin-top: 65px;
   top: 0px;
-  display:flex;
+  display: flex;
   justify-content: center;
   background-color: #181818;
 }
-.topline{
+.topline {
   display: flex;
   justify-content: center;
   font-weight: bold;
   margin-top: 0px;
   padding-top: 20px;
-  color: #A0616A;
+  color: #a0616a;
   text-transform: uppercase;
   background-color: #181818;
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-size: 15px;
 }
-.subline{
+.subline {
   display: flex;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -34,73 +36,72 @@
   justify-content: center;
   color: white;
   background-color: #181818;
-  
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  font-size: 14px;
 }
-.bottomline{
+.bottomline {
   display: flex;
   justify-content: center;
   color: white;
   background-color: #181818;
-  /*background-color: #FFB4B4;*/
   padding: 20px 20px 20px 30px;
   margin-bottom: 0;
-
+  font-size: 14px;
+  font-weight: 700;
 }
-.body{
-    margin-top: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    /*background-color: #CF6F80;*/
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    align-items: center;
-
+.body {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  align-items: center;
 }
-
-.med{
+.med {
   position: absolute;
-  top:55%;
+  top: 55%;
   left: 60%;
   z-index: 2;
 }
-.chatbot{
+.chatbot {
   position: absolute;
   top: 8%;
   left: 60%;
   z-index: 2;
 }
-.calendar{
+.calendar {
   position: absolute;
   top: 8%;
   right: 60%;
   z-index: 2;
 }
-.diet{
+.diet {
   position: absolute;
   top: 55%;
   right: 60%;
   z-index: 2;
 }
-.container{
-    position: relative;
-    width: 1150px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.container {
+  position: relative;
+  width: 1150px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.card{
+.card {
   position: relative;
   max-width: 400px;
   width: 90%;
   text-align: center;
   padding: 10px;
   height: 330px;
-  background: #C26E7A;
+  background: #c26e7a;
   margin: 20px;
   perspective: 300px;
   border-radius: 20px;
@@ -108,24 +109,8 @@
   box-shadow: 0 15px 25px rgb(19, 4, 4);
   -webkit-transition: 0.5s;
   transition: 0.5s;
-
- /* &:after {
-    position: absolute;
-    z-index: 0;
-    top: 10px;
-    right: 10px;
-    bottom: 10px;
-    left: 10px;
-    display: block;
-    content: '';
-    background: transparent;
-    box-shadow: 4px 4px 80px rgba(0,0,0,.4);
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}*/
 }
-
-.h2{
+.h2 {
   color: #fff;
   text-align: center;
   font-size: 10px;
@@ -138,30 +123,49 @@
   bottom: 0;
   padding: 0 3px;
   text-align: center;
-
 }
-.p{
-  color: black;
-  font-weight: bolder;
+.p {
+  color: #170909;
+  font-weight: 1000;
   bottom: 0;
+  font-size: 17px;
 }
-
-.card:hover{
+.card:hover {
   transform: scale(1.1);
   background: #db4158;
   box-shadow: 0 15px 25px rgb(0, 0, 0);
   border: 3px solid;
   border-color: rgb(235, 186, 197);
 }
-/*
-.a{
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    background: #000;
-    color: aliceblue;
-    border-radius: 40px;
-    text-decoration: none;
-    margin-top: 2px
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
-*/
+.image {
+  overflow: hidden;
+  transform: translatey(0px);
+  animation: float 3.4s ease-in-out infinite;
+}
+
+@media screen and (max-width: 420px) {
+  .heading {
+    font-size: 35px;
+    text-align: center;
+  }
+  .topline {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+  }
+  .subline {
+    text-align: center;
+    padding-right: 7px;
+  }
+}

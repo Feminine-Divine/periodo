@@ -1,7 +1,7 @@
 .btn {
   background-color: #010103;
   color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 7px;
   border: solid #60a3bc 1.5px;
   width: 100px;
@@ -12,12 +12,9 @@
   margin: 20px;
   box-shadow: 0 0 10px 5px #60a3bc;
 }
-  
-  .btn:hover {
-    background-color: #60a3bc;
-    box-shadow: none;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
- 
+.btn:hover {
+  background-color: #60a3bc;
+  box-shadow: none;
+  text-decoration: none;
+  cursor: pointer;
+}
