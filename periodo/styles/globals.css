@@ -7,7 +7,9 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
-  background-image: url('../public/woman_with_chart.svg'),url('../public/woman_v_sign.svg');
+  background-image: url("../public/woman_with_chart.svg"),
+    url("../public/woman_v_sign.svg");
+
   background-size: 60vw 60vh, 45vw 46vh;
   background-repeat: no-repeat, no-repeat;
   background-position: 107% 99%, 0% 100%;
@@ -36,21 +38,45 @@ a {
   display: none;
 } 
 
-
 .bot {
   bottom: 0;
-  right : 0;
-   position: fixed; 
+  right: 0;
+  position: fixed;
+  position: fixed;
+  position: fixed;
   margin-left: 90%;
   margin-top: 14%;
-
 }
 
+.emergency {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  margin-left: 0%;
+  margin-top: 14%;
+}
 
-@media only screen and (max-width: 372px) {
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #1c1c1c;
+  border-left: 9px solid #1c1c1c;
+  border-right: 9px solid #1c1c1c;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fc5296;
+  background-image: linear-gradient(315deg, #fc5296 0%, #f67062 74%);
+  border-radius: 30px;
+}
+
+@media (max-width: 400px) {
   html {
-    width: 150vw;
+    width: 100vw;
     height: 100vh;
     border-bottom: none;
+    overflow-x: hidden;
   }
 }

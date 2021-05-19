@@ -1,12 +1,30 @@
-.grid{
-    width: 85%!important;
-    margin: auto!important;
-    max-width: 950px!important;
-    padding: 10px 0;
-    flex-basis: auto!important;
+.mydiv {
+  background-color: rgb(251, 174, 210);
+  background-image: url("../../public/woman_with_chart.svg"),
+    url("../../public/woman_v_sign.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 130% 98%, -180px 100%;
+  background-size: 50vw 50vh, 40vw 40vh;
 }
+.grid {
+  background: rgb(228, 178, 68);
+  background: radial-gradient(
+    circle,
+    rgb(250, 247, 240) 12%,
+    rgb(251, 174, 210) 100%
+  );
 
-.field{
-    width: 100%!important;
-    margin: 3%!important;
+  width: 100% !important;
+  margin: auto !important;
+  max-width: 950px !important;
+  padding: 10px 0;
+  flex-basis: auto !important;
+}
+.field {
+  width: 100% !important;
+  margin: 3% !important;
+  box-shadow: 0 6px 8px 0 rgba(211, 156, 182, 0.981);
+}
+.field:hover {
+  transform: scale(1.04);
 }

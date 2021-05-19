@@ -1,69 +1,98 @@
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(253, 207, 246);
+}
+.intro {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  background-color: rgb(253, 207, 246);
+  margin-top: 60px;
+  font-size: 17px;
+  justify-content: center;
+}
+.intro h1 {
+  padding: 40px;
+}
+.img {
+  position: relative;
+  height: 120px;
+  z-index: 100;
+}
+.body {
+  /* background: coral; */
 
-.section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 5rem;
+  width: 80%;
+  align-items: center;
+  background-attachment: fixed;
+  margin-bottom: 3rem;
+  margin: -2rem;
+  padding: 4rem;
 }
-.body{
-    background: coral;
-    display: flex;
-    justify-content: center;
-    border-radius: 5rem;
-    width: 80%;
-    align-items: center;
-    background-attachment: fixed;
-    margin-bottom: 3rem;
+.container {
+  position: relative;
+  width: 1150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.container{
-    position: relative;
-    width: 1150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
- .card{
-    position: relative;
-    width: 290px;
-    height: 440px;
-    background: cornsilk;
-    margin: 20px;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 15px 25px black;
-    transition: 0.5s;
-}
-.circle{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    clip-path: circle(180px at center 0);
-    text-align: center;
-}
-.h2{
-    color: #fff;
-    padding: 30px 0;
-    text-align: center;
+.card {
+  position: relative;
+  width: 290px;
+  height: 450px;
+  background: #ee9ca7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffdde1,
+    #ee9ca7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffdde1,
+    #ee9ca7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+  margin: 20px;
+
+  box-shadow: 0 15px 25px black;
+  transition: 0.5s;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.h2 {
+  color: rgb(3, 0, 0);
+  padding: 30px 0;
+  font-size: 15px;
+  text-align: center;
 }
 .content {
-    position: absolute;
-    bottom: 10px;
-    padding: 20px;
-    page-break-after: 20px;
-    text-align: center;
+  position: absolute;
+  bottom: 15px;
+  padding: 25px;
+  page-break-after: 20px;
+  text-align: center;
 }
-.p{
-    color: sienna;
+.p {
+  color: rgb(56, 56, 56);
+  font-size: 16px;
 }
-.a{
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    background: #000;
-    color: aliceblue;
-    border-radius: 40px;
-    text-decoration: none;
-    margin-top: 2px
+.a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #000;
+  color: aliceblue;
+  border-radius: 40px;
+  text-decoration: none;
+  margin-top: 2px;
+}
+.a:hover {
+  color: rgb(255, 167, 208);
 }

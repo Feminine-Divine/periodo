@@ -6,8 +6,8 @@
     </p>
 
 ## About 📚
-Periodo - The Tracker focuses on young girls who are going to experience their first periods and the women who face problems tracking their period dates and remembering their dates be it for avoiding embarrassing moments or to monitor your period for lifestyle disorders(PCOS, PCOD, etc.). Our application Periodo can help these girls and women by keeping a track of their periods and notifying them of their upcoming dates along with keeping track of the level of flow of their periods also helping them with their correct diet in their period days. We have planned to add more features to the application as it grows with the help of contributors.
-The Project is very beginner-friendly to contribute to as well as has a user-friendly interface which can help in attracting a young audience.
+Periodo - The Tracker is designed for teenage girls about to start their periods and women who have trouble recalling their period dates, whether it's to prevent embarrassing situations or to check the period for lifestyle disorders (PCOS, PCOD, etc.).
+By keeping track of their cycles and notifying them, our app Periodo will assist these girls and women. Periodo will assist these girls and women by keeping track of their periods and notifying them of upcoming dates, as well as keeping track of the amount of discharge of their periods and assisting them with proper diet during their periods.We want to expand the application's functionality as it expands with the assistance of contributors. The project is really beginner-friendly to contribute to, and it has a user-friendly interface that may appeal to a younger audience. 
 
 
 ![image](https://user-images.githubusercontent.com/61618767/112602083-41041a00-8e39-11eb-9c6b-50cb15535f3c.png)
@@ -67,15 +67,15 @@ The Project is very beginner-friendly to contribute to as well as has a user-fri
     #or
     npm run dev
     ```
-    Check in which port, the server is running or click the link
+    Check-in which port, the server is running or clicks the link
     ![CLI](https://user-images.githubusercontent.com/43095489/110291642-57773c80-8016-11eb-9f40-5b0698c89efa.png)
 
 ### 2. Using Docker
 
 * Install [Docker](https://docs.docker.com/engine/install/), from the given link.
 
-* Once Docker is installed, use the following two commands to run the app in the root dicrectory:
-  * `docker-compose build` , This command will build the project
+* Once Docker is installed, use the following two commands to run the app in the root directory:
+  * `docker-compose build`, This command will build the project
   * `docker-compose up`, This command will run the container.
   
 * You can open the project on `localhost:3000` on the machine.
@@ -84,10 +84,12 @@ Note: If you are using docker-desktop on Windows Or WSL2 i.e Windows Subsystem F
 
 ## Documentation 📃
 Please read [CONTRIBUTING.md](https://github.com/Feminine-Divine/periodo/blob/master/.github/CONTRIBUTING.md) and [Code of Conduct](/Code-of-Conduct.md) before contrbuting
-
+Do follow the [commit conventions](https://github.com/Feminine-Divine/periodo/blob/master/.github/CONTRIBUTING.md#commit-conventions) while making any commits.
 
 ## Contact Us ☎️
-Please reachout the admins [Khushi Gautam](https://www.linkedin.com/in/khushi-gautam-7708b4191) and [Shipra Verma](https://www.linkedin.com/in/shipra-verma-76a4611ab) if you face any doubts or have any questions regarding the project.
+Please reach out to the admins [Khushi Gautam](https://www.linkedin.com/in/khushi-gautam-7708b4191) and [Shipra Verma](https://www.linkedin.com/in/shipra-verma-76a4611ab) if you face any doubts or have any questions regarding the project.
+
+### Follow us on [LinkedIn](https://www.linkedin.com/company/feminine-divine/)
 
 ### Chat Channel:- For any queries post here Mentors will guide you here on [Discord](https://discord.com/channels/811724426965811210/815040260105961472) 
 
@@ -101,6 +103,6 @@ Please reachout the admins [Khushi Gautam](https://www.linkedin.com/in/khushi-ga
 5. Try to discuss your features and problems related to the issue or PR directly here on Github.
 
 ## Open Source Programs
-This Project is a part of following program
+This Project is a part of the following program
 
 ![image](https://user-images.githubusercontent.com/66299533/111175145-1fe83180-85ce-11eb-9ab7-ffe81fbec848.png)

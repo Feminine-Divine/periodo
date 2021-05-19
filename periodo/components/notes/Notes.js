@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ShowNote from "./ShowNotes";
 import CreateArea from "./CreateArea";
+import styles from "./Notes.module.css";
 
 function Notes() {
   const [notes, setNotes] = useState([]);
@@ -20,7 +21,7 @@ function Notes() {
   }
 
   return (
-    <div>
+    <div className={styles.notesContainer}>
       <CreateArea onAdd={addNote} />
       {notes.map((noteItem, index) => {
         return (
@@ -36,5 +37,4 @@ function Notes() {
     </div>
   );
 }
-
 export default Notes;
