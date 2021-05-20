@@ -14,6 +14,7 @@ import {
   faSignInAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import classes from "./navbar.component.style.js";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import clsx from "clsx";
 import { useTheme } from "@material-ui/core/styles";
@@ -98,13 +99,16 @@ const Navbar = () => {
         </div>
         <Divider />
 
+<ThemeProvider theme={nav}>
         <div height="30px">
         <List className={classes.root} style={{ backgroundColor: "rgb(255, 182, 193)" }}>
           <ListItem button component="a" href="/homepage">
             <ListItemIcon>
               <FontAwesomeIcon icon={faHome} />
             </ListItemIcon>
-            <ListItemText primary="Home" />
+             <ListItemText>
+                  <Typography variant="h6">Home</Typography>
+                </ListItemText>
           </ListItem>
 
               <ListItem button component="a" href="/about">
@@ -170,27 +174,30 @@ const Navbar = () => {
                 </ListItemText>
               </ListItem>
 
-
           {user ? (
             <ListItem button component="a" href="/api/auth/logout">
               <ListItemIcon>
                 <FontAwesomeIcon icon={faSignOutAlt} />
               </ListItemIcon>
-              <ListItemText primary="Logout" />
+            <ListItemText>
+                    <Typography variant="h6">Logout</Typography>
+                  </ListItemText>
             </ListItem>
           ) : (
             <ListItem button component="a" href="/api/auth/login">
               <ListItemIcon>
                 <FontAwesomeIcon icon={faSignInAlt} />
               </ListItemIcon>
-              <ListItemText primary="Login" height="200px"/>
+               <ListItemText>
+                    <Typography variant="h6">Login</Typography>
+                  </ListItemText>
             </ListItem>
           )}
           <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
           <br></br><br></br><br></br><br></br><br></br>
         </List>
         </div>
-
+ </ThemeProvider>
       </Drawer>
     </div>
   );

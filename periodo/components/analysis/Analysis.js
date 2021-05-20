@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import ReactDOM from "react-dom";
 import styles from "./Analysis.module.css";
 
 const Analysis = () => {
@@ -114,63 +113,66 @@ const Analysis = () => {
         </button>
 
         {/*The bottom code should toggle on and off when the button is pressed*/}
-        <div style={{ display: showMe1 ? "block" : "none" }}>
-          <div className={styles.resultCard}>
-            Maintaining a healthy lifestyle can help reduce the risk of some of
-            the causes of irregular periods.
-            <br />
-            This includes:
-            <ul>
-              <li>
-                exercising regularly to maintain a healthy weight and reduce
-                stress
-              </li>
-              <li>following a healthy diet</li>
-            </ul>
+        <div className="resCards">
+          <div style={{ display: showMe1 ? "block" : "none" }}>
+            <div className={styles.resultCard}>
+              Maintaining a healthy lifestyle can help reduce the risk of some
+              of the causes of irregular periods.
+              <br />
+              This includes:
+              <ul>
+                <li>
+                  exercising regularly to maintain a healthy weight and reduce
+                  stress
+                </li>
+                <li>following a healthy diet</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div style={{ display: showMe2 ? "block" : "none" }}>
-          <div className={styles.resultCard2}>
-            Ouch! Try applying heating pads to quell the pain.Over-the-counter
-            pain relievers, such as ibuprofen (Advil, Motrin IB, others) or
-            naproxen sodium (Aleve), at regular doses starting the day before
-            you expect your period to begin can help control the pain of cramps.
+          <div style={{ display: showMe2 ? "block" : "none" }}>
+            <div className={styles.resultCard2}>
+              Ouch! Try applying heating pads to quell the pain.Over-the-counter
+              pain relievers, such as ibuprofen (Advil, Motrin IB, others) or
+              naproxen sodium (Aleve), at regular doses starting the day before
+              you expect your period to begin can help control the pain of
+              cramps.
+            </div>
           </div>
-        </div>
-        <div style={{ display: showMe3 ? "block" : "none" }}>
-          <div className={styles.resultCard3}>
-            Don’t ignore a long period. It’s important to see your doctor to
-            discuss why you might be experiencing this symptom. Delaying your
-            diagnosis and treatment could lead to a worsening of the underlying
-            condition responsible for the extended bleeding.
+          <div style={{ display: showMe3 ? "block" : "none" }}>
+            <div className={styles.resultCard3}>
+              Don’t ignore a long period. It’s important to see your doctor to
+              discuss why you might be experiencing this symptom. Delaying your
+              diagnosis and treatment could lead to a worsening of the
+              underlying condition responsible for the extended bleeding.
+            </div>
           </div>
-        </div>
-        <div style={{ display: showMe4 ? "block" : "none" }}>
-          <div className={styles.resultCard4}>
-            It is important to speak to a doctor before taking supplements to
-            treat PMS or any other condition.
-            <ul>
-              <li>
-                Not getting enough sleep can kill your mood if you're weeks away
-                from your period.
-              </li>
-              <li>Unmanaged stress can worsen mood swings.</li>
-            </ul>
+          <div style={{ display: showMe4 ? "block" : "none" }}>
+            <div className={styles.resultCard4}>
+              It is important to speak to a doctor before taking supplements to
+              treat PMS or any other condition.
+              <ul>
+                <li>
+                  Not getting enough sleep can kill your mood if you're weeks
+                  away from your period.
+                </li>
+                <li>Unmanaged stress can worsen mood swings.</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div style={{ display: showMe5 ? "block" : "none" }}>
-          <div className={styles.resultCard5}>
-            <img className={styles.congrats} src="/Congrats.svg" />
-            <p className={styles.resultCard5Text}>
-              <strong>
-                {" "}
-                #Blessed!
-                <br />
-              </strong>{" "}
-              Don't stress - looks like you have already discerned what works
-              best for you! Continue living your awesome lifestyle and lording
-              over the rest of us, you lucky human!
-            </p>
+          <div style={{ display: showMe5 ? "block" : "none" }}>
+            <div className={styles.resultCard5}>
+              <img className={styles.congrats} src="/Congrats.svg" />
+              <p className={styles.resultCard5Text}>
+                <strong>
+                  {" "}
+                  #Blessed!
+                  <br />
+                </strong>{" "}
+                Don't stress - looks like you have already discerned what works
+                best for you! Continue living your awesome lifestyle and lording
+                over the rest of us, you lucky human!
+              </p>
+            </div>
           </div>
         </div>
       </>
