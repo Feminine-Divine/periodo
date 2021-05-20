@@ -117,7 +117,7 @@ const Navbar = () => {
             <ListItemText primary="Notes" />
           </ListItem>
 
-          <ListItem button component="a" href="/tips">
+          <ListItem button component="a" href="/main">
             <ListItemIcon>
               <FontAwesomeIcon icon={faFileMedical} />
             </ListItemIcon>

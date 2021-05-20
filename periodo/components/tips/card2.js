@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./cards.module.css";
 
-const card = ({ props }) => {
+const card2 = ({ props }) => {
   const propsList = props.map((prop) => {
     return (
       <div className={style.card}>
@@ -35,4 +35,4 @@ const card = ({ props }) => {
     </div>
   );
 };
-export default card;
+export default card2;
