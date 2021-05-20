@@ -57,7 +57,6 @@
 }
 .resultCard {
   color: white;
-  position: absolute;
   bottom: 35%;
   left: 105%;
   justify-content: center;
@@ -224,4 +223,25 @@
 
 .quizWrapper {
   min-height: 90vh;
+}
+
+@media screen and (max-width: 500px) {
+  .quizHead {
+    margin-top: 75px;
+    padding-top: 10px;
+    margin-bottom: 50px;
+    left: 10px;
+    right: 10px;
+  }
+  .quiz {
+    width: auto;
+    left: 10px;
+    right: 10px;
+  }
+  .resCard {
+    display: flexbox;
+  }
+  .resultCard {
+    margin-top: 360px;
+  }
 }

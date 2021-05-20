@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 .footer {
-  margin-top: 350px;
-  background: black;
+  margin-top: 50px;
+  background: rgb(0, 0, 0);
   padding: 20px;
   color: aliceblue;
   display: block;
@@ -191,7 +191,8 @@
 }
 
 .footer__wrapper {
-  background: #131313;
+ height: 10px;
+  background: lightgrey;
 }
 
 .footer__wrapper.footer__pagedep {
@@ -281,5 +282,15 @@
   }
   #footer__logo {
     margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .footer_opensource h2 {
+    text-align: center;
+    font-size: 1.45em;
+  }
+  .website__rights {
+    text-align: center;
   }
 }

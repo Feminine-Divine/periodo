@@ -11,6 +11,8 @@ import { Col } from "reactstrap";
 export default function Footer() {
   const router = useRouter();
   const [isHome, setIsHome] = useState(false);
+  var date = new Date();
+  var year = date.getFullYear();
 
   useEffect(
     () => setIsHome(router.pathname === "/homepage" || router.pathname === "/"),
@@ -18,21 +20,21 @@ export default function Footer() {
   );
   console.log(isHome);
   return (
-    <React.Fragment>
-      <div
-        className={`${styles.footer__wrapper} ${
-          isHome && styles.footer__pagedep
-        }`}
-      >
-        {isHome && (
-          <Col
-            className={styles.contactus}
-            style={{ color: "#131313" }}
-            lg="12"
-          >
-            <ContactUs />
-          </Col>
-        )}
+    // <React.Fragment>
+    //   <div
+    //     className={`${styles.footer__wrapper} ${
+    //       isHome && styles.footer__pagedep
+    //     }`}
+    //   >
+        // {isHome && (
+        //   <Col
+        //     className={styles.contactus}
+        //     style={{ color: "#131313" }}
+        //     lg="12"
+        //   >
+            
+          // </Col> 
+      
         <div className={styles.footer__container}>
           <div className={styles.footer__links}>
             <div>
@@ -64,7 +66,7 @@ export default function Footer() {
                 </a>
               </div>
               <p className={styles.website__rights}>
-                © FEMININE-DIVINE 2021. All rights reserved.
+                © FEMININE-DIVINE {year}. All rights reserved.
               </p>
               <div className={styles.social__icons}>
                 <a
@@ -89,7 +91,7 @@ export default function Footer() {
             </div>
           </section>
         </div>
-      </div>
-    </React.Fragment>
+     
+    
   );
 }
