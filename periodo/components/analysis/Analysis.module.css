@@ -59,7 +59,6 @@
 }
 .resultCard {
   color: white;
-  position: absolute;
   bottom: 35%;
   left: 105%;
   justify-content: center;
@@ -456,5 +455,6 @@
   
 }
 
-=======
+
+
 

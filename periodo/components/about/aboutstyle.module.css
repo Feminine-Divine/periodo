@@ -24,6 +24,9 @@
   color: #a0616a;
   text-transform: uppercase;
   background-color: #181818;
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-size: 15px;
 }
 .subline {
   display: flex;
@@ -33,6 +36,9 @@
   justify-content: center;
   color: white;
   background-color: #181818;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  font-size: 14px;
 }
 .bottomline {
   display: flex;
@@ -41,6 +47,8 @@
   background-color: #181818;
   padding: 20px 20px 20px 30px;
   margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 700;
 }
 .body {
   margin-top: 0;
@@ -117,9 +125,10 @@
   text-align: center;
 }
 .p {
-  color: black;
-  font-weight: normal;
+  color: #170909;
+  font-weight: 1000;
   bottom: 0;
+  font-size: 17px;
 }
 .card:hover {
   transform: scale(1.1);
@@ -145,3 +154,18 @@
   animation: float 3.4s ease-in-out infinite;
 }
 
+@media screen and (max-width: 420px) {
+  .heading {
+    font-size: 35px;
+    text-align: center;
+  }
+  .topline {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+  }
+  .subline {
+    text-align: center;
+    padding-right: 7px;
+  }
+}
