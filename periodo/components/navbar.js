@@ -138,14 +138,13 @@ const Navbar = () => {
                 </ListItemText>
               </ListItem>
 
-              <ListItem button component="a" href="/tips">
-                <ListItemIcon>
-                  <FontAwesomeIcon icon={faFileMedical} />
-                </ListItemIcon>
-                <ListItemText>
-                  <Typography variant="h6">Tips</Typography>
-                </ListItemText>
-              </ListItem>
+          <ListItem button component="a" href="/main">
+            <ListItemIcon>
+              <FontAwesomeIcon icon={faFileMedical} />
+            </ListItemIcon>
+            <ListItemText primary="Tips" />
+          </ListItem>
+
 
               <ListItem button component="a" href="/calender">
                 <ListItemIcon>
