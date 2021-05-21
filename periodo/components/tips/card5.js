@@ -1,9 +1,11 @@
 import React from "react";
 import style from "./cards.module.css";
 
-const card = ({ props }) => {
+const card5 = ({ props }) => {
   const propsList = props.map((prop) => {
     return (
+      <>
+      
       <div className={style.card}>
         <div className={style.circle}>
         <div className={style.h2}>
@@ -21,9 +23,11 @@ const card = ({ props }) => {
           </a>
         </div>
       </div>
+      </>
     );
   });
   return (
+    <>
     <div className={style.intro}>
       <h1>| SOME TIPS FOR YOU |</h1>
     <div className={style.section}>
@@ -33,6 +37,7 @@ const card = ({ props }) => {
       </div>
     </div>
     </div>
+    </>
   );
 };
-export default card;
+export default card5;

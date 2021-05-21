@@ -44,7 +44,7 @@
 .card {
   position: relative;
   width: 290px;
-  height: 450px;
+  height: 530px;
   background: #ee9ca7; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -68,16 +68,17 @@
 }
 .h2 {
   color: rgb(3, 0, 0);
-  padding: 30px 0;
+  margin-bottom: 15px;
   font-size: 15px;
   text-align: center;
 }
 .content {
   position: absolute;
-  bottom: 15px;
+  bottom: 20px;
   padding: 25px;
   page-break-after: 20px;
   text-align: center;
+  margin-top: 20px;
 }
 .p {
   color: rgb(56, 56, 56);
@@ -91,8 +92,75 @@
   color: aliceblue;
   border-radius: 40px;
   text-decoration: none;
-  margin-top: 2px;
+  margin-top: 1px;
 }
 .a:hover {
   color: rgb(255, 167, 208);
+}
+
+.btn{
+  position: relative;
+  display: inline-block;
+  padding: 15px 25px;
+  background:rgb(235, 91, 158) ;
+  color:white ;
+  border-radius: 40px;
+  text-decoration: none;
+  margin-top: 10px;
+  width: 330px;
+}
+.btn:hover{
+  color: #000;
+}
+.card2 {
+  
+  margin-left: 200px;
+  width: 430px;
+  height: 370px;
+  background: #ee9ca7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffdde1,
+    #ee9ca7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffdde1,
+    #ee9ca7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin: 20px;
+
+  box-shadow: 0 15px 25px black;
+  transition: 0.5s;
+  transition: transform 0.3s;
+}
+.card2:hover {
+  transform: scale(1.05);
+}
+.card3 {
+  
+  margin-left: 200px;
+  width: 430px;
+  height: 370px;
+  background: #ee9ca7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffdde1,
+    #ee9ca7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffdde1,
+    #ee9ca7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin: 20px;
+
+  box-shadow: 0 15px 25px black;
+  transition: 0.5s;
+  transition: transform 0.3s;
+}
+.card3:hover {
+  transform: scale(1.05);
 }

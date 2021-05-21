@@ -71,7 +71,7 @@ const tips = [
     link:
       "https://www.webmd.com/women/qa/what-are-the-best-medications-to-relieve-painful-menstrual-cramps",
   },
-];
+]
 const Tips = () => {
   return (
     <div>
