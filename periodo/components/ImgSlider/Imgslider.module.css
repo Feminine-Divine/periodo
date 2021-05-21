@@ -1,0 +1,55 @@
+
+.slideimg {
+    width: 100%;
+    height: 43vh; 
+    font-size: 20px;
+    
+
+}
+.slideimg img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.contentbox1, .contentbox2, .contentbox3, .contentbox4{
+    width: 300px;
+    color: white;
+    position: absolute;
+    
+    text-align: center;
+}
+.contentbox1{
+    top: 25%;
+    left: 43%;
+}
+.contentbox2{
+    top: 10%;
+    left: 5%;
+}
+.contentbox3{
+    top: 10%;
+    left: 40%;
+}
+.contentbox4{
+    top: 10%;
+    left: 20%;
+}
+.slideimg span{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-style: italic;
+   color: pink;
+}
+.contentbox4 a{
+
+    padding: 1rem;
+    margin-top: 0.5rem;
+    background-color: pink;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+.contentbox4 a:hover{
+
+    transform: translateY(1);
+
+}
