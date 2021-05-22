@@ -43,8 +43,8 @@
   padding: 4rem;
 }
 .container {
-  position: relative;
-  width: 1150px;
+  /* position: relative;
+  width: 1150px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,7 +53,6 @@
 .card {
   width: 300px;
   height: max-content;
-  height: auto;
   position: relative;
   background: #ee9ca7; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7); /*Chrome 10-25, Safari 5.1-6 */
@@ -102,4 +101,109 @@
 .a:hover {
   color: rgb(255, 167, 208);
    font-weight: bold;
-} 
+}   
+.a:hover {
+  color: rgb(255, 167, 208);
+}
+
+.btn{
+  /* position: relative;
+  display: inline-block;
+  padding: 15px 25px;
+  background:rgb(235, 91, 158) ;
+  color:white ;
+  border-radius: 40px;
+  text-decoration: none;
+  margin-top: 10px;
+   */
+
+
+   width: 100%;
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid blue;
+  border-radius: 0.6em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 10px;
+  line-height: 1;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  border-color: rgb(238, 65, 146);
+  color: #fff;
+  box-shadow: 0 0 40px 40px rgb(238, 65, 146) inset, 0 0 0 0 rgb(238, 65, 146);
+  transition: all 150ms ease-in-out;
+ 
+  
+ 
+  
+}
+.btn:hover {
+  box-shadow: 0 0 10px 0 rgb(238, 65, 146) inset, 0 0 10px 4px rgb(236, 60, 142);
+  color: #000;
+}
+/* .btn:hover{
+  color:rgb(255, 167, 208);
+  font-weight: bold;
+} */
+.card2 {
+  
+  margin-left: 200px;
+  width: 430px;
+  height: 370px;
+  background: #ee9ca7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffdde1,
+    #ee9ca7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffdde1,
+    #ee9ca7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin: 20px;
+
+  box-shadow: 0 15px 25px black;
+  transition: 0.5s;
+  transition: transform 0.3s;
+}
+.card2:hover {
+  transform: scale(1.05);
+}
+.card3 {
+  
+  margin-left: 200px;
+  width: 430px;
+  height: 370px;
+  background: #ee9ca7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffdde1,
+    #ee9ca7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffdde1,
+    #ee9ca7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin: 20px;
+
+  box-shadow: 0 15px 25px black;
+  transition: 0.5s;
+  transition: transform 0.3s;
+}
+.card3:hover {
+  transform: scale(1.05);
+}
