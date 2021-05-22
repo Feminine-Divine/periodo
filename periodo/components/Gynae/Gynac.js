@@ -21,6 +21,7 @@ import Navbar from "../navbar";
 import { Forme, Userform } from "./Userform";
 import Link from "next/link";
 import style from "./Gynac.module.css";
+import Maps from './GoogleMap'
 
 const initialFValues = {
   fullName: "",
@@ -437,6 +438,7 @@ export default function Gynac() {
           </Grid>
         </div>
       </Forme>
+      <Maps></Maps>
     </>
   );
 }
