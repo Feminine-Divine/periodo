@@ -6,9 +6,7 @@ const card = ({ props }) => {
     return (
       <div className={style.card}>
         <div className={style.circle}>
-        <div className={style.h2}>
-            <h2>{prop.tipNumber}</h2>
-          </div>
+        
           <div className={style.img}>
             <img src={prop.tipLogo} alt="image" height={150} width={300} />
           </div>
