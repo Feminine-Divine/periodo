@@ -26,6 +26,7 @@
     "dotenv": "^8.2.0",
     "firebase": "^8.2.3",
     "font-awesome": "^4.7.0",
+    "google-maps-react": "^2.0.6",
     "next": "^10.2.0",
     "next-session": "^3.4.0",
     "react": "^17.0.1",
