@@ -10,7 +10,13 @@ const card = ({ props }) => {
             <h1>{prop.aboutNumber}</h1>
           </div>
           <div className={style.image}>
-            <img src={prop.imgsrc} height="200px" width="200px" padding="10px" /></div>
+            <img
+              src={prop.imgsrc}
+              height="200px"
+              width="200px"
+              padding="10px"
+            />
+          </div>
           <div className={style.content}>
             <p className={style.p}>{prop.aboutContent} </p>
           </div>
