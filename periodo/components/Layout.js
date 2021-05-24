@@ -1,7 +1,9 @@
 import Header from './navbar'
 import Footer from './Footer/Footer'
 import React, {Component} from 'react'
-import ContactUs from './Footer/ContactUs'
+import ContactUs from './Footer/ContactUs';
+
+
 
 class Layout extends Component {
     render() {
@@ -11,6 +13,7 @@ class Layout extends Component {
                 {this.props.children}
                 <ContactUs />
                 <Footer />
+                
             </div>
         )
     }
