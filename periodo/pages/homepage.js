@@ -13,7 +13,6 @@ import styles from '../styles/Home.module.css';
 
 
 
-
 const Homepage = () => {
   return (
     <>
@@ -28,6 +27,7 @@ const Homepage = () => {
       <Layout />
       <ChatBot />
       <Emergency />
+      
     </>
   );
 };
