@@ -97,6 +97,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 60px;
 }
 
 #footer__logo {
@@ -191,7 +192,7 @@
 }
 
 .footer__wrapper {
- height: 10px;
+  height: 10px;
   background: lightgrey;
 }
 
