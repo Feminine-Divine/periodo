@@ -58,6 +58,11 @@
   margin-left: 24px;
 }
 
+#footer__logo:hover {
+  color: #fc345f;
+  transform: scale(1.6);
+}
+
 .footer__links {
   width: 100%;
   max-width: 1000px;
