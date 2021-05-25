@@ -97,6 +97,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 60px;
 }
 
 #footer__logo {
@@ -191,7 +192,7 @@
 }
 
 .footer__wrapper {
- height: 10px;
+  height: 10px;
   background: lightgrey;
 }
 
@@ -282,15 +283,5 @@
   }
   #footer__logo {
     margin-left: 0px;
-  }
-}
-
-@media screen and (max-width: 340px) {
-  .footer_opensource h2 {
-    text-align: center;
-    font-size: 1.45em;
-  }
-  .website__rights {
-    text-align: center;
   }
 }

@@ -76,32 +76,24 @@ const Analysis = () => {
     const a4 = ((score / 1000) | 0) % 10;
     const a5 = ((score / 10000) | 0) % 10;
 
-    /* Toggles first card if answer for question 1 is true  */    
+    /* Toggles first card if answer for question 1 is true  */
     function toggle() {
       if (a1 == 1) {
-        setShowMe1(
-          !showMe1
-        ); 
+        setShowMe1(!showMe1);
       }
       /* Toggles second card if answer for question 2 or 4 is true  */
       if (a2 == 1 || a4 == 1) {
-        setShowMe2(
-          !showMe2
-        ); 
+        setShowMe2(!showMe2);
       }
       /* Toggles third card if answer for question 3 is true  */
       if (a3 == 1) {
-        setShowMe3(
-          !showMe3
-        );
+        setShowMe3(!showMe3);
       }
       /* Toggles fourth card if answer for question 4 is true  */
       if (a5 == 1) {
-        setShowMe4(
-          !showMe4
-        ); 
+        setShowMe4(!showMe4);
       }
-       /* Toggles last card if no answer is true  */
+      /* Toggles last card if no answer is true  */
       if (a1 == 0 && a2 == 0 && a3 == 0 && a4 == 0 && a5 == 0) {
         setShowMe5(!showMe5);
       }
@@ -188,11 +180,7 @@ const Analysis = () => {
     <div className={styles.quizWrapper}>
       <h1 className={styles.quizHead}>
         {" "}
-
-        {" "}
-
         Get the answers to all your questions. Period.{" "}
-
       </h1>
       <div className={styles.quiz}>
         {showScore ? (
@@ -253,4 +241,3 @@ const Analysis = () => {
 };
 
 export default Analysis;
-

@@ -4,12 +4,11 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 7px;
   border: solid #60a3bc 1.5px;
-  width: 100px;
-  height: 50px;
-  border-radius: 25px;
+  width: 128px;
+  height: 40px;
+  border-radius: 18px;
   font-size: 15px;
   text-decoration: none;
-  margin: 20px;
   box-shadow: 0 0 10px 5px #60a3bc;
 }
 .btn:hover {

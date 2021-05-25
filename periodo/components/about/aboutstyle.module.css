@@ -100,7 +100,7 @@
   width: 90%;
   text-align: center;
   padding: 10px;
-  height: 330px;
+  height: auto;
   background: #c26e7a;
   margin: 20px;
   perspective: 300px;
@@ -119,9 +119,6 @@
   padding: 10px 11px;
 }
 .content {
-  position: absolute;
-  bottom: 0;
-  padding: 0 3px;
   text-align: center;
 }
 .p {
