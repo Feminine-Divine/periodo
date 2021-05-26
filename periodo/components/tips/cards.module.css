@@ -35,11 +35,12 @@
 }
 .container {
   position: relative;
-  width: 1150px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding-left: 0px !important;
+  margin-left: 0px !important;
 }
 .card {
   position: relative;
@@ -98,22 +99,21 @@
   color: rgb(255, 167, 208);
 }
 
-.btn{
+.btn {
   position: relative;
   display: inline-block;
   padding: 15px 25px;
-  background:rgb(235, 91, 158) ;
-  color:white ;
+  background: rgb(235, 91, 158);
+  color: white;
   border-radius: 40px;
   text-decoration: none;
   margin-top: 10px;
   width: 330px;
 }
-.btn:hover{
+.btn:hover {
   color: #000;
 }
 .card2 {
-  
   margin-left: 200px;
   width: 430px;
   height: 370px;
@@ -139,7 +139,6 @@
   transform: scale(1.05);
 }
 .card3 {
-  
   margin-left: 200px;
   width: 430px;
   height: 370px;
