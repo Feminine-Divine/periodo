@@ -12,7 +12,6 @@ import {
   faStar,
   faSignOutAlt,
   faSignInAlt,
-  FaQuestion,
   faQuestion
 } from "@fortawesome/free-solid-svg-icons";
 import classes from "./navbar.component.style.js";

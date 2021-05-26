@@ -47,7 +47,6 @@
     "sass-loader": "^11.0.1",
     "sharp": "^0.27.2",
     "style-loader": "^2.0.0",
-    "styled-component": "^2.8.0",
     "styled-components": "^5.2.1",
     "webpack": "^5.27.2"
   },
