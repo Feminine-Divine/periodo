@@ -148,8 +148,6 @@ const Navbar = () => {
                 <Typography variant="h6">Tips</Typography>
             </ListItemText>
           </ListItem>
-
-
               <ListItem button component="a" href="/calender">
                 <ListItemIcon>
                   <FontAwesomeIcon icon={faCalendarAlt} />
