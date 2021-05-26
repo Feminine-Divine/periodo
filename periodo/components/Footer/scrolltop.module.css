@@ -1,0 +1,18 @@
+.scroll_to_top{
+    position: fixed;
+    bottom: 25px;
+    left: 86%;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: rgb(236, 10, 199);
+    color: white;
+    box-shadow: 5px 10px 20px 8px rgb(235, 152, 252) ;
+    z-index: 1;
+  }
+  .atag{
+      font-size: 35px;
+      margin-left: 3px;
+      font-weight: bolder;
+  }
+  

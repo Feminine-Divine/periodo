@@ -7,6 +7,7 @@ import MailIcon from "@material-ui/icons/Mail";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import { Col } from "reactstrap";
+import ScrollTop from "./scrolltop";
 
 export default function Footer() {
   const router = useRouter();
@@ -54,7 +55,10 @@ export default function Footer() {
                       style={{ marginTop: "15px", fontSize: "30px" }}
                     />
                   </a>
+                  
                 </div>
+                <br></br><br></br>
+                <ScrollTop/>
               </div>
             </div>
           </div>
@@ -86,10 +90,13 @@ export default function Footer() {
                 </a>
               </div>
             </div>
+            
             <div className={styles.footer_opensource}>
               <h2>With ♥ By FeminineDivine</h2>
             </div>
+            
           </section>
+          
         </div>
      
     
