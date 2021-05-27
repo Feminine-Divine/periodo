@@ -1,3 +1,4 @@
+/*
 import React, { useState } from 'react';
 import { Data } from './Data';
 import styled from 'styled-components'
@@ -76,4 +77,14 @@ export default function questions() {
         </IconContext.Provider>
         </>
     )
+}
+*/
+import React from 'react'
+
+export default function questions() {
+  return (
+    <div>
+      <h1>faqs</h1>
+    </div>
+  )
 }
