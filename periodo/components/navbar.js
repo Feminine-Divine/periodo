@@ -12,6 +12,7 @@ import {
   faStar,
   faSignOutAlt,
   faSignInAlt,
+  faQuestion
 } from "@fortawesome/free-solid-svg-icons";
 import classes from "./navbar.component.style.js";
 
@@ -163,6 +164,14 @@ const Navbar = () => {
                 </ListItemIcon>
                 <ListItemText>
                   <Typography variant="h6">Quiz</Typography>
+                </ListItemText>
+              </ListItem>
+              <ListItem button component="a" href="/questions">
+                <ListItemIcon>
+                  <FontAwesomeIcon icon={  faQuestion} />
+                </ListItemIcon>
+                <ListItemText>
+                  <Typography variant="h6">FAQs</Typography>
                 </ListItemText>
               </ListItem>
 
