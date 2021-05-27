@@ -12,6 +12,7 @@ import {
   faStar,
   faSignOutAlt,
   faSignInAlt,
+  FaBandcamp
 } from "@fortawesome/free-solid-svg-icons";
 import classes from "./navbar.component.style.js";
 
@@ -172,6 +173,14 @@ const Navbar = () => {
                 </ListItemIcon>
                 <ListItemText>
                   <Typography variant="h6">Wanna Rate Yourself</Typography>
+                </ListItemText>
+              </ListItem>
+              <ListItem button component="a" href="/social">
+                <ListItemIcon>
+                  <FontAwesomeIcon icon={FaBandcamp} />
+                </ListItemIcon>
+                <ListItemText>
+                  <Typography variant="h6">Social Campings</Typography>
                 </ListItemText>
               </ListItem>
 
