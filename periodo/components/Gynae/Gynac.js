@@ -63,7 +63,7 @@ export default function Gynac() {
         <hr></hr>
         <div className={style.mydiv}>
           <Grid container>
-            <Grid item xs={6} className={style.grid} style={{ paddingRight: 40 }}>
+            <Grid item xs={6} className={style.grid} style={{ paddingRight: 40 }}> 
               <em>
                 <TextField
                   className={style.field}
