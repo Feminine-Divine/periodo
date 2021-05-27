@@ -5,9 +5,7 @@ class SimpleForm extends Component {
   render() {
     return (
       <ChatBot
-        headerTitle="Chat Help"
-        recognitionEnable={true}
-        speechSynthesis={{ enable: true, lang: 'en' }}
+        // headerTitle="Chat Help"
         steps={[
           {
             id: "1",
@@ -193,8 +191,10 @@ class SimpleForm extends Component {
           },
         ]}
       />
+    
     );
   }
+  
 }
 
 export default SimpleForm;
