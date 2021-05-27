@@ -1,4 +1,4 @@
-export const Data = [
+const Data = [
     {
       question: 'Why is my period late?',
       answer: 'There are several reasons why your period might be late.First of all: you might be pregnant. If you think this could be the case, you can take a home pregnancy test or see your doctor to check.',
@@ -105,3 +105,5 @@ export const Data = [
       link:'https://www.your-life.com/en/your-questions/answers-to-your-top-menstruation-and-period-questions/#:~:text=to%20your%20doctor.-,How%20long%20is%20the%20average%20period%20length%3F,late'
     }
   ];
+
+export default Data;
