@@ -1,4 +1,4 @@
-/*
+
 export const Data = [
     {
       question: 'Why is my period late?',
@@ -106,4 +106,4 @@ export const Data = [
       link:'https://www.your-life.com/en/your-questions/answers-to-your-top-menstruation-and-period-questions/#:~:text=to%20your%20doctor.-,How%20long%20is%20the%20average%20period%20length%3F,late'
     }
   ];
-  */
+  
