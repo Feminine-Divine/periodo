@@ -12,8 +12,8 @@ import {
   faStar,
   faSignOutAlt,
   faSignInAlt,
-  FaBandcamp
 } from "@fortawesome/free-solid-svg-icons";
+import CollectionsIcon from '@material-ui/icons/Collections';
 import classes from "./navbar.component.style.js";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -175,14 +175,6 @@ const Navbar = () => {
                   <Typography variant="h6">Wanna Rate Yourself</Typography>
                 </ListItemText>
               </ListItem>
-              <ListItem button component="a" href="/social">
-                <ListItemIcon>
-                  <FontAwesomeIcon icon={FaBandcamp} />
-                </ListItemIcon>
-                <ListItemText>
-                  <Typography variant="h6">Social Campings</Typography>
-                </ListItemText>
-              </ListItem>
 
           {user ? (
             <ListItem button component="a" href="/api/auth/logout">
@@ -203,6 +195,14 @@ const Navbar = () => {
                   </ListItemText>
             </ListItem>
           )}
+          <ListItem button component="a" href="/social">
+                <ListItemIcon>
+                  <FontAwesomeIcon icon={CollectionsIcon} />
+                </ListItemIcon>
+                <ListItemText>
+                  <Typography variant="h6">Social Campings</Typography>
+                </ListItemText>
+              </ListItem>
           <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
           <br></br><br></br><br></br><br></br><br></br>
         </List>
