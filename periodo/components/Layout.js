@@ -4,6 +4,10 @@ import React, {Component} from 'react'
 import ContactUs from './Footer/ContactUs';
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin
 
 class Layout extends Component {
     render() {
