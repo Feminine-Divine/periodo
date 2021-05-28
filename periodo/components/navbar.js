@@ -13,6 +13,7 @@ import {
   faSignOutAlt,
   faSignInAlt,
 } from "@fortawesome/free-solid-svg-icons";
+import CollectionsIcon from '@material-ui/icons/Collections';
 import classes from "./navbar.component.style.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import clsx from "clsx";
@@ -162,6 +163,18 @@ const Navbar = () => {
               <ListItemText primary="Login" />
             </ListItem>
           )}
+
+          <ListItem button component="a" href="/social">
+                <ListItemIcon>
+                  <FontAwesomeIcon icon={CollectionsIcon} />
+                </ListItemIcon>
+                <ListItemText>
+                  <Typography variant="h6">Social Campings</Typography>
+                </ListItemText>
+              </ListItem>
+          <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+          <br></br><br></br><br></br><br></br><br></br>
+
         </List>
       </Drawer>
     </div>

@@ -175,7 +175,6 @@
     line-height: 40px;
     width: 40%;
     border: none;
-    margin-left: 90px;
     justify-content: center;
     outline: none;
     cursor: pointer;
@@ -189,7 +188,6 @@
   }
   .inputtextarea {
     height: 70px;
-    width: 360px;
     resize: none;
   }
 }
@@ -211,8 +209,8 @@
     line-height: 40px;
     width: 40%;
     border: none;
-    margin-left: 90px;
     justify-content: center;
+    margin-left:25vw;
     outline: none;
     cursor: pointer;
     color: #fff;
@@ -225,7 +223,7 @@
   }
   .inputtextarea {
     height: 70px;
-    width: 290px;
+    width: 98%;
     resize: none;
   }
 }
