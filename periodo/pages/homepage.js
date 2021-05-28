@@ -26,6 +26,7 @@ const Homepage = () => {
       <Layout />
       <ChatBot />
       <Emergency />
+      
     </>
   );
 };
