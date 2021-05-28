@@ -39,11 +39,10 @@
   display: flex;
   justify-content: center;
   border-radius: 5rem;
-  width: 80%;
+  width: 100vw;
   align-items: center;
   background-attachment: fixed;
   margin-bottom: 3rem;
-  margin: -2rem;
   padding: 4rem;
 }
 .container {
