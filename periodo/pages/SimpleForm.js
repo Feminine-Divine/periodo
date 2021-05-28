@@ -5,6 +5,7 @@ class SimpleForm extends Component {
   render() {
     return (
       <ChatBot
+        // headerTitle="Chat Help"
         steps={[
           {
             id: "1",
@@ -190,8 +191,10 @@ class SimpleForm extends Component {
           },
         ]}
       />
+    
     );
   }
+  
 }
 
 export default SimpleForm;
