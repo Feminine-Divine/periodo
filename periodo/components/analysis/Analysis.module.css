@@ -59,6 +59,7 @@
 }
 .resultCard {
   color: white;
+  position: absolute;
   bottom: 35%;
   left: 105%;
   justify-content: center;
@@ -226,8 +227,18 @@
 .quizWrapper {
   min-height: 90vh;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+@media screen and (max-width: 700px) {
+=======
 
 @media screen and (max-width: 500px) {
+>>>>>>> upstream/master
+=======
+
+@media screen and (max-width: 500px) {
+
+>>>>>>> origin
   .quizHead {
     margin-top: 75px;
     padding-top: 10px;

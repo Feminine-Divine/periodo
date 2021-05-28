@@ -4,6 +4,10 @@ import React, {Component} from 'react'
 import ContactUs from './Footer/ContactUs';
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin
 
 class Layout extends Component {
     render() {
@@ -11,7 +15,6 @@ class Layout extends Component {
             <div>
                 <Header />
                 {this.props.children}
-                <ContactUs />
                 <Footer />
                 
             </div>

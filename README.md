@@ -102,7 +102,7 @@ Please reach out to the admins [Khushi Gautam](https://www.linkedin.com/in/khush
 4. Please try to wait at least 3-4 days after submitting a PR. Maintainers are also human beings and have to manage the whole project. (So, don't ping constantly for review)
 5. Try to discuss your features and problems related to the issue or PR directly here on Github.
 
-## Open Source Programs ❣️
+## Open Source Programs
 This Project is a part of the following program
 
 ![image](https://user-images.githubusercontent.com/66299533/111175145-1fe83180-85ce-11eb-9ab7-ffe81fbec848.png)

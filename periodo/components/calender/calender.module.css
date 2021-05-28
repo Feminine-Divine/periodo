@@ -125,9 +125,3 @@
     padding: 8px;
   }
 }
-
-@media(min-width: 360px) and (max-width : 768px) {
-  .container{
-    width: 90%;
-  }
-}

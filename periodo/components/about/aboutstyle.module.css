@@ -24,9 +24,6 @@
   color: #a0616a;
   text-transform: uppercase;
   background-color: #181818;
-  letter-spacing: 2px;
-  font-weight: 800;
-  font-size: 15px;
 }
 .subline {
   display: flex;
@@ -36,9 +33,6 @@
   justify-content: center;
   color: white;
   background-color: #181818;
-  font-weight: 800;
-  letter-spacing: 2.5px;
-  font-size: 14px;
 }
 .bottomline {
   display: flex;
@@ -47,8 +41,6 @@
   background-color: #181818;
   padding: 20px 20px 20px 30px;
   margin-bottom: 0;
-  font-size: 14px;
-  font-weight: 700;
 }
 .body {
   margin-top: 0;
@@ -122,10 +114,9 @@
   text-align: center;
 }
 .p {
-  color: #170909;
-  font-weight: 1000;
+  color: black;
+  font-weight: normal;
   bottom: 0;
-  font-size: 17px;
 }
 .card:hover {
   transform: scale(1.1);
