@@ -2,6 +2,7 @@ import React from "react";
 import BeautyStars from "beauty-stars";
 import style from "./Flow.module.css";
 import Grid from "@material-ui/core/Grid";
+import { VictoryChart, VictoryLine, VictoryTheme, VictoryContainer } from "victory";
 
 export default class App extends React.Component {
   state = {
@@ -17,6 +18,7 @@ export default class App extends React.Component {
   colour = "#ffffff";
   size = "18px";
   render() {
+    console.log(this.state.value1);
     return (
       <div
         style={{
@@ -154,6 +156,28 @@ export default class App extends React.Component {
             </div>
           </div>
         </Grid>
+        <VictoryChart
+         containerComponent={<VictoryContainer responsive={false} style={{marginTop: 300}}/>}
+        height={600} width={800}
+            theme={VictoryTheme.material}
+          >
+            <VictoryLine
+              style={{
+                data: { stroke: "#c43a31" },
+                parent: { border: "1px solid #ccc"}
+              }}
+              data={[
+                { x: 'Blood Flow', y: this.state.value1 },
+                { x: 'Period Pain', y: this.state.value2 },
+                { x: 'Mood', y: this.state.value3 },
+                { x: 'Weakness', y: this.state.value4 },
+                { x: 'Acne', y: this.state.value5 },
+                { x: 'Bloating', y: this.state.value6 },
+                { x: 'Breast Tenderness', y: this.state.value7 },
+                { x: 'HairLoss', y: this.state.value8 },
+              ]}
+            />
+          </VictoryChart>        
       </div>
     );
   }
