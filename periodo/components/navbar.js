@@ -148,7 +148,7 @@ const Navbar = () => {
               </ListItem>
 
 
-              <ListItem button component="a" href="/calender">
+              <ListItem button component="a" href="/caltim">
                 <ListItemIcon>
                   <FontAwesomeIcon icon={faCalendarAlt} />
                 </ListItemIcon>
