@@ -7,6 +7,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import "react-day-picker/lib/style.css";
 import style from "./calender.module.css";
 import DialogNextButton from "../dialogbox/DialogNextButton";
+import Timer from './timer';
 
 export default class Example extends React.Component {
   static defaultProps = {
@@ -97,6 +98,7 @@ export default class Example extends React.Component {
           </Helmet>
         </div>
       </div>
+      <Timer />
       </>
     );
   }

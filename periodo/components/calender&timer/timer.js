@@ -16,7 +16,7 @@ export default function timer() {
     setInterval(updateTime,1000)
  
     return (
-        <div style={{marginTop:"50px"}}>
+        <div >
         <section className={style.timer_container}>
             <section className={style.timer}>
                 <div>
