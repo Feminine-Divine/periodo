@@ -230,7 +230,8 @@
 
 .h2{
   font-size: 68px;
-  margin-top: 7.5em;
+  margin-top: -650px;
+  margin-left: -300px;
 }
 .timer div:last-child{
   border: 2px solid white;
@@ -238,7 +239,7 @@
   display: grid;
   grid-template-columns: repeat(7,1fr);
   margin-top: 9em;
-  margin-left: -520px;
+  margin-left: -800px;
   padding: 1em;
   text-align: center;
   width: 500px;

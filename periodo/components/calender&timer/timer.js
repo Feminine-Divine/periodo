@@ -21,7 +21,7 @@ export default function timer() {
             <section className={style.timer}>
                 <div>
                     <span >
-                        <h2 className={style.h2}>Countdown  Timer</h2>
+                        <h2 className={style.h2}>Calander and Countdown  Timer</h2>
                     </span> 
                 </div>
                 <div >
