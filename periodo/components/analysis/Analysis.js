@@ -100,6 +100,7 @@ const Analysis = () => {
     }
     return (
       <>
+      
         <button className={styles.endCardButton1} onClick={toggle}>
           TELL ME MORE!
         </button>
@@ -177,8 +178,10 @@ const Analysis = () => {
   }
 
   return (
+    <>
+    <br></br><br></br><br></br>
     <div className={styles.quizWrapper}>
-      <h1 className={styles.quizHead}>
+      <h1 className={styles.quizHead} style={{textAlign:"center"}}>
         {" "}
         Get the answers to all your questions. Period.{" "}
       </h1>
@@ -237,6 +240,7 @@ const Analysis = () => {
         )}
       </div>
     </div>
+    </>
   );
 };
 
