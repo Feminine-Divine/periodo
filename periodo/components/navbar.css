@@ -47,7 +47,7 @@
     width: 30px;
     min-height: 7px;
     margin: 2px;
-    background-color:rgb(255, 211, 232);
+    background-color: white;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -66,7 +66,7 @@
     width: 30px;
     min-height: 7px;
     margin: 2px;
-    background-color:rgb(247, 168, 206);
+    background-color: white;
   }
 
   #nav-btn:checked + .main-navbar {
@@ -75,11 +75,12 @@
     visibility: visible;
   }
   .Nav-bar:hover {
-    color: "rgb(255, 105, 180)";
+    color: red;
   }
 }
 /* @media screen and (max-width:400px){
     .Nav-bar{
+        right: -40%;
         right: -30%;
     }
 } */
@@ -159,7 +160,7 @@
     height: 45px;
   }
   .menu-icon:hover {
-    color: rgb(241, 65, 150);
+    color: rgb(255, 211, 232);
   }
   .option {
     display: flex;

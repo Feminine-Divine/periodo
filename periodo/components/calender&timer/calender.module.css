@@ -125,6 +125,8 @@
     padding: 8px;
   }
 }
+<<<<<<< HEAD:periodo/components/calender/calender.module.css
+=======
 
 @media(min-width: 360px) and (max-width : 768px) {
   .container{
@@ -255,3 +257,4 @@
 .timer div:last-child span{
   font-size: 3em;
 }
+>>>>>>> upstream/master:periodo/components/calender&timer/calender.module.css
