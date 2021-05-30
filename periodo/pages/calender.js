@@ -1,15 +1,13 @@
-import React from "react";
-import Home from "../components/calender/calender"
-import Layout from "../components/Layout";
+import React from 'react';
+import Layout from '../components/Layout';
+import Calender from '../components/calender&timer/calender';
 
-const calender = () => {
-	return (
-		<>
-			<Layout>
-			<Home />
-			</Layout>
-		</>
-	)
+export default function calender() {
+    return (
+        <div>
+            <Layout>
+                <Calender />
+            </Layout>
+        </div>
+    )
 }
-
-export default calender;
