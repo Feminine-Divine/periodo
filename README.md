@@ -1,4 +1,4 @@
-# Periodo - The Tracker (Period Tracker) ✨
+># Periodo - The Tracker (Period Tracker) ✨
 
 
 <p align="center">
@@ -6,15 +6,17 @@
     </p>
 
 ## About 📚
-Periodo - The Tracker is designed for teenage girls about to start their periods and women who have trouble recalling their period dates, whether it's to prevent embarrassing situations or to check the period for lifestyle disorders (PCOS, PCOD, etc.).
-By keeping track of their cycles and notifying them, our app Periodo will assist these girls and women. Periodo will assist these girls and women by keeping track of their periods and notifying them of upcoming dates, as well as keeping track of the amount of discharge of their periods and assisting them with proper diet during their periods.We want to expand the application's functionality as it expands with the assistance of contributors. The project is really beginner-friendly to contribute to, and it has a user-friendly interface that may appeal to a younger audience. 
+**Periodo - The Tracker** _is designed for teenage girls_ who are about to start their periods, and _women_ who have trouble recalling their period dates. Whether it's to prevent embarrassing situations or to check the period for lifestyle disorders (PCOS, PCOD, etc.) this app is for you.<br>
+**Periodo** will help these girls and women <u>keep a track of their cycles and **notify them of upcoming dates**, as well as keeping track of the amount of discharge of their periods and assisting them with **proper diet** during their periods</u>.<br><br>
+We wish to expand the application's functionality with time and assistance from the contributors. This project is really a **beginner-friendly** to contribute, and it has a user-friendly interface that appeals to a younger audience. 
 
 
 ![image](https://user-images.githubusercontent.com/61618767/112602083-41041a00-8e39-11eb-9c6b-50cb15535f3c.png)
 
 <br>
 
-### Project's Demo Video : :tv: https://youtu.be/3dxa599SPT4
+## Project's Demo Video : 
+[Click here to see the demo.](https://youtu.be/3dxa599SPT4 "youtube link")
 
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?v=103)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) [![Maintenance](https://img.shields.io/badge/PR's%3F-Welcomed-brightgreen.svg?v=103)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
@@ -27,64 +29,95 @@ By keeping track of their cycles and notifying them, our app Periodo will assist
 ## Local Setup Instructions 💻
 
 ### Follow these steps to setup project locally:
-- **Fork the repository:** Click the fork button.
+1. **Fork the repository:** Click the fork button.
 ![fork](https://user-images.githubusercontent.com/43095489/110275583-87fdad00-7ffb-11eb-9828-1b4eb7026b3e.png)
-- **Clone forked repository:** If you are using *Windows OS* use `Git Bash` to run all commands given below.
+
+2. **Clone forked repository:** If you are using *Windows OS* use `Git Bash` to run all commands given below.
     ```bash
-    #to clone the repository
     git clone https://github.com/<your GitHub user name>/periodo.git
-    #Example
+    ```
+    Example
+    ```bash
     git clone https://github.com/johnDoe/periodo.git
     ```
-- **Add remote:** This will point to the original repository. It will help you to get the latest changes made by others.
+
+3. **Add remote:** This will point to the original repository. It will help you to get the latest changes made by others.
+    Add upstream as a remote.
     ```bash
-    #add upstream
     git remote add upstream https://github.com/Feminine-Divine/periodo.git
     ```
-## Two Ways to Install from here:
+## Two Ways to Install the Project:
 
-### 1. Without using Docker i.e Conventional Way
-- **Install yarn:** This project use `yarn` as a package manager.
-    ```bash
-    #to check yarn installed on your computer or not
-    yarn --version
-    #to install yarn
-    npm install --global yarn
+## Without using Docker
+1. **Install yarn:** This project uses `yarn` as a package manager.
+    - check if yarn is already installed on your machine.
+        ```bash
+        yarn --version
+        ```
+    - If not install yarn
+        ```node
+        npm install --global yarn
+        ```
+
+2. **Install dependencies:** Run the following to install the required dependencies.
+    
+    - Change working directory
+        ```bash
+        cd periodo/periodo
+        ```
+    - Install the dependencies.
+        ```bash
+        yarn install
+        ```
+        OR
+        
+        ```node
+        npm install
+        ```
+3. **Run the project:** 
+    - run in the development mode
+        ```bash
+        yarn dev
+        ```
+        OR
+
+        ```bash
+        npm run dev
+        ```
+4. **Open in browser:** [Click here](http://localhost:3000), or pase the following in your browser
+    ```text
+    http://localhost:3000
     ```
-- **Install dependencies:**
-    ```bash
-    #move to directory
-    cd periodo/periodo
-    #install the dependency
-    yarn install
-    #or
-    npm install
-    ```
-- **Run the project:**
-    ```bash
-    #run in the development mode
-    yarn dev
-    #or
-    npm run dev
-    ```
-    Check-in which port, the server is running or clicks the link
+    The following image shows the terminal output when the server is live.
     ![CLI](https://user-images.githubusercontent.com/43095489/110291642-57773c80-8016-11eb-9f40-5b0698c89efa.png)
 
-### 2. Using Docker
+## Using Docker
 
-* Install [Docker](https://docs.docker.com/engine/install/), from the given link.
+1. Install [Docker](https://docs.docker.com/engine/install/), from the given link.
 
-* Once Docker is installed, use the following two commands to run the app in the root directory:
-  * `docker-compose build`, This command will build the project
-  * `docker-compose up`, This command will run the container.
-  
-* You can open the project on `localhost:3000` on the machine.
-
+2. Once Docker is installed, use the following commands:
+    * Build the project
+        ```docker
+        docker-compose build
+        ```
+    * Run the container
+        ```
+        docker-compose up
+        ```
+3. View the project: [Click here](http://localhost:3000), OR pase the following in your browser
+    ```text
+    http://localhost:3000
+    ```
+    
 Note: If you are using docker-desktop on Windows Or WSL2 i.e Windows Subsystem For Linux, you can use the GUI Options to run the containers 
+
+<hr>
 
 ## Documentation 📃
 Please read [CONTRIBUTING.md](https://github.com/Feminine-Divine/periodo/blob/master/.github/CONTRIBUTING.md) and [Code of Conduct](/Code-of-Conduct.md) before contrbuting
 Do follow the [commit conventions](https://github.com/Feminine-Divine/periodo/blob/master/.github/CONTRIBUTING.md#commit-conventions) while making any commits.
+
+<hr>
 
 ## Contact Us ☎️
 Please reach out to the admins [Khushi Gautam](https://www.linkedin.com/in/khushi-gautam-7708b4191) and [Shipra Verma](https://www.linkedin.com/in/shipra-verma-76a4611ab) if you face any doubts or have any questions regarding the project.
@@ -93,6 +126,7 @@ Please reach out to the admins [Khushi Gautam](https://www.linkedin.com/in/khush
 
 ### Chat Channel:- For any queries post here Mentors will guide you here on [Discord](https://discord.com/channels/811724426965811210/815040260105961472) 
 
+<hr>
 
 ## General Guidelines for Contributors 🚧
 ### Some Guidelines need to be followed to maintain the decorum in the community.
@@ -102,7 +136,7 @@ Please reach out to the admins [Khushi Gautam](https://www.linkedin.com/in/khush
 4. Please try to wait at least 3-4 days after submitting a PR. Maintainers are also human beings and have to manage the whole project. (So, don't ping constantly for review)
 5. Try to discuss your features and problems related to the issue or PR directly here on Github.
 
-## Open Source Programs ❣️
+>## Open Source Programs ❣️
 This Project is a part of the following program
 
 ![image](https://user-images.githubusercontent.com/66299533/111175145-1fe83180-85ce-11eb-9ab7-ffe81fbec848.png)
