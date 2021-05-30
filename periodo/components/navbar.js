@@ -31,6 +31,7 @@ import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
+import Typography from '@material-ui/core/Typography';
 
 const Navbar = () => {
   const theme = useTheme();
@@ -163,10 +164,7 @@ const Navbar = () => {
               <ListItemText primary="Login" />
             </ListItem>
           )}
-<<<<<<< HEAD
-=======
 
->>>>>>> origin
           <ListItem button component="a" href="/social">
                 <ListItemIcon>
                   <FontAwesomeIcon icon={CollectionsIcon} />
@@ -177,10 +175,6 @@ const Navbar = () => {
               </ListItem>
           <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
           <br></br><br></br><br></br><br></br><br></br>
-<<<<<<< HEAD
-=======
-
->>>>>>> origin
         </List>
       </Drawer>
     </div>

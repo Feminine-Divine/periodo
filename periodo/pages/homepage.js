@@ -12,10 +12,6 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import styles from '../styles/Home.module.css';
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> origin
 const Homepage = () => {
   return (
     <>
