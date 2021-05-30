@@ -68,7 +68,7 @@ export default function social() {
   return (
     <div className={style.container}>
       <div className={style.intro}>
-      <h1>| SOCIAL CAMPINGS FOR YOU |</h1>
+      <h1>| SOCIAL CAMPAIGNS FOR YOU |</h1>
       </div>
       <div className={style.container2}>
       <div className={model? 

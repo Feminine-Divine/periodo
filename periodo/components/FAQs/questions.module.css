@@ -1,0 +1,60 @@
+.intro {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: rgb(240, 134, 171);
+    margin-top: 70px;
+    font-size: 17px;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+    .FAQSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 250vh;
+    background: transparent;
+    background: rgb(250, 174, 200);
+    }
+    .container{
+    position:absolute;
+    top: 50%;
+    left:50% ;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 30px 35px 8px rgb(248, 93, 147);
+    border-radius: 30px;
+    border-color: purple;
+    text-align: center;
+    justify-self: center;
+    }
+    .wrap{
+    background:palevioletred;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 15px 10px 0 rgb(248, 146, 180);
+    }
+    .h1{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .p{
+        font-size: 18px;
+    }
+    .a{
+        font-weight: bold;
+        padding: 6px;
+        background-color:rgb(224, 145, 207) ;
+        color:white;
+        border-radius: 10px;
+        box-shadow: 0 10px 8px 0 rgb(204, 118, 185);
+    }
+    

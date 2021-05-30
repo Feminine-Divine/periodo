@@ -7,6 +7,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import "react-day-picker/lib/style.css";
 import style from "./calender.module.css";
 import DialogNextButton from "../dialogbox/DialogNextButton";
+import Timer from './timer';
 
 export default class Example extends React.Component {
   static defaultProps = {
@@ -41,7 +42,7 @@ export default class Example extends React.Component {
     const modifiers = { start: from, end: to };
     return (
       <>
-      <br></br><br></br>
+      <br></br><br></br><br></br><br></br>
       <div className={style.calendarContainer}>
         <div className={style.RangeExample} className={style.container}>
           <Container maxWidth="md">
@@ -97,6 +98,7 @@ export default class Example extends React.Component {
           </Helmet>
         </div>
       </div>
+      <Timer />
       </>
     );
   }

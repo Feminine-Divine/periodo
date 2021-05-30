@@ -12,6 +12,7 @@ import {
   faStar,
   faSignOutAlt,
   faSignInAlt,
+  faQuestion
 } from "@fortawesome/free-solid-svg-icons";
 import CollectionsIcon from '@material-ui/icons/Collections';
 import classes from "./navbar.component.style.js";
@@ -135,12 +136,31 @@ const Navbar = () => {
             <ListItemText primary="Calendar" />
           </ListItem>
 
-          <ListItem button component="a" href="/analysis">
-            <ListItemIcon>
-              <FontAwesomeIcon icon={faAward} />
-            </ListItemIcon>
-            <ListItemText primary="Quiz" />
-          </ListItem>
+              <ListItem button component="a" href="/calender">
+                <ListItemIcon>
+                  <FontAwesomeIcon icon={faCalendarAlt} />
+                </ListItemIcon>
+                <ListItemText>
+                  <Typography variant="h6">Calander</Typography>
+                </ListItemText>
+              </ListItem>
+
+              <ListItem button component="a" href="/analysis">
+                <ListItemIcon>
+                  <FontAwesomeIcon icon={faAward} />
+                </ListItemIcon>
+                <ListItemText>
+                  <Typography variant="h6">Quiz</Typography>
+                </ListItemText>
+              </ListItem>
+              <ListItem button component="a" href="/questions">
+                <ListItemIcon>
+                  <FontAwesomeIcon icon={  faQuestion} />
+                </ListItemIcon>
+                <ListItemText>
+                  <Typography variant="h6">FAQs</Typography>
+                </ListItemText>
+              </ListItem>
 
           <ListItem button component="a" href="/flow">
             <ListItemIcon>

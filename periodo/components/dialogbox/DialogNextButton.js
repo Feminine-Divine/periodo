@@ -6,7 +6,7 @@ import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import Slide from "@material-ui/core/Slide";
-import style from "../calender/calender.module.css";
+import style from "../calender&timer/calender.module.css";
 import Link from "next/link";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
