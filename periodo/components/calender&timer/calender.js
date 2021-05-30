@@ -42,7 +42,6 @@ export default class Example extends React.Component {
     const modifiers = { start: from, end: to };
     return (
       <>
-      <br></br><br></br>
       <div className={style.calendarContainer}>
         <div className={style.RangeExample} className={style.container}>
           <Container maxWidth="md">
