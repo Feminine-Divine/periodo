@@ -3,16 +3,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playball&family=Redressed&family=Special+Elite&display=swap");
 
 .container {
-  padding-top: 150px
+  padding-top: 150px;
+ /* background-image: url('./images/women1.jpg'); */
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
 
-.background {
-  margin: 50px 0;
-  background-image: url("./images/women.jpg");
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 .title {
   font-family: "Dancing Script", cursive;
   font-size: 4em;
@@ -20,6 +19,7 @@
   text-align: center;
   flex-direction: row;
   justify-content: center;
+  margin-top: -80px;
 }
 .heading {
   font-family: "Special Elite", cursive;
