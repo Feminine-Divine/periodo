@@ -58,3 +58,14 @@
         box-shadow: 0 10px 8px 0 rgb(204, 118, 185);
     }
     
+    @media screen and (max-width: 1200px) {
+       .container{
+           margin-top: 0px;
+       }
+       .h1{
+           font-size: 15px;
+       }
+      .p{
+          font-size: 12px;
+      }
+      }  
