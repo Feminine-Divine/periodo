@@ -1,20 +1,41 @@
+
 .mydiv {
-  background-color: rgb(251, 174, 210);
+  background-color: rgb(251, 174, 210); 
   background-image: url("../../public/woman_with_chart.svg"),
     url("../../public/woman_v_sign.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: 130% 98%, -180px 100%;
   background-size: 50vw 50vh, 40vw 40vh;
+  border-radius: 30px;
 }
 .grid {
-  background: rgb(228, 178, 68);
+ /* background: rgb(228, 178, 68); 
+
+  background: radial-gradient(
+    circle,
+    rgb(250, 247, 240) 12%,
+    rgb(251, 174, 210) 100%
+  );
+*/
+background-color:rgb(228, 135, 178);
+  width: 100% !important;
+  margin: auto !important;
+  max-width: 950px !important;
+  padding: 10px 0;
+  flex-basis: auto !important;
+  box-shadow: -15px -15px 15px rgb(243, 114, 174),
+                15px 15px 15px rgb(243, 163, 200);
+}
+.grid2{
+  background: rgb(228, 178, 68); 
+  text-align: center;
   background: radial-gradient(
     circle,
     rgb(250, 247, 240) 12%,
     rgb(251, 174, 210) 100%
   );
 
-  width: 100% !important;
+  width: 120% !important;
   margin: auto !important;
   max-width: 950px !important;
   padding: 10px 0;
@@ -24,7 +45,24 @@
   width: 100% !important;
   margin: 3% !important;
   box-shadow: 0 6px 8px 0 rgba(211, 156, 182, 0.981);
+  border-radius: 40px;
+  box-shadow: 0 15px 10px 0px pink;
+  text-decoration: none;
 }
 .field:hover {
-  transform: scale(1.04);
+  transform: scale(0.9);
+}
+.h1{
+  margin-top: 70px;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(241, 151, 193, 0.981);
+  font-weight: bolder;
+  font-size: 40px;
+  padding: 20px;
+}
+.container{
+  background-color:rgb(251, 174, 210);
+  margin-top: -30px;
+  padding: 20px;
 }
