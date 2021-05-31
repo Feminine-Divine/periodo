@@ -22,6 +22,7 @@ import { Forme, Userform } from "./Userform";
 import Link from "next/link";
 import style from "./Gynac.module.css";
 import Maps from './GoogleMap'
+import shadows from "@material-ui/core/styles/shadows";
 
 const initialFValues = {
   fullName: "",
@@ -55,14 +56,13 @@ export default function Gynac() {
       <Navbar></Navbar>
 
       <Forme>
-        <h1>
+        <h1 className={style.h1}>
           <em>
             <strong>Contact the Gynecologist!</strong>
           </em>
         </h1>
-        <hr></hr>
         <div className={style.mydiv}>
-          <Grid container>
+          <Grid container className={style.container}>
             <Grid item xs={6} className={style.grid} style={{ paddingRight: 40 }}>
               <em>
                 <TextField
@@ -70,14 +70,17 @@ export default function Gynac() {
                   style={{
                     backgroundColor: "#fff8e1",
                     border: 10,
+                    borderRadius:"30px",
+                    borderStyle:"none"
                   }}
                   InputLabelProps={{
                     style: {
                       fontSize: "100%",
                       color: "#880e4f",
+                      marginLeft:"30px"
                     },
                   }}
-                  variant="outlined"
+                  
                   label="Name"
                   type="text"
                   required
@@ -99,9 +102,9 @@ export default function Gynac() {
                     style: {
                       fontSize: "100%",
                       color: "#880e4f",
+                      marginLeft:"30px"
                     },
                   }}
-                  variant="outlined"
                   label="Age"
                   type="number"
                   name="age"
@@ -120,9 +123,9 @@ export default function Gynac() {
                     style: {
                       fontSize: "100%",
                       color: "#880e4f ",
+                      marginLeft:"30px"
                     },
                   }}
-                  variant="outlined"
                   label="Email"
                   type="email"
                   name="email"
@@ -141,9 +144,9 @@ export default function Gynac() {
                     style: {
                       fontSize: "100%",
                       color: "#880e4f ",
+                      marginLeft:"30px"
                     },
                   }}
-                  variant="outlined"
                   label="Contact Number"
                   type="tel"
                   name="mobile"
@@ -162,9 +165,9 @@ export default function Gynac() {
                     style: {
                       fontSize: "100%",
                       color: "#880e4f",
+                      marginLeft:"30px"
                     },
                   }}
-                  variant="outlined"
                   label="Weight"
                   type="number"
                   name="weight"
@@ -182,9 +185,9 @@ export default function Gynac() {
                     style: {
                       fontSize: "100%",
                       color: "#880e4f",
+                      marginLeft:"30px"
                     },
                   }}
-                  variant="outlined"
                   label="Height (in cm)"
                   name="height"
                   type="number"
@@ -205,9 +208,9 @@ export default function Gynac() {
                       fontSize: "100%",
                       color: "#880e4f",
                       padding: "0 5px",
+                      marginLeft:"30px"
                     },
                   }}
-                  variant="outlined"
                   label="No. of Days your Cycle is Late"
                   type="number"
                   name="lateCycle"
@@ -226,9 +229,9 @@ export default function Gynac() {
                     style: {
                       fontSize: "100%",
                       color: "#880e4f",
+                      marginLeft:"30px"
                     },
                   }}
-                  variant="outlined"
                   label="Describe the Menstrual Issue"
                   type="text"
                   name="issues"
@@ -242,12 +245,13 @@ export default function Gynac() {
                   <TextField
                     className={style.field}
                     style={{
-                      backgroundColor: "white",
+                      backgroundColor: "#fff8e1",
                     }}
                     InputLabelProps={{
                       style: {
                         fontSize: "100%",
                         color: "#880e4f",
+                        marginLeft:"30px"
                       },
                     }}
                     id="date"
@@ -257,7 +261,7 @@ export default function Gynac() {
                   />
                 </em>
               </form>
-                <div className={style.grid}>
+                <div className={style.grid2}>
                   <FormControlLabel
                     control={
                       <Checkbox
@@ -276,9 +280,11 @@ export default function Gynac() {
                         onChange={handleInputChange}
                         name="PCOS"
                         color="primary"
+                        
                       />
                     }
                     label="PCOS"
+                    
                   />
                 <FormControlLabel
                     control={
@@ -326,15 +332,15 @@ export default function Gynac() {
                 />
               </div>
               <div
-                className={style.grid}
+                className={style.grid2}
                 style={{ display: "flex", position: "relative" }}
               >
-                <h4 margin="10px">
+                <h4 margin="30px">
                   <em>Choose:</em>
                 </h4>
 
                 <Button
-                  style={{ margin: "10px", position: "absolute", right: "0" }}
+                  style={{ margin: "10px", position: "absolute", right: "0", borderRadius:"30px" }}
                   aria-controls="customized-menu"
                   aria-haspopup="true"
                   variant="contained"
@@ -370,14 +376,14 @@ export default function Gynac() {
               </Menu>
 
               <div
-                className={style.grid}
+                className={style.grid2}
                 style={{ display: "flex", position: "relative" }}
               >
-                <h4 margin="10px">
+                <h4 margin="30px">
                   <em>Choose:</em>
                 </h4>
                 <Button
-                  style={{ margin: "10px", position: "absolute", right: "0" }}
+                  style={{ margin: "10px", position: "absolute", right: "0",borderRadius:"30px" }}
                   aria-controls="customized-menu"
                   aria-haspopup="true"
                   variant="contained"
@@ -413,12 +419,12 @@ export default function Gynac() {
               </Menu>
 
               <div
-                className={style.grid}
+                className={style.grid2}
                 style={{ display: "flex", position: "relative" }}
               >
                 <Button
                   style={{
-                    margin: "10px 0",
+                    margin: "10px 0",marginLeft:"30px"
                   }}
                   variant="contained"
                   color="secondary"
@@ -427,7 +433,7 @@ export default function Gynac() {
                   Send
                 </Button>
                 <Button
-                  style={{ margin: "10px", position: "absolute", right: "0" }}
+                  style={{ marginRight: "30px", position: "absolute", marginTop:"5px", right:"0" }}
                   variant="contained"
                 >
                   Cancel
