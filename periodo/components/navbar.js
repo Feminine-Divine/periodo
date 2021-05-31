@@ -13,6 +13,7 @@ import {
   faSignOutAlt,
   faSignInAlt,
   faQuestion,
+  faUsers
 } from "@fortawesome/free-solid-svg-icons";
 import CollectionsIcon from "@material-ui/icons/Collections";
 import classes from "./navbar.component.style.js";
@@ -211,10 +212,10 @@ const Navbar = () => {
               )}
               <ListItem button component="a" href="/social">
                 <ListItemIcon>
-                  <FontAwesomeIcon icon={CollectionsIcon} />
+                  <FontAwesomeIcon icon={faUsers} />
                 </ListItemIcon>
                 <ListItemText>
-                  <Typography variant="h6">Social Campings</Typography>
+                  <Typography variant="h6">Social Campaigns</Typography>
                 </ListItemText>
               </ListItem>
               <br></br>
