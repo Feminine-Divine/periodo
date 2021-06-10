@@ -10,6 +10,9 @@
 **Periodo** will help these girls and women <u>keep a track of their cycles and **notify them of upcoming dates**, as well as keeping track of the amount of discharge of their periods and assisting them with **proper diet** during their periods</u>.<br><br>
 We wish to expand the application's functionality with time and assistance from the contributors. This project is really a **beginner-friendly** to contribute, and it has a user-friendly interface that appeals to a younger audience. 
 
+### Technical details
+The code sample of this application is based basically on React and Nextjs. We have made all the features using the npm Packages and Node Modules. The backend is authenticated by the Nodejs and the Google APIs. The Auth0 API has also been used to make it’s Login and Logout authentication. The Google Map API has been used for directing the user to the nearby location for hospital, restroom, food he/she is searching for. The frontend of this application is pretty good that has been made with React. We have included various features in the application and all those are seen from the Sidebar. For instant information we have provided a chatbot also to the user. 
+
 
 ![image](https://user-images.githubusercontent.com/61618767/112602083-41041a00-8e39-11eb-9c6b-50cb15535f3c.png)
 
