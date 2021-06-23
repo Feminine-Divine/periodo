@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/navbar.js";
+import AlertBox from "../components/alertbox/alertbox";
 import Start from "../components/started.js";
 import Layout from "../components/Layout";
 import Footer from "../components/Footer/Footer.js";
@@ -17,6 +18,7 @@ const Homepage = () => {
   return (
     <>
       <Navbar />
+      <AlertBox />
         <div className={styles.socialIcons}>
             <a data-testid="github" href="https://github.com/Feminine-Divine/periodo"><GitHubIcon className={styles.icons} /></a>
             <a data-testid="mail" href="mailto:femininedivine591@gmail.com"><MailIcon className={styles.icons} /></a>
