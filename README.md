@@ -1,4 +1,4 @@
-># Periodo - The Tracker (Period Tracker) ✨
+# Periodo - The Tracker (Period Tracker) ✨
 
 
 <p align="center">
@@ -9,6 +9,9 @@
 **Periodo - The Tracker** _is designed for teenage girls_ who are about to start their periods, and _women_ who have trouble recalling their period dates. Whether it's to prevent embarrassing situations or to check the period for lifestyle disorders (PCOS, PCOD, etc.) this app is for you.<br>
 **Periodo** will help these girls and women <u>keep a track of their cycles and **notify them of upcoming dates**, as well as keeping track of the amount of discharge of their periods and assisting them with **proper diet** during their periods</u>.<br><br>
 We wish to expand the application's functionality with time and assistance from the contributors. This project is really a **beginner-friendly** to contribute, and it has a user-friendly interface that appeals to a younger audience. 
+
+### Technical details
+The code sample of this application is based basically on React and Nextjs. We have made all the features using the npm Packages and Node Modules. The backend is authenticated by the Nodejs and the Google APIs. The Auth0 API has also been used to make it’s Login and Logout authentication. The Google Map API has been used for directing the user to the nearby location for hospital, restroom, food he/she is searching for. The frontend of this application is pretty good that has been made with React. We have included various features in the application and all those are seen from the Sidebar. For instant information we have provided a chatbot also to the user. 
 
 
 ![image](https://user-images.githubusercontent.com/61618767/112602083-41041a00-8e39-11eb-9c6b-50cb15535f3c.png)
@@ -136,7 +139,7 @@ Please reach out to the admins [Khushi Gautam](https://www.linkedin.com/in/khush
 4. Please try to wait at least 3-4 days after submitting a PR. Maintainers are also human beings and have to manage the whole project. (So, don't ping constantly for review)
 5. Try to discuss your features and problems related to the issue or PR directly here on Github.
 
->## Open Source Programs ❣️
+## Open Source Programs ❣️
 This Project is a part of the following program
 
 ![image](https://user-images.githubusercontent.com/66299533/111175145-1fe83180-85ce-11eb-9ab7-ffe81fbec848.png)
