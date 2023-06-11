@@ -42,9 +42,12 @@ export default class Example extends React.Component {
     const modifiers = { start: from, end: to };
     return (
       <>
+      <body>
       <br></br><br></br><br></br><br></br>
       <div className={style.calendarContainer}>
-        <div className={style.RangeExample} className={style.container}>
+      {/* className={style.container}> className={RangeExample}  */
+      }
+        <div className={style.container}>
           <Container maxWidth="md">
             <h3 className={style.h3}>
               {!from && !to && <h3>Please select the first flow day.</h3>}
@@ -99,6 +102,7 @@ export default class Example extends React.Component {
         </div>
       </div>
       <Timer />
+      </body>
       </>
     );
   }

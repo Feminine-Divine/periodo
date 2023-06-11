@@ -29,6 +29,7 @@ function CreateArea(props) {
   }
 
   return (
+    <body>
     <div>
       <form className={styles.createnote} onSubmit={submitNote}>
         <input
@@ -55,6 +56,7 @@ function CreateArea(props) {
         </button>
       </form>
     </div>
+    </body>
   );
 }
 

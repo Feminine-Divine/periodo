@@ -11,8 +11,8 @@ class Layout extends Component {
             <div>
                 <Header />
                 {this.props.children}
-                <ContactUs />
-                <Footer />
+                {/* <ContactUs /> */}
+                {/* <Footer /> */}
                 
             </div>
         )

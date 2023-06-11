@@ -21,6 +21,8 @@ function Notes() {
   }
 
   return (
+    <>
+    <body>
     <div className={styles.notesContainer}>
       <CreateArea onAdd={addNote} />
       {notes.map((noteItem, index) => {
@@ -35,6 +37,8 @@ function Notes() {
         );
       })}
     </div>
+    </body>
+    </>
   );
 }
 export default Notes;

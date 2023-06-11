@@ -16,6 +16,7 @@ export default function timer() {
     setInterval(updateTime,1000)
  
     return (
+        <body>
         <div >
         <section className={style.timer_container}>
             <section className={style.timer}>
@@ -34,5 +35,6 @@ export default function timer() {
             </section>
         </section>
         </div>
+        </body>
     )
 }

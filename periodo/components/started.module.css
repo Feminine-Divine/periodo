@@ -10,7 +10,7 @@
   margin: 50px 0;
   background-image: url("./images/women.jpg");
   height: 100%;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .title {
