@@ -17,6 +17,7 @@
     height: 250vh;
     background: transparent;
     background: rgb(250, 174, 200);
+    margin-bottom: -15rem;
     }
     .container{
     position:absolute;

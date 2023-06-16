@@ -229,7 +229,7 @@
 }
 
 .quizWrapper {
-  min-height: 90vh;
+  min-height: 50vh;
 }
 
 @media screen and (max-width: 500px) {

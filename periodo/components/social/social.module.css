@@ -2,6 +2,7 @@
 .container{
     background-color: pink;
     height: 100%;
+    margin-bottom: -15rem;
 }
 .container2{
     width: 100%;
@@ -32,8 +33,8 @@
 .intro {
     color: rgb(0, 0, 0);
     text-align: center;
-    background-color: rgb(253, 207, 246);
-    margin-top: 60px;
+    background-color: pink;
+    margin-top: 65px;
     font-size: 17px;
     justify-content: center;
 }

@@ -191,7 +191,7 @@ export default class App extends React.Component {
 
           </VictoryChart>         */}
 
-        <VictoryChart
+        {/* <VictoryChart
           containerComponent={
             <VictoryContainer responsive={true} style={{ height: "600px" }} />
           } // Data from previous months can be mapped from an array and plotted
@@ -290,7 +290,7 @@ export default class App extends React.Component {
               ]}
             />
           </VictoryStack>
-        </VictoryChart>
+        </VictoryChart> */}
       </div>
     );
   }
