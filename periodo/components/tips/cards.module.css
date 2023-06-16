@@ -7,10 +7,10 @@
 .intro {
   color: rgb(0, 0, 0);
   text-align: center;
-  background-color: rgb(253, 207, 246);
-  margin-top: 60px;
+  margin-top: 5rem;
   font-size: 17px;
   justify-content: center;
+  margin-bottom: -8rem;
 }
 .intro h1 {
   padding: 40px;
@@ -22,16 +22,12 @@
 }
 .body {
   /* background: coral; */
-
   display: flex;
   justify-content: center;
   border-radius: 5rem;
   width: 80%;
   align-items: center;
-  background-attachment: fixed;
-  margin-bottom: 3rem;
-  margin: -2rem;
-  padding: 4rem;
+  background-attachment:scroll;  
 }
 .container {
   position: relative;

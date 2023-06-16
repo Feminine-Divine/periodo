@@ -15,7 +15,7 @@
 }
 .notebody {
   font-size: 1.1em;
-  margin-bottom: 10px;
+  
   white-space: pre-wrap;
   word-wrap: break-word;
 }
@@ -75,7 +75,7 @@
   text-align: center;
 }
 .notesContainer {
-  min-height: 90vh;
+  margin-bottom: -15rem;
   overflow: scroll;
-  margin-top: 65px;
+  margin-top: 5rem;
 }

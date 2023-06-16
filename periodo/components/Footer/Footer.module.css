@@ -102,7 +102,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
 }
 
 #footer__logo {

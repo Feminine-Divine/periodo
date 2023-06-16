@@ -25,11 +25,12 @@ export default initAuth0({
         httpTimeout: 2500,
         clockTolerance: 10000,
       },
+      secret: process.env.REACT_APP_SECRET,
 });
 */
 
 export default initAuth0({
-  secret: process.env.REACT_APP_SECRET,
+  //secret: process.env.REACT_APP_SECRET,
   issuerBaseURL: process.env.REACT_APP_USERBASE_URL,
   baseURL: "http://localhost:3000",
   clientID: process.env.AUTH0_CLIENT_ID,

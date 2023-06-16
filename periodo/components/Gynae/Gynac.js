@@ -23,6 +23,7 @@ import Link from "next/link";
 import style from "./Gynac.module.css";
 import Maps from './GoogleMap'
 import shadows from "@material-ui/core/styles/shadows";
+import dynamic from "next/dynamic";
 
 const initialFValues = {
   fullName: "",
@@ -38,7 +39,7 @@ const initialFValues = {
   disorders: "",
   issues: "",
 };
-export default function Gynac() {
+function Gynac() {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = (event) => {
@@ -448,3 +449,6 @@ export default function Gynac() {
     </>
   );
 }
+
+export default dynamic (() => Promise.resolve(Gynac), {ssr: false})
+

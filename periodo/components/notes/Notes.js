@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ShowNote from "./ShowNotes";
 import CreateArea from "./CreateArea";
 import styles from "./Notes.module.css";
+import dynamic from "next/dynamic";
 
 function Notes() {
   const [notes, setNotes] = useState([]);
@@ -22,7 +23,7 @@ function Notes() {
 
   return (
     <>
-    <body>
+    
     <div className={styles.notesContainer}>
       <CreateArea onAdd={addNote} />
       {notes.map((noteItem, index) => {
@@ -37,8 +38,10 @@ function Notes() {
         );
       })}
     </div>
-    </body>
+    
     </>
   );
 }
-export default Notes;
+
+export default dynamic (() => Promise.resolve(Notes), {ssr: false})
+

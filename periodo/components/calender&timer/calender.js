@@ -8,8 +8,9 @@ import "react-day-picker/lib/style.css";
 import style from "./calender.module.css";
 import DialogNextButton from "../dialogbox/DialogNextButton";
 import Timer from './timer';
+import dynamic from "next/dynamic";
 
-export default class Example extends React.Component {
+class Example extends React.Component {
   static defaultProps = {
     numberOfMonths: 2,
   };
@@ -107,3 +108,6 @@ export default class Example extends React.Component {
     );
   }
 }
+
+
+export default dynamic (() => Promise.resolve(Example), {ssr: false})

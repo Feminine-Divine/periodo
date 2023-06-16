@@ -5,9 +5,10 @@ import Layout from "../components/Layout";
 const notes = () => {
   return (
     <>
-      <Layout>
-      <Notes />
-      </Layout>
+    <Layout>
+      <Notes></Notes>
+    </Layout>
+    
     </>
   );
 };
