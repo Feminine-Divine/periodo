@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "export NODE_OPTIONS=--openssl-legacy-provider; next build",
+    "build": "next build",
     "start": "next start",
     "heroku-postbuild": "npm run build"
   },
+  
   "dependencies": {
     "@ampproject/toolbox-optimizer": "^2.6.0",
     "@auth0/nextjs-auth0": "^1.2.0",
