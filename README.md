@@ -6,7 +6,7 @@
     </p>
 
 ## About 📚
-**Periodo - The Tracker** _is designed for teenage girls_ who are about to start their periods, and _women_ who have trouble recalling their period dates. Whether it's to prevent embarrassing situations or to check the period for lifestyle disorders (PCOS, PCOD, etc.) this app is for you.<br>
+**Periodo -    KKKK The Tracker** _is designed for teenage girls_ who are about to start their periods, and _women_ who have trouble recalling their period dates. Whether it's to prevent embarrassing situations or to check the period for lifestyle disorders (PCOS, PCOD, etc.) this app is for you.<br>
 **Periodo** will help these girls and women <u>keep a track of their cycles and **notify them of upcoming dates**, as well as keeping track of the amount of discharge of their periods and assisting them with **proper diet** during their periods</u>.<br><br>
 We wish to expand the application's functionality with time and assistance from the contributors. This project is really a **beginner-friendly** to contribute, and it has a user-friendly interface that appeals to a younger audience. 
 
